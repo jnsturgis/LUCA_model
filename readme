@@ -1,41 +1,21 @@
-This directory contains a metabolic model of LUCA. 
-This model aims to be as complete as possible and provide a self consistent metabolism and objective functions for analysis.
-Various choices will be necessary and explained here in the development of the model that is based on the article by Wimmer et al. 2021 (Energy at Origins: Favorable Thermodynamics of Biosynthetic Reactions in the Last Universal Common Ancestor (LUCA) Frontiers in Microbiology 12:793664 doi: 10.3389/fmicb.2021.793664)
 
-The objective with this metabolic model is to be able to then propose an evolutionary path from earlier models while maintaining a coherent metabolic and catalytic scheme.
+## LUCA.sbml
 
-Step 1 Convert Wimmers model to an smbl model this is LUCA_clean.sbml that was created by the python code in ../Tables2SBML.ipynb convert to pure python code but fetching external info seems to be imperfect.
+THe objective of this project is to build a self consistent metabolic model of LUCA, 
+that is coherent with as many as possible of the accepted and likely properties of LUCA.
 
-Step 2 Convert to a model suitable for FBA and a metabolic model:
-	1. Need an objective function so add DNA, RNA, Protein, Membrane and cofactors to define the composition of LUCA. This needs some decisions!
-	2. Need to define a catabolism to drive the anabolism and merge with the anabolic reations. This needs some decisions.
-	3. Need to define exchanges with the environment to provide raw materials.
+The model sbml file will contain the model however a number of accessory programs should
+be associated with the project in order to:
+* Help maintain coherency and consistency of the model. 
+* Allow automatic recovery of information and annotations for the model from different
+on-line sources.
+* Produce figures based on the model
 
-1.1 Following Jain et al. 2014 propose a membrane composed of a mixture of polyprenyl ether lipids on glycerol-1-phosphate and fatty acyl ester lipids on glycerol-3-phosphate forming a heterochiral membrane. These then have head groups added by the CDP route including serine, ethanolamine and glycerol.
+The main model will contain the anabolic reactions necessary for growth of the model
+organism, as analysed by flux balance analysis, and the exchange reactions with the
+environment needed for resource acquisition and waste disposal.
+A separate part of the model will deal with catabolic reactions and the possible sources
+of ATP.
 
-1.2 Following from bionumbers (BNID 111490) and derived from Niedhardt et al. the composition of the cell (recalculated to remove LPS, peptidoglycan and glycogen) is about:
-Protein 60% dry wt
-RNA 22%
-DNA 3%
-Lipids 10%
-Metabolites and cofactors 4%
-Ions 1%
-
-1.3 Within these we will opt for DNA and RNA 50%GC and 50%AT (an arbitrary choice)
-
-1.4 Proteome composition based on data in Brune et al 2018.
-W	1	Y	2	F	6	M	2
-L	11	I	6	V	7.5	A	9.5
-P	4	G	7.5	C	1	Q	4.5
-N	4.5	T	5	S	5	E	6.5
-D	5.5	K	4	H	2	R	5.5
-
-1.5 Add membrane lipid biosynthesis pathway both acyl and isoprenyl
-
-1.6 Define metabolites and cofactors for growth 
-1.7 Correct define formulae and charges of different compounds and verify reactions are equilibrated.
-1.8 Complete as possible external references dG° and KEGG and ec#
-
-
-
-
+The initial model LUCA_v0.0.sbml was generated automatically from the tables Witters et al. (1)
+using the script in table2sbml.py
