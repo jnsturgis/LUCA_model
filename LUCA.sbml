@@ -4939,6 +4939,22 @@
       <species id="M_i_tRNAV" name="Valinyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
       <species id="M_i_tRNAW" name="Tryptophanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
       <species id="M_i_tRNAY" name="Tyrosinyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
+      <species id="M_i_CDPDOG" name="CDP di oleyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M_i_DOPS" name="di oleyl phosphatidyl serine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M_i_DOPE" name="di oleyl phosphatidyl ethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_DOPG" name="di oleyl phosphatidyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_Gol3P" name="Glycerol 3 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_CDPDGGG" name="CDP di geranylgeranylglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_DGGGPS" name="di geranylgeranylglycerolphosphoserine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_DGGGPE" name="di geranylgeranylglycerolphosphoethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_DGGGPG" name="di geranylgeranylglycerolphosphoglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_DGGGP" name="di geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_GGPP" name="geranyl geranyl pyrophosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_GGGP" name="Geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_Gol1P" name="Glycerol 1 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_DOPA" name="Di oleyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_OLPA" name="Oleyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_OPP" name="oleyl phosphopantatheine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
@@ -14643,6 +14659,158 @@
         <listOfProducts>
           <speciesReference species="M_i_Protein" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_RNA" stoichiometry="100" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_PSS" name="Phosphatidyl serine synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00065" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_DOPS" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_PSDC" name="Phosphatidyl serine decarboxylase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_DOPS" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_DOPE" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00011" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_PGS" name="Phosphatidyl glyerol synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DOPG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_APSS" name="Archeol phospho serine synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_CDPDGGG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00065" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_DGGGPS" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_APSD" name="Archeol phosphoserine decarboxylase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_DGGGPS" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00011" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DGGGPE" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_APGS" name="Archeol phosphoglycerol synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_CDPDGGG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_DGGGPG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_Lipid" name="Membrane synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_DOPG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DOPE" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DOPS" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DGGGPG" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_i_DGGGPE" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_Lipid" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_CDPAS" name="CDP archeol synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_DGGGP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00063" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_CDPDGGG" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_DGGGPS" name="digeranylgeranylglycerolphosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_GGPP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_GGGP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_DGGGP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_GGGPS" name="Geranylgeranylglycerolphosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_GGPP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Gol1P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_GGGP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_CDPDAGS" name="CDP diacyl glycerol synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_DOPA" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00063" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_RMAN10" name="Oleyl transferase 2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_OPP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_DOPA" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C01134" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_RMAN11" name="Oleyl transferase 1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_OPP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C01134" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_RMAN12" name="Glycerol 1 phosphate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00111" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00004" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00003" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Gol1P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_RMAN13" name="Glycerol 3 phosphate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00111" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00004" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00003" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>
