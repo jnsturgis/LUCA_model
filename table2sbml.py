@@ -1,14 +1,16 @@
 # Lets start with some libraries
 # Find chemical formulae and charges seem to be missing and CHEBI
-
+"""
+This file should generate an initial sbml model based on Table1 and Table3 of Wimmers et al.
+"""
 from urllib import request
 from bs4 import BeautifulSoup
 import pandas as pd
 
 col_list=[0,2]
-pH = 7
-temp = 30
-col_list.append(int(3+14*(temp-25)/5+(pH-1)))
+PH = 7
+TEMP = 30
+col_list.append(int(3+14*(TEMP-25)/5+(PH-1)))
 
 start1 = pd.read_excel("../Wimmers_Tables/Table 1.xlsx", header=4, index_col=0, usecols=[0,1,2,3,6])
 start2 = pd.read_excel("../Wimmers_Tables/Table 3.XLSX",
@@ -39,34 +41,35 @@ start1["R1"] = start1["Reaction equation (KEGG compound)"].str.split("<=>").str[
 start1["P1"] = start1["Reaction equation (KEGG compound)"].str.split("<=>").str[1]
 
 cpds = []
-digits = "0123456789"
+DIGITS = "0123456789"
 
-def add_pair( code, name ):
-    if code[0] in digits:
-        assert code[0] == name[0]
-        code = code.lstrip(digits)
-        name = name.lstrip(digits)
-        code = code.strip()
-        name = name.strip()
+def add_pair( mycode, myname ):
+    """Build the structures"""
+    if mycode[0] in DIGITS:
+        assert mycode[0] == myname[0]
+        mycode = mycode.lstrip(DIGITS)
+        myname = myname.lstrip(DIGITS)
+        mycode = mycode.strip()
+        myname = myname.strip()
 
     for elem in cpds:
-        if elem[0] == code and elem[1] == name:
+        if elem[0] == mycode and elem[1] == myname:
             return
-    cpds.append([code, name])
+    cpds.append([mycode, myname])
 
-for i in range(0,start1.shape[0]):
-    codes = start1["R1"][i].split(" + ")
-    names = start1["R name"][i].split(" + ")
+for ii in range(0,start1.shape[0]):
+    codes = start1["R1"][ii].split(" + ")
+    names = start1["R name"][ii].split(" + ")
     assert len(codes) == len(names)
-    for j in range(0,len(codes)):
-        add_pair(codes[j].strip(),names[j].strip())
+    for code, name in zip(codes, names):
+        add_pair(code.strip(),name.strip())
 
-for i in range(0,start1.shape[0]):
-    codes = start1["P1"][i].split(" + ")
-    names = start1["P name"][i].split(" + ")
+for ii in range(0,start1.shape[0]):
+    codes = start1["P1"][ii].split(" + ")
+    names = start1["P name"][ii].split(" + ")
     assert len(codes) == len(names)
-    for j in range(0,len(codes)):
-        add_pair(codes[j].strip(),names[j].strip())
+    for code, name in zip(codes, names) :
+        add_pair(code.strip(),name.strip())
 
 compounds = pd.DataFrame( cpds, columns=['KEGG ID','Name'] )
 print(compounds.shape)
@@ -74,16 +77,18 @@ compounds.to_csv("LUCAcompounds.csv")
 reactions.to_csv("LUCAreactions.csv")
 
 def fetch_info( species ):
+    """Collect information from KEGG - this seems broken"""
     url = f"https://www.kegg.jp/entry/{species}"
-    html = request.urlopen(url).read().decode('utf8')
-    parsedHTML = BeautifulSoup(html, "html.parser")
-    table = parsedHTML.find_all(class_ = "cel")[2]
-    return(' '.join(table.stripped_strings))
+    with request.urlopen(url).read().decode('utf8') as html:
+        parsed_html = BeautifulSoup(html, "html.parser")
+        table = parsed_html.find_all(class_ = "cel")[2]
+    return ' '.join(table.stripped_strings)
 
 formulae = []
 charges = []
 for index, compound in compounds.iterrows() :
-    if index % 100 == 0 : print(compound)
+    if index % 100 == 0 :
+        print(compound)
     formulae.append( fetch_info(compound.to_list()[0]))
     charges.append( '0' )
 
@@ -139,18 +144,23 @@ for element in modifications:
 # RMAN4 remove a stray proton
 
 modifications = [('R03231',['C00019', 'C01092', 'C00080'],['C04425', 'C01037']),
-                ('R00742',['C00002', 'C00024', 'C00288', 'C00080'], ['C00008', 'C00009', 'C00083' ]),
-                ('R00344',['C00002', 'C00022', 'C00288', 'C00080'], ['C00008', 'C00009', 'C00036' ]),
+                ('R00742',['C00002', 'C00024', 'C00288', 'C00080'],
+                ['C00008', 'C00009', 'C00083' ]),
+                ('R00344',['C00002', 'C00022', 'C00288', 'C00080'],
+                ['C00008', 'C00009', 'C00036' ]),
                 ('R05220',['C06505', 'C00002', 'C00080'], ['C06506', 'C00536']),
                 ('R07773',['C16243', 'C00019', 'C00080'], ['C11542', 'C00021']),
-                ('R00575',['2 C00002', 'C00064', 'C00288', 'C00001', 'C00080'], ['2 C00008', 'C00009', 'C00025', 'C00169']),
+                ('R00575',['2 C00002', 'C00064', 'C00288', 'C00001', 'C00080'],
+                ['2 C00008', 'C00009', 'C00025', 'C00169']),
                 ('R05223',['C00194', 'C00144', 'C00080'], ['C06510', 'C05775']),
                 ('R03348',['C03722', 'C00119', 'C00080'], ['C01185', 'C00013', 'C00011']),
                 ('R07404',['C00002', 'C03373', 'C00288', 'C00080'], ['C00008', 'C00009', 'C15667']),
                 ('R10712',['C04752', 'C20247', 'C00080'], ['C01081', 'C00013', 'C00011']),
-                ('R12026',['C00003', 'C00037', 'C00283'], ['C00153', 'C20784', '3 C00001', 'C00080']),
+                ('R12026',['C00003', 'C00037', 'C00283'],
+                ['C00153', 'C20784', '3 C00001', 'C00080']),
                 ('RMAN4', ['C00011', 'C00282'], ['C00058']),
-                ('R11628',['C00002', 'C21511', '3 C00030', 'C00001', 'C00080'], ['C00008', 'C00009', 'C21512', '3 C00028']),
+                ('R11628',['C00002', 'C21511', '3 C00030', 'C00001', 'C00080'],
+                ['C00008', 'C00009', 'C21512', '3 C00028']),
                 ('RMAN1', ['C21107', 'C00014'], ['C20559', 'C00001']),
                 ('R10397',['C17023', 'C16590', 'C00030'], ['C00001', 'C16593', 'C00028']),
                 ('R09153',['C17023', 'C00593', 'C00030'], ['C00001', 'C03576', 'C00028']),
@@ -166,34 +176,47 @@ for element in modifications:
     reactions.loc[ element[0] ] = new_element
 
 def species_id( species ) -> str:
+    """Pretty silly function"""
     return f"i_{species}"
 
 def species2sbml( species ) ->str:
-    if species[0] in digits:
+    """Produce an sbml species reference"""
+    if species[0] in DIGITS:
         number = 0
         i = 0
-        while species[i] in digits :
+        while species[i] in DIGITS :
             number += int(species[i])
             i += 1
     else :
         number = 1
-    return f"          <speciesReference species=\"{species_id(species.lstrip(digits).strip())}\" stoichiometry=\"{number}\" constant=\"true\"/>\n"
+    answer = f"          <speciesReference species=\"{species_id(species.lstrip(DIGITS).strip())}\""
+    answer += f" stoichiometry=\"{number}\" constant=\"true\"/>\n"
+    return answer
 
-def compound2sbml( index, compound) ->str :
+def compound2sbml( my_index, my_compound) ->str :
+    """Produce and sbml compound declaration"""
     # Consruct id from compartment and kegg ID
-    id = species_id(index)
+    my_id = species_id(my_index)
 
-    output  = f"      <species metaid=\"meta_{id}\" id=\"{id}\" name=\"{compound[0]}\" compartment=\"i\"\n"
-    output +=  "          hasOnlySubstanceUnits=\"false\" boundaryCondition=\"false\" constant=\"false\"\n"
+    output  = f"      <species metaid=\"meta_{my_id}\" id=\"{my_id}\" name=\"{my_compound[0]}\""
+    output +=  " compartment=\"i\"\n"
+    output +=  "          hasOnlySubstanceUnits=\"false\" boundaryCondition=\"false\""
+    output +=    " constant=\"false\"\n"
     output +=  "          initialConcentration=\"1e-3\" substanceUnits=\"mole\"\n"
-    output += f"          fbc:charge=\"{compound[2]}\" fbc:chemicalFormula=\"{compound[1]}\">\n"
+    output += f"          fbc:charge=\"{my_compound[2]}\" fbc:chemicalFormula=\"{my_compound[1]}\""
+    output +=  ">\n"
     # Annotations
     output +=  "        <annotation>\n"
-    output +=  "          <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:vCard=\"http://www.w3.org/2001/vcard-rdf/3.0#\" xmlns:vCard4=\"http://www.w3.org/2006/vcard/ns#\" xmlns:bqbiol=\"http://biomodels.net/biology-qualifiers/\" xmlns:bqmodel=\"http://biomodels.net/model-qualifiers/\">\n"
-    output += f"            <rdf:Description rdf:about=\"#meta_{id}\">\n"
+    output +=  "          <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\""
+    output += " xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:vCard=\"http://www.w3.org/2001"
+    output += "/vcard-rdf/3.0#\" xmlns:vCard4=\"http://www.w3.org/2006/vcard/ns#\""
+    output += " xmlns:bqbiol=\"http://biomodels.net/biology-qualifiers/\" xmlns:bqmodel=\""
+    output += "http://biomodels.net/model-qualifiers/\">\n"
+    output += f"            <rdf:Description rdf:about=\"#meta_{my_id}\">\n"
     output +=  "              <bqbiol:is>\n"
     output +=  "                <rdf:Bag>\n"
-    output += f"                  <rdf:li rdf:resource=\"https://identifiers.org/kegg/KEGG:{compound[0]}\"/>\n"
+    output +=  "                  <rdf:li rdf:resource=\"https://identifiers.org/kegg/"
+    output += f"KEGG:{my_compound[0]}\"/>\n"
     output +=  "                </rdf:Bag>\n"
     output +=  "              </bqbiol:is>\n"
     output +=  "            </rdf:Description>\n"
@@ -202,18 +225,28 @@ def compound2sbml( index, compound) ->str :
     output +=  "      </species>\n"
     return output
 
-def reaction2sbml( index, reaction) ->str :
-    output = f"      <reaction metaid=\"meta_{index}\" id=\"{index}\" name=\"KEGG {index}\""
-    output += "          reversible=\"true\" fast=\"false\" fbc:lowerFluxBound=\"cobra_0_bound\" fbc:upperFluxBound=\"cobra_default_ub\">\n"
+def reaction2sbml( my_index, my_reaction) ->str :
+    """Produce an sbml reaction block"""
+    output = f"      <reaction metaid=\"meta_{my_index}\" id=\"{my_index}\" name=\""
+    output += f"KEGG {my_index}\""
+    output += "          reversible=\"true\" fast=\"false\" fbc:lowerFluxBound=\"cobra_0_bound\""
+    output += "fbc:upperFluxBound=\"cobra_default_ub\">\n"
     # Annotations
     output +=  "        <annotation>\n"
-    output +=  "          <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:vCard=\"http://www.w3.org/2001/vcard-rdf/3.0#\" xmlns:vCard4=\"http://www.w3.org/2006/vcard/ns#\" xmlns:bqbiol=\"http://biomodels.net/biology-qualifiers/\" xmlns:bqmodel=\"http://biomodels.net/model-qualifiers/\">\n"
-    output += f"            <rdf:Description rdf:about=\"#meta_{index}\">\n"
+    output +=  "          <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" "
+    output += "xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:vCard=\"http://www.w3.org/2001"
+    output += "/vcard-rdf/3.0#\" xmlns:vCard4=\"http://www.w3.org/2006/vcard/ns#\" xmlns:bqbiol"
+    output += "=\"http://biomodels.net/biology-qualifiers/\" xmlns:bqmodel=\"http://biomodels"
+    output += ".net/model-qualifiers/\">\n"
+    output += f"            <rdf:Description rdf:about=\"#meta_{my_index}\">\n"
     output +=  "              <bqbiol:is>\n"
     output +=  "                <rdf:Bag>\n"
-    output += f"                  <rdf:li rdf:resource=\"https://identifiers.org/dG0/{reaction[2]}\"/>\n"
-    output += f"                  <rdf:li rdf:resource=\"https://identifiers.org/dG0_uncertainty/{reaction[1]}\"/>\n"
-    output += f"                  <rdf:li rdf:resource=\"https://identifiers.org/EC #/{reaction[0]}\"/>\n"
+    output += "                  <rdf:li rdf:resource=\"https://identifiers.org/"
+    output += f"dG0/{my_reaction[2]}\"/>\n"
+    output += "                  <rdf:li rdf:resource=\"https://identifiers.org/"
+    output += f"dG0_uncertainty/{my_reaction[1]}\"/>\n"
+    output += "                  <rdf:li rdf:resource=\"https://identifiers.org/"
+    output += f"EC #/{my_reaction[0]}\"/>\n"
     output +=  "                </rdf:Bag>\n"
     output +=  "              </bqbiol:is>\n"
     output +=  "            </rdf:Description>\n"
@@ -221,21 +254,25 @@ def reaction2sbml( index, reaction) ->str :
     output +=  "        </annotation>\n"
     # Reaction species and stochiometry
     output += "        <listOfReactants>\n"
-    for species in reaction[3]:
+    for species in my_reaction[3]:
         output += species2sbml( species.strip() )
     output += "        </listOfReactants>\n"
     output += "        <listOfProducts>\n"
-    for species in reaction[4]:
+    for species in my_reaction[4]:
         output += species2sbml( species.strip() )
     output += "        </listOfProducts>\n"
     output += "      </reaction>\n"
     return output
 
-sbml_header = """<?xml version="1.0" encoding="UTF-8"?>
-<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" metaid="meta_" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
-  <model metaid="meta_LUCA" fbc:strict="true">"""
+# pylint: disable="invalid-name"
 
-sbml_units = """      <listOfUnitDefinitions>
+SBML_HEADER = """<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core"
+    xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2"
+    metaid="meta_ML" id="ML" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
+  <model metaid="meta_LUCA" id="LUCA" fbc:strict="true">"""
+
+SBML_UNITS = """      <listOfUnitDefinitions>
       <unitDefinition id="mmol_per_gDW_per_hr">
         <listOfUnits>
           <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
@@ -245,7 +282,7 @@ sbml_units = """      <listOfUnitDefinitions>
       </unitDefinition>
     </listOfUnitDefinitions>\n"""
 
-sbml_compartments = """    <listOfCompartments>
+SBML_COMPARTMENTS = """    <listOfCompartments>
       <compartment id="i" constant="true"/>
       <compartment id="e" constant="true"/>
     </listOfCompartments>"""
@@ -255,13 +292,14 @@ for index, compound in compounds.iterrows() :
     sbml_species += compound2sbml(index, compound.to_list())
 sbml_species += "    </listOfSpecies>\n"
 
-sbml_parameters = """    <listOfParameters>
+SBML_PARAMETERS = """    <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
       <parameter sboTerm="SBO:0000626" id="cobra_default_ub" value="1000" constant="true"/>
       <parameter sboTerm="SBO:0000626" id="cobra_0_bound" value="0" constant="true"/>
       <parameter sboTerm="SBO:0000626" id="minus_inf" value="-INF" constant="true"/>
       <parameter sboTerm="SBO:0000626" id="plus_inf" value="INF" constant="true"/>
-      <parameter sboTerm="SBO:0000625" id="R_EX_CN_lower_bound" value="-100" units="mmol_per_gDW_per_hr" constant="true"/>
+      <parameter sboTerm="SBO:0000625" id="R_EX_CN_lower_bound" value="-100"
+        units="mmol_per_gDW_per_hr" constant="true"/>
     </listOfParameters>\n"""
 
 sbml_reactions  = "    <listOfReactions>"
@@ -269,22 +307,22 @@ for index, reaction in reactions.iterrows() :
     sbml_reactions += reaction2sbml(index.strip(), reaction.to_list())
 sbml_reactions += "    </listOfReactions>\n"
 
-sbml_objectives = """    <fbc:listOfObjectives fbc:activeObjective="obj">
+SBML_OBJECTIVES = """    <fbc:listOfObjectives fbc:activeObjective="obj">
       <fbc:objective fbc:id="obj" fbc:type="maximize">
         <fbc:listOfFluxObjectives>
            <fbc:fluxObjective fbc:reaction="R_Z_BIOMASS" fbc:coefficient="1"/>
         </fbc:listOfFluxObjectives>
       </fbc:objective>
     </fbc:listOfObjectives>\n"""
-sbml_footer = """  </model>
+SBML_FOOTER = """  </model>
 </sbml>\n"""
 
-with open('LUCA.sbml', 'w+') as fh:
-    fh.write(sbml_header)
-    fh.write(sbml_units)
-    fh.write(sbml_compartments)
+with open('LUCA_v0.0.sbml', 'w+', encoding="utf-8") as fh:
+    fh.write(SBML_HEADER)
+    fh.write(SBML_UNITS)
+    fh.write(SBML_COMPARTMENTS)
     fh.write(sbml_species)
-    fh.write(sbml_parameters)
+    fh.write(SBML_PARAMETERS)
     fh.write(sbml_reactions)
-#    fh.write(sbml_objectives)
-    fh.write(sbml_footer)
+#    fh.write(SBML_OBJECTIVES)
+    fh.write(SBML_FOOTER)
