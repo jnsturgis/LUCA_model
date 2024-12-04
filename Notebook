@@ -29,6 +29,7 @@ L	11	I	6	V	7.5	A	9.5
 P	4	G	7.5	C	1	Q	4.5
 N	4.5	T	5	S	5	E	6.5
 D	5.5	K	4	H	2	R	5.5
+For amino acid production arginine depends on acetate production and no recycling in initial pathways
 
 1.5 Add membrane lipid biosynthesis pathway both acyl and isoprenyl - need to use ACP not phosphopantatheine and synth of oleyl-ACP and GGPP todo
 
@@ -38,4 +39,31 @@ D	5.5	K	4	H	2	R	5.5
 
 
 
+AcetylCoA C00024
+AcetoacetylCoA C00332
+Coenzyme A
+HMGCoA C00356
+Mevalonate C00418
+Mevalonate-5-P C01107
+Mevalonate-5-PP C01143
+Isopentenyl-PP C00129
+Dimethylallyl-PP C00235
+GPP C00341
+FPP C00448
+GGPP C00353
+
+Modifications made
+==================
+
+1. Polymerisation and aggregation reactions
+1.1 DNA polymerase
+1.2 RNA polymerase
+1.3 Protein synthesis from amino-acyl tRNA's
+1.4 Lipid aggregation to make membrane
+1.5 (TODO) Metabolite aggregation for cytoplasmic pool of cofactors and metabolites
+2. Add reactions to produce membrane lipids, a mixture of archael and bacterial style lipids (Article)
+3. Some other bits:
+3.1 CMP phosphorylation to CTP using ATP
+3.2 Pyrophosphate hydrolysis
+3.3 Hydrogenase to reduce NAD+
 
