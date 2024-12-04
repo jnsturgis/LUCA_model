@@ -2133,7 +2133,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_tRNAE" id="M_i_tRNAE" name="L-Glutamyl-tRNA(Glu)" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C43H54N16O31P4">
+      <species metaid="meta_M_i_tRNAE" id="M_i_tRNAE" name="L-Glutamyl-tRNA(Glu)" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C43H54N16O31P4">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_tRNAE">
@@ -4915,46 +4915,107 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_Protein" name="Protein 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_RNA" name="RNA 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DNA" name="DNA 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_Lipid" name="Membrane lipids 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="meta_M_i_Protein" id="M_i_Protein" name="Protein 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C498H788N141O140.5S3">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_Protein">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/Molecular Mass/11094.61"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_RNA" id="M_i_RNA" name="RNA 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C38H47N15O28P4">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_RNA">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/Molecular Mass/1285.76"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_DNA" id="M_i_DNA" name="DNA 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C39H49N15O24P4">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_DNA">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/Molecular Mass/1235.79"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_Lipid" id="M_i_Lipid" name="Membrane lipids 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-6" fbc:chemicalFormula="C262H460O48P6N4">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_Lipid">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/Molecular Mass/4620.28"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
       <species id="M_i_Metab" name="Metabolites and cofactors 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_tRNAA" name="Alanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAC" name="Cistenyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAD" name="Aspartyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAF" name="Phenylalanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAG" name="Glycyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAH" name="Histidyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAI" name="Isoleucyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAK" name="Lysyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_tRNAL" name="Leucyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAM" name="Methionyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAN" name="Asparaginyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAP" name="Prolyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAQ" name="Glutaminyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAR" name="Argininyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAS" name="Seryl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAT" name="Threoninyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAV" name="Valinyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAW" name="Tryptophanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_tRNAY" name="Tyrosinyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4"/>
-      <species id="M_i_CDPDOG" name="CDP di oleyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_i_DOPS" name="di oleyl phosphatidyl serine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_i_DOPE" name="di oleyl phosphatidyl ethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DOPG" name="di oleyl phosphatidyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_Gol3P" name="Glycerol 3 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_CDPDGGG" name="CDP di geranylgeranylglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DGGGPS" name="di geranylgeranylglycerolphosphoserine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DGGGPE" name="di geranylgeranylglycerolphosphoethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DGGGPG" name="di geranylgeranylglycerolphosphoglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DGGGP" name="di geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_GGPP" name="geranyl geranyl pyrophosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_GGGP" name="Geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_Gol1P" name="Glycerol 1 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_DOPA" name="Di oleyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_OLPA" name="Oleyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
-      <species id="M_i_OPP" name="oleyl phosphopantatheine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_tRNAA" name="Alanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C41H52N16O29P4"/>
+      <species id="M_i_tRNAC" name="Cistenyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C41H52N16O29P4S"/>
+      <species id="M_i_tRNAD" name="Aspartyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C42H52N16O31P4"/>
+      <species id="M_i_tRNAF" name="Phenylalanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C47H56N16O29P4"/>
+      <species id="M_i_tRNAG" name="Glycyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C40H50N16O29P4"/>
+      <species id="M_i_tRNAH" name="Histidyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C44H54N18O29P4"/>
+      <species id="M_i_tRNAI" name="Isoleucyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C44H58N16O29P4"/>
+      <species id="M_i_tRNAK" name="Lysyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C44H59N17O29P4"/>
+      <species id="M_i_tRNAL" name="Leucyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C44H59N17O29P4"/>
+      <species id="M_i_tRNAM" name="Methionyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C43H56N16O29P4S"/>
+      <species id="M_i_tRNAN" name="Asparaginyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C42H53N17O30P4"/>
+      <species id="M_i_tRNAP" name="Prolyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C43H54N16O29P4"/>
+      <species id="M_i_tRNAQ" name="Glutaminyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C43H54N16O29P4"/>
+      <species id="M_i_tRNAR" name="Argininyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C44H59N19O29P4"/>
+      <species id="M_i_tRNAS" name="Seryl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C41H52N16O30P4"/>
+      <species id="M_i_tRNAT" name="Threoninyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C42H54N16O30P4"/>
+      <species id="M_i_tRNAV" name="Valinyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C43H56N16O29P4"/>
+      <species id="M_i_tRNAW" name="Tryptophanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C49H57N17O29P4"/>
+      <species id="M_i_tRNAY" name="Tyrosinyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C47H56N16O30P4"/>
+      <species id="M_i_CDPDOG" name="CDP di oleyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C48H84O15P2N3"/>
+      <species id="M_i_DOPS" name="di oleyl phosphatidyl serine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H77NO10P"/>
+      <species id="M_i_DOPE" name="di oleyl phosphatidyl ethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C41H77NO8P"/>
+      <species id="M_i_DOPG" name="di oleyl phosphatidyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H76O9P"/>
+      <species id="M_i_Gol3P" name="Glycerol 3 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H8O6P"/>
+      <species id="M_i_CDPDGGG" name="CDP di geranylgeranylglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C52H84O13P2N3"/>
+      <species id="M_i_DGGGPS" name="di geranylgeranylglycerolphosphoserine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C46H77O8PN"/>
+      <species id="M_i_DGGGPE" name="di geranylgeranylglycerolphosphoethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C45H77O6PN"/>
+      <species id="M_i_DGGGPG" name="di geranylgeranylglycerolphosphoglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C46H76O7P"/>
+      <species id="M_i_DGGGP" name="di geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C43H72O6P"/>
+      <species metaid="meta_M_i_GGPP" id="M_i_GGPP" name="geranyl geranyl pyrophosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H36O7P2">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_GGPP">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/KEGG/C00353"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species id="M_i_GGGP" name="Geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C23H40O6P"/>
+      <species id="M_i_Gol1P" name="Glycerol 1 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H8O6P"/>
+      <species id="M_i_DOPA" name="Di oleyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C39H72O8P"/>
+      <species id="M_i_OLPA" name="Oleyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H40O7P"/>
+      <species id="M_i_OACP" name="Oleyl-ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H55N2O8PSPr"/>
+      <species id="M_i_ACP" name="Acyl carrier protein (Phosphopantetheine + protein)" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C11H23N2O7PSPr"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
@@ -14374,11 +14435,11 @@
       </reaction>
       <reaction id="R_BIOM" name="Biomass - stochiometry gives composition" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
-          <speciesReference species="M_i_DNA" stoichiometry="3" constant="true"/>
-          <speciesReference species="M_i_Lipid" stoichiometry="10" constant="true"/>
-          <speciesReference species="M_i_Metab" stoichiometry="4" constant="true"/>
-          <speciesReference species="M_i_Protein" stoichiometry="60" constant="true"/>
-          <speciesReference species="M_i_RNA" stoichiometry="20" constant="true"/>
+          <speciesReference species="M_i_DNA" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Lipid" stoichiometry="0.89" constant="true"/>
+          <speciesReference species="M_i_Metab" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_Protein" stoichiometry="2.23" constant="true"/>
+          <speciesReference species="M_i_RNA" stoichiometry="6.41" constant="true"/>
         </listOfReactants>
       </reaction>
       <reaction id="R_RNAP" name="RNA synthesis (1 unit dry mass)" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -14684,11 +14745,12 @@
         <listOfReactants>
           <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00080" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
+          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_DOPG" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_APSS" name="Archeol phospho serine synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -14714,20 +14776,22 @@
         <listOfReactants>
           <speciesReference species="M_i_CDPDGGG" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00080" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_i_DGGGPG" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DGGGPG" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_Lipid" name="Membrane synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
-          <speciesReference species="M_i_DOPG" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_DOPE" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_DOPS" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_DGGGPG" stoichiometry="2" constant="true"/>
           <speciesReference species="M_i_DGGGPE" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DGGGPG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DGGGPS" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DOPE" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DOPG" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_DOPS" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_i_Lipid" stoichiometry="1" constant="true"/>
@@ -14775,22 +14839,22 @@
       </reaction>
       <reaction id="R_RMAN10" name="Oleyl transferase 2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
+          <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_OPP" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
+          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_DOPA" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_C01134" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_RMAN11" name="Oleyl transferase 1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
           <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_OPP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
+          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_C01134" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_RMAN12" name="Glycerol 1 phosphate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -14812,6 +14876,80 @@
           <speciesReference species="M_i_C00003" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
         </listOfProducts>
+      </reaction>
+      <reaction id="R_EX_Meta" name="Exchange metabolites dummy" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_Metab" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_Lipid" name="Exchange Lipids dummy" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_Lipid" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_ATP" name="Exchange ATP" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_UTP" name="Exchange UTP" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00075" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_Protein" name="Protein exchange dummy" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_Protein" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_Energy" name="Abstract ATP regeneration reaction" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00008" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00001" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_EX_PO4" name="Phosphate exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_H2O" name="Water exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00001" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_CO2" name="CO2 exchange reaction" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00011" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_GTP" name="Exchange GTP" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00044" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_EX_CTP" name="CTP exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00063" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_RMAN14" name="Pyrophosphatase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00001" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00009" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_EX_DNA" name="DNA exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_DNA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
       </reaction>
     </listOfReactions>
     <fbc:listOfObjectives fbc:activeObjective="obj">
