@@ -54,7 +54,7 @@ GGPP C00353
 
 Modifications made
 ==================
-
+0. Add biomass function based on Bionumbers (BIOMASS)
 1. Polymerisation and aggregation reactions
 1.1 DNA polymerase
 1.2 RNA polymerase
@@ -62,8 +62,28 @@ Modifications made
 1.4 Lipid aggregation to make membrane
 1.5 (TODO) Metabolite aggregation for cytoplasmic pool of cofactors and metabolites
 2. Add reactions to produce membrane lipids, a mixture of archael and bacterial style lipids (Article)
+2.1 Isoprenoid synthesis pathway (via mevalonate)
+2.2 Fatty acid synthesis pathway
 3. Some other bits:
 3.1 CMP phosphorylation to CTP using ATP
 3.2 Pyrophosphate hydrolysis
 3.3 Hydrogenase to reduce NAD+
+3.4 Acetyl CoA Synthase (RMAN16)
+3.5 ApoACP Synthase (RMAN18)*** ToDo
+4. Added exchange reactions (initially with internal compartment)
+4.1 H2O, CO2, H+, NH3, H2S, PO4
+4.2 Unlimited energy supply (EX_Energy) regenerates ATP for free!!!
+4.3 Protein as Pr to simplify.
 
+Next steps.
+1. Automatic recovery and tidying of annotations for reactions and metabolites
+1.1 Data Sources
+1.1.1 kegg https://www.genome.jp/entry/R00742 -> EC#, RHEA#
+1.1.2 kegg https://www.genome.jp/entry/C00001 -> CHEBI, Mass
+1.1.3 rhea https://www.rhea-db.org/rhea/11311 -> Directionality, Reagents charges, CHEBI, SMILES etc
+1.2 Information desired
+1.2.1 Reaction: EC, RHEA, KEGG, directionality, DG0', DG0' uncertainty
+1.2.2 Metabolite: KEGG, CHEBI, Formula (fully protonated acids, deprotonated bases), charge pH7, 
+2. Addition of modifier species for reactions to indicate cofactors
+2.1 Cofactors associated with enzyme. http://www.ebi.ac.uk/thornton-srv/databases/CoFactor/queries.php?ec=1.1.2.10&submit=Go
+3. Setup of metabolites based on cofactors and cytoplasmic composition for Biomass function

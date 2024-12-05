@@ -12,6 +12,7 @@
     </listOfUnitDefinitions>
     <listOfCompartments>
       <compartment id="i" constant="true"/>
+      <compartment id="e" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
       <species metaid="meta_M_i_C00022" id="M_i_C00022" name="Pyruvate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H4O3">
@@ -4915,7 +4916,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_Protein" id="M_i_Protein" name="Protein 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C498H781.5N134.5O145S3">
+      <species metaid="meta_M_i_Protein" id="M_i_Protein" name="Protein 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C996H1563N269O290S6">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_Protein">
@@ -4992,11 +4993,11 @@
       <species id="M_i_DOPE" name="di oleyl phosphatidyl ethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C41H77NO8P"/>
       <species id="M_i_DOPG" name="di oleyl phosphatidyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H76O9P"/>
       <species id="M_i_Gol3P" name="Glycerol 3 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H8O6P"/>
-      <species id="M_i_CDPDGGG" name="CDP di geranylgeranylglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C52H84O13P2N3"/>
-      <species id="M_i_DGGGPS" name="di geranylgeranylglycerolphosphoserine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C46H77O8PN"/>
-      <species id="M_i_DGGGPE" name="di geranylgeranylglycerolphosphoethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C45H77O6PN"/>
-      <species id="M_i_DGGGPG" name="di geranylgeranylglycerolphosphoglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C46H76O7P"/>
-      <species id="M_i_DGGGP" name="di geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C43H72O6P"/>
+      <species id="M_i_CDPDGGG" name="CDP di geranylgeranylglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C52H85O13P2N3"/>
+      <species id="M_i_DGGGPS" name="di geranylgeranylglycerolphosphoserine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C46H78O8PN"/>
+      <species id="M_i_DGGGPE" name="di geranylgeranylglycerolphosphoethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C45H78O6PN"/>
+      <species id="M_i_DGGGPG" name="di geranylgeranylglycerolphosphoglycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C46H77O7P"/>
+      <species id="M_i_DGGGP" name="di geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C43H73O6P"/>
       <species metaid="meta_M_i_GGPP" id="M_i_GGPP" name="geranyl geranyl pyrophosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H36O7P2">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -5010,8 +5011,8 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_GGGP" name="Geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C23H40O6P"/>
-      <species id="M_i_Gol1P" name="Glycerol 1 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H8O6P"/>
+      <species id="M_i_GGGP" name="Geranylgeranylglycerol phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C23H41O6P"/>
+      <species id="M_i_Gol1P" name="Glycerol 1 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H9O6P"/>
       <species id="M_i_DOPA" name="Di oleyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C39H72O8P"/>
       <species id="M_i_OLPA" name="Oleyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H40O7P"/>
       <species id="M_i_OACP" name="Oleyl-ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H55N2O8PSPr"/>
@@ -5122,6 +5123,7 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species id="M_i_AcACP" name="Acetyl ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C13H25N2O8PSPr"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
@@ -5131,6 +5133,7 @@
       <parameter sboTerm="SBO:0000626" id="plus_inf" value="INF" constant="true"/>
       <parameter sboTerm="SBO:0000625" id="R_EX_Energy_upper_bound" value="10000" units="mmol_per_gDW_per_hr" constant="true"/>
       <parameter sboTerm="SBO:0000625" id="R_EX_H2O_upper_bound" value="10000" units="mmol_per_gDW_per_hr" constant="true"/>
+      <parameter sboTerm="SBO:0000625" id="R_EX_CO2_lower_bound" value="-2000" units="mmol_per_gDW_per_hr" constant="true"/>
       <parameter sboTerm="SBO:0000625" id="R_EX_H2_lower_bound" value="-10000" units="mmol_per_gDW_per_hr" constant="true"/>
     </listOfParameters>
     <listOfReactions>
@@ -8922,7 +8925,7 @@
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/dG0/-103.5"/>
                   <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/2.1"/>
-                  <rdf:li rdf:resource="https://identifiers.org/ec #/EC #:4.1.99.12"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:4.1.99.12"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -14542,7 +14545,7 @@
           <speciesReference species="M_i_C00080" stoichiometry="2" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_BIOM" name="Biomass - stochiometry gives composition" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction id="R_BIOMASS" name="Biomass - stochiometry gives composition" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
           <speciesReference species="M_i_DNA" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_Lipid" stoichiometry="0.89" constant="true"/>
@@ -14805,30 +14808,30 @@
       </reaction>
       <reaction id="R_TRANSL" name="Protein Translation" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
-          <speciesReference species="M_i_tRNAA" stoichiometry="9.5" constant="true"/>
-          <speciesReference species="M_i_tRNAC" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_tRNAD" stoichiometry="5.5" constant="true"/>
-          <speciesReference species="M_i_tRNAE" stoichiometry="6.5" constant="true"/>
-          <speciesReference species="M_i_tRNAF" stoichiometry="6" constant="true"/>
-          <speciesReference species="M_i_tRNAG" stoichiometry="7.5" constant="true"/>
-          <speciesReference species="M_i_tRNAH" stoichiometry="2" constant="true"/>
-          <speciesReference species="M_i_tRNAI" stoichiometry="6" constant="true"/>
-          <speciesReference species="M_i_tRNAK" stoichiometry="4" constant="true"/>
-          <speciesReference species="M_i_tRNAL" stoichiometry="11" constant="true"/>
-          <speciesReference species="M_i_tRNAM" stoichiometry="2" constant="true"/>
-          <speciesReference species="M_i_tRNAN" stoichiometry="4.5" constant="true"/>
-          <speciesReference species="M_i_tRNAP" stoichiometry="4" constant="true"/>
-          <speciesReference species="M_i_tRNAQ" stoichiometry="4.5" constant="true"/>
-          <speciesReference species="M_i_tRNAR" stoichiometry="5.5" constant="true"/>
-          <speciesReference species="M_i_tRNAS" stoichiometry="5" constant="true"/>
-          <speciesReference species="M_i_tRNAT" stoichiometry="5" constant="true"/>
-          <speciesReference species="M_i_tRNAV" stoichiometry="7.5" constant="true"/>
-          <speciesReference species="M_i_tRNAW" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_tRNAY" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_i_tRNAA" stoichiometry="19" constant="true"/>
+          <speciesReference species="M_i_tRNAC" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_i_tRNAD" stoichiometry="11" constant="true"/>
+          <speciesReference species="M_i_tRNAE" stoichiometry="13" constant="true"/>
+          <speciesReference species="M_i_tRNAF" stoichiometry="12" constant="true"/>
+          <speciesReference species="M_i_tRNAG" stoichiometry="15" constant="true"/>
+          <speciesReference species="M_i_tRNAH" stoichiometry="4" constant="true"/>
+          <speciesReference species="M_i_tRNAI" stoichiometry="12" constant="true"/>
+          <speciesReference species="M_i_tRNAK" stoichiometry="8" constant="true"/>
+          <speciesReference species="M_i_tRNAL" stoichiometry="22" constant="true"/>
+          <speciesReference species="M_i_tRNAM" stoichiometry="4" constant="true"/>
+          <speciesReference species="M_i_tRNAN" stoichiometry="9" constant="true"/>
+          <speciesReference species="M_i_tRNAP" stoichiometry="8" constant="true"/>
+          <speciesReference species="M_i_tRNAQ" stoichiometry="9" constant="true"/>
+          <speciesReference species="M_i_tRNAR" stoichiometry="11" constant="true"/>
+          <speciesReference species="M_i_tRNAS" stoichiometry="10" constant="true"/>
+          <speciesReference species="M_i_tRNAT" stoichiometry="10" constant="true"/>
+          <speciesReference species="M_i_tRNAV" stoichiometry="15" constant="true"/>
+          <speciesReference species="M_i_tRNAW" stoichiometry="2" constant="true"/>
+          <speciesReference species="M_i_tRNAY" stoichiometry="4" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_i_Protein" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_RNA" stoichiometry="100" constant="true"/>
+          <speciesReference species="M_i_RNA" stoichiometry="200" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_PSS" name="Phosphatidyl serine synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
@@ -14966,10 +14969,11 @@
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN12" name="Glycerol 1 phosphate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction id="R_RMAN12" name="Glycerol 1 phosphate dehydrogenase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
-          <speciesReference species="M_i_C00111" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00004" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00111" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00080" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_i_C00003" stoichiometry="1" constant="true"/>
@@ -15011,7 +15015,7 @@
           <speciesReference species="M_i_C00001" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_EX_CO2" name="CO2 exchange reaction" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction id="R_EX_CO2" name="CO2 exchange reaction" reversible="true" fast="false" fbc:lowerFluxBound="R_EX_CO2_lower_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
           <speciesReference species="M_i_C00011" stoichiometry="1" constant="true"/>
         </listOfReactants>
@@ -15050,16 +15054,6 @@
           <speciesReference species="M_i_C00283" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_EX_Ac" name="Acetate exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
-        <listOfReactants>
-          <speciesReference species="M_i_C00033" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-      </reaction>
-      <reaction id="R_EX_OACP" name="Fatty acid exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
-        <listOfReactants>
-          <speciesReference species="M_i_DOPA" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-      </reaction>
       <reaction id="R_RMAN5" name="CMP Kinase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
           <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
@@ -15079,16 +15073,6 @@
           <speciesReference species="M_i_C00008" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00063" stoichiometry="1" constant="true"/>
         </listOfProducts>
-      </reaction>
-      <reaction id="R_EX_Gol1P" name="Strange exchange seems necessary" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
-        <listOfReactants>
-          <speciesReference species="M_i_Gol1P" stoichiometry="1" constant="true"/>
-        </listOfReactants>
-      </reaction>
-      <reaction id="R_EX_ACP" name="ACP exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
-        <listOfReactants>
-          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
-        </listOfReactants>
       </reaction>
       <reaction id="R_GGPPS" name="Geranylgeranyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
@@ -15262,11 +15246,53 @@
           <speciesReference species="M_i_C00010" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
+      <reaction id="R_RMAN17" name="Oleyl ACP synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_AcACP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00005" stoichiometry="15" constant="true"/>
+          <speciesReference species="M_i_C00080" stoichiometry="15" constant="true"/>
+          <speciesReference species="M_i_C00083" stoichiometry="8" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00001" stoichiometry="8" constant="true"/>
+          <speciesReference species="M_i_C00006" stoichiometry="15" constant="true"/>
+          <speciesReference species="M_i_C00010" stoichiometry="8" constant="true"/>
+          <speciesReference species="M_i_C00011" stoichiometry="8" constant="true"/>
+          <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_RMAN7" name="Acetyl transferase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00024" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_AcACP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00010" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R_EX_Proton" name="Proton exchange" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00080" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction id="R_RMAN16" name="Acetyl CoA Synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00010" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00033" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00020" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00024" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
     </listOfReactions>
     <fbc:listOfObjectives fbc:activeObjective="obj">
       <fbc:objective fbc:id="obj" fbc:type="maximize">
         <fbc:listOfFluxObjectives>
-          <fbc:fluxObjective fbc:reaction="R_BIOM" fbc:coefficient="1"/>
+          <fbc:fluxObjective fbc:reaction="R_BIOMASS" fbc:coefficient="1"/>
         </fbc:listOfFluxObjectives>
       </fbc:objective>
     </fbc:listOfObjectives>
