@@ -12,7 +12,6 @@
     </listOfUnitDefinitions>
     <listOfCompartments>
       <compartment id="i" constant="true"/>
-      <compartment id="e" constant="true"/>
     </listOfCompartments>
     <listOfSpecies>
       <species metaid="meta_M_i_C00022" id="M_i_C00022" name="Pyruvate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H4O3">
@@ -483,7 +482,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C00229" id="M_i_C00229" name="Acyl-carrier protein" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="HSR">
+      <species metaid="meta_M_i_C00229" id="M_i_C00229" name="Acyl-carrier protein" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C11H22N2O7PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C00229">
@@ -496,7 +495,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C01209" id="M_i_C01209" name="Malonyl-[acyl-carrier protein]" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H3O3SR">
+      <species metaid="meta_M_i_C01209" id="M_i_C01209" name="Malonyl-[acp]" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H24N2O10PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C01209">
@@ -509,7 +508,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C19673" id="M_i_C19673" name="Malonyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H5O3SR">
+      <species metaid="meta_M_i_C19673" id="M_i_C19673" name="Malonyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C15H26N2O10PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C19673">
@@ -522,7 +521,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20372" id="M_i_C20372" name="3-Ketoglutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H7O4SR">
+      <species metaid="meta_M_i_C20372" id="M_i_C20372" name="3-Ketoglutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C17H28N2O11PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20372">
@@ -535,7 +534,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20373" id="M_i_C20373" name="3-Hydroxyglutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H9O4SR">
+      <species metaid="meta_M_i_C20373" id="M_i_C20373" name="3-Hydroxyglutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C17H30N2O11PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20373">
@@ -548,7 +547,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20374" id="M_i_C20374" name="Enoylglutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H7O3SR">
+      <species metaid="meta_M_i_C20374" id="M_i_C20374" name="Enoylglutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C17H28N2O10PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20374">
@@ -561,7 +560,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20375" id="M_i_C20375" name="Glutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H9O3SR">
+      <species metaid="meta_M_i_C20375" id="M_i_C20375" name="Glutaryl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C17H30N2O10PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20375">
@@ -574,7 +573,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20376" id="M_i_C20376" name="3-Ketopimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H11O4SR">
+      <species metaid="meta_M_i_C20376" id="M_i_C20376" name="3-Ketopimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C19H32N2O11PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20376">
@@ -587,7 +586,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20377" id="M_i_C20377" name="3-Hydroxypimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H13O4SR">
+      <species metaid="meta_M_i_C20377" id="M_i_C20377" name="3-Hydroxypimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C19H34O11N2PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20377">
@@ -600,7 +599,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C20378" id="M_i_C20378" name="Enoylpimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H11O3SR">
+      <species metaid="meta_M_i_C20378" id="M_i_C20378" name="Enoylpimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C19H32O10N2PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C20378">
@@ -613,7 +612,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C19846" id="M_i_C19846" name="Pimeloyl-[acyl-carrier protein] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H13O3SR">
+      <species metaid="meta_M_i_C19846" id="M_i_C19846" name="Pimeloyl-[acp] methyl ester" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C19H34O10N2PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C19846">
@@ -626,7 +625,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_C19845" id="M_i_C19845" name="Pimeloyl-[acyl-carrier protein]" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C7H11O3SR">
+      <species metaid="meta_M_i_C19845" id="M_i_C19845" name="Pimeloyl-[acp]" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C18H32O10N2PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_C19845">
@@ -4916,7 +4915,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_Protein" id="M_i_Protein" name="Protein 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C996H1563N269O290S6">
+      <species metaid="meta_M_i_Protein" id="M_i_Protein" name="Protein" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C996H1563N269O290S6">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_Protein">
@@ -4929,7 +4928,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_RNA" id="M_i_RNA" name="RNA 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C38H47N15O28P4">
+      <species metaid="meta_M_i_RNA" id="M_i_RNA" name="RNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C38H47N15O28P4">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_RNA">
@@ -4942,7 +4941,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_DNA" id="M_i_DNA" name="DNA 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C39H49N15O24P4">
+      <species metaid="meta_M_i_DNA" id="M_i_DNA" name="DNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C39H49N15O24P4">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_DNA">
@@ -4955,7 +4954,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="meta_M_i_Lipid" id="M_i_Lipid" name="Membrane lipids 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-6" fbc:chemicalFormula="C262H460O48P6N4">
+      <species metaid="meta_M_i_Lipid" id="M_i_Lipid" name="Membrane lipids 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C262H463O48P6N4">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#meta_M_i_Lipid">
@@ -4968,7 +4967,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_Metab" name="Metabolites and cofactors 1 part dry weight" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species id="M_i_Metab" name="Metabolites and cofactors" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
       <species id="M_i_tRNAA" name="Alanyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C41H52N16O29P4"/>
       <species id="M_i_tRNAC" name="Cistenyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C41H52N16O29P4S"/>
       <species id="M_i_tRNAD" name="Aspartyl tRNA" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C42H52N16O31P4"/>
@@ -5015,8 +5014,7 @@
       <species id="M_i_Gol1P" name="Glycerol 1 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H9O6P"/>
       <species id="M_i_DOPA" name="Di oleyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C39H72O8P"/>
       <species id="M_i_OLPA" name="Oleyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H40O7P"/>
-      <species id="M_i_OACP" name="Oleyl-ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H55N2O8PSPr"/>
-      <species id="M_i_ACP" name="Acyl carrier protein (Phosphopantetheine + protein)" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C11H23N2O7PSPr"/>
+      <species id="M_i_OACP" name="Oleyl-ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H54N2O8PSPr"/>
       <species id="M_i_C00112" name="CDP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C9H15N3O11P2"/>
       <species metaid="meta_M_i_FPP" id="M_i_FPP" name="Farnesyl pyrophosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C15H28O7P2">
         <annotation>
@@ -5123,7 +5121,33 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_AcACP" name="Acetyl ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C13H25N2O8PSPr"/>
+      <species id="M_i_AcACP" name="Acetyl ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C13H24N2O8PSPr"/>
+      <species metaid="meta_M_i_aACP" id="M_i_aACP" name="apo ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="HOPr">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_aACP">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C03688"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_C00054" id="M_i_C00054" name="Adenosine 3&apos; 5&apos; bis phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H15N5O10P2">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_C00054">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00054"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
@@ -8925,7 +8949,7 @@
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/dG0/-103.5"/>
                   <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/2.1"/>
-                  <rdf:li rdf:resource="https://identifiers.org/ec-code:4.1.99.12"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/4.1.99.12"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -14955,7 +14979,7 @@
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00229" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_DOPA" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
@@ -14965,7 +14989,7 @@
           <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00229" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
@@ -15263,8 +15287,8 @@
       </reaction>
       <reaction id="R_RMAN7" name="Acetyl transferase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
         <listOfReactants>
+          <speciesReference species="M_i_C00229" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00024" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_i_ACP" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_i_AcACP" stoichiometry="1" constant="true"/>
@@ -15286,6 +15310,49 @@
           <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00020" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00024" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_RMAN8" id="R_RMAN8" name="HoloACP synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN8">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.7"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_i_C00010" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_aACP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00229" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00054" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_RMAN9" id="R_RMAN9" name="Adenosine 3&apos; phosphatase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN9">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/3.1.3.7"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00188"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_i_C00054" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00001" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_i_C00020" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_i_C00009" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>
