@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\author{James Sturgis}
+\title{A whole organism metabolic model for LUCA}
+\begin{document}
+\maketitle
+\begin{abstract}
+ 
+\end{abstract} 
+\section*{Introduction}
+\section*{Resultats}
+We undertook to develop a whole organism metabolic model of the last universal common ancestor LUCA. This model, like metabolism today, contains two branches, an anabolic branch allowing synthesis of the cellular content from raw materials, and a catabolic branch providing the energy to drive the anabolism.
+\subsection*{A functional anabolic model}
+The anabolic model we have produced is based on that presented by Wimmers \textit{et al.} \cite{Wimmers} incorporating a number of additions as detailed below.
+The an overview of this model is shown in figure \ref{fig:anabolism} with the fluxes through the central metabolism and towards the different cellular components.
+
+Description of model goes here number of species and reactions and exchanges.
+
+To construct this model various additions to that presented by Wimmer \textit{et al.} \cite{Wimmers} were necessary. These were:
+\begin{itemize}
+ \item a BIOMASS reaction to define what LUCA is made out of.
+ \item Aggregation and polymerisation reactions to define the biomass components: DNA, RNA, Protein, Membrane and metabolites.
+ \item Reactions to make a lipid membrane.
+ \item Exchange reactions to define environmental requirements.
+ \item Miscellaneous reactions necessary to make the metabolic model functional.
+\end{itemize}
+These additional reactions aim to extend the model, in as parsimonious way as possible, to give a functional whole organism metabolic model.
+\subsubsection*{BIOMASS}
+\subsubsection*{Aggregation}
+\subsubsection*{Lipid metabolism}
+\subsubsection*{Exchange reactions}
+\subsubsection*{Miscellaneous additions}
+\begin{itemize}
+ \item Nucleotide kinase reactions to regenerate CTP from CMP. This is necessary as the membrane lipid metabolism adds headgroups via CDP-diacyl glycerol or CDP-Archeol resulting in the production of CMP which needs to be recycled. See lipid metabolism for justification. \textbf{ec-code}
+ \item Pyrophosphate (diphosphate) hydrolysis reaction. Many energy requiring reactions produce diphosphate that is then rapidly hydrolysed to phosphate providing additional driving force for these reactions. \textbf{Justification?} \textbf{ec-code}
+ \item Hydrogenase reaction to reduce NAD$^+$ to NADH and provide reducing equivalents.\textbf{Justification?} \textbf{ec-code}
+ \item Acetyl-CoA synthase, several reactions in the pathway produce acetate \textbf{cite them} so this metabolite needs to either be reintegrated into the metabolism or excreted.The most direct and common way to use acetate, is to invest energy and convert it to acetyl coenzyme a so this is the route we propose by introducing \textbf{ec-code}.
+ \item ApoACP synthase. Fatty acid synthesis uses ACP as the carrier for chain elongation. Where else does ACP feature? To introduce this into the model. \textbf{ec-code}
+\end{itemize}
+
+\subsection*{Cofactor requirements}
+\subsection*{Catabolic choices}
+\section*{Discussion}
+\section*{Methods}
+\end{document}
