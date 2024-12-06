@@ -73,8 +73,8 @@ for ii in range(0,start1.shape[0]):
 
 compounds = pd.DataFrame( cpds, columns=['KEGG ID','Name'] )
 print(compounds.shape)
-compounds.to_csv("LUCAcompounds.csv")
-reactions.to_csv("LUCAreactions.csv")
+compounds.to_csv("LUCAcompounds_v0.0.csv")
+reactions.to_csv("LUCAreactions_v0.0.csv")
 
 def fetch_info( species ):
     """Collect information from KEGG - this seems broken"""
