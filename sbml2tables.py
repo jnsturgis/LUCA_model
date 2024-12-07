@@ -55,6 +55,10 @@ for reaction in model.find_all('reaction'):
                 # pylint: disable="invalid-name"
                 revers = 'true'
                 reaction['reversible'] = revers
+                try:
+                    reaction['fbc:lowerFluxBound'] = 'cobra_default_lb'
+                except KeyError:
+                    pass
         el  = annotation['rdf:resource'].split('/')
         info.append( (el[3],el[4]) )
 
