@@ -5487,7 +5487,7 @@
    <parameter constant="true" id="R_EX_H2_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="-10000"/>
   </listOfParameters>
   <listOfReactions>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00258" metaid="meta_R_R00258" name="KEGG R00258" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00258" metaid="meta_R_R00258" name="KEGG R00258" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00258">
@@ -5511,7 +5511,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00400" metaid="meta_R_R00400" name="KEGG R00400" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00400" metaid="meta_R_R00400" name="KEGG R00400" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00400">
@@ -5535,7 +5535,7 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00369" metaid="meta_R_R00369" name="KEGG R00369" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00369" metaid="meta_R_R00369" name="KEGG R00369" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00369">
@@ -5634,7 +5634,7 @@
      <speciesReference constant="true" species="M_i_C00624" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07245" metaid="meta_R_R07245" name="KEGG R07245" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07245" metaid="meta_R_R07245" name="KEGG R07245" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07245">
@@ -5658,7 +5658,7 @@
      <speciesReference constant="true" species="M_i_C15532" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02283" metaid="meta_R_R02283" name="KEGG R02283" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02283" metaid="meta_R_R02283" name="KEGG R02283" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02283">
@@ -5708,7 +5708,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02649" metaid="meta_R_R02649" name="KEGG R02649" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02649" metaid="meta_R_R02649" name="KEGG R02649" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02649">
@@ -5732,7 +5732,7 @@
      <speciesReference constant="true" species="M_i_C04133" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00149" metaid="meta_R_R00149" name="KEGG R00149" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00149" metaid="meta_R_R00149" name="KEGG R00149" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00149">
@@ -5783,7 +5783,7 @@
      <speciesReference constant="true" species="M_i_C00086" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01954" metaid="meta_R_R01954" name="KEGG R01954" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01954" metaid="meta_R_R01954" name="KEGG R01954" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01954">
@@ -5833,7 +5833,7 @@
      <speciesReference constant="true" species="M_i_C00327" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01086" metaid="meta_R_R01086" name="KEGG R01086" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01086" metaid="meta_R_R01086" name="KEGG R01086" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01086">
@@ -5934,7 +5934,7 @@
      <speciesReference constant="true" species="M_i_C00152" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00482" metaid="meta_R_R00482" name="KEGG R00482" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00482" metaid="meta_R_R00482" name="KEGG R00482" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00482">
@@ -5960,7 +5960,7 @@
      <speciesReference constant="true" species="M_i_C00152" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00355" metaid="meta_R_R00355" name="KEGG R00355" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00355" metaid="meta_R_R00355" name="KEGG R00355" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00355">
@@ -5984,7 +5984,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01135" metaid="meta_R_R01135" name="KEGG R01135" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01135" metaid="meta_R_R01135" name="KEGG R01135" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01135">
@@ -6010,7 +6010,7 @@
      <speciesReference constant="true" species="M_i_C03794" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00127" metaid="meta_R_R00127" name="KEGG R00127" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00127" metaid="meta_R_R00127" name="KEGG R00127" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00127">
@@ -6033,7 +6033,7 @@
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="2"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01083" metaid="meta_R_R01083" name="KEGG R01083" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01083" metaid="meta_R_R01083" name="KEGG R01083" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01083">
@@ -6104,7 +6104,7 @@
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03182" metaid="meta_R_R03182" name="KEGG R03182" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03182" metaid="meta_R_R03182" name="KEGG R03182" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03182">
@@ -6130,7 +6130,7 @@
      <speciesReference constant="true" species="M_i_C01909" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03231" metaid="meta_R_R03231" name="KEGG R03231" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03231" metaid="meta_R_R03231" name="KEGG R03231" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03231">
@@ -6155,7 +6155,7 @@
      <speciesReference constant="true" species="M_i_C01037" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10699" metaid="meta_R_R10699" name="KEGG R10699" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10699" metaid="meta_R_R10699" name="KEGG R10699" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10699">
@@ -6524,7 +6524,7 @@
      <speciesReference constant="true" species="M_i_C02869" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10092" metaid="meta_R_R10092" name="KEGG R10092" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10092" metaid="meta_R_R10092" name="KEGG R10092" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10092">
@@ -6548,7 +6548,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00742" metaid="meta_R_R00742" name="KEGG R00742" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00742" metaid="meta_R_R00742" name="KEGG R00742" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00742">
@@ -6626,7 +6626,7 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00206" metaid="meta_R_R00206" name="KEGG R00206" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00206" metaid="meta_R_R00206" name="KEGG R00206" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00206">
@@ -6677,7 +6677,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00344" metaid="meta_R_R00344" name="KEGG R00344" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00344" metaid="meta_R_R00344" name="KEGG R00344" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00344">
@@ -6704,7 +6704,7 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00352" metaid="meta_R_R00352" name="KEGG R00352" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00352" metaid="meta_R_R00352" name="KEGG R00352" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00352">
@@ -6731,7 +6731,7 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01322" metaid="meta_R_R01322" name="KEGG R01322" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01322" metaid="meta_R_R01322" name="KEGG R01322" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01322">
@@ -6757,7 +6757,7 @@
      <speciesReference constant="true" species="M_i_C00566" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01325" metaid="meta_R_R01325" name="KEGG R01325" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01325" metaid="meta_R_R01325" name="KEGG R01325" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01325">
@@ -6780,7 +6780,7 @@
      <speciesReference constant="true" species="M_i_C00158" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00405" metaid="meta_R_R00405" name="KEGG R00405" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00405" metaid="meta_R_R00405" name="KEGG R00405" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00405">
@@ -6806,7 +6806,7 @@
      <speciesReference constant="true" species="M_i_C00091" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00354" metaid="meta_R_R00354" name="KEGG R00354" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00354" metaid="meta_R_R00354" name="KEGG R00354" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00354">
@@ -6829,7 +6829,7 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01900" metaid="meta_R_R01900" name="KEGG R01900" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01900" metaid="meta_R_R01900" name="KEGG R01900" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01900">
@@ -6852,7 +6852,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01082" metaid="meta_R_R01082" name="KEGG R01082" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01082" metaid="meta_R_R01082" name="KEGG R01082" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01082">
@@ -6900,7 +6900,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00267" metaid="meta_R_R00267" name="KEGG R00267" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00267" metaid="meta_R_R00267" name="KEGG R00267" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00267">
@@ -6926,7 +6926,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01197" metaid="meta_R_R01197" name="KEGG R01197" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01197" metaid="meta_R_R01197" name="KEGG R01197" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01197">
@@ -6953,7 +6953,7 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01196" metaid="meta_R_R01196" name="KEGG R01196" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01196" metaid="meta_R_R01196" name="KEGG R01196" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01196">
@@ -7005,7 +7005,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00943" metaid="meta_R_R00943" name="KEGG R00943" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00943" metaid="meta_R_R00943" name="KEGG R00943" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00943">
@@ -7031,7 +7031,7 @@
      <speciesReference constant="true" species="M_i_C00234" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01655" metaid="meta_R_R01655" name="KEGG R01655" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01655" metaid="meta_R_R01655" name="KEGG R01655" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01655">
@@ -7055,7 +7055,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01220" metaid="meta_R_R01220" name="KEGG R01220" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01220" metaid="meta_R_R01220" name="KEGG R01220" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01220">
@@ -7079,7 +7079,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00134" metaid="meta_R_R00134" name="KEGG R00134" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00134" metaid="meta_R_R00134" name="KEGG R00134" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00134">
@@ -7129,7 +7129,7 @@
      <speciesReference constant="true" species="M_i_C00024" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07157" metaid="meta_R_R07157" name="KEGG R07157" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07157" metaid="meta_R_R07157" name="KEGG R07157" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07157">
@@ -7256,7 +7256,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03018" metaid="meta_R_R03018" name="KEGG R03018" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03018" metaid="meta_R_R03018" name="KEGG R03018" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03018">
@@ -7280,7 +7280,7 @@
      <speciesReference constant="true" species="M_i_C03492" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00130" metaid="meta_R_R00130" name="KEGG R00130" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00130" metaid="meta_R_R00130" name="KEGG R00130" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00130">
@@ -7327,7 +7327,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01214_2" metaid="meta_R_R01214_2" name="KEGG R01214_2" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01214_2" metaid="meta_R_R01214_2" name="KEGG R01214_2" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01214_2">
@@ -7351,7 +7351,7 @@
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01226" metaid="meta_R_R01226" name="KEGG R01226" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01226" metaid="meta_R_R01226" name="KEGG R01226" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01226">
@@ -7500,7 +7500,7 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R08217" metaid="meta_R_R08217" name="KEGG R08217" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R08217" metaid="meta_R_R08217" name="KEGG R08217" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R08217">
@@ -7625,7 +7625,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10392" metaid="meta_R_R10392" name="KEGG R10392" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10392" metaid="meta_R_R10392" name="KEGG R10392" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10392">
@@ -7648,7 +7648,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10395" metaid="meta_R_R10395" name="KEGG R10395" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10395" metaid="meta_R_R10395" name="KEGG R10395" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10395">
@@ -7671,7 +7671,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10393" metaid="meta_R_R10393" name="KEGG R10393" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10393" metaid="meta_R_R10393" name="KEGG R10393" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10393">
@@ -7694,7 +7694,7 @@
      <speciesReference constant="true" species="M_i_C16597" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10396" metaid="meta_R_R10396" name="KEGG R10396" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10396" metaid="meta_R_R10396" name="KEGG R10396" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10396">
@@ -7966,7 +7966,7 @@
      <speciesReference constant="true" species="M_i_C00536" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05808" metaid="meta_R_R05808" name="KEGG R05808" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05808" metaid="meta_R_R05808" name="KEGG R05808" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05808">
@@ -7990,7 +7990,7 @@
      <speciesReference constant="true" species="M_i_C00021" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05809" metaid="meta_R_R05809" name="KEGG R05809" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05809" metaid="meta_R_R05809" name="KEGG R05809" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05809">
@@ -8014,7 +8014,7 @@
      <speciesReference constant="true" species="M_i_C00021" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05810" metaid="meta_R_R05810" name="KEGG R05810" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05810" metaid="meta_R_R05810" name="KEGG R05810" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05810">
@@ -8038,7 +8038,7 @@
      <speciesReference constant="true" species="M_i_C00021" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07772" metaid="meta_R_R07772" name="KEGG R07772" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07772" metaid="meta_R_R07772" name="KEGG R07772" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07772">
@@ -8062,7 +8062,7 @@
      <speciesReference constant="true" species="M_i_C00084" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07773" metaid="meta_R_R07773" name="KEGG R07773" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07773" metaid="meta_R_R07773" name="KEGG R07773" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07773">
@@ -8087,7 +8087,7 @@
      <speciesReference constant="true" species="M_i_C00021" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05812" metaid="meta_R_R05812" name="KEGG R05812" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05812" metaid="meta_R_R05812" name="KEGG R05812" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05812">
@@ -8112,7 +8112,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07774" metaid="meta_R_R07774" name="KEGG R07774" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07774" metaid="meta_R_R07774" name="KEGG R07774" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07774">
@@ -8137,7 +8137,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07775" metaid="meta_R_R07775" name="KEGG R07775" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07775" metaid="meta_R_R07775" name="KEGG R07775" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07775">
@@ -8161,7 +8161,7 @@
      <speciesReference constant="true" species="M_i_C00021" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05814" metaid="meta_R_R05814" name="KEGG R05814" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05814" metaid="meta_R_R05814" name="KEGG R05814" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05814">
@@ -8183,7 +8183,7 @@
      <speciesReference constant="true" species="M_i_C05773" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05815" metaid="meta_R_R05815" name="KEGG R05815" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05815" metaid="meta_R_R05815" name="KEGG R05815" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05815">
@@ -8211,7 +8211,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="2"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05225" metaid="meta_R_R05225" name="KEGG R05225" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05225" metaid="meta_R_R05225" name="KEGG R05225" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05225">
@@ -8239,7 +8239,7 @@
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="4"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07302" metaid="meta_R_R07302" name="KEGG R07302" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07302" metaid="meta_R_R07302" name="KEGG R07302" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07302">
@@ -8265,7 +8265,7 @@
      <speciesReference constant="true" species="M_i_C06508" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R06558" metaid="meta_R_R06558" name="KEGG R06558" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R06558" metaid="meta_R_R06558" name="KEGG R06558" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R06558">
@@ -8289,7 +8289,7 @@
      <speciesReference constant="true" species="M_i_C00035" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05221" metaid="meta_R_R05221" name="KEGG R05221" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05221" metaid="meta_R_R05221" name="KEGG R05221" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05221">
@@ -8313,7 +8313,7 @@
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05222" metaid="meta_R_R05222" name="KEGG R05222" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05222" metaid="meta_R_R05222" name="KEGG R05222" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05222">
@@ -8337,7 +8337,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05223" metaid="meta_R_R05223" name="KEGG R05223" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05223" metaid="meta_R_R05223" name="KEGG R05223" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05223">
@@ -8386,7 +8386,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07136" metaid="meta_R_R07136" name="KEGG R07136" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07136" metaid="meta_R_R07136" name="KEGG R07136" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07136">
@@ -8460,7 +8460,7 @@
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07476" metaid="meta_R_R07476" name="KEGG R07476" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07476" metaid="meta_R_R07476" name="KEGG R07476" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07476">
@@ -8511,7 +8511,7 @@
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00571" metaid="meta_R_R00571" name="KEGG R00571" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00571" metaid="meta_R_R00571" name="KEGG R00571" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00571">
@@ -8705,7 +8705,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00586" metaid="meta_R_R00586" name="KEGG R00586" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00586" metaid="meta_R_R00586" name="KEGG R00586" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00586">
@@ -8729,7 +8729,7 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01290" metaid="meta_R_R01290" name="KEGG R01290" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01290" metaid="meta_R_R01290" name="KEGG R01290" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01290">
@@ -8753,7 +8753,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00177" metaid="meta_R_R00177" name="KEGG R00177" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00177" metaid="meta_R_R00177" name="KEGG R00177" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00177">
@@ -8926,7 +8926,7 @@
      <speciesReference constant="true" species="M_i_C00364" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02094" metaid="meta_R_R02094" name="KEGG R02094" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02094" metaid="meta_R_R02094" name="KEGG R02094" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02094">
@@ -8950,7 +8950,7 @@
      <speciesReference constant="true" species="M_i_C00363" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02093" metaid="meta_R_R02093" name="KEGG R02093" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02093" metaid="meta_R_R02093" name="KEGG R02093" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02093">
@@ -9026,7 +9026,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R09397" metaid="meta_R_R09397" name="KEGG R09397" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09397" metaid="meta_R_R09397" name="KEGG R09397" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R09397">
@@ -9103,7 +9103,7 @@
      <speciesReference constant="true" species="M_i_C05198" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R09398" metaid="meta_R_R09398" name="KEGG R09398" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09398" metaid="meta_R_R09398" name="KEGG R09398" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R09398">
@@ -9174,7 +9174,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="2"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02272" metaid="meta_R_R02272" name="KEGG R02272" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02272" metaid="meta_R_R02272" name="KEGG R02272" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02272">
@@ -9354,7 +9354,7 @@
      <speciesReference constant="true" species="M_i_C03741" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03165" metaid="meta_R_R03165" name="KEGG R03165" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03165" metaid="meta_R_R03165" name="KEGG R03165" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03165">
@@ -9377,7 +9377,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03194" metaid="meta_R_R03194" name="KEGG R03194" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03194" metaid="meta_R_R03194" name="KEGG R03194" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03194">
@@ -9401,7 +9401,7 @@
      <speciesReference constant="true" species="M_i_C02463" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03947" metaid="meta_R_R03947" name="KEGG R03947" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03947" metaid="meta_R_R03947" name="KEGG R03947" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03947">
@@ -9474,7 +9474,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00549" metaid="meta_R_R00549" name="KEGG R00549" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00549" metaid="meta_R_R00549" name="KEGG R00549" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00549">
@@ -9545,7 +9545,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00161" metaid="meta_R_R00161" name="KEGG R00161" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00161" metaid="meta_R_R00161" name="KEGG R00161" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00161">
@@ -9594,7 +9594,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03459" metaid="meta_R_R03459" name="KEGG R03459" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03459" metaid="meta_R_R03459" name="KEGG R03459" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03459">
@@ -9666,7 +9666,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01070" metaid="meta_R_R01070" name="KEGG R01070" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01070" metaid="meta_R_R01070" name="KEGG R01070" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01070">
@@ -9713,7 +9713,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00341" metaid="meta_R_R00341" name="KEGG R00341" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00341" metaid="meta_R_R00341" name="KEGG R00341" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00341">
@@ -9738,7 +9738,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01518" metaid="meta_R_R01518" name="KEGG R01518" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01518" metaid="meta_R_R01518" name="KEGG R01518" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01518">
@@ -9760,7 +9760,7 @@
      <speciesReference constant="true" species="M_i_C00197" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01015" metaid="meta_R_R01015" name="KEGG R01015" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01015" metaid="meta_R_R01015" name="KEGG R01015" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01015">
@@ -9782,7 +9782,7 @@
      <speciesReference constant="true" species="M_i_C00111" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00431" metaid="meta_R_R00431" name="KEGG R00431" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00431" metaid="meta_R_R00431" name="KEGG R00431" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00431">
@@ -9807,7 +9807,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00658" metaid="meta_R_R00658" name="KEGG R00658" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00658" metaid="meta_R_R00658" name="KEGG R00658" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00658">
@@ -9830,7 +9830,7 @@
      <speciesReference constant="true" species="M_i_C00631" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00959" metaid="meta_R_R00959" name="KEGG R00959" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00959" metaid="meta_R_R00959" name="KEGG R00959" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00959">
@@ -9852,7 +9852,7 @@
      <speciesReference constant="true" species="M_i_C00103" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01512" metaid="meta_R_R01512" name="KEGG R01512" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01512" metaid="meta_R_R01512" name="KEGG R01512" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01512">
@@ -9928,7 +9928,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01602" metaid="meta_R_R01602" name="KEGG R01602" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01602" metaid="meta_R_R01602" name="KEGG R01602" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01602">
@@ -10004,7 +10004,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00253" metaid="meta_R_R00253" name="KEGG R00253" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00253" metaid="meta_R_R00253" name="KEGG R00253" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00253">
@@ -10030,7 +10030,7 @@
      <speciesReference constant="true" species="M_i_C00064" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01465" metaid="meta_R_R01465" name="KEGG R01465" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01465" metaid="meta_R_R01465" name="KEGG R01465" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01465">
@@ -10055,7 +10055,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00751" metaid="meta_R_R00751" name="KEGG R00751" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00751" metaid="meta_R_R00751" name="KEGG R00751" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00751">
@@ -10078,7 +10078,7 @@
      <speciesReference constant="true" species="M_i_C00084" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00372" metaid="meta_R_R00372" name="KEGG R00372" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00372" metaid="meta_R_R00372" name="KEGG R00372" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00372">
@@ -10125,7 +10125,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00945" metaid="meta_R_R00945" name="KEGG R00945" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00945" metaid="meta_R_R00945" name="KEGG R00945" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00945">
@@ -10150,7 +10150,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00371" metaid="meta_R_R00371" name="KEGG R00371" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00371" metaid="meta_R_R00371" name="KEGG R00371" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00371">
@@ -10199,7 +10199,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01130" metaid="meta_R_R01130" name="KEGG R01130" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01130" metaid="meta_R_R01130" name="KEGG R01130" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01130">
@@ -10225,7 +10225,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00330" metaid="meta_R_R00330" name="KEGG R00330" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00330" metaid="meta_R_R00330" name="KEGG R00330" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00330">
@@ -10273,7 +10273,7 @@
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00332" metaid="meta_R_R00332" name="KEGG R00332" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00332" metaid="meta_R_R00332" name="KEGG R00332" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00332">
@@ -10297,7 +10297,7 @@
      <speciesReference constant="true" species="M_i_C00035" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01230" metaid="meta_R_R01230" name="KEGG R01230" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01230" metaid="meta_R_R01230" name="KEGG R01230" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01230">
@@ -10323,7 +10323,7 @@
      <speciesReference constant="true" species="M_i_C00144" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01231" metaid="meta_R_R01231" name="KEGG R01231" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01231" metaid="meta_R_R01231" name="KEGG R01231" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01231">
@@ -10424,7 +10424,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04640" metaid="meta_R_R04640" name="KEGG R04640" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04640" metaid="meta_R_R04640" name="KEGG R04640" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04640">
@@ -10446,7 +10446,7 @@
      <speciesReference constant="true" species="M_i_C04916" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03012" metaid="meta_R_R03012" name="KEGG R03012" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03012" metaid="meta_R_R03012" name="KEGG R03012" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03012">
@@ -10471,7 +10471,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03243" metaid="meta_R_R03243" name="KEGG R03243" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03243" metaid="meta_R_R03243" name="KEGG R03243" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03243">
@@ -10495,7 +10495,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01071" metaid="meta_R_R01071" name="KEGG R01071" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01071" metaid="meta_R_R01071" name="KEGG R01071" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01071">
@@ -10519,7 +10519,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04035" metaid="meta_R_R04035" name="KEGG R04035" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04035" metaid="meta_R_R04035" name="KEGG R04035" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04035">
@@ -10543,7 +10543,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04037" metaid="meta_R_R04037" name="KEGG R04037" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04037" metaid="meta_R_R04037" name="KEGG R04037" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04037">
@@ -10566,7 +10566,7 @@
      <speciesReference constant="true" species="M_i_C04896" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04558" metaid="meta_R_R04558" name="KEGG R04558" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04558" metaid="meta_R_R04558" name="KEGG R04558" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04558">
@@ -10719,7 +10719,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04209" metaid="meta_R_R04209" name="KEGG R04209" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04209" metaid="meta_R_R04209" name="KEGG R04209" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04209">
@@ -10742,7 +10742,7 @@
      <speciesReference constant="true" species="M_i_C04751" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04325" metaid="meta_R_R04325" name="KEGG R04325" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04325" metaid="meta_R_R04325" name="KEGG R04325" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04325">
@@ -10766,7 +10766,7 @@
      <speciesReference constant="true" species="M_i_C04376" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04559" metaid="meta_R_R04559" name="KEGG R04559" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04559" metaid="meta_R_R04559" name="KEGG R04559" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04559">
@@ -10789,7 +10789,7 @@
      <speciesReference constant="true" species="M_i_C04677" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R06975" metaid="meta_R_R06975" name="KEGG R06975" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R06975" metaid="meta_R_R06975" name="KEGG R06975" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R06975">
@@ -10815,7 +10815,7 @@
      <speciesReference constant="true" species="M_i_C04734" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07405" metaid="meta_R_R07405" name="KEGG R07405" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07405" metaid="meta_R_R07405" name="KEGG R07405" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07405">
@@ -10837,7 +10837,7 @@
      <speciesReference constant="true" species="M_i_C04751" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04560" metaid="meta_R_R04560" name="KEGG R04560" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04560" metaid="meta_R_R04560" name="KEGG R04560" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04560">
@@ -10861,7 +10861,7 @@
      <speciesReference constant="true" species="M_i_C04734" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04463" metaid="meta_R_R04463" name="KEGG R04463" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04463" metaid="meta_R_R04463" name="KEGG R04463" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04463">
@@ -10889,7 +10889,7 @@
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04208" metaid="meta_R_R04208" name="KEGG R04208" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04208" metaid="meta_R_R04208" name="KEGG R04208" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04208">
@@ -11011,7 +11011,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05069" metaid="meta_R_R05069" name="KEGG R05069" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05069" metaid="meta_R_R05069" name="KEGG R05069" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05069">
@@ -11057,7 +11057,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02199" metaid="meta_R_R02199" name="KEGG R02199" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02199" metaid="meta_R_R02199" name="KEGG R02199" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02199">
@@ -11081,7 +11081,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03898" metaid="meta_R_R03898" name="KEGG R03898" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03898" metaid="meta_R_R03898" name="KEGG R03898" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03898">
@@ -11104,7 +11104,7 @@
      <speciesReference constant="true" species="M_i_C06032" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03896" metaid="meta_R_R03896" name="KEGG R03896" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03896" metaid="meta_R_R03896" name="KEGG R03896" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03896">
@@ -11177,7 +11177,7 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04426" metaid="meta_R_R04426" name="KEGG R04426" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04426" metaid="meta_R_R04426" name="KEGG R04426" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04426">
@@ -11225,7 +11225,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03968" metaid="meta_R_R03968" name="KEGG R03968" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03968" metaid="meta_R_R03968" name="KEGG R03968" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03968">
@@ -11248,7 +11248,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01090" metaid="meta_R_R01090" name="KEGG R01090" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01090" metaid="meta_R_R01090" name="KEGG R01090" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01090">
@@ -11272,7 +11272,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04001" metaid="meta_R_R04001" name="KEGG R04001" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04001" metaid="meta_R_R04001" name="KEGG R04001" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04001">
@@ -11395,7 +11395,7 @@
      <speciesReference constant="true" species="M_i_C00666" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02734" metaid="meta_R_R02734" name="KEGG R02734" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02734" metaid="meta_R_R02734" name="KEGG R02734" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02734">
@@ -11445,7 +11445,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01934" metaid="meta_R_R01934" name="KEGG R01934" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01934" metaid="meta_R_R01934" name="KEGG R01934" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01934">
@@ -11471,7 +11471,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00715" metaid="meta_R_R00715" name="KEGG R00715" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00715" metaid="meta_R_R00715" name="KEGG R00715" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00715">
@@ -11547,7 +11547,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02735" metaid="meta_R_R02735" name="KEGG R02735" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02735" metaid="meta_R_R02735" name="KEGG R02735" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02735">
@@ -11569,7 +11569,7 @@
      <speciesReference constant="true" species="M_i_C00680" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04475" metaid="meta_R_R04475" name="KEGG R04475" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04475" metaid="meta_R_R04475" name="KEGG R04475" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04475">
@@ -11593,7 +11593,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01939" metaid="meta_R_R01939" name="KEGG R01939" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01939" metaid="meta_R_R01939" name="KEGG R01939" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01939">
@@ -11617,7 +11617,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03444" metaid="meta_R_R03444" name="KEGG R03444" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03444" metaid="meta_R_R03444" name="KEGG R03444" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03444">
@@ -11640,7 +11640,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04371" metaid="meta_R_R04371" name="KEGG R04371" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04371" metaid="meta_R_R04371" name="KEGG R04371" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04371">
@@ -11663,7 +11663,7 @@
      <speciesReference constant="true" species="M_i_C05662" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04467" metaid="meta_R_R04467" name="KEGG R04467" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04467" metaid="meta_R_R04467" name="KEGG R04467" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04467">
@@ -11714,7 +11714,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04364" metaid="meta_R_R04364" name="KEGG R04364" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04364" metaid="meta_R_R04364" name="KEGG R04364" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04364">
@@ -11739,7 +11739,7 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04365" metaid="meta_R_R04365" name="KEGG R04365" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04365" metaid="meta_R_R04365" name="KEGG R04365" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04365">
@@ -11764,7 +11764,7 @@
      <speciesReference constant="true" species="M_i_C04462" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02755" metaid="meta_R_R02755" name="KEGG R02755" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02755" metaid="meta_R_R02755" name="KEGG R02755" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02755">
@@ -11791,7 +11791,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04336" metaid="meta_R_R04336" name="KEGG R04336" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04336" metaid="meta_R_R04336" name="KEGG R04336" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04336">
@@ -11814,7 +11814,7 @@
      <speciesReference constant="true" species="M_i_C03871" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07613" metaid="meta_R_R07613" name="KEGG R07613" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07613" metaid="meta_R_R07613" name="KEGG R07613" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07613">
@@ -12013,7 +12013,7 @@
      <speciesReference constant="true" species="M_i_C19885" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03098" metaid="meta_R_R03098" name="KEGG R03098" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03098" metaid="meta_R_R03098" name="KEGG R03098" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03098">
@@ -12037,7 +12037,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00480" metaid="meta_R_R00480" name="KEGG R00480" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00480" metaid="meta_R_R00480" name="KEGG R00480" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00480">
@@ -12061,7 +12061,7 @@
      <speciesReference constant="true" species="M_i_C03082" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02291" metaid="meta_R_R02291" name="KEGG R02291" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02291" metaid="meta_R_R02291" name="KEGG R02291" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02291">
@@ -12160,7 +12160,7 @@
      <speciesReference constant="true" species="M_i_C01118" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00946" metaid="meta_R_R00946" name="KEGG R00946" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00946" metaid="meta_R_R00946" name="KEGG R00946" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00946">
@@ -12334,7 +12334,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R09726" metaid="meta_R_R09726" name="KEGG R09726" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09726" metaid="meta_R_R09726" name="KEGG R09726" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R09726">
@@ -12437,7 +12437,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00104" metaid="meta_R_R00104" name="KEGG R00104" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00104" metaid="meta_R_R00104" name="KEGG R00104" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00104">
@@ -12511,7 +12511,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07407" metaid="meta_R_R07407" name="KEGG R07407" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07407" metaid="meta_R_R07407" name="KEGG R07407" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07407">
@@ -12536,7 +12536,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07410" metaid="meta_R_R07410" name="KEGG R07410" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07410" metaid="meta_R_R07410" name="KEGG R07410" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07410">
@@ -12584,7 +12584,7 @@
      <speciesReference constant="true" species="M_i_C00345" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02736" metaid="meta_R_R02736" name="KEGG R02736" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02736" metaid="meta_R_R02736" name="KEGG R02736" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02736">
@@ -12609,7 +12609,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10907" metaid="meta_R_R10907" name="KEGG R10907" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10907" metaid="meta_R_R10907" name="KEGG R10907" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10907">
@@ -12634,7 +12634,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01049" metaid="meta_R_R01049" name="KEGG R01049" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01049" metaid="meta_R_R01049" name="KEGG R01049" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01049">
@@ -12658,7 +12658,7 @@
      <speciesReference constant="true" species="M_i_C00119" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01830" metaid="meta_R_R01830" name="KEGG R01830" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01830" metaid="meta_R_R01830" name="KEGG R01830" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01830">
@@ -12682,7 +12682,7 @@
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01528" metaid="meta_R_R01528" name="KEGG R01528" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01528" metaid="meta_R_R01528" name="KEGG R01528" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01528">
@@ -12708,7 +12708,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10221" metaid="meta_R_R10221" name="KEGG R10221" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10221" metaid="meta_R_R10221" name="KEGG R10221" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10221">
@@ -12734,7 +12734,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01056" metaid="meta_R_R01056" name="KEGG R01056" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01056" metaid="meta_R_R01056" name="KEGG R01056" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01056">
@@ -12756,7 +12756,7 @@
      <speciesReference constant="true" species="M_i_C00117" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01827" metaid="meta_R_R01827" name="KEGG R01827" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01827" metaid="meta_R_R01827" name="KEGG R01827" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01827">
@@ -12780,7 +12780,7 @@
      <speciesReference constant="true" species="M_i_C05345" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01529" metaid="meta_R_R01529" name="KEGG R01529" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01529" metaid="meta_R_R01529" name="KEGG R01529" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01529">
@@ -12802,7 +12802,7 @@
      <speciesReference constant="true" species="M_i_C00231" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02739" metaid="meta_R_R02739" name="KEGG R02739" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02739" metaid="meta_R_R02739" name="KEGG R02739" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02739">
@@ -12824,7 +12824,7 @@
      <speciesReference constant="true" species="M_i_C01172" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01641" metaid="meta_R_R01641" name="KEGG R01641" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01641" metaid="meta_R_R01641" name="KEGG R01641" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01641">
@@ -12848,7 +12848,7 @@
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02740" metaid="meta_R_R02740" name="KEGG R02740" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02740" metaid="meta_R_R02740" name="KEGG R02740" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02740">
@@ -12870,7 +12870,7 @@
      <speciesReference constant="true" species="M_i_C00668" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05338" metaid="meta_R_R05338" name="KEGG R05338" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05338" metaid="meta_R_R05338" name="KEGG R05338" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05338">
@@ -12893,7 +12893,7 @@
      <speciesReference constant="true" species="M_i_C00067" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R09780" metaid="meta_R_R09780" name="KEGG R09780" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09780" metaid="meta_R_R09780" name="KEGG R09780" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R09780">
@@ -12963,7 +12963,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00694" metaid="meta_R_R00694" name="KEGG R00694" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00694" metaid="meta_R_R00694" name="KEGG R00694" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00694">
@@ -12987,7 +12987,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07276" metaid="meta_R_R07276" name="KEGG R07276" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07276" metaid="meta_R_R07276" name="KEGG R07276" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R07276">
@@ -13038,7 +13038,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03314" metaid="meta_R_R03314" name="KEGG R03314" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03314" metaid="meta_R_R03314" name="KEGG R03314" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03314">
@@ -13061,7 +13061,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00667" metaid="meta_R_R00667" name="KEGG R00667" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00667" metaid="meta_R_R00667" name="KEGG R00667" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00667">
@@ -13161,7 +13161,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00239" metaid="meta_R_R00239" name="KEGG R00239" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00239" metaid="meta_R_R00239" name="KEGG R00239" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00239">
@@ -13209,7 +13209,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04173" metaid="meta_R_R04173" name="KEGG R04173" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04173" metaid="meta_R_R04173" name="KEGG R04173" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04173">
@@ -13233,7 +13233,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01513" metaid="meta_R_R01513" name="KEGG R01513" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01513" metaid="meta_R_R01513" name="KEGG R01513" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01513">
@@ -13377,7 +13377,7 @@
      <speciesReference constant="true" species="M_i_C01269" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03084" metaid="meta_R_R03084" name="KEGG R03084" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03084" metaid="meta_R_R03084" name="KEGG R03084" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03084">
@@ -13400,7 +13400,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02413" metaid="meta_R_R02413" name="KEGG R02413" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02413" metaid="meta_R_R02413" name="KEGG R02413" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R02413">
@@ -13543,7 +13543,7 @@
      <speciesReference constant="true" species="M_i_C00058" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03503" metaid="meta_R_R03503" name="KEGG R03503" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03503" metaid="meta_R_R03503" name="KEGG R03503" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03503">
@@ -13688,7 +13688,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03504" metaid="meta_R_R03504" name="KEGG R03504" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03504" metaid="meta_R_R03504" name="KEGG R03504" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03504">
@@ -13711,7 +13711,7 @@
      <speciesReference constant="true" species="M_i_C01300" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03066" metaid="meta_R_R03066" name="KEGG R03066" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03066" metaid="meta_R_R03066" name="KEGG R03066" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03066">
@@ -13760,7 +13760,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05048" metaid="meta_R_R05048" name="KEGG R05048" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05048" metaid="meta_R_R05048" name="KEGG R05048" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05048">
@@ -13807,7 +13807,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00428" metaid="meta_R_R00428" name="KEGG R00428" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00428" metaid="meta_R_R00428" name="KEGG R00428" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00428">
@@ -13902,7 +13902,7 @@
      <speciesReference constant="true" species="M_i_C00068" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04509" metaid="meta_R_R04509" name="KEGG R04509" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04509" metaid="meta_R_R04509" name="KEGG R04509" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R04509">
@@ -14105,7 +14105,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="2"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R09977" metaid="meta_R_R09977" name="KEGG R09977" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09977" metaid="meta_R_R09977" name="KEGG R09977" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R09977">
@@ -14127,7 +14127,7 @@
      <speciesReference constant="true" species="M_i_C20247" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03472" metaid="meta_R_R03472" name="KEGG R03472" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03472" metaid="meta_R_R03472" name="KEGG R03472" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03472">
@@ -14154,7 +14154,7 @@
      <speciesReference constant="true" species="M_i_C00237" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R12026" metaid="meta_R_R12026" name="KEGG R12026" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R12026" metaid="meta_R_R12026" name="KEGG R12026" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R12026">
@@ -14497,7 +14497,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03509" metaid="meta_R_R03509" name="KEGG R03509" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03509" metaid="meta_R_R03509" name="KEGG R03509" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R03509">
@@ -14669,7 +14669,7 @@
      <speciesReference constant="true" species="M_i_C00254" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01731" metaid="meta_R_R01731" name="KEGG R01731" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01731" metaid="meta_R_R01731" name="KEGG R01731" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01731">
@@ -14746,7 +14746,7 @@
      <speciesReference constant="true" species="M_i_C00042" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01870" metaid="meta_R_R01870" name="KEGG R01870" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01870" metaid="meta_R_R01870" name="KEGG R01870" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01870">
@@ -14770,7 +14770,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01869" metaid="meta_R_R01869" name="KEGG R01869" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01869" metaid="meta_R_R01869" name="KEGG R01869" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01869">
@@ -14842,7 +14842,7 @@
      <speciesReference constant="true" species="M_i_C00438" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01993" metaid="meta_R_R01993" name="KEGG R01993" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01993" metaid="meta_R_R01993" name="KEGG R01993" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01993">
@@ -14865,7 +14865,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00156" metaid="meta_R_R00156" name="KEGG R00156" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00156" metaid="meta_R_R00156" name="KEGG R00156" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00156">
@@ -14889,7 +14889,7 @@
      <speciesReference constant="true" species="M_i_C00075" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00158" metaid="meta_R_R00158" name="KEGG R00158" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00158" metaid="meta_R_R00158" name="KEGG R00158" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00158">
@@ -14959,7 +14959,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01214_1" metaid="meta_R_R01214_1" name="KEGG R01214_1" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01214_1" metaid="meta_R_R01214_1" name="KEGG R01214_1" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R01214_1">
@@ -14983,7 +14983,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05071" metaid="meta_R_R05071" name="KEGG R05071" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R05071" metaid="meta_R_R05071" name="KEGG R05071" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R05071">
@@ -15030,7 +15030,7 @@
      <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10935" metaid="meta_R_R10935" name="KEGG R10935" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10935" metaid="meta_R_R10935" name="KEGG R10935" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R10935">
@@ -15054,7 +15054,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="2"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11038" metaid="meta_R_R11038" name="KEGG R11038" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R11038" metaid="meta_R_R11038" name="KEGG R11038" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R11038">
@@ -15078,7 +15078,7 @@
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11039" metaid="meta_R_R11039" name="KEGG R11039" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R11039" metaid="meta_R_R11039" name="KEGG R11039" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R11039">
@@ -15175,7 +15175,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN4" metaid="meta_R_RMAN4" name="KEGG RMAN4" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN4" metaid="meta_R_RMAN4" name="KEGG RMAN4" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_RMAN4">
@@ -15223,7 +15223,7 @@
      <speciesReference constant="true" species="M_i_C00005" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00315" metaid="meta_R_R00315" name="KEGG R00315" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00315" metaid="meta_R_R00315" name="KEGG R00315" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00315">
@@ -15247,7 +15247,7 @@
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00230" metaid="meta_R_R00230" name="KEGG R00230" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00230" metaid="meta_R_R00230" name="KEGG R00230" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00230">
@@ -15271,7 +15271,7 @@
      <speciesReference constant="true" species="M_i_C00227" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
-   <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00019" metaid="meta_R_R00019" name="KEGG R00019" reversible="true">
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00019" metaid="meta_R_R00019" name="KEGG R00019" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_R00019">
