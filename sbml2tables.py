@@ -14,8 +14,8 @@ from bs4 import BeautifulSoup
 PRINT_STABLE = False 	# print information in tables after building them
 PRINT_RTABLE = False
 PRINT_GTABLE = False
-SAVE_SBML    = True	# save the xml tree after modifications
-VERBOSE      = False	# warnings about formulae and meta_id's
+SAVE_SBML    = False	# save the xml tree after modifications
+VERBOSE      = True	# warnings about formulae and meta_id's
 
 EMPTY        = ""
 MINIMUM      = -15.0
@@ -65,7 +65,7 @@ for reaction in model.find_all('reaction'):
     infodict = dict(info)
     if 'dG0' not in infodict:
         if VERBOSE:
-            print( f'{reacid} has no dG0.')
+            print( f'Warning {reacid} has no dG0.')
     if 'kegg-reaction' not in infodict:                 # add kegg-reaction annotation
         if name[:5] == 'KEGG ':
             # pylint: disable='undefined-loop-variable'
@@ -78,7 +78,7 @@ for reaction in model.find_all('reaction'):
             annotation.insert_after(new_tag)
         else :
             if VERBOSE:
-                print(f'{reacid} has no kegg identifier.')
+                print(f'Warning {reacid} has no kegg identifier.')
 
     if PRINT_RTABLE:
         print( reacid, name, revers, substrate, product, modifier, info, sep='\t')
