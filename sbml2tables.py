@@ -8,13 +8,9 @@ from bs4 import BeautifulSoup
 
 			# These lines control the program functions
 PRINT_TABLE = True 	# print tables after building them
-SAVE_SBML = False	# print the xml tree after modifications
+SAVE_SBML   = False	# print the xml tree after modifications
+VERBOSE     = False	# warnings about formulae and meta_id's
 EMPTY = ""
-
-def annot2key_value( text: str ) -> tuple:
-    """Parse the annotation into the key and value as a tuple"""
-    elements = text.split('/')
-    return (elements[3],elements[4])
 
 with open("LUCA.sbml", encoding="UTF8") as fp:
     model = BeautifulSoup( fp, 'xml' )
@@ -29,28 +25,29 @@ for species in model.find_all('species'):
         metaid = species['metaid']
     except KeyError:
         metaid = 'Meta_'+specid
-        if not PRINT_TABLE:
+        if VERBOSE:
             print( f'Warning no metaid for {specid}.' )
     try:
         formul = species['fbc:chemicalFormula']
     except KeyError:
         # pylint: disable="invalid-name"
         formul = EMPTY
-        if not PRINT_TABLE :
+        if VERBOSE :
             print( f'Warning no formula for {specid}.' )
     charge = species['fbc:charge']
     compar = species['compartment']
     info   = []
     for annotation in species.find_all('rdf:li'):
-        info.append( annot2key_value(annotation['rdf:resource'] ))
-    infodict = dict(info)
-    if 'kegg' in infodict :
-        if specid[:5] == 'M_i_C':
-            infodict['kegg-compound'] = specid[4:]
-        del infodict['kegg']
+        el  = annotation['rdf:resource'].split('/')		# Fix kegg-compound annotations
+        if el[3] == 'kegg' :
+            if specid[:5] == 'M_i_C':
+                el[3] = 'kegg-compound'
+                el[4] = specid[4:]
+                annotation['rdf:resource'] = f'{el[0]}/{el[1]}/{el[2]}/{el[3]}/{el[4]}'
+        el  = annotation['rdf:resource'].split('/')
+        info.append( (el[3],el[4]) )
     if PRINT_TABLE:
-        print( specid + '\t' + name + '\t' + formul + '\t', end='' )
-        print( charge + '\t' + compar + '\t' , infodict, sep="" )
+    	print( specid, name, formul, charge, compar, info, sep='\t')
 
 for gene in model.find_all('gene'):
     pass
