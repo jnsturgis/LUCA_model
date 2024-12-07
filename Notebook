@@ -68,12 +68,14 @@ Modifications made
 3.1 CMP phosphorylation to CTP using ATP
 3.2 Pyrophosphate hydrolysis
 3.3 Hydrogenase to reduce NAD+
-3.4 Acetyl CoA Synthase (RMAN16)
-3.5 ApoACP Synthase (RMAN18)*** ToDo
+3.4 Acetyl CoA Synthase 
+3.5 ApoACP Synthase (RMAN8 2.7.8.7) and Adenosine 3'5' bis phosphate recycling
 4. Added exchange reactions (initially with internal compartment)
 4.1 H2O, CO2, H+, NH3, H2S, PO4
 4.2 Unlimited energy supply (EX_Energy) regenerates ATP for free!!!
 4.3 Protein as Pr to simplify.
+5. Remove unused reactions
+5.1 Miscellaneous e-
 
 Next steps.
 1. Automatic recovery and tidying of annotations for reactions and metabolites
