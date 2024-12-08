@@ -11,6 +11,7 @@ Notably reversibility (perhaps it is due to fluxLowerBound?)
 from bs4 import BeautifulSoup
 
 			# These lines control the program functions
+			# TODO: set up from command line options
 PRINT_STABLE = False 	# print information in tables after building them
 PRINT_RTABLE = False
 PRINT_GTABLE = False
@@ -78,7 +79,8 @@ for reaction in model.find_all('reaction'):
             annotation.insert_after(new_tag)
         else :
             if VERBOSE:
-                print(f'Warning {reacid} has no kegg identifier.')
+                if reacid[:5] != "R_EX_":
+                    print(f'Warning {reacid} has no kegg identifier.')
 
     if PRINT_RTABLE:
         print( reacid, name, revers, substrate, product, modifier, info, sep='\t')

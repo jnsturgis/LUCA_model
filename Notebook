@@ -89,3 +89,13 @@ Next steps.
 2. Addition of modifier species for reactions to indicate cofactors
 2.1 Cofactors associated with enzyme. http://www.ebi.ac.uk/thornton-srv/databases/CoFactor/queries.php?ec=1.1.2.10&submit=Go
 3. Setup of metabolites based on cofactors and cytoplasmic composition for Biomass function
+
+
+? Formate reduction RMAN4 - hydrogen or NADH (1.17.1.9)
+TODO How to interpret multiple ec-code? should be AND not OR sort them out
+lookup cofactor requirement (FeS included) where
+CoA, NADH, ATP are in reactions
+Bionumbers cytoplasmic composition for metabolites and cofactors based on required fluxes
+cnapy does not preserve sbml file (unused bits... InitialConcentration and probably Modifiers)... this will be a problem!
+use Enzyme table... (ec-code/Substrates/Products/Modifiers/dG0/Equation)
+

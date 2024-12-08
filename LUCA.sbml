@@ -5218,9 +5218,45 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_DOPS" name="di oleoyl phosphatidyl serine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H77NO10P"/>
-      <species id="M_i_DOPE" name="di oleoyl phosphatidyl ethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C41H77NO8P"/>
-      <species id="M_i_DOPG" name="di oleoyl phosphatidyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H76O9P"/>
+      <species metaid="meta_M_i_DOPS" id="M_i_DOPS" name="di oleoyl phosphatidyl serine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H77NO10P">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_DOPS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C02737"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_DOPE" id="M_i_DOPE" name="di oleoyl phosphatidyl ethanolamine" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C41H77NO8P">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_DOPE">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00350"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_DOPG" id="M_i_DOPG" name="di oleoyl phosphatidyl glycerol" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H76O9P">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_DOPG">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00344"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
       <species metaid="meta_M_i_Gol3P" id="M_i_Gol3P" name="Glycerol 3 phosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H8O6P">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -5314,8 +5350,32 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_DOPA" name="Di oleoyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C39H72O8P"/>
-      <species id="M_i_OLPA" name="Oleoyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H40O7P"/>
+      <species metaid="meta_M_i_DOPA" id="M_i_DOPA" name="Di oleoyl phosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C39H72O8P">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_DOPA">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00416"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="meta_M_i_OLPA" id="M_i_OLPA" name="Oleoyl lysophosphatidic acid" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H40O7P">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_OLPA">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00681"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
       <species metaid="meta_M_i_OACP" id="M_i_OACP" name="Oleoyl-ACP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H54N2O8PSPr">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -5329,7 +5389,19 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species id="M_i_C00112" name="CDP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C9H15N3O11P2"/>
+      <species metaid="meta_M_i_C00112" id="M_i_C00112" name="CDP" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C9H15N3O11P2">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_M_i_C00112">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00112"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
       <species metaid="meta_M_i_FPP" id="M_i_FPP" name="Farnesyl pyrophosphate" compartment="i" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C15H28O7P2">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
@@ -15195,8 +15267,8 @@
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/dG0/-5.0"/>
                   <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/4.0"/>
-                  <rdf:li rdf:resource="https://identifiers.org/ec-code/-"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/RMAN4"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.17.98.-"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R12754"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -15316,7 +15388,19 @@
           <speciesReference species="M_i_RNA" stoichiometry="6.41" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_RNAP" name="RNA synthesis (1 unit dry mass)" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RNAP" id="R_RNAP" name="RNA synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RNAP">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.7.6"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00444"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00044" stoichiometry="1" constant="true"/>
@@ -15328,7 +15412,19 @@
           <speciesReference species="M_i_C00013" stoichiometry="4" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_DNAP" name="DNA synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_DNAP" id="R_DNAP" name="DNA synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_DNAP">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.7.7"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00379"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00131" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00286" stoichiometry="1" constant="true"/>
@@ -15798,7 +15894,19 @@
           <speciesReference species="M_i_tRNAY" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_TRANSL" name="Protein Translation" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_TRANSL" id="R_TRANSL" name="Protein Translation" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_TRANSL">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.2.12"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R04685"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_tRNAA" stoichiometry="19" constant="true"/>
           <speciesReference species="M_i_tRNAC" stoichiometry="2" constant="true"/>
@@ -15826,7 +15934,19 @@
           <speciesReference species="M_i_RNA" stoichiometry="200" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_PSS" name="Phosphatidyl serine synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_PSS" id="R_PSS" name="Phosphatidyl serine synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_PSS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01800"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.8"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00065" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
@@ -15836,7 +15956,19 @@
           <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_PSDC" name="Phosphatidyl serine decarboxylase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_PSDC" id="R_PSDC" name="Phosphatidyl serine decarboxylase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_PSDC">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/4.1.1.65"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R02055"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_DOPS" stoichiometry="1" constant="true"/>
         </listOfReactants>
@@ -15845,7 +15977,19 @@
           <speciesReference species="M_i_C00011" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_PGS" name="Phosphatidyl glyerol synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_PGS" id="R_PGS" name="Phosphatidyl glyerol synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_PGS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.5"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01801"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
@@ -15864,7 +16008,7 @@
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R10255"/>
-                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.28"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.38"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -15921,6 +16065,8 @@
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R08966"/>
                   <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.7.67"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-9.3"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/3.2"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -15945,7 +16091,21 @@
           <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_GGGPS" name="Geranylgeranylglycerolphosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_GGGPS" id="R_GGGPS" name="Geranylgeranylglycerolphosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_GGGPS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.5.1.41"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R04158"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-36.7"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/5.4"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_GGPP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_Gol1P" stoichiometry="1" constant="true"/>
@@ -15963,6 +16123,8 @@
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01800"/>
                   <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.8"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-9.5"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -15977,7 +16139,19 @@
           <speciesReference species="M_i_CDPDOG" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN10" name="Oleyl transferase 2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN10" id="R_RMAN10" name="Oleyl transferase 2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN10">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.51"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R02241"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
@@ -15987,7 +16161,19 @@
           <speciesReference species="M_i_DOPA" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN11" name="Oleyl transferase 1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN11" id="R_RMAN11" name="Oleyl transferase 1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN11">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R12241"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.275"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_Gol3P" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
@@ -15997,7 +16183,21 @@
           <speciesReference species="M_i_OLPA" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN12" name="Glycerol 1 phosphate dehydrogenase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN12" id="R_RMAN12" name="Glycerol 1 phosphate dehydrogenase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN12">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.261"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-25.7"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1.4"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R05679"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00004" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00111" stoichiometry="1" constant="true"/>
@@ -16008,7 +16208,21 @@
           <speciesReference species="M_i_Gol1P" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN13" name="Glycerol 3 phosphate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN13" id="R_RMAN13" name="Glycerol 3 phosphate dehydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN13">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.8"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00842"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-25.7"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1.4"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00111" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00004" stoichiometry="1" constant="true"/>
@@ -16085,7 +16299,21 @@
           <speciesReference species="M_i_C00011" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_RMAN14" name="Pyrophosphatase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN14" id="R_RMAN14" name="Pyrophosphatase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN14">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/3.6.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00004"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-17.0"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.4"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00001" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
@@ -16111,7 +16339,21 @@
           <speciesReference species="M_i_C00282" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_RMAN15" name="Hydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN15" id="R_RMAN15" name="Hydrogenase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN15">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.12.1.2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00700"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-16.2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/6.5"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00282" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00003" stoichiometry="1" constant="true"/>
@@ -16155,7 +16397,19 @@
           <speciesReference species="M_i_C00283" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_RMAN5" name="CMP Kinase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN5" id="R_RMAN5" name="CMP Kinase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN5">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.4.4"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00334"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00055" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
@@ -16165,7 +16419,19 @@
           <speciesReference species="M_i_C00008" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN6" name="CDP Kinase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN6" id="R_RMAN6" name="CDP Kinase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.4.6"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00331"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00112" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
@@ -16175,7 +16441,21 @@
           <speciesReference species="M_i_C00063" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_GGPPS" name="Geranylgeranyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_GGPPS" id="R_GGPPS" name="Geranylgeranyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_GGPPS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R02061"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.5.1.29"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-78.0"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/5.8"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_FPP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_IPPP" stoichiometry="1" constant="true"/>
@@ -16185,7 +16465,21 @@
           <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_FPPS" name="Farnesyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_FPPS" id="R_FPPS" name="Farnesyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_FPPS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.5.1.68"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R08528"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-78.0"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/5.8"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_GPP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_IPPP" stoichiometry="1" constant="true"/>
@@ -16195,7 +16489,21 @@
           <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_GPPS" name="Geranyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_GPPS" id="R_GPPS" name="Geranyl pyrophosphate synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_GPPS">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.5.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01658"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-76.6"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/5.5"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_DMAPP" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_IPPP" stoichiometry="1" constant="true"/>
@@ -16205,7 +16513,21 @@
           <speciesReference species="M_i_C00013" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_IPPPI" name="Isopentenyl pyrophosphate isomerase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_IPPPI" id="R_IPPPI" name="Isopentenyl pyrophosphate isomerase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_IPPPI">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/5.3.3.2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01123"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/4.8"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/5.7"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_DMAPP" stoichiometry="1" constant="true"/>
         </listOfReactants>
@@ -16220,7 +16542,7 @@
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/ec-code/4.1.1.33"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg/R01121"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01121"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -16243,7 +16565,8 @@
             <rdf:Description rdf:about="#meta_R_M5PK">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ec-code/EC:2.7.4.2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.4.2"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R03245"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -16265,6 +16588,7 @@
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.1.36"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R02245"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -16285,8 +16609,10 @@
             <rdf:Description rdf:about="#meta_R_HMGCR">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ec/EC:1.1.1.34 "/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg/KEGG:R02082"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.34 "/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R02082"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/2.8"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/3.4"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -16309,8 +16635,10 @@
             <rdf:Description rdf:about="#meta_R_HMGS">
               <bqbiol:is>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="https://identifiers.org/ec/EC:2.3.3.10"/>
-                  <rdf:li rdf:resource="https://identifiers.org/kegg/KEGG:R01978"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.3.10"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01978"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0/-17.0"/>
+                  <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/4.7"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>
@@ -16362,7 +16690,19 @@
           <speciesReference species="M_i_OACP" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_RMAN7" name="Acetyl transferase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN7" id="R_RMAN7" name="Acetyl transferase" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN7">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.38"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01624"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00229" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00024" stoichiometry="1" constant="true"/>
@@ -16389,7 +16729,19 @@
           <speciesReference species="M_i_C00080" stoichiometry="1" constant="true"/>
         </listOfReactants>
       </reaction>
-      <reaction id="R_RMAN16" name="Acetyl CoA Synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+      <reaction metaid="meta_R_RMAN16" id="R_RMAN16" name="Acetyl CoA Synthase" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_RMAN16">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/6.2.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00235"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
         <listOfReactants>
           <speciesReference species="M_i_C00002" stoichiometry="1" constant="true"/>
           <speciesReference species="M_i_C00010" stoichiometry="1" constant="true"/>
@@ -16408,6 +16760,7 @@
               <bqbiol:is>
                 <rdf:Bag>
                   <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.8.7"/>
+                  <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R01625"/>
                 </rdf:Bag>
               </bqbiol:is>
             </rdf:Description>

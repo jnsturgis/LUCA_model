@@ -1,0 +1,108 @@
+"Metabolite"	"kegg-compound"	"Conc (mM)"
+"K+"		300
+"Cl-"		150
+"Glutamate"		96
+"Mg2+"		50
+"Glutathione"		17
+"Fructise 1,6 bisposphate"		15
+"Na+"		10
+"ATP"		9.6
+"UDP-NAG"		9.2
+"Hexose phosphate"		8.8
+"UTP"		8.3
+"GTP"		4.9
+"dTTP"		4.6
+"Aspartate"		4.2
+"Valine"		4
+"6 phsopho gluconate"		3.8
+"Glutamine"		3.8
+"CTP"		2.7
+"NAD"		2.6
+"Alanine"		2.5
+"UDP-glucose"		2.5
+"glutathione disulfide"		2.4
+"uridine"		2.1
+"Ca2+"		2
+"citrate"		2
+"UDP"		1.8
+"malate"		1.7
+"3 phospho glycerate"		1.5
+"citruline"		1.4
+"coenzyme A"		1.4
+"glycerate"		1.4
+"pentose phosphate"		1.3
+"Glucosamine 6 phosphate"		1.2
+"Acetyl phosphate"		1.1
+"gluconolactone"		1
+"GDP"		0.68
+"Acetyl-CoA"		0.61
+"carbamoyl aspartate"		0.59
+"arginine"		0.57
+"succinate"		0.57
+"ADP"		0.55
+"asparagine"		0.51
+"2 keto glutarate"		0.44
+"lysine"		0.4
+"dTDP"		0.38
+"proline"		0.38
+"DHAP"		0.37
+"homocysteine"		0.37
+"CMP"		0.36
+"deoxyribose5P"		0.3
+"isoleucine+leucine"		0.3
+"AMP"		0.28
+"inosine monophosphate"		0.27
+"PRPP"		0.26
+"Succinyl-CoA"		0.23
+"inosine triphosphate"		0.2
+"guanine"		0.19
+"PEP"		0.18
+"SAM"		0.18
+"threonine"		0.18
+"FAD"		0.17
+"dihydroxybenzoic acid"		0.14
+"methionine"		0.14
+"NADPH"		0.12
+"fumarate"		0.11
+"Phenylpyruvate"		0.09
+"NADH"		0.083
+"NAG-1P"		0.082
+"histidine"		0.068
+"serine"		0.068
+"FMN"		0.054
+"hydroxybenzoate"		0.052
+"dGMP"		0.051
+"glycerol phosphate"		0.049
+"Nacetylornithine"		0.043
+"gluconate"		0.042
+"cAMP"		0.035
+"malonylCoA"		0.035
+"dCTP"		0.034
+"tyrosine"		0.029
+"GMP"		0.024
+"inosine diphosphate"		0.024
+"acetoacetylCoA"		0.022
+"riboflavin"		0.019
+"phenylalanine"		0.018
+"aconitate"		0.016
+"dATP"		0.016
+"cytosine"		0.014
+"shikimate"		0.014
+"histidinol"		0.013
+"dihydroorotate"		0.012
+"quinolinate"		0.012
+"tryptophan"		0.012
+"ornithine"		0.01
+"dAMP"		0.0088
+"adenosinephosphosulfate"		0.0066
+"Myo-inositol"		0.0057
+"propionylCoA"		0.0053
+"ADP glucose"		0.0043
+"anthranilate"		0.0035
+"desoxyadenosine"		0.0028
+"cytidine"		0.0026
+"NADP+"		0.0021
+"guanosine"		0.0016
+"adenine"		0.0015
+"desoxyguanosine"		0.00052
+"adenosine"		0.00013
