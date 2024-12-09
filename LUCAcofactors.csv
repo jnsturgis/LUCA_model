@@ -1,0 +1,145 @@
+ID	Info	Cofactors	Codes	
+R_R00742	[('dG0', '-7.5'), ('dG0_uncertainty', '1.5'), ('ec-code', '6.4.1.2'), ('kegg-reaction', 'R00742')]	Biotin	C00120	
+R_R00344	[('dG0', '-5.6'), ('dG0_uncertainty', '0.7'), ('ec-code', '6.4.1.1'), ('kegg-reaction', 'R00344')]	Biotin, Zn2+	C00120, C00038	
+R_R03083	[('dG0', '-168.0'), ('dG0_uncertainty', '6.0'), ('ec-code', '4.2.3.4'), ('kegg-reaction', 'R03083')]	Co2+, NAD+	C00175, C00003	
+R_R00402	[('dG0', '-60.4'), ('dG0_uncertainty', '2.1'), ('ec-code', '1.3.1.6'), ('kegg-reaction', 'R00402')]	FAD	C00016	
+R_R07168	[('dG0', '-43.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '1.5.1.20'), ('kegg-reaction', 'R07168')]	FAD	C00016	
+R_R01195	[('dG0', '-16.0'), ('dG0_uncertainty', '6.0'), ('ec-code', '1.18.1.2'), ('kegg-reaction', 'R01195')]	FAD	C00016	
+R_R01291	[('dG0', '-33.0'), ('dG0_uncertainty', '2.7'), ('ec-code', '4.4.1.21'), ('kegg-reaction', 'R01291')]	Fe2+	C14818	
+R_R03898	[('dG0', '8.8'), ('dG0_uncertainty', '2.8'), ('ec-code', '4.2.1.35'), ('kegg-reaction', 'R03898')]	Fe2+	C14818	
+R_R03896	[('dG0', '9.4'), ('dG0_uncertainty', '2.4'), ('ec-code', '4.2.1.35'), ('kegg-reaction', 'R03896')]	Fe2+	C14818	
+R_R01325	[('dG0', '-8.4'), ('dG0_uncertainty', '1.1'), ('ec-code', '4.2.1.3'), ('kegg-reaction', 'R01325')]	Fe4S4	Fe4S4	
+R_R01900	[('dG0', '1.6'), ('dG0_uncertainty', '1.1'), ('ec-code', '4.2.1.3'), ('kegg-reaction', 'R01900')]	Fe4S4	Fe4S4	
+R_R10392	[('dG0', '0.4'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.114'), ('kegg-reaction', 'R10392')]	Fe4S4	Fe4S4	
+R_R10395	[('dG0', '0.4'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.114'), ('kegg-reaction', 'R10395')]	Fe4S4	Fe4S4	
+R_R10393	[('dG0', '3.7'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.114'), ('kegg-reaction', 'R10393')]	Fe4S4	Fe4S4	
+R_R10396	[('dG0', '3.7'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.114'), ('kegg-reaction', 'R10396')]	Fe4S4	Fe4S4	
+R_R11580	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.1.1.272'), ('kegg-reaction', 'R11580')]	Fe4S4	Fe4S4	
+R_R03968	[('dG0', '0.4'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.33'), ('kegg-reaction', 'R03968')]	Fe4S4	Fe4S4	
+R_R04001	[('dG0', '3.7'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.33'), ('kegg-reaction', 'R04001')]	Fe4S4	Fe4S4	
+R_R03444	[('dG0', '0.4'), ('dG0_uncertainty', '1.9'), ('ec-code', '4.2.1.114,4.2.1.-'), ('kegg-reaction', 'R03444')]	Fe4S4	Fe4S4	
+R_R04371	[('dG0', '1.2'), ('dG0_uncertainty', '2.9'), ('ec-code', '4.2.1.36,4.2.1.114'), ('kegg-reaction', 'R04371')]	Fe4S4	Fe4S4	
+R_R09394	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '4.1.99.22'), ('kegg-reaction', 'R09394')]	Fe4S4	Fe4S4	MoaA
+R_R04292	[('dG0', '-218.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '2.5.1.72'), ('kegg-reaction', 'R04292')]	Fe4S4	Fe4S4	
+R_R10246	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '4.1.99.19'), ('kegg-reaction', 'R10246')]	Fe4S4	Fe4S4	
+R_R03472	[('dG0', '0.0'), ('dG0_uncertainty', '100000.0'), ('ec-code', '4.1.99.17'), ('kegg-reaction', 'R03472')]	Fe4S4	Fe4S4	
+R_RMAN15	[('ec-code', '1.12.1.2'), ('kegg-reaction', 'R00700'), ('dG0', '-16.2'), ('dG0_uncertainty', '6.5')]	Fe4S4 FMN Ni2+	C00061, Fe4S4, C19609	
+R_R01078	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.8.1.6'), ('kegg-reaction', 'R01078')]	Fe4S4, Fe2S2	Fe4S4, Fe2S2	Sulfur carrier from Isc or Suf assembly system
+R_R11634	[('dG0', '-65.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '1.1.98.6'), ('kegg-reaction', 'R11634')]	Fe4S4, SAM	Fe4S4, C00019	
+R_R11633	[('dG0', '-59.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '1.1.98.6'), ('kegg-reaction', 'R11633')]	Fe4S4, SAM	Fe4S4, C00019	
+R_R11636	[('dG0', '-60.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '1.1.98.6'), ('kegg-reaction', 'R11636')]	Fe4S4, SAM	Fe4S4, C00019	
+R_R01714	[('dG0', '-63.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '4.2.3.5'), ('kegg-reaction', 'R01714')]	FMN	C00061	
+R_R01867	[('dG0', '-51.5'), ('dG0_uncertainty', '2.4'), ('ec-code', '1.3.98.1'), ('kegg-reaction', 'R01867')]	FMN	C00061	
+R_R01869	[('dG0', '8.9'), ('dG0_uncertainty', '1.2'), ('ec-code', '1.3.1.14'), ('kegg-reaction', 'R01869')]	FMN FAD Fe2S2	C00061, C00016, Fe2S2	
+R_IPPPI	[('ec-code', '5.3.3.2'), ('kegg-reaction', 'R01123'), ('dG0', '4.8'), ('dG0_uncertainty', '5.7')]	FMN NADH Mg2+	C00061, C00004, C00305	
+R_R10802	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '1.5.99.15'), ('kegg-reaction', 'R10802')]	FMN, Fe4S4	C00061, Fe4S4	
+R_R03759	[('dG0', '-17.4'), ('dG0_uncertainty', '1.0'), ('ec-code', '1.1.1.75'), ('kegg-reaction', 'R03759')]	K+	C00238	
+R_R01213	[('dG0', '-24.4'), ('dG0_uncertainty', '1.3'), ('ec-code', '2.3.3.13'), ('kegg-reaction', 'R01213')]	K+	C00238	
+R_R05225	[('dG0', '0.0'), ('dG0_uncertainty', '100000.0'), ('ec-code', '6.3.5.10'), ('kegg-reaction', 'R05225')]	Mg2+	C00305	
+R_R02100	[('dG0', '-55.8'), ('dG0_uncertainty', '2.6'), ('ec-code', '3.6.1.23,3.6.1.-'), ('kegg-reaction', 'R02100')]	Mg2+	C00305	
+R_R05789	[('dG0', '-32.8'), ('dG0_uncertainty', '1.3'), ('ec-code', '3.1.3.71'), ('kegg-reaction', 'R05789')]	Mg2+	C00305	
+R_R07476	[('dG0', '0.0'), ('dG0_uncertainty', '70000.0'), ('ec-code', '4.4.1.19'), ('kegg-reaction', 'R07476')]	Mg2+	C00305	
+R_R07281	[('dG0', '-103.5'), ('dG0_uncertainty', '2.1'), ('ec-code', '4.1.99.12'), ('kegg-reaction', 'R07281')]	Mg2+	C00305	
+R_R07280	[('dG0', '-32.5'), ('dG0_uncertainty', '1.2'), ('ec-code', '3.1.3.104'), ('kegg-reaction', 'R07280')]	Mg2+	C00305	
+R_R00161	[('dG0', '-12.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '2.7.7.2'), ('kegg-reaction', 'R00161')]	Mg2+	C00305	
+R_R05338	[('dG0', '9.4'), ('dG0_uncertainty', '1.7'), ('ec-code', '4.1.2.43'), ('kegg-reaction', 'R05338')]	Mg2+	C00305	
+R_R04638	[('dG0', '-69.0'), ('dG0_uncertainty', '6.0'), ('ec-code', '3.6.1.67'), ('kegg-reaction', 'R04638')]	Mg2+	C00305	
+R_R03503	[('dG0', '-4.0'), ('dG0_uncertainty', '6.0'), ('ec-code', '2.7.6.3'), ('kegg-reaction', 'R03503')]	Mg2+	C00305	
+R_R11102	[('dG0', '-110.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '2.4.2.54'), ('kegg-reaction', 'R11102')]	Mg2+	C00305	
+R_R00315	[('dG0', '-13.6'), ('dG0_uncertainty', '0.5'), ('ec-code', '2.7.2.1,2.7.2.15'), ('kegg-reaction', 'R00315')]	Mg2+	C00305	
+R_DGGGPS	[('dG0', '-36.7'), ('dG0_uncertainty', '5.4')]	Mg2+	C00305	
+R_GGGPS	[('ec-code', '2.5.1.41'), ('kegg-reaction', 'R04158'), ('dG0', '-36.7'), ('dG0_uncertainty', '5.4')]	Mg2+	C00305	
+R_FPPS	[('ec-code', '2.5.1.68'), ('kegg-reaction', 'R08528'), ('dG0', '-78.0'), ('dG0_uncertainty', '5.8')]	Mg2+	C00305	
+R_RMAN8	[('ec-code', '2.7.8.7'), ('kegg-reaction', 'R01625'), ('dG0', '0.0'), ('dG0_uncertainty', '1000')]	Mg2+	C00305	
+R_R00549	[('dG0', '-11.1'), ('dG0_uncertainty', '2.9'), ('ec-code', '2.7.1.26'), ('kegg-reaction', 'R00549')]	Mg2+ (Mn, Zn)	C00305	
+R_R09726	[('dG0', '0.0'), ('dG0_uncertainty', '100000.0'), ('ec-code', '2.7.7.75'), ('kegg-reaction', 'R09726')]	Mg2+ (Mn2+)	C00305	
+R_R09735	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.10.1.1'), ('kegg-reaction', 'R09735')]	Mg2+ (Zn2+)	C00305	
+R_CDPAS	[('kegg-reaction', 'R08966'), ('ec-code', '2.7.7.67'), ('dG0', '-9.3'), ('dG0_uncertainty', '3.2')]	Mg2+ K+	C00238, C00305	
+R_R00199	[('dG0', '-18.5'), ('dG0_uncertainty', '0.5'), ('ec-code', '2.7.9.2'), ('kegg-reaction', 'R00199')]	Mn2+	C19610	
+R_APSS	[('kegg-reaction', 'R10255'), ('ec-code', '2.7.8.38'), ('dG0', '0.0'), ('dG0_uncertainty', '1000')]	Mn2+	C19610	
+R_R00019	[('dG0', '-4.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.12.7.2,1.12.99.-'), ('kegg-reaction', 'R00019')]	Ni2+	C19604	
+R_R07157	[('dG0', '31.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.2.7.4'), ('kegg-reaction', 'R07157')]	Fe4S4 (NiFeS)	Fe4S4	
+R_R00258	[('dG0', '-0.2'), ('dG0_uncertainty', '0.5'), ('ec-code', '2.6.1.2'), ('kegg-reaction', 'R00258')]	Pyridoxal-P	C00018	
+R_R00400	[('dG0', '2.6'), ('dG0_uncertainty', '0.7'), ('ec-code', '2.6.1.12'), ('kegg-reaction', 'R00400')]	Pyridoxal-P	C00018	
+R_R00369	[('dG0', '8.4'), ('dG0_uncertainty', '1.6'), ('ec-code', '2.6.1.44'), ('kegg-reaction', 'R00369')]	Pyridoxal-P	C00018	
+R_R02283	[('dG0', '3.0'), ('dG0_uncertainty', '3.4'), ('ec-code', '2.6.1.11'), ('kegg-reaction', 'R02283')]	Pyridoxal-P	C00018	
+R_R00355	[('dG0', '-2.8'), ('dG0_uncertainty', '0.5'), ('ec-code', '2.6.1.1'), ('kegg-reaction', 'R00355')]	Pyridoxal-P	C00018	
+R_R03231	[('dG0', '-0.709176020668'), ('dG0_uncertainty', '5e-12'), ('ec-code', '2.6.1.62'), ('kegg-reaction', 'R03231')]	Pyridoxal-P	C00018	
+R_R10699	[('dG0', '5.9'), ('dG0_uncertainty', '1.8'), ('ec-code', '2.6.1.105'), ('kegg-reaction', 'R10699')]	Pyridoxal-P	C00018	
+R_R10124	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.3.1.47'), ('kegg-reaction', 'R10124')]	Pyridoxal-P	C00018	
+R_R00372	[('dG0', '-8.6'), ('dG0_uncertainty', '1.6'), ('ec-code', '2.6.1.4,2.6.1.44'), ('kegg-reaction', 'R00372')]	Pyridoxal-P	C00018	
+R_R00945	[('dG0', '-6.8'), ('dG0_uncertainty', '1.2'), ('ec-code', '2.1.2.1'), ('kegg-reaction', 'R00945')]	Pyridoxal-P	C00018	
+R_R03243	[('dG0', '8.4'), ('dG0_uncertainty', '2.9'), ('ec-code', '2.6.1.9'), ('kegg-reaction', 'R03243')]	Pyridoxal-P	C00018	
+R_R02199	[('dG0', '5.9'), ('dG0_uncertainty', '3.5'), ('ec-code', '2.6.1.42'), ('kegg-reaction', 'R02199')]	Pyridoxal-P	C00018	
+R_R01090	[('dG0', '-0.4'), ('dG0_uncertainty', '1.6'), ('ec-code', '2.6.1.6,2.6.1.42,2.6.1.67'), ('kegg-reaction', 'R01090')]	Pyridoxal-P	C00018	
+R_R00451	[('dG0', '-35.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '4.1.1.20'), ('kegg-reaction', 'R00451')]	Pyridoxal-P	C00018	
+R_R04475	[('dG0', '0.9'), ('dG0_uncertainty', '2.9'), ('ec-code', '2.6.1.17'), ('kegg-reaction', 'R04475')]	Pyridoxal-P	C00018	
+R_R01939	[('dG0', '0.7'), ('dG0_uncertainty', '2.9'), ('ec-code', '2.6.1.39'), ('kegg-reaction', 'R01939')]	Pyridoxal-P	C00018	
+R_R04467	[('dG0', '9.4'), ('dG0_uncertainty', '1.9'), ('ec-code', '2.6.1.-'), ('kegg-reaction', 'R04467')]	Pyridoxal-P	C00018	
+R_R07613	[('dG0', '61.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '2.6.1.83'), ('kegg-reaction', 'R07613')]	Pyridoxal-P	C00018	
+R_R09778	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.6.1.-'), ('kegg-reaction', 'R09778')]	Pyridoxal-P	C00018	
+R_R03260	[('dG0', '-62.0'), ('dG0_uncertainty', '6.0'), ('ec-code', '2.5.1.48'), ('kegg-reaction', 'R03260')]	Pyridoxal-P	C00018	
+R_R01286	[('dG0', '-34.3'), ('dG0_uncertainty', '2.7'), ('ec-code', '4.4.1.13'), ('kegg-reaction', 'R01286')]	Pyridoxal-P	C00018	
+R_R00694	[('dG0', '0.0'), ('dG0_uncertainty', '2.1'), ('ec-code', '2.6.1.1,2.6.1.5,2.6.1.9,2.6.1.57'), ('kegg-reaction', 'R00694')]	Pyridoxal-P	C00018	
+R_R07276	[('dG0', '9.6'), ('dG0_uncertainty', '1.9'), ('ec-code', '2.6.1.79'), ('kegg-reaction', 'R07276')]	Pyridoxal-P	C00018	
+R_R00667	[('dG0', '-4.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '2.6.1.13'), ('kegg-reaction', 'R00667')]	Pyridoxal-P	C00018	
+R_R04173	[('dG0', '-10.9'), ('dG0_uncertainty', '0.4'), ('ec-code', '2.6.1.52'), ('kegg-reaction', 'R04173')]	Pyridoxal-P	C00018	
+R_R05553	[('dG0', '-106.0'), ('dG0_uncertainty', '8.0'), ('ec-code', '4.1.3.38'), ('kegg-reaction', 'R05553')]	Pyridoxal-P	C00018	
+R_R01716	[('dG0', '-17.9'), ('dG0_uncertainty', '3.1'), ('ec-code', '2.6.1.85'), ('kegg-reaction', 'R01716')]	Pyridoxal-P	C00018	
+R_R07460	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.8.1.7'), ('kegg-reaction', 'R07460')]	Pyridoxal-P	C00018	
+R_R01466	[('dG0', '-46.8'), ('dG0_uncertainty', '2.8'), ('ec-code', '4.2.3.1'), ('kegg-reaction', 'R01466')]	Pyridoxal-P	C00018	
+R_R02722	[('dG0', '-31.5'), ('dG0_uncertainty', '3.1'), ('ec-code', '4.2.1.20'), ('kegg-reaction', 'R02722')]	Pyridoxal-P	C00018	
+R_R00734	[('dG0', '-0.5'), ('dG0_uncertainty', '2.1'), ('ec-code', '2.6.1.1'), ('kegg-reaction', 'R00734')]	Pyridoxal-P	C00018	
+R_R01731	[('dG0', '12.4'), ('dG0_uncertainty', '2.0'), ('ec-code', '2.6.1.57,2.6.1.78'), ('kegg-reaction', 'R01731')]	Pyridoxal-P	C00018	
+R_R10305	[('dG0', '-57.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '2.5.1.134'), ('kegg-reaction', 'R10305')]	PyridoxalP	C00018	
+R_R00897	[('dG0', '-51.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '2.5.1.47,2.5.1.65'), ('kegg-reaction', 'R00897')]	PyridoxalP	C00018	
+R_R01001	[('dG0', '-32.0'), ('dG0_uncertainty', '6.0'), ('ec-code', '4.4.1.1'), ('kegg-reaction', 'R01001')]	PyridoxalP	C00018	
+R_R07274	[('dG0', '-35.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '2.5.1.47,2.5.1.65'), ('kegg-reaction', 'R07274')]	PyridoxalP	C00018	
+R_R01290	[('dG0', '-13.3'), ('dG0_uncertainty', '2.7'), ('ec-code', '4.2.1.22'), ('kegg-reaction', 'R01290')]	PyridoxalP	C00018	
+R_R02272	[('dG0', '-9.1'), ('dG0_uncertainty', '0.7'), ('ec-code', '5.4.3.8'), ('kegg-reaction', 'R02272')]	PyridoxalP	C00018	
+R_PSDC	[('ec-code', '4.1.1.65'), ('kegg-reaction', 'R02055'), ('dG0', '-15.9'), ('dG0_uncertainty', '1000')]	PyridoxalP	C00018	
+R_APSD	[('dG0', '-15.9'), ('dG0_uncertainty', '1000')]	PyridoxalP	C00018	
+R_R00996	[('dG0', '-42.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '4.3.1.19'), ('kegg-reaction', 'R00996')]	PyridoxalP (Fe2S2)	C00018, FeS2	
+R_R08648	[('dG0', '-20.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '2.2.1.6'), ('kegg-reaction', 'R08648')]	TPP	C00068	
+R_R01830	[('dG0', '-5.9'), ('dG0_uncertainty', '2.4'), ('ec-code', '2.2.1.1'), ('kegg-reaction', 'R01830')]	TPP	C00068	
+R_R01641	[('dG0', '-3.9'), ('dG0_uncertainty', '1.9'), ('ec-code', '2.2.1.1'), ('kegg-reaction', 'R01641')]	TPP	C00068	
+R_R05636	[('dG0', '-31.3'), ('dG0_uncertainty', '3.4'), ('ec-code', '2.2.1.7'), ('kegg-reaction', 'R05636')]	TPP	C00068	
+R_R00226	[('dG0', '-29.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '2.2.1.6'), ('kegg-reaction', 'R00226')]	TPP	C00068	
+R_R01197	[('dG0', '13.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.2.7.3,1.2.7.11'), ('kegg-reaction', 'R01197')]	TPP Fe4S4	C00068, Fe4S4	
+R_R01196	[('dG0', '19.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.2.7.1,1.2.7.11'), ('kegg-reaction', 'R01196')]	TPP Fe4S4	C00068, Fe4S4	
+R_R00669	[('dG0', '-24.4'), ('dG0_uncertainty', '3.5'), ('ec-code', '3.5.1.14,3.5.1.16'), ('kegg-reaction', 'R00669')]	Zn2+	C00038	
+R_R10092	[('dG0', '-5.9'), ('dG0_uncertainty', '3.1'), ('ec-code', '4.2.1.1'), ('kegg-reaction', 'R10092')]	Zn2+	C00038	
+R_R00036	[('dG0', '-85.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '4.2.1.24'), ('kegg-reaction', 'R00036')]	Zn2+	C00038	
+R_R01070	[('dG0', '-4.7'), ('dG0_uncertainty', '2.3'), ('ec-code', '4.1.2.13'), ('kegg-reaction', 'R01070')]	Zn2+	C00038	
+R_R04620	[('dG0', '-130.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '3.1.3.1'), ('kegg-reaction', 'R04620')]	Zn2+	C00038	
+R_R07459	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.7.7.73,2.7.7.80'), ('kegg-reaction', 'R07459')]	Zn2+	C00038	
+R_RMAN12	[('ec-code', '1.1.1.261'), ('dG0', '-25.7'), ('dG0_uncertainty', '1.4'), ('kegg-reaction', 'R05679')]	Zn2+	C00038	
+R_R00946	[('dG0', '-3.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '2.1.1.13'), ('kegg-reaction', 'R00946')]	Zn2+, Cobamide	C00038, C00194	
+R_R10866	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '1.2.7.-'), ('kegg-reaction', 'R10866')]			
+R_R01214_2	[('dG0', '1.8'), ('dG0_uncertainty', '3.5'), ('ec-code', '-'), ('kegg-reaction', 'R01214_2')]			
+R_R08331	[('dG0', '-31.7'), ('dG0_uncertainty', '2.0'), ('ec-code', '2.3.3.-'), ('kegg-reaction', 'R08331')]			
+R_R08332	[('dG0', '-26.1'), ('dG0_uncertainty', '1.3'), ('ec-code', '2.3.3.-'), ('kegg-reaction', 'R08332')]			
+R_R08217	[('dG0', '-9.3'), ('dG0_uncertainty', '1.3'), ('ec-code', '2.7.1.-'), ('kegg-reaction', 'R08217')]			
+R_R08323	[('dG0', '-21.3'), ('dG0_uncertainty', '3.0'), ('ec-code', '-'), ('kegg-reaction', 'R08323')]			
+R_R08214	[('dG0', '-15.2'), ('dG0_uncertainty', '3.1'), ('ec-code', '1.1.1.-'), ('kegg-reaction', 'R08214')]			
+R_R08215	[('dG0', '-15.2'), ('dG0_uncertainty', '3.1'), ('ec-code', '1.1.1.-'), ('kegg-reaction', 'R08215')]			
+R_R08328	[('dG0', '-26.0'), ('dG0_uncertainty', '3.1'), ('ec-code', '-'), ('kegg-reaction', 'R08328')]			
+R_R10397	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '-'), ('kegg-reaction', 'R10397')]			
+R_R08716	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '-'), ('kegg-reaction', 'R08716')]			
+R_R09153	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '-'), ('kegg-reaction', 'R09153')]			
+R_R04336	[('dG0', '53.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '-'), ('kegg-reaction', 'R04336')]			
+R_R09776	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.7.2.-'), ('kegg-reaction', 'R09776')]			
+R_R09777	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '1.2.1.-'), ('kegg-reaction', 'R09777')]			
+R_R09779	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '-'), ('kegg-reaction', 'R09779')]			
+R_R03314	[('dG0', '-5.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '-'), ('kegg-reaction', 'R03314')]			
+R_R04621	[('dG0', '-26.3'), ('dG0_uncertainty', '2.7'), ('ec-code', '3.6.1.-'), ('kegg-reaction', 'R04621')]			
+R_RMAN1	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '-'), ('kegg-reaction', 'RMAN1')]			
+R_R01214_1	[('dG0', '-1.8'), ('dG0_uncertainty', '3.5'), ('ec-code', '-'), ('kegg-reaction', 'R01214_1')]			
+R_R10935	[('dG0', '0.0'), ('dG0_uncertainty', '100000.0'), ('ec-code', '-'), ('kegg-reaction', 'R10935')]			
+R_R11038	[('dG0', '-0.4'), ('dG0_uncertainty', '2.0'), ('ec-code', '-'), ('kegg-reaction', 'R11038')]			
+R_R11039	[('dG0', '4.6'), ('dG0_uncertainty', '1.3'), ('ec-code', '-'), ('kegg-reaction', 'R11039')]			
+R_R00736	[('dG0', '-87.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '-'), ('kegg-reaction', 'R00736')]			
+R_R10902	[('dG0', '-23.1'), ('dG0_uncertainty', '2.4'), ('ec-code', '-'), ('kegg-reaction', 'R10902')]			
+R_R11040	[('dG0', '-70.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '-'), ('kegg-reaction', 'R11040')]			
+R_RMAN4	[('dG0', '-5.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '1.17.98.-'), ('kegg-reaction', 'R12754')]			
+R_RMAN17	[Oleate synthesis]			

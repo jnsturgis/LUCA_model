@@ -7,21 +7,72 @@ Note not everything survives a passage through cnapy.
 Notably reversibility (perhaps it is due to fluxLowerBound?)
 """
 
-# pylint: disable='fixme'
+# Allow todo comments and dont insist on capitals if initialized with a default.
+# pylint: disable='fixme' 'invalid-name'
+
+import sys
 from bs4 import BeautifulSoup
 
 			# These lines control the program functions
-			# TODO: set up from command line options
+			# TODO: set up from command line options not quite working
 PRINT_STABLE = False 	# print information in tables after building them
 PRINT_RTABLE = False
 PRINT_GTABLE = False
-SAVE_SBML    = False	# save the xml tree after modifications
-VERBOSE      = True	# warnings about formulae and meta_id's
+SAVE_SBML    = True	# save the xml tree after modifications
+VERBOSE      = False	# warnings about formulae and meta_id's
 
 EMPTY        = ""
 MINIMUM      = -15.0
 
-with open("LUCA.sbml", encoding="UTF8") as fp:
+def usage():
+    """Print a usage message and quit."""
+    print("sbml2tables -h -v -q -s s_file -r r_file -g g_file source")
+    sys.exit()
+
+source = ""
+
+#
+# Handle the command line
+#
+# TODO: Save tables to files
+# TODO: More robust and resilient
+#
+
+for i in range(1, len(sys.argv)):
+    arg = sys.argv[i]
+    if arg[0] == '-':
+        match arg[1]:
+            case 'h':
+                pass
+            case 'q':
+                SAVE_SBML = False
+            case 'v':
+                VERBOSE = True
+            case 's':
+                PRINT_STABLE = True
+                sname = sys.argv[i+1]
+                i += 1
+            case 'r':
+                PRINT_RTABLE = True
+                rname = sys.argv[i+1]
+                i += 1
+            case 'g':
+                PRINT_GTABLE = True
+                gname = sys.argv[i+1]
+                i += 1
+            case _:
+                usage()
+    else :
+        source = arg
+
+if source == "":
+    usage()
+
+#
+# Handle the sbml file
+#
+
+with open( source, encoding="UTF8") as fp:
     model = BeautifulSoup( fp, 'xml' )
 
 for reaction in model.find_all('reaction'):
@@ -53,7 +104,6 @@ for reaction in model.find_all('reaction'):
             annotation['rdf:resource'] = f'{el[0]}/{el[1]}/{el[2]}/{el[3]}/{el[4]}'
         if el[3] == 'dG0' :                             # Fix reversibility based on dG0
             if float( el[4] ) > MINIMUM :               # TODO fbc:lowerFluxBound
-                # pylint: disable="invalid-name"
                 revers = 'true'
                 reaction['reversible'] = revers
                 try:
@@ -66,7 +116,11 @@ for reaction in model.find_all('reaction'):
     infodict = dict(info)
     if 'dG0' not in infodict:
         if VERBOSE:
-            print( f'Warning {reacid} has no dG0.')
+            try:
+                ec = infodict['ec-code']
+                print( f'Warning {reacid} with ec:{ec} has no dG0.')
+            except KeyError:
+                print( f'Warning {reacid} has no dG0.')
     if 'kegg-reaction' not in infodict:                 # add kegg-reaction annotation
         if name[:5] == 'KEGG ':
             # pylint: disable='undefined-loop-variable'
@@ -81,6 +135,7 @@ for reaction in model.find_all('reaction'):
             if VERBOSE:
                 if reacid[:5] != "R_EX_":
                     print(f'Warning {reacid} has no kegg identifier.')
+    # TODO: warning if multiple ec-codes in the line
 
     if PRINT_RTABLE:
         print( reacid, name, revers, substrate, product, modifier, info, sep='\t')
@@ -97,7 +152,6 @@ for species in model.find_all('species'):		# TODO ensure species have initialCon
     try:
         formul = species['fbc:chemicalFormula']
     except KeyError:
-        # pylint: disable="invalid-name"
         formul = EMPTY
         if VERBOSE :
             print( f'Warning no formula for {specid}.' )
@@ -106,7 +160,6 @@ for species in model.find_all('species'):		# TODO ensure species have initialCon
     try:
         conc = float(species['initialConcentration'])
     except KeyError:
-        # pylint: disable="invalid-name"
         species['initialConcentration'] = '1.0'
         conc = 1.0
     info   = []

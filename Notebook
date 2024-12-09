@@ -74,7 +74,7 @@ Modifications made
 4.1 H2O, CO2, H+, NH3, H2S, PO4
 4.2 Unlimited energy supply (EX_Energy) regenerates ATP for free!!!
 4.3 Protein as Pr to simplify.
-5. Remove unused reactions
+5. Remove unused reagents
 5.1 Miscellaneous e-
 
 Next steps.
@@ -91,11 +91,24 @@ Next steps.
 3. Setup of metabolites based on cofactors and cytoplasmic composition for Biomass function
 
 
-? Formate reduction RMAN4 - hydrogen or NADH (1.17.1.9)
-TODO How to interpret multiple ec-code? should be AND not OR sort them out
-lookup cofactor requirement (FeS included) where
-CoA, NADH, ATP are in reactions
-Bionumbers cytoplasmic composition for metabolites and cofactors based on required fluxes
-cnapy does not preserve sbml file (unused bits... InitialConcentration and probably Modifiers)... this will be a problem!
-use Enzyme table... (ec-code/Substrates/Products/Modifiers/dG0/Equation)
+? Formate reduction RMAN4 - hydrogen or NADH (1.17.1.9) perhaps add both...
+TODO How to interpret multiple ec-code? should be AND not OR sort them out manually (keep first) DONE
+TODO Estimate dG0 values uncertainty 1000 if not from equilibrator DONE
+
+TODO lookup cofactor requirements (FeS included) for enzymes and add as modulator (check cnapy resistance)
+TODO Create metabolites CoA, NADH, ATP are in reactions from bionumbers data ? to BIOMASS reaction
+
+dG0 for tRNA synthases +8 +/- 10 estimated from Transfer RNA Identity Contributes to Transition State Stabilization During Aminoacyl-tRNA Synthesis (1999) Nucleic Acids Research 27(18):3631-7
+
+9/12/24
+Next steps
+
+1. Insert cofactors into reactions as modulators from a table.
+2. fba calculation protocol... (using cobra)
+2.1 fba for protein, DNA, RNA and lipids (redo aggregations etc to make things easier to understand)
+2.2 add to BIOMASS required cofactors for reactions with flux get contribution from annotations
+2.3 add to BIOMASS elements from cycle with flux get contribution from annotations
+2.4 redo fba and repeat from 2.2 until no changes.
+3. work out how to add genes to the mix so can do a deletion analysis of the model... 
+4. work out thermodynamics from dG° and flux... where are bottlenecks and can we compensate with concentrations.
 
