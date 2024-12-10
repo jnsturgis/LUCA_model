@@ -103,7 +103,7 @@ dG0 for tRNA synthases +8 +/- 10 estimated from Transfer RNA Identity Contribute
 9/12/24
 Next steps
 
-1. Insert cofactors into reactions as modulators from a table (add_cofactors.py) DONE
+1. Insert cofactors into reactions as modulators from a table (add_cofactors.py) DONE as far as possible
 2. fba calculation protocol... (using cobra)
 2.1 fba for protein, DNA, RNA and lipids (redo aggregations etc to make things easier to understand)
 2.2 add to BIOMASS required cofactors for reactions with flux get contribution from annotations
@@ -112,4 +112,8 @@ Next steps
 3. work out how to add genes to the mix so can do a deletion analysis of the model... 
 4. work out thermodynamics from dG° and flux... where are bottlenecks and can we compensate with concentrations.
 5. merge models to test different anabolic choices.
+
+Note cnapy mangles:
+1. Cofactors as modifiers
+2. Initial concentrations
 

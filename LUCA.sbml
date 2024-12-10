@@ -11,7 +11,8 @@
    </unitDefinition>
   </listOfUnitDefinitions>
   <listOfCompartments>
-   <compartment constant="true" id="i"/>
+    <compartment constant="true" id="i"/>
+    <compartment constant="true" id="e"/>
   </listOfCompartments>
   <listOfSpecies>
    <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H4O3" hasOnlySubstanceUnits="false" id="M_i_C00022" initialConcentration="1.0" metaid="meta_M_i_C00022" name="Pyruvate">
@@ -5740,7 +5741,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00400" metaid="meta_R_R00400" name="KEGG R00400" reversible="true">
@@ -5767,7 +5768,7 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00369" metaid="meta_R_R00369" name="KEGG R00369" reversible="true">
@@ -5794,7 +5795,7 @@
      <speciesReference constant="true" species="M_i_C00048" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00396" metaid="meta_R_R00396" name="KEGG R00396" reversible="false">
@@ -5920,7 +5921,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03443" metaid="meta_R_R03443" name="KEGG R03443" reversible="false">
@@ -6121,7 +6122,7 @@
      <speciesReference constant="true" species="M_i_C00077" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00578" metaid="meta_R_R00578" name="KEGG R00578" reversible="false">
@@ -6228,7 +6229,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01135" metaid="meta_R_R01135" name="KEGG R01135" reversible="true">
@@ -6402,7 +6403,7 @@
      <speciesReference constant="true" species="M_i_C01037" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10699" metaid="meta_R_R10699" name="KEGG R10699" reversible="true">
@@ -6429,7 +6430,7 @@
      <speciesReference constant="true" species="M_i_C01037" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01626" metaid="meta_R_R01626" name="KEGG R01626" reversible="true">
@@ -6725,7 +6726,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01078" metaid="meta_R_R01078" name="KEGG R01078" reversible="true">
@@ -6754,8 +6755,8 @@
      <speciesReference constant="true" species="M_i_C05198" stoichiometry="2"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
-     <modifierSpeciesReference species="Fe2S2"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe2S2"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10866" metaid="meta_R_R10866" name="KEGG R10866" reversible="true">
@@ -6808,7 +6809,7 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00742" metaid="meta_R_R00742" name="KEGG R00742" reversible="true">
@@ -6838,7 +6839,7 @@
      <speciesReference constant="true" species="M_i_C00083" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00120"/>
+     <modifierSpeciesReference species="M_i_C00120"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00199" metaid="meta_R_R00199" name="KEGG R00199" reversible="false">
@@ -6867,7 +6868,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C19610"/>
+     <modifierSpeciesReference species="M_i_C19610"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00345" metaid="meta_R_R00345" name="KEGG R00345" reversible="false">
@@ -6946,7 +6947,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00016"/>
+     <modifierSpeciesReference species="M_i_C00016"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00344" metaid="meta_R_R00344" name="KEGG R00344" reversible="true">
@@ -6976,8 +6977,8 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00120"/>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00120"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00352" metaid="meta_R_R00352" name="KEGG R00352" reversible="true">
@@ -7056,7 +7057,7 @@
      <speciesReference constant="true" species="M_i_C00158" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00405" metaid="meta_R_R00405" name="KEGG R00405" reversible="true">
@@ -7131,7 +7132,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01082" metaid="meta_R_R01082" name="KEGG R01082" reversible="true">
@@ -7235,8 +7236,8 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01196" metaid="meta_R_R01196" name="KEGG R01196" reversible="true">
@@ -7266,8 +7267,8 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07168" metaid="meta_R_R07168" name="KEGG R07168" reversible="false">
@@ -7295,7 +7296,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00016"/>
+     <modifierSpeciesReference species="M_i_C00016"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00943" metaid="meta_R_R00943" name="KEGG R00943" reversible="true">
@@ -7448,7 +7449,7 @@
      <speciesReference constant="true" species="M_i_C00139" stoichiometry="2"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04230" metaid="meta_R_R04230" name="KEGG R04230" reversible="false">
@@ -7944,7 +7945,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10395" metaid="meta_R_R10395" name="KEGG R10395" reversible="true">
@@ -7970,7 +7971,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10393" metaid="meta_R_R10393" name="KEGG R10393" reversible="true">
@@ -7996,7 +7997,7 @@
      <speciesReference constant="true" species="M_i_C16597" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10396" metaid="meta_R_R10396" name="KEGG R10396" reversible="true">
@@ -8022,7 +8023,7 @@
      <speciesReference constant="true" species="M_i_C16600" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10397" metaid="meta_R_R10397" name="KEGG R10397" reversible="true">
@@ -8200,7 +8201,7 @@
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R08716" metaid="meta_R_R08716" name="KEGG R08716" reversible="true">
@@ -8550,7 +8551,7 @@
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="4"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07302" metaid="meta_R_R07302" name="KEGG R07302" reversible="true">
@@ -8700,7 +8701,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07136" metaid="meta_R_R07136" name="KEGG R07136" reversible="true">
@@ -8800,7 +8801,7 @@
      <speciesReference constant="true" species="M_i_C11536" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00573" metaid="meta_R_R00573" name="KEGG R00573" reversible="false">
@@ -8881,7 +8882,7 @@
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00897" metaid="meta_R_R00897" name="KEGG R00897" reversible="false">
@@ -8908,7 +8909,7 @@
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00194" metaid="meta_R_R00194" name="KEGG R00194" reversible="false">
@@ -8960,7 +8961,7 @@
      <speciesReference constant="true" species="M_i_C00109" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R12342" metaid="meta_R_R12342" name="KEGG R12342" reversible="false">
@@ -9010,7 +9011,7 @@
      <speciesReference constant="true" species="M_i_C00155" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C14818"/>
+     <modifierSpeciesReference species="M_i_C14818"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07274" metaid="meta_R_R07274" name="KEGG R07274" reversible="false">
@@ -9037,7 +9038,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00586" metaid="meta_R_R00586" name="KEGG R00586" reversible="true">
@@ -9088,7 +9089,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00177" metaid="meta_R_R00177" name="KEGG R00177" reversible="true">
@@ -9142,8 +9143,8 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
-     <modifierSpeciesReference species="C00019"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C00019"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11633" metaid="meta_R_R11633" name="KEGG R11633" reversible="false">
@@ -9171,8 +9172,8 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
-     <modifierSpeciesReference species="C00019"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C00019"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11636" metaid="meta_R_R11636" name="KEGG R11636" reversible="false">
@@ -9200,8 +9201,8 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
-     <modifierSpeciesReference species="C00019"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C00019"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02100" metaid="meta_R_R02100" name="KEGG R02100" reversible="false">
@@ -9228,7 +9229,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02325" metaid="meta_R_R02325" name="KEGG R02325" reversible="false">
@@ -9527,7 +9528,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="2"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02272" metaid="meta_R_R02272" name="KEGG R02272" reversible="true">
@@ -9552,7 +9553,7 @@
      <speciesReference constant="true" species="M_i_C00430" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R11626" metaid="meta_R_R11626" name="KEGG R11626" reversible="true">
@@ -9808,7 +9809,7 @@
      <speciesReference constant="true" species="M_i_C00058" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04457" metaid="meta_R_R04457" name="KEGG R04457" reversible="false">
@@ -9860,7 +9861,7 @@
      <speciesReference constant="true" species="M_i_C00061" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00066" metaid="meta_R_R00066" name="KEGG R00066" reversible="false">
@@ -9910,7 +9911,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00161" metaid="meta_R_R00161" name="KEGG R00161" reversible="true">
@@ -9937,7 +9938,7 @@
      <speciesReference constant="true" species="M_i_C00016" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03458" metaid="meta_R_R03458" name="KEGG R03458" reversible="false">
@@ -10060,7 +10061,7 @@
      <speciesReference constant="true" species="M_i_C05378" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04780" metaid="meta_R_R04780" name="KEGG R04780" reversible="false">
@@ -10476,7 +10477,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03758" metaid="meta_R_R03758" name="KEGG R03758" reversible="false">
@@ -10527,7 +10528,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00371" metaid="meta_R_R00371" name="KEGG R00371" reversible="true">
@@ -10579,7 +10580,7 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00238"/>
+     <modifierSpeciesReference species="M_i_C00238"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01130" metaid="meta_R_R01130" name="KEGG R01130" reversible="true">
@@ -10878,7 +10879,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01071" metaid="meta_R_R01071" name="KEGG R01071" reversible="true">
@@ -11348,8 +11349,8 @@
      <speciesReference constant="true" species="M_i_C00014" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
-     <modifierSpeciesReference species="Fe2S2"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
+     <modifierSpeciesReference species="M_i_Fe2S2"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05070" metaid="meta_R_R05070" name="KEGG R05070" reversible="false">
@@ -11447,7 +11448,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02199" metaid="meta_R_R02199" name="KEGG R02199" reversible="true">
@@ -11474,7 +11475,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03898" metaid="meta_R_R03898" name="KEGG R03898" reversible="true">
@@ -11500,7 +11501,7 @@
      <speciesReference constant="true" species="M_i_C06032" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C14818"/>
+     <modifierSpeciesReference species="M_i_C14818"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03896" metaid="meta_R_R03896" name="KEGG R03896" reversible="true">
@@ -11526,7 +11527,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C14818"/>
+     <modifierSpeciesReference species="M_i_C14818"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05068" metaid="meta_R_R05068" name="KEGG R05068" reversible="false">
@@ -11579,7 +11580,7 @@
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00238"/>
+     <modifierSpeciesReference species="M_i_C00238"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04426" metaid="meta_R_R04426" name="KEGG R04426" reversible="true">
@@ -11653,7 +11654,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01090" metaid="meta_R_R01090" name="KEGG R01090" reversible="true">
@@ -11680,7 +11681,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04001" metaid="meta_R_R04001" name="KEGG R04001" reversible="true">
@@ -11706,7 +11707,7 @@
      <speciesReference constant="true" species="M_i_C04411" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01088" metaid="meta_R_R01088" name="KEGG R01088" reversible="false">
@@ -11961,7 +11962,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02735" metaid="meta_R_R02735" name="KEGG R02735" reversible="true">
@@ -12010,7 +12011,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01939" metaid="meta_R_R01939" name="KEGG R01939" reversible="true">
@@ -12037,7 +12038,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03444" metaid="meta_R_R03444" name="KEGG R03444" reversible="true">
@@ -12063,7 +12064,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04371" metaid="meta_R_R04371" name="KEGG R04371" reversible="true">
@@ -12089,7 +12090,7 @@
      <speciesReference constant="true" species="M_i_C05662" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04467" metaid="meta_R_R04467" name="KEGG R04467" reversible="true">
@@ -12116,7 +12117,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02315" metaid="meta_R_R02315" name="KEGG R02315" reversible="false">
@@ -12271,7 +12272,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04863" metaid="meta_R_R04863" name="KEGG R04863" reversible="true">
@@ -12424,7 +12425,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09779" metaid="meta_R_R09779" name="KEGG R09779" reversible="true">
@@ -12549,7 +12550,7 @@
      <speciesReference constant="true" species="M_i_C00042" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01286" metaid="meta_R_R01286" name="KEGG R01286" reversible="false">
@@ -12577,7 +12578,7 @@
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01777" metaid="meta_R_R01777" name="KEGG R01777" reversible="false">
@@ -12628,8 +12629,8 @@
      <speciesReference constant="true" species="M_i_C00073" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
-     <modifierSpeciesReference species="C00194"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
+     <modifierSpeciesReference species="M_i_C00194"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01773" metaid="meta_R_R01773" name="KEGG R01773" reversible="false">
@@ -12709,7 +12710,7 @@
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R11372" metaid="meta_R_R11372" name="KEGG R11372" reversible="true">
@@ -12785,7 +12786,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09726" metaid="meta_R_R09726" name="KEGG R09726" reversible="true">
@@ -12812,7 +12813,7 @@
      <speciesReference constant="true" species="M_i_C19848" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04292" metaid="meta_R_R04292" name="KEGG R04292" reversible="false">
@@ -12840,7 +12841,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00257" metaid="meta_R_R00257" name="KEGG R00257" reversible="false">
@@ -13142,7 +13143,7 @@
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01528" metaid="meta_R_R01528" name="KEGG R01528" reversible="true">
@@ -13311,7 +13312,7 @@
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02740" metaid="meta_R_R02740" name="KEGG R02740" reversible="true">
@@ -13359,7 +13360,7 @@
      <speciesReference constant="true" species="M_i_C00067" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09780" metaid="meta_R_R09780" name="KEGG R09780" reversible="true">
@@ -13456,7 +13457,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07276" metaid="meta_R_R07276" name="KEGG R07276" reversible="true">
@@ -13483,7 +13484,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10089" metaid="meta_R_R10089" name="KEGG R10089" reversible="false">
@@ -13560,7 +13561,7 @@
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01248" metaid="meta_R_R01248" name="KEGG R01248" reversible="false">
@@ -13711,7 +13712,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01513" metaid="meta_R_R01513" name="KEGG R01513" reversible="true">
@@ -13762,8 +13763,8 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00175"/>
-     <modifierSpeciesReference species="C00003"/>
+     <modifierSpeciesReference species="M_i_C00175"/>
+     <modifierSpeciesReference species="M_i_C00003"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01826" metaid="meta_R_R01826" name="KEGG R01826" reversible="false">
@@ -13814,7 +13815,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00061"/>
+     <modifierSpeciesReference species="M_i_C00061"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02412" metaid="meta_R_R02412" name="KEGG R02412" reversible="false">
@@ -13937,7 +13938,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="3"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05553" metaid="meta_R_R05553" name="KEGG R05553" reversible="false">
@@ -13963,7 +13964,7 @@
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04638" metaid="meta_R_R04638" name="KEGG R04638" reversible="false">
@@ -13990,7 +13991,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04639" metaid="meta_R_R04639" name="KEGG R04639" reversible="false">
@@ -14064,7 +14065,7 @@
      <speciesReference constant="true" species="M_i_C04807" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03067" metaid="meta_R_R03067" name="KEGG R03067" reversible="false">
@@ -14115,7 +14116,7 @@
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11072" metaid="meta_R_R11072" name="KEGG R11072" reversible="false">
@@ -14453,7 +14454,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10712" metaid="meta_R_R10712" name="KEGG R10712" reversible="false">
@@ -14506,7 +14507,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07460" metaid="meta_R_R07460" name="KEGG R07460" reversible="true">
@@ -14533,7 +14534,7 @@
      <speciesReference constant="true" species="M_i_C00041" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07461" metaid="meta_R_R07461" name="KEGG R07461" reversible="true">
@@ -14591,7 +14592,7 @@
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10247" metaid="meta_R_R10247" name="KEGG R10247" reversible="true">
@@ -14669,7 +14670,7 @@
      <speciesReference constant="true" species="M_i_C00237" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R12026" metaid="meta_R_R12026" name="KEGG R12026" reversible="true">
@@ -14747,7 +14748,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10339" metaid="meta_R_R10339" name="KEGG R10339" reversible="false">
@@ -14847,8 +14848,8 @@
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00061"/>
-     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C00061"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01771" metaid="meta_R_R01771" name="KEGG R01771" reversible="false">
@@ -14899,7 +14900,7 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00986" metaid="meta_R_R00986" name="KEGG R00986" reversible="false">
@@ -15025,7 +15026,7 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03509" metaid="meta_R_R03509" name="KEGG R03509" reversible="true">
@@ -15178,7 +15179,7 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01715" metaid="meta_R_R01715" name="KEGG R01715" reversible="false">
@@ -15227,7 +15228,7 @@
      <speciesReference constant="true" species="M_i_C00826" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00575" metaid="meta_R_R00575" name="KEGG R00575" reversible="false">
@@ -15283,7 +15284,7 @@
      <speciesReference constant="true" species="M_i_C00042" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00061"/>
+     <modifierSpeciesReference species="M_i_C00061"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01870" metaid="meta_R_R01870" name="KEGG R01870" reversible="true">
@@ -15335,9 +15336,9 @@
      <speciesReference constant="true" species="M_i_C00004" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00061"/>
-     <modifierSpeciesReference species="C00016"/>
-     <modifierSpeciesReference species="Fe2S2"/>
+     <modifierSpeciesReference species="M_i_C00061"/>
+     <modifierSpeciesReference species="M_i_C00016"/>
+     <modifierSpeciesReference species="M_i_Fe2S2"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00965" metaid="meta_R_R00965" name="KEGG R00965" reversible="false">
@@ -15504,7 +15505,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="M_i_C00068"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01214_1" metaid="meta_R_R01214_1" name="KEGG R01214_1" reversible="true">
@@ -15771,7 +15772,7 @@
      <speciesReference constant="true" species="M_i_C00005" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00016"/>
+     <modifierSpeciesReference species="M_i_C00016"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00315" metaid="meta_R_R00315" name="KEGG R00315" reversible="true">
@@ -15798,7 +15799,7 @@
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00230" metaid="meta_R_R00230" name="KEGG R00230" reversible="true">
@@ -15849,10 +15850,21 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="2"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C19609"/>
+     <modifierSpeciesReference species="M_i_C19609"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_BIOMASS" metaid="meta_R_BIOMASS" name="Biomass - stochiometry gives composition" reversible="true">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <center><h2>The Biomass function</h2></center>
+        <p>
+          The reactants for the BIOMASS function are organized to reflect the composition of a cell
+          with aggregated species (such as biopolymers) stochiometry reflecting % by weight and
+          simple species reflecting mM amounts.
+          This reaction is manipulated by some of my programs to ensure metabolic consistency.
+        </p>
+      </body>
+    </notes>
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_R_BIOMASS">
@@ -15868,9 +15880,9 @@
     <listOfReactants>
      <speciesReference constant="true" species="M_i_DNA" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_Lipid" stoichiometry="0.89"/>
-     <speciesReference constant="true" species="M_i_Metab" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_Protein" stoichiometry="2.23"/>
      <speciesReference constant="true" species="M_i_RNA" stoichiometry="6.41"/>
+     <speciesReference constant="true" species="M_i_Metab" stoichiometry="1"/>
     </listOfReactants>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_RNAP" metaid="meta_R_RNAP" name="RNA synthesis" reversible="false">
@@ -16507,7 +16519,7 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_PGS" metaid="meta_R_PGS" name="Phosphatidyl glyerol synthase" reversible="true">
@@ -16560,7 +16572,7 @@
      <speciesReference constant="true" species="M_i_C00055" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C19610"/>
+     <modifierSpeciesReference species="M_i_C19610"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_APSD" metaid="meta_R_APSD" name="Archeol phosphoserine decarboxylase" reversible="false">
@@ -16584,7 +16596,7 @@
      <speciesReference constant="true" species="M_i_DGGGPE" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="M_i_C00018"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_APGS" metaid="meta_R_APGS" name="Archeol phosphoglycerol synthase" reversible="true">
@@ -16660,8 +16672,8 @@
      <speciesReference constant="true" species="M_i_CDPDGGG" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00238"/>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00238"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_DGGGPS" metaid="meta_R_DGGGPS" name="digeranylgeranylglycerolphosphate synthase" reversible="false">
@@ -16686,7 +16698,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_GGGPS" metaid="meta_R_GGGPS" name="Geranylgeranylglycerolphosphate synthase" reversible="false">
@@ -16713,7 +16725,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_CDPDAGS" metaid="meta_R_CDPDAGS" name="CDP diacyl glycerol synthase" reversible="true">
@@ -16813,7 +16825,7 @@
      <speciesReference constant="true" species="M_i_Gol1P" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="M_i_C00038"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN13" metaid="meta_R_RMAN13" name="Glycerol 3 phosphate dehydrogenase" reversible="false">
@@ -16977,9 +16989,9 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00061"/>
-     <modifierSpeciesReference species="Fe4S4"/>
-     <modifierSpeciesReference species="C19609"/>
+     <modifierSpeciesReference species="M_i_C00061"/>
+     <modifierSpeciesReference species="M_i_Fe4S4"/>
+     <modifierSpeciesReference species="M_i_C19609"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_NH3" metaid="meta_R_EX_NH3" name="Ammonia exchange" reversible="true">
@@ -17112,7 +17124,7 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_GPPS" metaid="meta_R_GPPS" name="Geranyl pyrophosphate synthase" reversible="false">
@@ -17161,9 +17173,9 @@
      <speciesReference constant="true" species="M_i_IPPP" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00061"/>
-     <modifierSpeciesReference species="C00004"/>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00061"/>
+     <modifierSpeciesReference species="M_i_C00004"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_M5DPDC" metaid="meta_R_M5DPDC" name="Mevalonate diphosphate decarboxylase" reversible="false">
@@ -17431,7 +17443,7 @@
      <speciesReference constant="true" species="M_i_C00054" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
-     <modifierSpeciesReference species="C00305"/>
+     <modifierSpeciesReference species="M_i_C00305"/>
     </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN9" metaid="meta_R_RMAN9" name="Adenosine 3' phosphatase" reversible="true">
