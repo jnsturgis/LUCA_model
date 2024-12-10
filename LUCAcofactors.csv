@@ -57,7 +57,7 @@ R_R09735	[('dG0', 'nan'), ('dG0_uncertainty', 'nan'), ('ec-code', '2.10.1.1'), (
 R_CDPAS	[('kegg-reaction', 'R08966'), ('ec-code', '2.7.7.67'), ('dG0', '-9.3'), ('dG0_uncertainty', '3.2')]	Mg2+ K+	C00238, C00305	
 R_R00199	[('dG0', '-18.5'), ('dG0_uncertainty', '0.5'), ('ec-code', '2.7.9.2'), ('kegg-reaction', 'R00199')]	Mn2+	C19610	
 R_APSS	[('kegg-reaction', 'R10255'), ('ec-code', '2.7.8.38'), ('dG0', '0.0'), ('dG0_uncertainty', '1000')]	Mn2+	C19610	
-R_R00019	[('dG0', '-4.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.12.7.2,1.12.99.-'), ('kegg-reaction', 'R00019')]	Ni2+	C19604	
+R_R00019	[('dG0', '-4.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.12.7.2,1.12.99.-'), ('kegg-reaction', 'R00019')]	Ni2+	C19609	
 R_R07157	[('dG0', '31.0'), ('dG0_uncertainty', '7.0'), ('ec-code', '1.2.7.4'), ('kegg-reaction', 'R07157')]	Fe4S4 (NiFeS)	Fe4S4	
 R_R00258	[('dG0', '-0.2'), ('dG0_uncertainty', '0.5'), ('ec-code', '2.6.1.2'), ('kegg-reaction', 'R00258')]	Pyridoxal-P	C00018	
 R_R00400	[('dG0', '2.6'), ('dG0_uncertainty', '0.7'), ('ec-code', '2.6.1.12'), ('kegg-reaction', 'R00400')]	Pyridoxal-P	C00018	
@@ -99,7 +99,7 @@ R_R01290	[('dG0', '-13.3'), ('dG0_uncertainty', '2.7'), ('ec-code', '4.2.1.22'),
 R_R02272	[('dG0', '-9.1'), ('dG0_uncertainty', '0.7'), ('ec-code', '5.4.3.8'), ('kegg-reaction', 'R02272')]	PyridoxalP	C00018	
 R_PSDC	[('ec-code', '4.1.1.65'), ('kegg-reaction', 'R02055'), ('dG0', '-15.9'), ('dG0_uncertainty', '1000')]	PyridoxalP	C00018	
 R_APSD	[('dG0', '-15.9'), ('dG0_uncertainty', '1000')]	PyridoxalP	C00018	
-R_R00996	[('dG0', '-42.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '4.3.1.19'), ('kegg-reaction', 'R00996')]	PyridoxalP (Fe2S2)	C00018, FeS2	
+R_R00996	[('dG0', '-42.0'), ('dG0_uncertainty', '4.0'), ('ec-code', '4.3.1.19'), ('kegg-reaction', 'R00996')]	PyridoxalP (Fe2S2)	C00018, Fe2S2	
 R_R08648	[('dG0', '-20.0'), ('dG0_uncertainty', '5.0'), ('ec-code', '2.2.1.6'), ('kegg-reaction', 'R08648')]	TPP	C00068	
 R_R01830	[('dG0', '-5.9'), ('dG0_uncertainty', '2.4'), ('ec-code', '2.2.1.1'), ('kegg-reaction', 'R01830')]	TPP	C00068	
 R_R01641	[('dG0', '-3.9'), ('dG0_uncertainty', '1.9'), ('ec-code', '2.2.1.1'), ('kegg-reaction', 'R01641')]	TPP	C00068	

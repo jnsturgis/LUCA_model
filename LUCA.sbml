@@ -5558,6 +5558,151 @@
      </rdf:RDF>
     </annotation>
    </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="4" fbc:chemicalFormula="Fe2S2" hasOnlySubstanceUnits="false" id="M_i_Fe2S2" initialConcentration="1.0" name="Fe2S2 redox center"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="8" fbc:chemicalFormula="Fe4S4" hasOnlySubstanceUnits="false" id="M_i_Fe4S4" initialConcentration="1.0" name="Fe4S4 center"/>
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Zn" hasOnlySubstanceUnits="false" id="M_e_C00038" initialConcentration="1.0" metaid="meta_M_e_C00038" name="extracellular Zn2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_e_C00038">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00038"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="2" fbc:chemicalFormula="Zn" hasOnlySubstanceUnits="false" id="M_i_C00038" initialConcentration="1.0" metaid="meta_M_i_C00038" name="cytoplasmic Zn2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00038">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00038"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Fe" hasOnlySubstanceUnits="false" id="M_e_C14818" initialConcentration="1.0" metaid="meta_M_e_C14818" name="extracellular Fe2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_e_C14818">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C14818"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Mg" hasOnlySubstanceUnits="false" id="M_e_C00305" initialConcentration="1.0" metaid="meta_M_e_C00305" name="extracellular Mg2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_e_C00305">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00305"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="2" fbc:chemicalFormula="Mg" hasOnlySubstanceUnits="false" id="M_i_C00305" initialConcentration="1.0" metaid="meta_M_i_C00305" name="cytoplasmic Mg2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00305">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00305"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="2" fbc:chemicalFormula="Fe" hasOnlySubstanceUnits="false" id="M_i_C14818" initialConcentration="1.0" metaid="meta_M_i_C14818" name="cytoplasmic Fe2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C14818">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C14818"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="1" fbc:chemicalFormula="K" hasOnlySubstanceUnits="false" id="M_e_C00238" initialConcentration="1.0" metaid="meta_M_e_C00238" name="extracellular K+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_e_C00238">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00238"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="K" hasOnlySubstanceUnits="false" id="M_i_C00238" initialConcentration="1.0" metaid="meta_M_i_C00238" name="cytoplasmic K+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00238">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00238"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Mn" hasOnlySubstanceUnits="false" id="M_e_C19610" initialConcentration="1.0" metaid="meta_M_e_C19610" name="extracellular Mn">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_e_C19610">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C19610"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="2" fbc:chemicalFormula="Mn" hasOnlySubstanceUnits="false" id="M_i_C19610" initialConcentration="1.0" metaid="meta_M_i_C19610" name="cytoplasmic Mn2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C19610">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C19610"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Ni" hasOnlySubstanceUnits="false" id="M_e_C19609" initialConcentration="1.0" metaid="meta_M_e_C19609" name="extracellular Ni2+">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_e_C19609">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C19609"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
   </listOfSpecies>
   <listOfParameters>
    <parameter constant="true" id="cobra_default_lb" sboTerm="SBO:0000626" value="-1000"/>
@@ -5594,6 +5739,9 @@
      <speciesReference constant="true" species="M_i_C00041" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00400" metaid="meta_R_R00400" name="KEGG R00400" reversible="true">
     <annotation>
@@ -5618,6 +5766,9 @@
      <speciesReference constant="true" species="M_i_C00041" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00369" metaid="meta_R_R00369" name="KEGG R00369" reversible="true">
     <annotation>
@@ -5642,6 +5793,9 @@
      <speciesReference constant="true" species="M_i_C00041" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00048" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00396" metaid="meta_R_R00396" name="KEGG R00396" reversible="false">
     <annotation>
@@ -5765,6 +5919,9 @@
      <speciesReference constant="true" species="M_i_C00437" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03443" metaid="meta_R_R03443" name="KEGG R03443" reversible="false">
     <annotation>
@@ -5963,6 +6120,9 @@
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00077" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00578" metaid="meta_R_R00578" name="KEGG R00578" reversible="false">
     <annotation>
@@ -6067,6 +6227,9 @@
      <speciesReference constant="true" species="M_i_C00049" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01135" metaid="meta_R_R01135" name="KEGG R01135" reversible="true">
     <annotation>
@@ -6238,6 +6401,9 @@
      <speciesReference constant="true" species="M_i_C04425" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C01037" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10699" metaid="meta_R_R10699" name="KEGG R10699" reversible="true">
     <annotation>
@@ -6262,6 +6428,9 @@
      <speciesReference constant="true" species="M_i_C04076" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C01037" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01626" metaid="meta_R_R01626" name="KEGG R01626" reversible="true">
     <annotation>
@@ -6555,6 +6724,9 @@
      <speciesReference constant="true" species="M_i_C00229" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01078" metaid="meta_R_R01078" name="KEGG R01078" reversible="true">
     <annotation>
@@ -6581,6 +6753,10 @@
      <speciesReference constant="true" species="M_i_C00073" stoichiometry="2"/>
      <speciesReference constant="true" species="M_i_C05198" stoichiometry="2"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="Fe2S2"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10866" metaid="meta_R_R10866" name="KEGG R10866" reversible="true">
     <annotation>
@@ -6631,6 +6807,9 @@
      <speciesReference constant="true" species="M_i_C00288" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00742" metaid="meta_R_R00742" name="KEGG R00742" reversible="true">
     <annotation>
@@ -6658,6 +6837,9 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00083" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00120"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00199" metaid="meta_R_R00199" name="KEGG R00199" reversible="false">
     <annotation>
@@ -6684,6 +6866,9 @@
      <speciesReference constant="true" species="M_i_C00074" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C19610"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00345" metaid="meta_R_R00345" name="KEGG R00345" reversible="false">
     <annotation>
@@ -6760,6 +6945,9 @@
      <speciesReference constant="true" species="M_i_C00042" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00016"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00344" metaid="meta_R_R00344" name="KEGG R00344" reversible="true">
     <annotation>
@@ -6787,6 +6975,10 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00120"/>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00352" metaid="meta_R_R00352" name="KEGG R00352" reversible="true">
     <annotation>
@@ -6863,6 +7055,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C00158" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00405" metaid="meta_R_R00405" name="KEGG R00405" reversible="true">
     <annotation>
@@ -6935,6 +7130,9 @@
      <speciesReference constant="true" species="M_i_C00417" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01082" metaid="meta_R_R01082" name="KEGG R01082" reversible="true">
     <annotation>
@@ -7036,6 +7234,10 @@
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01196" metaid="meta_R_R01196" name="KEGG R01196" reversible="true">
     <annotation>
@@ -7063,6 +7265,10 @@
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07168" metaid="meta_R_R07168" name="KEGG R07168" reversible="false">
     <annotation>
@@ -7088,6 +7294,9 @@
      <speciesReference constant="true" species="M_i_C00440" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00016"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00943" metaid="meta_R_R00943" name="KEGG R00943" reversible="true">
     <annotation>
@@ -7238,6 +7447,9 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00139" stoichiometry="2"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04230" metaid="meta_R_R04230" name="KEGG R04230" reversible="false">
     <annotation>
@@ -7731,6 +7943,9 @@
      <speciesReference constant="true" species="M_i_C20581" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10395" metaid="meta_R_R10395" name="KEGG R10395" reversible="true">
     <annotation>
@@ -7754,6 +7969,9 @@
      <speciesReference constant="true" species="M_i_C20582" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10393" metaid="meta_R_R10393" name="KEGG R10393" reversible="true">
     <annotation>
@@ -7777,6 +7995,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C16597" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10396" metaid="meta_R_R10396" name="KEGG R10396" reversible="true">
     <annotation>
@@ -7800,6 +8021,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C16600" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10397" metaid="meta_R_R10397" name="KEGG R10397" reversible="true">
     <annotation>
@@ -7975,6 +8199,9 @@
      <speciesReference constant="true" species="M_i_C11540" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R08716" metaid="meta_R_R08716" name="KEGG R08716" reversible="true">
     <annotation>
@@ -8322,6 +8549,9 @@
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="4"/>
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="4"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07302" metaid="meta_R_R07302" name="KEGG R07302" reversible="true">
     <annotation>
@@ -8469,6 +8699,9 @@
      <speciesReference constant="true" species="M_i_C11537" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07136" metaid="meta_R_R07136" name="KEGG R07136" reversible="true">
     <annotation>
@@ -8566,6 +8799,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C11536" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00573" metaid="meta_R_R00573" name="KEGG R00573" reversible="false">
     <annotation>
@@ -8644,6 +8880,9 @@
      <speciesReference constant="true" species="M_i_C02291" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00897" metaid="meta_R_R00897" name="KEGG R00897" reversible="false">
     <annotation>
@@ -8668,6 +8907,9 @@
      <speciesReference constant="true" species="M_i_C00097" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00194" metaid="meta_R_R00194" name="KEGG R00194" reversible="false">
     <annotation>
@@ -8717,6 +8959,9 @@
      <speciesReference constant="true" species="M_i_C00014" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00109" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R12342" metaid="meta_R_R12342" name="KEGG R12342" reversible="false">
     <annotation>
@@ -8764,6 +9009,9 @@
      <speciesReference constant="true" species="M_i_C11838" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00155" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C14818"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R07274" metaid="meta_R_R07274" name="KEGG R07274" reversible="false">
     <annotation>
@@ -8788,6 +9036,9 @@
      <speciesReference constant="true" species="M_i_C00097" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00586" metaid="meta_R_R00586" name="KEGG R00586" reversible="true">
     <annotation>
@@ -8836,6 +9087,9 @@
      <speciesReference constant="true" species="M_i_C02291" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00177" metaid="meta_R_R00177" name="KEGG R00177" reversible="true">
     <annotation>
@@ -8887,6 +9141,10 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="C00019"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11633" metaid="meta_R_R11633" name="KEGG R11633" reversible="false">
     <annotation>
@@ -8912,6 +9170,10 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="C00019"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11636" metaid="meta_R_R11636" name="KEGG R11636" reversible="false">
     <annotation>
@@ -8937,6 +9199,10 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="C00019"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02100" metaid="meta_R_R02100" name="KEGG R02100" reversible="false">
     <annotation>
@@ -8961,6 +9227,9 @@
      <speciesReference constant="true" species="M_i_C00365" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02325" metaid="meta_R_R02325" name="KEGG R02325" reversible="false">
     <annotation>
@@ -9257,6 +9526,9 @@
      <speciesReference constant="true" species="M_i_C00931" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="2"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02272" metaid="meta_R_R02272" name="KEGG R02272" reversible="true">
     <annotation>
@@ -9279,6 +9551,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C00430" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R11626" metaid="meta_R_R11626" name="KEGG R11626" reversible="true">
     <annotation>
@@ -9532,6 +9807,9 @@
      <speciesReference constant="true" species="M_i_C15556" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00058" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04457" metaid="meta_R_R04457" name="KEGG R04457" reversible="false">
     <annotation>
@@ -9581,6 +9859,9 @@
      <speciesReference constant="true" species="M_i_C00008" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00061" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00066" metaid="meta_R_R00066" name="KEGG R00066" reversible="false">
     <annotation>
@@ -9628,6 +9909,9 @@
      <speciesReference constant="true" species="M_i_C04732" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00161" metaid="meta_R_R00161" name="KEGG R00161" reversible="true">
     <annotation>
@@ -9652,6 +9936,9 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00016" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03458" metaid="meta_R_R03458" name="KEGG R03458" reversible="false">
     <annotation>
@@ -9772,6 +10059,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C05378" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04780" metaid="meta_R_R04780" name="KEGG R04780" reversible="false">
     <annotation>
@@ -10185,6 +10475,9 @@
      <speciesReference constant="true" species="M_i_C00037" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03758" metaid="meta_R_R03758" name="KEGG R03758" reversible="false">
     <annotation>
@@ -10233,6 +10526,9 @@
      <speciesReference constant="true" species="M_i_C00037" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00371" metaid="meta_R_R00371" name="KEGG R00371" reversible="true">
     <annotation>
@@ -10282,6 +10578,9 @@
      <speciesReference constant="true" species="M_i_C03194" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00238"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01130" metaid="meta_R_R01130" name="KEGG R01130" reversible="true">
     <annotation>
@@ -10578,6 +10877,9 @@
      <speciesReference constant="true" species="M_i_C01100" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01071" metaid="meta_R_R01071" name="KEGG R01071" reversible="true">
     <annotation>
@@ -11045,6 +11347,10 @@
      <speciesReference constant="true" species="M_i_C00109" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00014" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+     <modifierSpeciesReference species="Fe2S2"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05070" metaid="meta_R_R05070" name="KEGG R05070" reversible="false">
     <annotation>
@@ -11140,6 +11446,9 @@
      <speciesReference constant="true" species="M_i_C06006" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02199" metaid="meta_R_R02199" name="KEGG R02199" reversible="true">
     <annotation>
@@ -11164,6 +11473,9 @@
      <speciesReference constant="true" species="M_i_C00407" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03898" metaid="meta_R_R03898" name="KEGG R03898" reversible="true">
     <annotation>
@@ -11187,6 +11499,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C06032" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C14818"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03896" metaid="meta_R_R03896" name="KEGG R03896" reversible="true">
     <annotation>
@@ -11210,6 +11525,9 @@
      <speciesReference constant="true" species="M_i_C02226" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C14818"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05068" metaid="meta_R_R05068" name="KEGG R05068" reversible="false">
     <annotation>
@@ -11260,6 +11578,9 @@
      <speciesReference constant="true" species="M_i_C02504" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00238"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04426" metaid="meta_R_R04426" name="KEGG R04426" reversible="true">
     <annotation>
@@ -11331,6 +11652,9 @@
      <speciesReference constant="true" species="M_i_C02631" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01090" metaid="meta_R_R01090" name="KEGG R01090" reversible="true">
     <annotation>
@@ -11355,6 +11679,9 @@
      <speciesReference constant="true" species="M_i_C00123" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04001" metaid="meta_R_R04001" name="KEGG R04001" reversible="true">
     <annotation>
@@ -11378,6 +11705,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C04411" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01088" metaid="meta_R_R01088" name="KEGG R01088" reversible="false">
     <annotation>
@@ -11630,6 +11960,9 @@
      <speciesReference constant="true" species="M_i_C00047" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02735" metaid="meta_R_R02735" name="KEGG R02735" reversible="true">
     <annotation>
@@ -11676,6 +12009,9 @@
      <speciesReference constant="true" species="M_i_C04421" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01939" metaid="meta_R_R01939" name="KEGG R01939" reversible="true">
     <annotation>
@@ -11700,6 +12036,9 @@
      <speciesReference constant="true" species="M_i_C00956" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03444" metaid="meta_R_R03444" name="KEGG R03444" reversible="true">
     <annotation>
@@ -11723,6 +12062,9 @@
      <speciesReference constant="true" species="M_i_C04002" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04371" metaid="meta_R_R04371" name="KEGG R04371" reversible="true">
     <annotation>
@@ -11746,6 +12088,9 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C05662" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04467" metaid="meta_R_R04467" name="KEGG R04467" reversible="true">
     <annotation>
@@ -11770,6 +12115,9 @@
      <speciesReference constant="true" species="M_i_C04390" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02315" metaid="meta_R_R02315" name="KEGG R02315" reversible="false">
     <annotation>
@@ -11922,6 +12270,9 @@
      <speciesReference constant="true" species="M_i_C00666" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R04863" metaid="meta_R_R04863" name="KEGG R04863" reversible="true">
     <annotation>
@@ -12072,6 +12423,9 @@
      <speciesReference constant="true" species="M_i_C19889" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09779" metaid="meta_R_R09779" name="KEGG R09779" reversible="true">
     <annotation>
@@ -12194,6 +12548,9 @@
      <speciesReference constant="true" species="M_i_C02291" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00042" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01286" metaid="meta_R_R01286" name="KEGG R01286" reversible="false">
     <annotation>
@@ -12219,6 +12576,9 @@
      <speciesReference constant="true" species="M_i_C00014" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01777" metaid="meta_R_R01777" name="KEGG R01777" reversible="false">
     <annotation>
@@ -12267,6 +12627,10 @@
      <speciesReference constant="true" species="M_i_C00101" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00073" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+     <modifierSpeciesReference species="C00194"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01773" metaid="meta_R_R01773" name="KEGG R01773" reversible="false">
     <annotation>
@@ -12344,6 +12708,9 @@
      <speciesReference constant="true" species="M_i_C00073" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R11372" metaid="meta_R_R11372" name="KEGG R11372" reversible="true">
     <annotation>
@@ -12417,6 +12784,9 @@
      <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09726" metaid="meta_R_R09726" name="KEGG R09726" reversible="true">
     <annotation>
@@ -12441,6 +12811,9 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C19848" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04292" metaid="meta_R_R04292" name="KEGG R04292" reversible="false">
     <annotation>
@@ -12466,6 +12839,9 @@
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="2"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00257" metaid="meta_R_R00257" name="KEGG R00257" reversible="false">
     <annotation>
@@ -12765,6 +13141,9 @@
      <speciesReference constant="true" species="M_i_C05345" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01528" metaid="meta_R_R01528" name="KEGG R01528" reversible="true">
     <annotation>
@@ -12931,6 +13310,9 @@
      <speciesReference constant="true" species="M_i_C05382" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R02740" metaid="meta_R_R02740" name="KEGG R02740" reversible="true">
     <annotation>
@@ -12976,6 +13358,9 @@
      <speciesReference constant="true" species="M_i_C00199" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00067" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R09780" metaid="meta_R_R09780" name="KEGG R09780" reversible="true">
     <annotation>
@@ -13070,6 +13455,9 @@
      <speciesReference constant="true" species="M_i_C00079" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07276" metaid="meta_R_R07276" name="KEGG R07276" reversible="true">
     <annotation>
@@ -13094,6 +13482,9 @@
      <speciesReference constant="true" species="M_i_C00826" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10089" metaid="meta_R_R10089" name="KEGG R10089" reversible="false">
     <annotation>
@@ -13168,6 +13559,9 @@
      <speciesReference constant="true" species="M_i_C01165" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01248" metaid="meta_R_R01248" name="KEGG R01248" reversible="false">
     <annotation>
@@ -13316,6 +13710,9 @@
      <speciesReference constant="true" species="M_i_C01005" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01513" metaid="meta_R_R01513" name="KEGG R01513" reversible="true">
     <annotation>
@@ -13364,6 +13761,10 @@
      <speciesReference constant="true" species="M_i_C00944" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00175"/>
+     <modifierSpeciesReference species="C00003"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01826" metaid="meta_R_R01826" name="KEGG R01826" reversible="false">
     <annotation>
@@ -13412,6 +13813,9 @@
      <speciesReference constant="true" species="M_i_C00251" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00061"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R02412" metaid="meta_R_R02412" name="KEGG R02412" reversible="false">
     <annotation>
@@ -13532,6 +13936,9 @@
      <speciesReference constant="true" species="M_i_C04874" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="3"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R05553" metaid="meta_R_R05553" name="KEGG R05553" reversible="false">
     <annotation>
@@ -13555,6 +13962,9 @@
      <speciesReference constant="true" species="M_i_C00568" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00022" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04638" metaid="meta_R_R04638" name="KEGG R04638" reversible="false">
     <annotation>
@@ -13579,6 +13989,9 @@
      <speciesReference constant="true" species="M_i_C05925" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R04639" metaid="meta_R_R04639" name="KEGG R04639" reversible="false">
     <annotation>
@@ -13650,6 +14063,9 @@
      <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C04807" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R03067" metaid="meta_R_R03067" name="KEGG R03067" reversible="false">
     <annotation>
@@ -13698,6 +14114,9 @@
      <speciesReference constant="true" species="M_i_C11355" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00025" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R11072" metaid="meta_R_R11072" name="KEGG R11072" reversible="false">
     <annotation>
@@ -14033,6 +14452,9 @@
      <speciesReference constant="true" species="M_i_C11437" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10712" metaid="meta_R_R10712" name="KEGG R10712" reversible="false">
     <annotation>
@@ -14083,6 +14505,9 @@
      <speciesReference constant="true" species="M_i_C15813" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07460" metaid="meta_R_R07460" name="KEGG R07460" reversible="true">
     <annotation>
@@ -14107,6 +14532,9 @@
      <speciesReference constant="true" species="M_i_C15812" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00041" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R07461" metaid="meta_R_R07461" name="KEGG R07461" reversible="true">
     <annotation>
@@ -14162,6 +14590,9 @@
      <speciesReference constant="true" species="M_i_C00073" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10247" metaid="meta_R_R10247" name="KEGG R10247" reversible="true">
     <annotation>
@@ -14237,6 +14668,9 @@
      <speciesReference constant="true" species="M_i_C00058" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00237" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R12026" metaid="meta_R_R12026" name="KEGG R12026" reversible="true">
     <annotation>
@@ -14312,6 +14746,9 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R10339" metaid="meta_R_R10339" name="KEGG R10339" reversible="false">
     <annotation>
@@ -14409,6 +14846,10 @@
      <speciesReference constant="true" species="M_i_C01217" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00061"/>
+     <modifierSpeciesReference species="Fe4S4"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01771" metaid="meta_R_R01771" name="KEGG R01771" reversible="false">
     <annotation>
@@ -14457,6 +14898,9 @@
      <speciesReference constant="true" species="M_i_C00188" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00986" metaid="meta_R_R00986" name="KEGG R00986" reversible="false">
     <annotation>
@@ -14580,6 +15024,9 @@
      <speciesReference constant="true" species="M_i_C00118" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R03509" metaid="meta_R_R03509" name="KEGG R03509" reversible="true">
     <annotation>
@@ -14730,6 +15177,9 @@
      <speciesReference constant="true" species="M_i_C00082" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00026" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R01715" metaid="meta_R_R01715" name="KEGG R01715" reversible="false">
     <annotation>
@@ -14776,6 +15226,9 @@
      <speciesReference constant="true" species="M_i_C00036" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00826" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00575" metaid="meta_R_R00575" name="KEGG R00575" reversible="false">
     <annotation>
@@ -14829,6 +15282,9 @@
      <speciesReference constant="true" species="M_i_C00295" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00042" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00061"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01870" metaid="meta_R_R01870" name="KEGG R01870" reversible="true">
     <annotation>
@@ -14878,6 +15334,11 @@
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00004" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00061"/>
+     <modifierSpeciesReference species="C00016"/>
+     <modifierSpeciesReference species="Fe2S2"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_R00965" metaid="meta_R_R00965" name="KEGG R00965" reversible="false">
     <annotation>
@@ -15042,6 +15503,9 @@
      <speciesReference constant="true" species="M_i_C06010" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00068"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R01214_1" metaid="meta_R_R01214_1" name="KEGG R01214_1" reversible="true">
     <annotation>
@@ -15306,6 +15770,9 @@
      <speciesReference constant="true" species="M_i_C00139" stoichiometry="2"/>
      <speciesReference constant="true" species="M_i_C00005" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00016"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00315" metaid="meta_R_R00315" name="KEGG R00315" reversible="true">
     <annotation>
@@ -15330,6 +15797,9 @@
      <speciesReference constant="true" species="M_i_C00002" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00033" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R00230" metaid="meta_R_R00230" name="KEGG R00230" reversible="true">
     <annotation>
@@ -15378,6 +15848,9 @@
      <speciesReference constant="true" species="M_i_C00138" stoichiometry="2"/>
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="2"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C19609"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_BIOMASS" metaid="meta_R_BIOMASS" name="Biomass - stochiometry gives composition" reversible="true">
     <annotation>
@@ -16033,6 +16506,9 @@
      <speciesReference constant="true" species="M_i_DOPE" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_PGS" metaid="meta_R_PGS" name="Phosphatidyl glyerol synthase" reversible="true">
     <annotation>
@@ -16083,6 +16559,9 @@
      <speciesReference constant="true" species="M_i_DGGGPS" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00055" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C19610"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_APSD" metaid="meta_R_APSD" name="Archeol phosphoserine decarboxylase" reversible="false">
     <annotation>
@@ -16104,6 +16583,9 @@
      <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_DGGGPE" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00018"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_APGS" metaid="meta_R_APGS" name="Archeol phosphoglycerol synthase" reversible="true">
     <annotation>
@@ -16177,6 +16659,10 @@
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_CDPDGGG" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00238"/>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_DGGGPS" metaid="meta_R_DGGGPS" name="digeranylgeranylglycerolphosphate synthase" reversible="false">
     <annotation>
@@ -16199,6 +16685,9 @@
      <speciesReference constant="true" species="M_i_DGGGP" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_GGGPS" metaid="meta_R_GGGPS" name="Geranylgeranylglycerolphosphate synthase" reversible="false">
     <annotation>
@@ -16223,6 +16712,9 @@
      <speciesReference constant="true" species="M_i_GGGP" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_CDPDAGS" metaid="meta_R_CDPDAGS" name="CDP diacyl glycerol synthase" reversible="true">
     <annotation>
@@ -16320,6 +16812,9 @@
      <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_Gol1P" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00038"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN13" metaid="meta_R_RMAN13" name="Glycerol 3 phosphate dehydrogenase" reversible="false">
     <annotation>
@@ -16481,6 +16976,11 @@
      <speciesReference constant="true" species="M_i_C00004" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00061"/>
+     <modifierSpeciesReference species="Fe4S4"/>
+     <modifierSpeciesReference species="C19609"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_NH3" metaid="meta_R_EX_NH3" name="Ammonia exchange" reversible="true">
     <annotation>
@@ -16611,6 +17111,9 @@
      <speciesReference constant="true" species="M_i_FPP" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_GPPS" metaid="meta_R_GPPS" name="Geranyl pyrophosphate synthase" reversible="false">
     <annotation>
@@ -16657,6 +17160,11 @@
     <listOfProducts>
      <speciesReference constant="true" species="M_i_IPPP" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00061"/>
+     <modifierSpeciesReference species="C00004"/>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub" id="R_M5DPDC" metaid="meta_R_M5DPDC" name="Mevalonate diphosphate decarboxylase" reversible="false">
     <annotation>
@@ -16922,6 +17430,9 @@
      <speciesReference constant="true" species="M_i_C00229" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00054" stoichiometry="1"/>
     </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="C00305"/>
+    </listOfModifiers>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN9" metaid="meta_R_RMAN9" name="Adenosine 3' phosphatase" reversible="true">
     <annotation>
@@ -16970,6 +17481,261 @@
     </listOfReactants>
     <listOfProducts>
      <speciesReference constant="true" species="M_i_Metab" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Fe2S2" metaid="meta_R_EX_Fe2S2" name="Dummy Fe2S2 exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Fe2S2">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Fe4S4" metaid="meta_R_EX_Fe4S4" name="Dummy Fe4S4 exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Fe4S4">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_Fe4S4" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Zn" metaid="meta_R_EX_Zn" name="Zinc exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Zn">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C00038" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_TR_Zn" metaid="meta_R_TR_Zn" name="Zinc tranporter" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_TR_Zn">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C00038" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00038" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Fe" metaid="meta_R_EX_Fe" name="Ferrous Iron exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Fe">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C14818" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Mg" metaid="meta_R_EX_Mg" name="Magnesium exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Mg">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C00305" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_TR_Mg" metaid="meta_R_TR_Mg" name="Magnesium transporter" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_TR_Mg">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C00305" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00305" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_TR_Fe" metaid="meta_R_TR_Fe" name="Ferrous iron transporter" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_TR_Fe">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C14818" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C14818" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_TR_K" metaid="meta_R_TR_K" name="Potassium transporter" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_TR_K">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C00238" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00238" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_K" metaid="meta_R_EX_K" name="Potassium exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_K">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C00238" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Mn" metaid="meta_R_EX_Mn" name="Manganese exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Mn">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C19610" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_TR_Mn" metaid="meta_R_TR_Mn" name="Manganese transporter" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_TR_Mn">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C19610" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C19610" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Ni" metaid="meta_R_EX_Ni" name="Nickel exchange" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Ni">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C19609" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_TR_Ni" metaid="meta_R_TR_Ni" name="Nickel transporter" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_TR_Ni">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_e_C19609" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C19609" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
   </listOfReactions>
