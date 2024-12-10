@@ -77,7 +77,7 @@ for reaction in model.find_all('reaction'):
             prodlist.insert_after(modlist)
         for cofactor in my_dict[reacid].split(','):
             cof_tag = model.new_tag('modifierSpeciesReference')
-            cof_tag['species'] = cofactor.strip() 
+            cof_tag['species'] = f'M_{cofactor.strip()}' 
             modlist.append( cof_tag )
             pass
 

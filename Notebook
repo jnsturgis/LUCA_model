@@ -104,7 +104,9 @@ dG0 for tRNA synthases +8 +/- 10 estimated from Transfer RNA Identity Contribute
 Next steps
 
 1. Insert cofactors into reactions as modulators from a table (add_cofactors.py) DONE as far as possible
+   try to check the litterature for the remaining reactions.
 2. fba calculation protocol... (using cobra)
+2.0 Aggregation reacions adjust stochiometry so Mr = 1500 => 1mM = 1.5mg/ml = 1%dry wt.
 2.1 fba for protein, DNA, RNA and lipids (redo aggregations etc to make things easier to understand)
 2.2 add to BIOMASS required cofactors for reactions with flux get contribution from annotations
 2.3 add to BIOMASS elements from cycle with flux get contribution from annotations
@@ -116,4 +118,4 @@ Next steps
 Note cnapy mangles:
 1. Cofactors as modifiers
 2. Initial concentrations
-
+3. Notes

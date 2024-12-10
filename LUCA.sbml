@@ -3135,7 +3135,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H8NO4R" hasOnlySubstanceUnits="false" id="M_i_C19885" initialConcentration="1.0" metaid="meta_M_i_C19885" name="alpha-Aminoadipate carrier protein LysW">
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H8NO4Pr" hasOnlySubstanceUnits="false" id="M_i_C19885" initialConcentration="1.0" metaid="meta_M_i_C19885" name="alpha-Aminoadipate carrier protein LysW">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_i_C19885">
@@ -3265,7 +3265,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H7N2O2SR" hasOnlySubstanceUnits="false" id="M_i_C15814" initialConcentration="1.0" metaid="meta_M_i_C15814" name="Thiocarboxy-[sulfur-carrier protein]">
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H7N2O2SPr" hasOnlySubstanceUnits="false" id="M_i_C15814" initialConcentration="1.0" metaid="meta_M_i_C15814" name="Thiocarboxy-[sulfur-carrier protein]">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_i_C15814">
@@ -3876,7 +3876,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H7N2O3R" hasOnlySubstanceUnits="false" id="M_i_C15810" initialConcentration="1.0" metaid="meta_M_i_C15810" name="Sulfur-carrier protein">
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H7N2O3Pr" hasOnlySubstanceUnits="false" id="M_i_C15810" initialConcentration="1.0" metaid="meta_M_i_C15810" name="Sulfur-carrier protein">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_i_C15810">
@@ -3915,7 +3915,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H19N7O9PR" hasOnlySubstanceUnits="false" id="M_i_C15813" initialConcentration="1.0" metaid="meta_M_i_C15813" name="Adenylyl-[sulfur-carrier protein]">
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H19N7O9PPr" hasOnlySubstanceUnits="false" id="M_i_C15813" initialConcentration="1.0" metaid="meta_M_i_C15813" name="Adenylyl-[sulfur-carrier protein]">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_i_C15813">
@@ -4903,7 +4903,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C996H1563N269O290S6" hasOnlySubstanceUnits="false" id="M_i_Protein" initialConcentration="1.0" metaid="meta_M_i_Protein" name="Protein">
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="Pr" hasOnlySubstanceUnits="false" id="M_i_Protein" initialConcentration="1.0" metaid="meta_M_i_Protein" name="Protein">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_i_Protein">
@@ -4945,7 +4945,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="-3" fbc:chemicalFormula="C262H463O48P6N4" hasOnlySubstanceUnits="false" id="M_i_Lipid" initialConcentration="1.0" metaid="meta_M_i_Lipid" name="Membrane lipids">
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="-1" fbc:chemicalFormula="Lp" hasOnlySubstanceUnits="false" id="M_i_Lipid" initialConcentration="1.0" metaid="meta_M_i_Lipid" name="Membrane lipids">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_i_Lipid">
@@ -15859,8 +15859,9 @@
         <center><h2>The Biomass function</h2></center>
         <p>
           The reactants for the BIOMASS function are organized to reflect the composition of a cell
-          with aggregated species (such as biopolymers) stochiometry reflecting % by weight and
-          simple species reflecting mM amounts.
+          with aggregated species (such as biopolymers) stochiometry reflecting % by weight 3% DNA
+          20% RNA, 55% Protein and 10% Lipid taken from Bionumbers. For simple metabolite and
+          cofactor species stochiometry reflects mM amounts.
           This reaction is manipulated by some of my programs to ensure metabolic consistency.
         </p>
       </body>
@@ -15878,10 +15879,10 @@
      </rdf:RDF>
     </annotation>
     <listOfReactants>
-     <speciesReference constant="true" species="M_i_DNA" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_Lipid" stoichiometry="0.89"/>
-     <speciesReference constant="true" species="M_i_Protein" stoichiometry="2.23"/>
-     <speciesReference constant="true" species="M_i_RNA" stoichiometry="6.41"/>
+     <speciesReference constant="true" species="M_i_DNA" stoichiometry="3"/>
+     <speciesReference constant="true" species="M_i_Lipid" stoichiometry="10"/>
+     <speciesReference constant="true" species="M_i_Protein" stoichiometry="50"/>
+     <speciesReference constant="true" species="M_i_RNA" stoichiometry="20"/>
      <speciesReference constant="true" species="M_i_Metab" stoichiometry="1"/>
     </listOfReactants>
    </reaction>
@@ -16446,30 +16447,30 @@
      </rdf:RDF>
     </annotation>
     <listOfReactants>
-     <speciesReference constant="true" species="M_i_tRNAA" stoichiometry="19"/>
-     <speciesReference constant="true" species="M_i_tRNAC" stoichiometry="2"/>
-     <speciesReference constant="true" species="M_i_tRNAD" stoichiometry="11"/>
-     <speciesReference constant="true" species="M_i_tRNAE" stoichiometry="13"/>
-     <speciesReference constant="true" species="M_i_tRNAF" stoichiometry="12"/>
-     <speciesReference constant="true" species="M_i_tRNAG" stoichiometry="15"/>
-     <speciesReference constant="true" species="M_i_tRNAH" stoichiometry="4"/>
-     <speciesReference constant="true" species="M_i_tRNAI" stoichiometry="12"/>
-     <speciesReference constant="true" species="M_i_tRNAK" stoichiometry="8"/>
-     <speciesReference constant="true" species="M_i_tRNAL" stoichiometry="22"/>
-     <speciesReference constant="true" species="M_i_tRNAM" stoichiometry="4"/>
-     <speciesReference constant="true" species="M_i_tRNAN" stoichiometry="9"/>
-     <speciesReference constant="true" species="M_i_tRNAP" stoichiometry="8"/>
-     <speciesReference constant="true" species="M_i_tRNAQ" stoichiometry="9"/>
-     <speciesReference constant="true" species="M_i_tRNAR" stoichiometry="11"/>
-     <speciesReference constant="true" species="M_i_tRNAS" stoichiometry="10"/>
-     <speciesReference constant="true" species="M_i_tRNAT" stoichiometry="10"/>
-     <speciesReference constant="true" species="M_i_tRNAV" stoichiometry="15"/>
-     <speciesReference constant="true" species="M_i_tRNAW" stoichiometry="2"/>
-     <speciesReference constant="true" species="M_i_tRNAY" stoichiometry="4"/>
+     <speciesReference constant="true" species="M_i_tRNAA" stoichiometry="1.293"/>
+     <speciesReference constant="true" species="M_i_tRNAC" stoichiometry="0.136"/>
+     <speciesReference constant="true" species="M_i_tRNAD" stoichiometry="0.748"/>
+     <speciesReference constant="true" species="M_i_tRNAE" stoichiometry="0.884"/>
+     <speciesReference constant="true" species="M_i_tRNAF" stoichiometry="0.816"/>
+     <speciesReference constant="true" species="M_i_tRNAG" stoichiometry="1.02"/>
+     <speciesReference constant="true" species="M_i_tRNAH" stoichiometry="0.272"/>
+     <speciesReference constant="true" species="M_i_tRNAI" stoichiometry="0.816"/>
+     <speciesReference constant="true" species="M_i_tRNAK" stoichiometry="0.544"/>
+     <speciesReference constant="true" species="M_i_tRNAL" stoichiometry="1.497"/>
+     <speciesReference constant="true" species="M_i_tRNAM" stoichiometry="0.272"/>
+     <speciesReference constant="true" species="M_i_tRNAN" stoichiometry="0.612"/>
+     <speciesReference constant="true" species="M_i_tRNAP" stoichiometry="0.544"/>
+     <speciesReference constant="true" species="M_i_tRNAQ" stoichiometry="0.612"/>
+     <speciesReference constant="true" species="M_i_tRNAR" stoichiometry="0.748"/>
+     <speciesReference constant="true" species="M_i_tRNAS" stoichiometry="0.680"/>
+     <speciesReference constant="true" species="M_i_tRNAT" stoichiometry="0.680"/>
+     <speciesReference constant="true" species="M_i_tRNAV" stoichiometry="1.02"/>
+     <speciesReference constant="true" species="M_i_tRNAW" stoichiometry="0.136"/>
+     <speciesReference constant="true" species="M_i_tRNAY" stoichiometry="0.272"/>
     </listOfReactants>
     <listOfProducts>
      <speciesReference constant="true" species="M_i_Protein" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_RNA" stoichiometry="200"/>
+     <speciesReference constant="true" species="M_i_RNA" stoichiometry="13.605"/>
     </listOfProducts>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_PSS" metaid="meta_R_PSS" name="Phosphatidyl serine synthase" reversible="true">
@@ -16637,12 +16638,12 @@
      </rdf:RDF>
     </annotation>
     <listOfReactants>
-     <speciesReference constant="true" species="M_i_DGGGPE" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_DGGGPG" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_DGGGPS" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_DOPE" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_DOPG" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_DOPS" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_DGGGPE" stoichiometry="0.323"/>
+     <speciesReference constant="true" species="M_i_DGGGPG" stoichiometry="0.323"/>
+     <speciesReference constant="true" species="M_i_DGGGPS" stoichiometry="0.323"/>
+     <speciesReference constant="true" species="M_i_DOPE" stoichiometry="0.323"/>
+     <speciesReference constant="true" species="M_i_DOPG" stoichiometry="0.323"/>
+     <speciesReference constant="true" species="M_i_DOPS" stoichiometry="0.323"/>
     </listOfReactants>
     <listOfProducts>
      <speciesReference constant="true" species="M_i_Lipid" stoichiometry="1"/>
