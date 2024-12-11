@@ -1,4 +1,4 @@
-This directory contains a metabolic model of LUCA. 
+This directory contains a metabolic model of LUCA.
 This model aims to be as complete as possible and provide a self consistent metabolism and objective functions for analysis.
 Various choices will be necessary and explained here in the development of the model that is based on the article by Wimmer et al. 2021 (Energy at Origins: Favorable Thermodynamics of Biosynthetic Reactions in the Last Universal Common Ancestor (LUCA) Frontiers in Microbiology 12:793664 doi: 10.3389/fmicb.2021.793664)
 
@@ -33,7 +33,7 @@ For amino acid production arginine depends on acetate production and no recyclin
 
 1.5 Add membrane lipid biosynthesis pathway both acyl and isoprenyl - need to use ACP not phosphopantatheine and synth of oleyl-ACP and GGPP todo
 
-1.6 Define metabolites and cofactors for growth 
+1.6 Define metabolites and cofactors for growth
 1.7 Correct define formulae and charges of different compounds and verify reactions are equilibrated.
 1.8 Complete as possible external references dG° and KEGG and ec#
 
@@ -68,8 +68,11 @@ Modifications made
 3.1 CMP phosphorylation to CTP using ATP
 3.2 Pyrophosphate hydrolysis
 3.3 Hydrogenase to reduce NAD+
-3.4 Acetyl CoA Synthase 
+3.4 Acetyl CoA Synthase
 3.5 ApoACP Synthase (RMAN8 2.7.8.7) and Adenosine 3'5' bis phosphate recycling
+3.6 Iminoglycine synthesis R10245
+3.7 FeS metabolism synthesis of iron sulfur clusters (IscS/IscU) Barras Article
+3.8 Recycling/recovery of 5deoxyAdenosine Beaudoin article
 4. Added exchange reactions (initially with internal compartment)
 4.1 H2O, CO2, H+, NH3, H2S, PO4
 4.2 Unlimited energy supply (EX_Energy) regenerates ATP for free!!!
@@ -85,19 +88,15 @@ Next steps.
 1.1.3 rhea https://www.rhea-db.org/rhea/11311 -> Directionality, Reagents charges, CHEBI, SMILES etc
 1.2 Information desired
 1.2.1 Reaction: EC, RHEA, KEGG, directionality, DG0', DG0' uncertainty
-1.2.2 Metabolite: KEGG, CHEBI, Formula (fully protonated acids, deprotonated bases), charge pH7, 
+1.2.2 Metabolite: KEGG, CHEBI, Formula (fully protonated acids, deprotonated bases), charge pH7,
 2. Addition of modifier species for reactions to indicate cofactors
 2.1 Cofactors associated with enzyme. http://www.ebi.ac.uk/thornton-srv/databases/CoFactor/queries.php?ec=1.1.2.10&submit=Go
 3. Setup of metabolites based on cofactors and cytoplasmic composition for Biomass function
 
 
-? Formate reduction RMAN4 - hydrogen or NADH (1.17.1.9) perhaps add both...
-TODO How to interpret multiple ec-code? should be AND not OR sort them out manually (keep first) DONE
 TODO Estimate dG0 values uncertainty 1000 if not from equilibrator DONE
-
-TODO lookup cofactor requirements (FeS included) for enzymes and add as modulator (check cnapy resistance)
+TODO lookup cofactor requirements (FeS included) for enzymes and add as modulator (check cnapy resistance) DONE (ish)
 TODO Create metabolites CoA, NADH, ATP are in reactions from bionumbers data ? to BIOMASS reaction
-
 dG0 for tRNA synthases +8 +/- 10 estimated from Transfer RNA Identity Contributes to Transition State Stabilization During Aminoacyl-tRNA Synthesis (1999) Nucleic Acids Research 27(18):3631-7
 
 9/12/24
@@ -111,7 +110,7 @@ Next steps
 2.2 add to BIOMASS required cofactors for reactions with flux get contribution from annotations
 2.3 add to BIOMASS elements from cycle with flux get contribution from annotations
 2.4 redo fba and repeat from 2.2 until no changes.
-3. work out how to add genes to the mix so can do a deletion analysis of the model... 
+3. work out how to add genes to the mix so can do a deletion analysis of the model...
 4. work out thermodynamics from dG° and flux... where are bottlenecks and can we compensate with concentrations.
 5. merge models to test different anabolic choices.
 

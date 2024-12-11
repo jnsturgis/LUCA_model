@@ -5743,6 +5743,13 @@
      </rdf:RDF>
     </annotation>
    </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="Pr" hasOnlySubstanceUnits="false" id="M_i_IscU" initialConcentration="1" metaid="meta_M_i_IscU" name="IscU scaffold"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="FeSPr" hasOnlySubstanceUnits="false" id="M_i_IscUFe" initialConcentration="1" metaid="meta_M_i_IscUFe" name="IscU 1 FeS"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="2" fbc:chemicalFormula="Fe2S2Pr" hasOnlySubstanceUnits="false" id="M_i_IscUFe2" initialConcentration="1" metaid="meta_M_i_IscUFe2" name="IscU 2 FeS"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="3" fbc:chemicalFormula="Fe3S3Pr" hasOnlySubstanceUnits="false" id="M_i_IscUFe3" initialConcentration="1" metaid="meta_M_i_IscUFe3" name="IscU 3 FeS"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="4" fbc:chemicalFormula="Fe4S4Pr" hasOnlySubstanceUnits="false" id="M_i_IscUFe4" initialConcentration="1" metaid="meta_M_i_IscUFe4" name="IscU 4 FeS"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H11O7P" hasOnlySubstanceUnits="false" id="M_i_5dR1P" initialConcentration="1" metaid="meta_M_i_5dR1P" name="5 deoxy Ribose 1 Phosphate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H11O7P" hasOnlySubstanceUnits="false" id="M_i_5dRu1P" initialConcentration="1" metaid="meta_M_i_5dRu1P" name="5 deoxy Ribulose 1 Phosphate"/>
   </listOfSpecies>
   <listOfParameters>
    <parameter constant="true" id="cobra_default_lb" sboTerm="SBO:0000626" value="-1000"/>
@@ -14943,13 +14950,13 @@
     <listOfReactants>
      <speciesReference constant="true" species="M_i_C15812" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C15813" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_C00030" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00138" stoichiometry="1"/>
     </listOfReactants>
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C15814" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C15811" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_C00028" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00139" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_R10246" metaid="meta_R_R10246" name="KEGG R10246" reversible="true">
@@ -16336,18 +16343,24 @@
      <speciesReference constant="true" species="M_i_C00019" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00038" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00061" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00068" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00175" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00238" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00305" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C14818" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C19609" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C19610" stoichiometry="1"/>
-     <!-- Currently these necessary cofactors can not be synthesised by the model
-     <speciesReference constant="true" species="M_i_C00068" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_C00120" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_C00194" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_Fe4S4" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
+     <!-- Currently these necessary cofactors can not be synthesised by the model
+     <speciesReference constant="true" species="M_i_C00120" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00194" stoichiometry="1"/>
+   -->
+     <!-- Necessary protein and other species for cycles -->
+     <!--
+     <speciesReference constant="true" species="M_i_C15811" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C15810" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscU"   stoichiometry="1"/>
    -->
     </listOfReactants>
    </reaction>
@@ -18121,7 +18134,7 @@
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_Co" metaid="meta_R_EX_Co" name="Co2+ exchange" reversible="true">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
-      <rdf:Description rdf:about="#meta_R_EX_Fe">
+      <rdf:Description rdf:about="#meta_R_EX_Co">
        <bqbiol:is>
         <rdf:Bag>
          <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
@@ -18371,6 +18384,265 @@
     </listOfReactants>
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C00175" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_IscU_1" metaid="meta_R_IscU_1" name="FeS assembly 1" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_IscU_1">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C15812" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscU" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00138" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C14818" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C15811" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00139" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_IscU_2" metaid="meta_R_IscU_2" name="FeS assembly 2" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_IscU_2">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C15812" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00138" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C14818" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe2" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C15811" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00139" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_IscU_3" metaid="meta_R_IscU_3" name="FeS assembly 3" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_IscU_3">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C15812" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe2" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00138" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C14818" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe3" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C15811" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00139" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_IscU_4" metaid="meta_R_IscU_4" name="FeS assembly 4" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_IscU_4">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C15812" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe3" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00138" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C14818" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_IscUFe4" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C15811" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00139" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_Fe4S4" metaid="meta_R_Fe4S4" name="Fe4S4 release" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_Fe4S4">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_IscUFe4" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_IscU" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_Fe4S4" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_Fe2S2" metaid="meta_R_Fe2S2" name="Fe2S2 release" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_Fe2S2">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_IscUFe2" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_IscU" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_10245" metaid="meta_R_10245" name="Iminoglycine synthesis" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_10245">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R10245"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00014" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00048" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C15809" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_5DR1" metaid="meta_R_5DR1" name="5 deoxyadenosine phosphorylase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_5DR1">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C05198" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00147" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_5dR1P" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_5DR2" metaid="meta_R_5DR2" name="5 deoxyribose phosphate isomerase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_5DR2">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_5dR1P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_5dRu1P" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_5DR3" metaid="meta_R_5DR3" name="5 deoxyribulose phosphate aldolase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_5DR3">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_5dRu1P" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00111" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00084" stoichiometry="1"/>
+    </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="M_i_C19610"/>
+    </listOfModifiers>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_5DR4" metaid="meta_R_5DR4" name="AMP:diphosphate phospho-D-ribosyltransferase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_5DR4">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/-19.3"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/2.6"/>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-reaction/R00190"/>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.4.2.7"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00147" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00119" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00020" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00013" stoichiometry="1"/>
     </listOfProducts>
    </reaction>
   </listOfReactions>
