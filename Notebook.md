@@ -118,3 +118,36 @@ Note cnapy mangles:
 1. Cofactors as modifiers
 2. Initial concentrations
 3. Notes
+
+13/12/24
+C00120 and C00194 cofactors not synthesised...
+
+20/12/24
+What we need to do and in what order
+
+1. Separate Anabolism, Catabolism and Environment
+1.1 Catabolism contains all species
+1.2 Anabolism can add reactions with existing species to produce ATP, add genes, modify dG° and inital concentrations
+1.2.1 Consider free energy from environment (meta_tri_phosphate)
+1.2.2 Consider CO2 reduction pathway
+1.2.3 Consider ATP synthase and respiratory chain with H2 donor and sulfite acceptor
+1.3 Environment adds exchange reactions only
+1.3.1 A meta_tri_phosphate environment
+1.3.2 A CO2 acetate production environment
+1.3.3 A more standard environement
+1.4 A program to merge the components and check that the result is "complete"
+1.4.1 Merge aspect - including biomass update based on modifiers (check outside fba how enzyme conc is supplied)
+1.4.2 Check biomass production
+1.4.3 Search for cycles in the reaction graph and add component to BIOMASS
+1.4.4 Analysis of model failure and proposition for fixes (what exchanges make work - work back from BIOMASS reaction)
+
+2. Modify the smbl files.
+2.1 Semi-automatically add genes for reactions
+2.1.1 Unwrap oleate biosynthesis
+2.1.2 Based on EC number type labelling using bacterial and archael annotations
+2.2 Modify initial concentrations for Bionumbers
+2.3 Collect CHEBI and RHEA references automatically
+
+3. Analysis of working model
+3.1 Analysis of unused and unnecessary reactions and unreferenced substances
+3.2 Analysis of thermodynamic choke points (possibly with initial concentration modification)

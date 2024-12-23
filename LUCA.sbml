@@ -1380,7 +1380,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Co" hasOnlySubstanceUnits="false" id="M_e_C00175" initialConcentration="1.0" metaid="meta_M_e_C00175" name="Extracellulara Co2+">
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Co" hasOnlySubstanceUnits="false" id="M_e_C00175" initialConcentration="1.0" metaid="meta_M_e_C00175" name="extracellulara Co2+">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_e_C00175">
@@ -5678,7 +5678,7 @@
      </rdf:RDF>
     </annotation>
    </species>
-   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Mn" hasOnlySubstanceUnits="false" id="M_e_C19610" initialConcentration="1.0" metaid="meta_M_e_C19610" name="extracellular Mn">
+   <species boundaryCondition="false" compartment="e" constant="false" fbc:charge="2" fbc:chemicalFormula="Mn" hasOnlySubstanceUnits="false" id="M_e_C19610" initialConcentration="1.0" metaid="meta_M_e_C19610" name="extracellular Mn2+">
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
       <rdf:Description rdf:about="#meta_M_e_C19610">
@@ -17932,6 +17932,23 @@
     </annotation>
     <listOfReactants>
      <speciesReference constant="true" species="M_e_C00080" stoichiometry="1"/>
+    </listOfReactants>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_EX_MeOH" metaid="meta_R_EX_MeOH" name="Methanol exchange dummy" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_MeOH">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/0.0"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00132" stoichiometry="1"/>
     </listOfReactants>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_RMAN16" metaid="meta_R_RMAN16" name="Acetyl CoA Synthase" reversible="true">
