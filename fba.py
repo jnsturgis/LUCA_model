@@ -1,5 +1,6 @@
 """
-This program is desigend to perform a flux balance analysis and analyse the results
+This program performs a flux balance analysis on a sbml model file.
+
 using them to examine the thermodynamics and ensure that the model BIOMASS function
 is complete.
 
@@ -118,7 +119,7 @@ if solution.status == 'optimal':
     energy_flux = energy_flux[:i]
     print( energy_flux )
 
-    # Search for unmakable used compounds
+    # Search for unmakeable used compounds
     # A subset of species that for all reactions with flux have coefficients, after
     # ajusting coefficients for flux direction, that sum to 0.
     # How to search efficiently

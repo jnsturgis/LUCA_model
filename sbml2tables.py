@@ -1,7 +1,8 @@
 """
-This program reads in an sbml file and generates a series of tables from it,
-these include a table of reactions, of compounds and of genes. In each of
-these tables the different desired information for the model is collected.
+This program reads in an sbml file and generates a series of tables from it.
+
+These tables include a table of reactions, of compounds and of genes. In each
+of these tables the different desired information for the model is collected.
 
 Note not everything survives a passage through cnapy.
 Notably reversibility (perhaps it is due to fluxLowerBound?)

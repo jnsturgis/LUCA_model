@@ -1,10 +1,18 @@
 """
-This program takes two arguments. First an sbml file that is going to be read and edited,
-and second a tsv file containing a table linking reaction names to cofactor codes. The
-program should for each line in the table:
-1. If all the species do not already exist add new new species to the SBML
+Modify an sbml file adding modulators to reactions.
+
+This program takes two arguments. First an sbml file that is going to be read
+and edited, and second a tsv file containing a table linking reaction names to
+cofactor codes. This table, after a 1 line header, has 2 columns the first is
+the reaction name (as it appears in the sbml file), the second a comma
+separated list of species.
+
+The program should for each line in the table:
+1. If all the species do not already exist add new species to the SBML, at
+   present just prints the list of missing species for manual addition.
 2. If necessary create a list of modulators for the indicated reaction.
 3. Set the modulators of the reaction to correspond to the indicated species.
+4. Output the modified SBML file
 """
 
 # Allow todo comments and dont insist on capitals if initialized with a default.
@@ -61,7 +69,7 @@ if len(species_list) > 0:
         print( species )
     sys.exit()
 
-# 2. Modify reactions as necessary the list of modulators for each reaction
+# 2/3. Modify reactions as necessary the list of modulators for each reaction
 
 my_dict = dict(my_table)
 
@@ -77,8 +85,10 @@ for reaction in model.find_all('reaction'):
             prodlist.insert_after(modlist)
         for cofactor in my_dict[reacid].split(','):
             cof_tag = model.new_tag('modifierSpeciesReference')
-            cof_tag['species'] = f'M_{cofactor.strip()}' 
+            cof_tag['species'] = f'M_{cofactor.strip()}'
             modlist.append( cof_tag )
             pass
+
+# 4. Print the resulting sbml file
 
 print(model.prettify(formatter="minimal"))

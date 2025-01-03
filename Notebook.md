@@ -37,8 +37,6 @@ For amino acid production arginine depends on acetate production and no recyclin
 1.7 Correct define formulae and charges of different compounds and verify reactions are equilibrated.
 1.8 Complete as possible external references dG° and KEGG and ec#
 
-
-
 AcetylCoA C00024
 AcetoacetylCoA C00332
 Coenzyme A
@@ -102,8 +100,7 @@ dG0 for tRNA synthases +8 +/- 10 estimated from Transfer RNA Identity Contribute
 9/12/24
 Next steps
 
-1. Insert cofactors into reactions as modulators from a table (add_cofactors.py) DONE as far as possible
-   try to check the litterature for the remaining reactions.
+1. Insert cofactors into reactions as modulators from a table (add_cofactors.py) DONE as far as possible try to check the litterature for the remaining reactions.
 2. fba calculation protocol... (using cobra)
 2.0 Aggregation reacions adjust stochiometry so Mr = 1500 => 1mM = 1.5mg/ml = 1%dry wt.
 2.1 fba for protein, DNA, RNA and lipids (redo aggregations etc to make things easier to understand)

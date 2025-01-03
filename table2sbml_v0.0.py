@@ -1,7 +1,5 @@
-# Lets start with some libraries
-# Find chemical formulae and charges seem to be missing and CHEBI
 """
-This file should generate an initial sbml model based on Table1 and Table3 of Wimmers et al.
+This file generates an initial sbml model based on Table1 and Table3 of Wimmers et al.
 """
 from urllib import request
 from bs4 import BeautifulSoup
