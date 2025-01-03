@@ -1,6 +1,9 @@
 """
 This file generates an initial sbml model based on Table1 and Table3 of Wimmers et al.
 """
+
+# pylint: disable='fixme' 'invalid-name' 'bare-except'
+
 from urllib import request
 from bs4 import BeautifulSoup
 import pandas as pd
