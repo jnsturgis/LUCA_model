@@ -10,7 +10,7 @@ in model.boundary
 """
 
 # Allow todo comments and dont insist on capitals if initialized with a default.
-# pylint: disable='fixme'
+# pylint: disable='fixme' 'bare-except'
 
 # TODO: expand to more general sanity check on sbml file.
 

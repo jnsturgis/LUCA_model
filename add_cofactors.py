@@ -87,7 +87,6 @@ for reaction in model.find_all('reaction'):
             cof_tag = model.new_tag('modifierSpeciesReference')
             cof_tag['species'] = f'M_{cofactor.strip()}'
             modlist.append( cof_tag )
-            pass
 
 # 4. Print the resulting sbml file
 

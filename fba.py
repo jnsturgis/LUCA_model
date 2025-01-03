@@ -54,7 +54,7 @@ energy_flux = []
 if solution.status == 'optimal':
     for item in solution.fluxes.items():
         reaction = model.find('reaction', id=f"R_{item[0]}")
-        if reaction == None:
+        if reaction is None:
             print( f'Unable to find reaction R_{item[0]}.')
             sys.exit()
         # Add required cofactors to list of cofactors
