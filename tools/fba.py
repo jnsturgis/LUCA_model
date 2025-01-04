@@ -25,6 +25,9 @@ The different modifications made to the input sbml file should be logged.
 # Allow todo comments and dont insist on capitals if initialized with a default.
 # pylint: disable='fixme' 'invalid-name' 'bare-except'
 
+# todo: setup routines that operate on the BeautifulSoup structure.
+# Less efficient but more portable than current version.
+
 import sys
 import math
 
@@ -109,15 +112,15 @@ def collect_cofactors( model, solution ):
     """
     cofactors = []
 #   compounds = []
-    for item in (x for x in solution.fluxes.items()
-                    if float(x[1]) != 0.0 ) :
-        reaction = model.find('reaction', id=f"R_{item[0]}")
-        if reaction is None:
-            print( f'Unable to find reaction R_{item[0]}.')
-            sys.exit()
-        for species in reaction.find_all('modifierSpeciesReference'):
-            cofactors.append(species['species'])
-        return list(set(cofactors))
+    for item in solution.fluxes.items():
+        if float(item[1]) != 0.0 :
+            reaction = model.find('reaction', id=f"R_{item[0]}")
+            if reaction is None:
+                print( f'Unable to find reaction R_{item[0]}.')
+                sys.exit()
+            for species in reaction.find_all('modifierSpeciesReference'):
+                cofactors.append(species['species'])
+    return list(set(cofactors))
 
 def thermodynamic_report(model, solution):
     """
@@ -152,6 +155,12 @@ def thermodynamic_report(model, solution):
     for item in energy_flux:
         print( f'{item[0]:<11}  {item[1]:>10.3f} {item[2]:>10.1f}')
 
+def unused_report( model, solution ):
+    """"
+    Make a report on the unused reactions and species.
+    """
+    pass
+
 def main():
     """
     Main routine to perform the various steps.
@@ -176,14 +185,12 @@ def main():
 
     while not finished:
 # 1. Are all cofactors used in the reactions with flux included in the BIOMASS
-#    reaction at appropriate stochiometries? If not modify the BIOMASS reaction
+#    reaction at appropriate stoichiometry? If not modify the BIOMASS reaction
 #    appropriately.
         if solution.status == 'optimal':
-            update_annotations( model, solution )
-
-            # Collect cofactors and species
             cofactor_list = collect_cofactors( model, solution )
-
+            print( "Used cofactors")
+            print( cofactor_list )
             reaction = model.find('reaction', id='R_BIOMASS' )
             # pylint: disable='undefined-loop-variable'
             assert reaction is not None
@@ -193,12 +200,27 @@ def main():
                 except ValueError:
                     pass
 
-            if len(cofactor_list) > 0:
             # If necessary modify the BIOMASS reaction adding the lines to the
             # end of listOfReactants
             # <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
             # setup another attempt.
+
+            # TODO: remove from list if provided by environment
+            # TODO: recover stoichiometry from species initial concentration
+
+            if len(cofactor_list) > 0:
                 print( f"These {len(cofactor_list)} cofactors are required for this solution." )
+                print( cofactor_list )
+
+            if len(cofactor_list) > 0:
+                for item in cofactor_list:
+                    new_species = model.new_tag('speciesReference')
+                    new_species['constant'] = "true"
+                    new_species['species']  = f'{item}'
+                    new_species['stoichiometry']  = "1"
+                    species.insert_after(new_species)
+
+                print( "These have been added to the BIOMASS reaction." )
                 print( cofactor_list )
 
             finished = True             # Dummy
@@ -213,22 +235,27 @@ def main():
             finished = True             # Dummy
 
 # 4. Return to step 1 until no more modifications need to be made.
+
         if not finished:
+            # TODO: make a new cobra model from the BeautifulSoup
             solution = cobra_model.optimize()
             print( f'Solved fba with objective_value:{solution.objective_value}')
 
 #   end of while not finished loop
 
 # 5. Add annotations on reaction fluxes from the fba to the model.
+    if solution.status == 'optimal':
+        update_annotations( model, solution )
 
 # 6. Output the resulting model (-o filename).
     if destination:
         with open(destination, 'w', encoding="UTF8") as f:
             f.write(model.prettify(formatter="minimal"))
 
-    if report:
 # 7. Identify and report on unused reactions and species (-r)
 # 8. Identify and report on thermodynamic hurdles in the model (-r)
+    if report:
+        unused_report( model, solution)
         thermodynamic_report( model, solution )
 
 # Call the main routine
