@@ -148,3 +148,5 @@ What we need to do and in what order
 3. Analysis of working model
 3.1 Analysis of unused and unnecessary reactions and unreferenced substances
 3.2 Analysis of thermodynamic choke points (possibly with initial concentration modification)
+
+NOTE 5/1/25: Probably do not need FeS cluster exchange as synthesis is in model.

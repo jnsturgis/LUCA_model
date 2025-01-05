@@ -25,7 +25,7 @@ The different modifications made to the input sbml file should be logged.
 # Allow todo comments and dont insist on capitals if initialized with a default.
 # pylint: disable='fixme' 'invalid-name' 'bare-except'
 
-# todo: setup routines that operate on the BeautifulSoup structure.
+# TODO: setup routines that operate on the BeautifulSoup structure.
 # Less efficient but more portable than current version.
 
 import sys
@@ -34,9 +34,17 @@ import math
 from cobra.io import read_sbml_model
 from bs4 import BeautifulSoup
 
+# Constants
+
+R_BIOMASS = 'R_BIOMASS'
+
+# Utility functions
+
 def sign(x : float ) -> float:
     """Implement a sign function, returns +1 or -1 depending on sign of x"""
     return math.copysign(1, x)
+
+# Program control and user interface
 
 def usage():
     """
@@ -83,6 +91,8 @@ def command_line( args ):
         usage()
     return my_report, infile, outfile
 
+# Routines that manipulate the sbml model
+
 def update_annotations( model, solution ):
     """
     Update annotations for each reaction to include the fba-flux.
@@ -106,6 +116,22 @@ def update_annotations( model, solution ):
         if old_annotation is not None:
             old_annotation.decompose()
 
+def exchange_species( model ):
+    """
+    Return a list of species that are exchanged with the environment.
+
+    Go through the list of reactions collecting species that appear in a
+    reaction with no substrates or no products.
+    """
+    exchanged = []
+    for reaction in model.find_all('reaction'):
+        if not reaction['id'] == R_BIOMASS:
+            if ((not reaction.find('listOfReactants')) or
+                (not reaction.find('listOfProducts'))):
+                for species in reaction.find_all('speciesReference'):
+                    exchanged.append(species['species'])
+    return list(set(exchanged))
+
 def collect_cofactors( model, solution ):
     """
     Collect the cofactors (modifiers) used in reactions with flux.
@@ -122,26 +148,29 @@ def collect_cofactors( model, solution ):
                 cofactors.append(species['species'])
     return list(set(cofactors))
 
+# Reports on the model
+
 def thermodynamic_report(model, solution):
     """
     Print a report on the thermodynamic properties of the fba solution.
     """
     energy_flux = []
-    for item in (x for x in solution.fluxes.items()
-                    if float(x[1]) != 0.0 ) :
-        reaction = model.find('reaction', id=f"R_{item[0]}")
-        if reaction is None:
-            print( f'Unable to find reaction R_{item[0]}.')
-            sys.exit()
+    for item in solution.fluxes.items():
+        if float(item[1]) != 0.0 :
+            reaction = model.find('reaction', id=f"R_{item[0]}")
+            if reaction is None:
+                print( f'Unable to find reaction R_{item[0]}.')
+                sys.exit()
 
-        r_energy = 0.0
-        for annotation in reaction.find_all('rdf:li'):
-            if annotation['rdf:resource'].split('/')[3] == 'dG0' :
-                r_energy = float(annotation['rdf:resource'].split('/')[4])
-        e_flux    = r_energy * float(item[1])
-        r_energy *= sign(float(item[1]))
-        energy_flux.append((f'R_{item[0]}',e_flux, r_energy ))
-
+            r_energy = 0.0
+            for annotation in reaction.find_all('rdf:li'):
+                if annotation['rdf:resource'].split('/')[3] == 'dG0' :
+                    r_energy = float(annotation['rdf:resource'].split('/')[4])
+                    break
+            e_flux    = r_energy * float(item[1])
+            r_energy *= sign(float(item[1]))
+            energy_flux.append((f'R_{item[0]}',e_flux, r_energy ))
+    i=0
     energy_flux.sort(key=lambda x: x[2], reverse=True)
     for i, e_flux in enumerate(energy_flux):
         if e_flux[2] <= 10:
@@ -159,7 +188,9 @@ def unused_report( model, solution ):
     """"
     Make a report on the unused reactions and species.
     """
-    pass
+    # TODO: Collect list of unused reactions and unfeatured species.
+    print("The following reactions are not used in the fba solution:")
+    print("The following species do not feature in the fba solution:")
 
 def main():
     """
@@ -191,7 +222,7 @@ def main():
             cofactor_list = collect_cofactors( model, solution )
             print( "Used cofactors")
             print( cofactor_list )
-            reaction = model.find('reaction', id='R_BIOMASS' )
+            reaction = model.find('reaction', id = R_BIOMASS )
             # pylint: disable='undefined-loop-variable'
             assert reaction is not None
             for species in reaction.find_all('speciesReference'):
@@ -205,7 +236,12 @@ def main():
             # <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
             # setup another attempt.
 
-            # TODO: remove from list if provided by environment
+            # DONE: remove from list if provided by environment
+            cofactor_list_too = cofactor_list.copy()
+            for item in cofactor_list_too:
+                if item in exchange_species(model):
+                    cofactor_list.remove(item)
+
             # TODO: recover stoichiometry from species initial concentration
 
             if len(cofactor_list) > 0:
@@ -222,24 +258,28 @@ def main():
 
                 print( "These have been added to the BIOMASS reaction." )
                 print( cofactor_list )
+                finished = False
 
-            finished = True             # Dummy
 # 2. Are all running reaction cycles filled? Check that at least one species
 #    in all closed reaction cycle appears at an appropriate stochiometry in the
 #    BIOMASS reaction? If not make the necessary modifications.
         if solution.status == 'optimal':
+            # TODO: Search for cycles
+            # TODO: Ensure cycles are filled in BIOMASS reaction
             pass
 # 3. Does the fba run producing a growth rate? If not analyse why not by
 #    isolating parts of biomass and backtracking through metabolism.
         if solution.status != 'optimal':
-            finished = True             # Dummy
+            pass
 
 # 4. Return to step 1 until no more modifications need to be made.
 
         if not finished:
             # TODO: make a new cobra model from the BeautifulSoup
+            cobra_model = read_sbml_model( model.prettify(formatter="minimal"))
             solution = cobra_model.optimize()
             print( f'Solved fba with objective_value:{solution.objective_value}')
+            finished = True
 
 #   end of while not finished loop
 
