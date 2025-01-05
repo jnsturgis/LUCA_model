@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml fbc:required="false" level="3" metaid="meta_" sboTerm="SBO:0000624" version="1" xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2">
+ <model fbc:strict="true" id="LUCA" metaid="meta_LUCA">
+  <listOfUnitDefinitions>
+   <unitDefinition id="mmol_per_gDW_per_hr">
+    <listOfUnits>
+     <unit exponent="1" kind="mole" multiplier="1" scale="-3"/>
+     <unit exponent="-1" kind="gram" multiplier="1" scale="0"/>
+     <unit exponent="-1" kind="second" multiplier="3600" scale="0"/>
+    </listOfUnits>
+   </unitDefinition>
+  </listOfUnitDefinitions>
+  <listOfCompartments>
+   <compartment constant="true" id="i"/>
+   <compartment constant="true" id="e"/>
+  </listOfCompartments>
+  <listOfSpecies>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O" hasOnlySubstanceUnits="false" id="M_i_C00001" initialConcentration="1.0" metaid="meta_M_i_C00001" name="H2O">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00001">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00001"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H16N5O13P3" hasOnlySubstanceUnits="false" id="M_i_C00002" initialConcentration="1.0" metaid="meta_M_i_C00002" name="ATP">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00002">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00002"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H15N5O10P2" hasOnlySubstanceUnits="false" id="M_i_C00008" initialConcentration="1.0" metaid="meta_M_i_C00008" name="ADP">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00008">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00008"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H3PO4" hasOnlySubstanceUnits="false" id="M_i_C00009" initialConcentration="1.0" metaid="meta_M_i_C00009" name="Orthophosphate">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_M_i_C00009">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/kegg-compound/C00009"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </species>
+  </listOfSpecies>
+  <listOfParameters>
+   <parameter constant="true" id="cobra_default_lb" sboTerm="SBO:0000626" value="-1000"/>
+   <parameter constant="true" id="cobra_default_ub" sboTerm="SBO:0000626" value="1000"/>
+   <parameter constant="true" id="cobra_0_bound" sboTerm="SBO:0000626" value="0"/>
+   <parameter constant="true" id="minus_inf" sboTerm="SBO:0000626" value="-INF"/>
+   <parameter constant="true" id="plus_inf" sboTerm="SBO:0000626" value="INF"/>
+   <parameter constant="true" id="R_EX_Energy_upper_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="10000"/>
+   <parameter constant="true" id="R_EX_H2O_upper_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="10000"/>
+   <parameter constant="true" id="R_EX_CO2_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="-2000"/>
+   <parameter constant="true" id="R_EX_H2_lower_bound" sboTerm="SBO:0000625" units="mmol_per_gDW_per_hr" value="-10000"/>
+  </listOfParameters>
+  <listOfReactions>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="R_EX_Energy_upper_bound" id="R_EX_Energy" metaid="meta_R_EX_Energy" name="Abstract ATP regeneration reaction" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_EX_Energy">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/dG0/0.0"/>
+         <rdf:li rdf:resource="https://identifiers.org/dG0_uncertainty/1000"/>
+         <rdf:li rdf:resource="https://identifiers.org/fba-flux/530.9769658459098"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00008" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00002" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+  </listOfReactions>
+ </model>
+</sbml>
+

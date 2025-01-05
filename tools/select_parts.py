@@ -17,6 +17,9 @@ The program
 # Allow todo comments and dont insist on capitals if initialized with a default.
 # pylint: disable='fixme' 'invalid-name' 'bare-except'
 
+# TODO: Handle command line options beter (ie filename -h) and uncompilable
+# regular expressions.
+
 import sys
 import re
 from bs4 import BeautifulSoup

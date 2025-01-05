@@ -150,8 +150,9 @@ What we need to do and in what order
 3.2 Analysis of thermodynamic choke points (possibly with initial concentration modification)
 
 Note 5/1/25: These lines extract the LUCA.sbml catabolism (energy supply)
-and environment segments respectively.
+environment and anabolism segments respectively.
 ```
 python3 tools/select_parts.py  models/LUCA.sbml -k ".*Energy.*"
 python3 tools/select_parts.py  models/LUCA.sbml -k ".*exchange.*"
+python3 tools/select_parts.py  models/LUCA.sbml -r ".*EX_.*"
 ```
