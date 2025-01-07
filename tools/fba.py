@@ -259,26 +259,26 @@ def main():
         print( f"Failed to read sbml model from '{source}'.")
         sys.exit()
 
-    cobra_model = read_sbml_model( model.prettify(formatter="minimal") )
-    solution = cobra_model.optimize()
-    print( f'Initial fba with objective_value:{solution.objective_value}')
     finished = False
 
     while not finished:
+        cobra_model = read_sbml_model( model.prettify(formatter="minimal") )
+        solution = cobra_model.optimize()
+        print( f'The fba gives objective_value:{solution.objective_value}')
+
 # 1. Are all cofactors used in the reactions with flux included in the BIOMASS
 #    reaction at appropriate stoichiometry? If not modify the BIOMASS reaction
 #    appropriately.
-        if solution.status == 'optimal':
+        if solution.status == 'optimal' and solution.objective_value > 0.0:
             cofactor_list = collect_cofactors( model, solution )
 
             # DONE: remove from list if in BIOMASS reaction.
             reaction = model.find('reaction', id = R_BIOMASS )
-            if reaction:
-                for species in reaction.find_all('speciesReference'):
-                    try:
-                        cofactor_list.remove( species['species'] )
-                    except ValueError:
-                        pass
+            for species in reaction.find_all('speciesReference'):
+                try:
+                    cofactor_list.remove( species['species'] )
+                except ValueError:
+                    pass
 
             # DONE: remove from list if provided by environment
             cofactor_list_too = cofactor_list.copy()
@@ -295,18 +295,15 @@ def main():
                 # end of listOfReactants
                 # <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
                 # setup another attempt.
-                if reaction:
-                    add_to_biomass(model, cofactor_list)
-                    print( "These have been added to the BIOMASS reaction." )
-                    finished = False
+                add_to_biomass(model, cofactor_list)
+                print( "These have been added to the BIOMASS reaction." )
+                finished = False
 
 # 2. Are all running reaction cycles filled? Check that at least one species
 #    in all closed reaction cycle appears at an appropriate stochiometry in the
 #    BIOMASS reaction? If not make the necessary modifications.
-        if solution.status == 'optimal':
             # TODO: Search for cycles
             # TODO: Ensure cycles are filled in BIOMASS reaction
-            pass
 
 # 3. Does the fba run producing a growth rate? If not analyse why not by
 #    isolating parts of biomass and backtracking through metabolism.
@@ -315,29 +312,22 @@ def main():
 
 # 4. Return to step 1 until no more modifications need to be made.
 
-        if not finished:
-            # DONE: make a new cobra model from the BeautifulSoup
-            cobra_model = read_sbml_model( model.prettify(formatter="minimal"))
-            solution = cobra_model.optimize()
-            print( f'Solved fba with objective_value:{solution.objective_value}')
-            finished = True
-
 #   end of while not finished loop
 
+
 # 5. Add annotations on reaction fluxes from the fba to the model.
-    if solution.status == 'optimal':
+    if solution.status == 'optimal' and solution.objective_value > 0.0:
         update_annotations( model, solution )
+# 7. Identify and report on unused reactions and species (-r)
+# 8. Identify and report on thermodynamic hurdles in the model (-r)
+        if report:
+            unused_report( model )
+            thermodynamic_report( model, solution )
 
 # 6. Output the resulting model (-o filename).
     if destination:
         with open(destination, 'w', encoding="UTF8") as f:
             f.write(model.prettify(formatter="minimal"))
-
-# 7. Identify and report on unused reactions and species (-r)
-# 8. Identify and report on thermodynamic hurdles in the model (-r)
-    if report and solution.objective_value > 0.0 :
-        unused_report( model )
-        thermodynamic_report( model, solution )
 
 # Call the main routine
 if __name__ == '__main__':
