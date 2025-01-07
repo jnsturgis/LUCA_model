@@ -219,6 +219,7 @@ def unused_report( model ):
     Make a report on the unused reactions and species.
     """
     # DONE: Collect list of unused reactions and unfeatured species.
+    # TODO: Collect list of unused cofactors
     species_list = []
     reaction_list = []
     for species in model.find_all('species'):
