@@ -116,6 +116,29 @@ def update_annotations( model, solution ):
         if old_annotation is not None:
             old_annotation.decompose()
 
+def add_to_biomass(model, species_list):
+    """
+    Add all species in the list to the BIOMASS reaction.
+    """
+    # TODO: recover stoichiometry from species initial concentration
+    # pylint: disable = 'undefined-loop-variable'
+    reaction = model.find('reaction', id = R_BIOMASS )
+    if len(species_list) > 0 and reaction:
+        for species in reaction.find_all('speciesReference'):
+            pass
+        for item in species_list:
+            the_species = model.find('species', id = item)
+            concentration = the_species['initialConcentration']
+            if concentration :
+                concentration = float(concentration)
+            else:
+                concentration = 1.0
+            new_species = model.new_tag('speciesReference')
+            new_species['constant'] = "true"
+            new_species['species']  = f'{item}'
+            new_species['stoichiometry']  = f'{concentration}'
+            species.insert_after(new_species)
+
 def exchange_species( model ):
     """
     Return a list of species that are exchanged with the environment.
@@ -189,6 +212,10 @@ def unused_report( model, solution ):
     Make a report on the unused reactions and species.
     """
     # TODO: Collect list of unused reactions and unfeatured species.
+    for species in model.find_all('species'):
+        pass
+    for reaction in model.find_all('reaction'):
+        pass
     print("The following reactions are not used in the fba solution:")
     print("The following species do not feature in the fba solution:")
 
@@ -208,11 +235,10 @@ def main():
         print( f"Failed to read sbml model from '{source}'.")
         sys.exit()
 
-    cobra_model = read_sbml_model( source )
-
-    finished = False
+    cobra_model = read_sbml_model( model.prettify(formatter="minimal") )
     solution = cobra_model.optimize()
     print( f'Initial fba with objective_value:{solution.objective_value}')
+    finished = False
 
     while not finished:
 # 1. Are all cofactors used in the reactions with flux included in the BIOMASS
@@ -220,21 +246,15 @@ def main():
 #    appropriately.
         if solution.status == 'optimal':
             cofactor_list = collect_cofactors( model, solution )
-            print( "Used cofactors")
-            print( cofactor_list )
-            reaction = model.find('reaction', id = R_BIOMASS )
-            # pylint: disable='undefined-loop-variable'
-            assert reaction is not None
-            for species in reaction.find_all('speciesReference'):
-                try:
-                    cofactor_list.remove( species['species'] )
-                except ValueError:
-                    pass
 
-            # If necessary modify the BIOMASS reaction adding the lines to the
-            # end of listOfReactants
-            # <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
-            # setup another attempt.
+            # DONE: remove from list if in BIOMASS reaction.
+            reaction = model.find('reaction', id = R_BIOMASS )
+            if reaction:
+                for species in reaction.find_all('speciesReference'):
+                    try:
+                        cofactor_list.remove( species['species'] )
+                    except ValueError:
+                        pass
 
             # DONE: remove from list if provided by environment
             cofactor_list_too = cofactor_list.copy()
@@ -242,23 +262,19 @@ def main():
                 if item in exchange_species(model):
                     cofactor_list.remove(item)
 
-            # TODO: recover stoichiometry from species initial concentration
-
+            # The remaining cofactors need to be provided somehow
             if len(cofactor_list) > 0:
                 print( f"These {len(cofactor_list)} cofactors are required for this solution." )
                 print( cofactor_list )
 
-            if len(cofactor_list) > 0:
-                for item in cofactor_list:
-                    new_species = model.new_tag('speciesReference')
-                    new_species['constant'] = "true"
-                    new_species['species']  = f'{item}'
-                    new_species['stoichiometry']  = "1"
-                    species.insert_after(new_species)
-
-                print( "These have been added to the BIOMASS reaction." )
-                print( cofactor_list )
-                finished = False
+                # If possible modify the BIOMASS reaction adding the lines to the
+                # end of listOfReactants
+                # <speciesReference constant="true" species="M_i_Fe2S2" stoichiometry="1"/>
+                # setup another attempt.
+                if reaction:
+                    add_to_biomass(model, cofactor_list)
+                    print( "These have been added to the BIOMASS reaction." )
+                    finished = False
 
 # 2. Are all running reaction cycles filled? Check that at least one species
 #    in all closed reaction cycle appears at an appropriate stochiometry in the
@@ -267,15 +283,16 @@ def main():
             # TODO: Search for cycles
             # TODO: Ensure cycles are filled in BIOMASS reaction
             pass
+
 # 3. Does the fba run producing a growth rate? If not analyse why not by
 #    isolating parts of biomass and backtracking through metabolism.
-        if solution.status != 'optimal':
-            pass
+        if solution.objective_value == 0.0:
+            print('Solution has no flux looking for causes.')
 
 # 4. Return to step 1 until no more modifications need to be made.
 
         if not finished:
-            # TODO: make a new cobra model from the BeautifulSoup
+            # DONE: make a new cobra model from the BeautifulSoup
             cobra_model = read_sbml_model( model.prettify(formatter="minimal"))
             solution = cobra_model.optimize()
             print( f'Solved fba with objective_value:{solution.objective_value}')
