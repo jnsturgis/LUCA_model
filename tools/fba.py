@@ -167,18 +167,13 @@ def exchange_species( model ):
                     exchanged.append(species['species'])
     return list(set(exchanged))
 
-def collect_cofactors( model, solution ):
+def collect_cofactors( model ):
     """
     Collect the cofactors (modifiers) used in reactions with flux.
     """
     cofactors = []
-#   compounds = []
-    for item in solution.fluxes.items():
-        if float(item[1]) != 0.0 :
-            reaction = model.find('reaction', id=f"R_{item[0]}")
-            if reaction is None:
-                print( f'Unable to find reaction R_{item[0]}.')
-                sys.exit()
+    for reaction in model.find_all('reaction'):
+        if find_flux( reaction ) != 0.0:
             for species in reaction.find_all('modifierSpeciesReference'):
                 cofactors.append(species['species'])
     return list(set(cofactors))
@@ -265,12 +260,14 @@ def main():
         cobra_model = read_sbml_model( model.prettify(formatter="minimal") )
         solution = cobra_model.optimize()
         print( f'The fba gives objective_value:{solution.objective_value}')
+        update_annotations( model, solution)
 
 # 1. Are all cofactors used in the reactions with flux included in the BIOMASS
 #    reaction at appropriate stoichiometry? If not modify the BIOMASS reaction
 #    appropriately.
+        finished = True
         if solution.status == 'optimal' and solution.objective_value > 0.0:
-            cofactor_list = collect_cofactors( model, solution )
+            cofactor_list = collect_cofactors( model )
 
             # DONE: remove from list if in BIOMASS reaction.
             reaction = model.find('reaction', id = R_BIOMASS )
@@ -309,7 +306,9 @@ def main():
 #    isolating parts of biomass and backtracking through metabolism.
         if solution.objective_value == 0.0:
             print('Solution has no flux looking for causes.')
-
+            # TODO: Try to resolve or localize issue
+            print('Unable to resolve issue.')
+            break
 # 4. Return to step 1 until no more modifications need to be made.
 
 #   end of while not finished loop
