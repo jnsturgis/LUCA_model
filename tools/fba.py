@@ -93,6 +93,16 @@ def command_line( args ):
 
 # Routines that manipulate the sbml model
 
+def find_flux( reaction ) ->float:
+    """
+    Find the fba-flux for the reaction that is stored in the annotations.
+    """
+    for annotation in reaction.find_all('rdf:li'):
+        parts = annotation['rdf:resource'].split('/')
+        if parts[3] == 'fba-flux' :
+            return float(parts[4])
+    return 0.0
+
 def update_annotations( model, solution ):
     """
     Update annotations for each reaction to include the fba-flux.
@@ -120,12 +130,14 @@ def add_to_biomass(model, species_list):
     """
     Add all species in the list to the BIOMASS reaction.
     """
-    # TODO: recover stoichiometry from species initial concentration
+    # DONE: recover stoichiometry from species initial concentration
     # pylint: disable = 'undefined-loop-variable'
     reaction = model.find('reaction', id = R_BIOMASS )
     if len(species_list) > 0 and reaction:
+        # Find end of current list of species in reaction
         for species in reaction.find_all('speciesReference'):
             pass
+        # Add each member of the list
         for item in species_list:
             the_species = model.find('species', id = item)
             concentration = the_species['initialConcentration']
@@ -207,17 +219,29 @@ def thermodynamic_report(model, solution):
     for item in energy_flux:
         print( f'{item[0]:<11}  {item[1]:>10.3f} {item[2]:>10.1f}')
 
-def unused_report( model, solution ):
+def unused_report( model ):
     """"
     Make a report on the unused reactions and species.
     """
-    # TODO: Collect list of unused reactions and unfeatured species.
+    # DONE: Collect list of unused reactions and unfeatured species.
+    species_list = []
+    reaction_list = []
     for species in model.find_all('species'):
-        pass
+        species_list.append(species['id'])
     for reaction in model.find_all('reaction'):
-        pass
-    print("The following reactions are not used in the fba solution:")
-    print("The following species do not feature in the fba solution:")
+        if find_flux(reaction):
+            for species in reaction.find_all('speciesReference'):
+                try:
+                    species_list.remove( species['species'] )
+                except ValueError:
+                    pass
+        else:
+            # Reaction has no flux
+            reaction_list.append(reaction['id'])
+    print( f"The following {len(reaction_list)} reactions are not used in the fba solution:")
+    print( reaction_list )
+    print( f"The following {len(species_list)} species do not feature in the fba solution:")
+    print( species_list )
 
 def main():
     """
@@ -311,8 +335,8 @@ def main():
 
 # 7. Identify and report on unused reactions and species (-r)
 # 8. Identify and report on thermodynamic hurdles in the model (-r)
-    if report:
-        unused_report( model, solution)
+    if report and solution.objective_value > 0.0 :
+        unused_report( model )
         thermodynamic_report( model, solution )
 
 # Call the main routine
