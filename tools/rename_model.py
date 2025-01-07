@@ -79,9 +79,8 @@ def main():
     4. Write the result.
     """
     new_name, source, dest = command_line(sys.argv)
-    # TODO: if not source use stdin
     try:
-        with open( source, encoding="UTF8") as fp:
+        with open(source, 'r', encoding="UTF8") if source else sys.stdin as fp:
             model = BeautifulSoup( fp, 'xml' )
     except:
         print( f"Failed to read sbml model from '{source}'.")
@@ -89,11 +88,11 @@ def main():
 
     rename_model( model, new_name)
 
-    if not dest:
-        print(model.prettify(formatter="minimal"))
+    if dest:
+        with open(dest, 'w', encoding="UTF8") as fp:
+            fp.write(model.prettify(formatter="minimal"))
     else:
-        # TODO: output to dest
-        pass
+        print(model.prettify(formatter="minimal"))
 
 if __name__ == '__main__':
     main()
