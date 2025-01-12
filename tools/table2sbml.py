@@ -37,8 +37,12 @@ import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup
 
-COMPARTMENT_COLUMN = 2
-GENE_COLUMN = 5
+SBML_INITIAL = """<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
+  <model metaid="meta_model_name" id="model_name" fbc:strict="true">
+  </model>
+</sbml>
+"""
 
 def usage():
     """
@@ -100,23 +104,159 @@ def gene_elements( rule_list ):
             elements.extend(gene_rule.split())
     return list(set(elements) - set(['and','or','AND','OR']))
 
+def add_annotation( soup, item ):
+    new_tag = soup.new_tag('annotation')
+    new_species.append(new_tag)
+    new_tag.append(soup.new_tag('rdf:RDF', attrs={
+        "xmlns:bqbiol":"http://biomodels.net/biology-qualifiers/",
+        "xmlns:bqmodel":"http://biomodels.net/model-qualifiers/",
+        "xmlns:dcterms":"http://purl.org/dc/terms/",
+        "xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xmlns:vCard":"http://www.w3.org/2001/vcard-rdf/3.0#",
+        "xmlns:vCard4":"http://www.w3.org/2006/vcard/ns#"}))
+    new_tag = new_tag.find('rdf:RDF')
+    new_tag.append(soup.new_tag('rdf:Description', attrs={'rdf:about':f'#meta_{row.Id}'}))
+    new_tag = new_tag.find('rdf:Description')
+    new_tag.append(soup.new_tag('bqbiol:is'))
+    new_tag = new_tag.find('bqbiol:is')
+    new_tag.append(soup.new_tag('rdf:Bag'))
+
+def add_annotations( soup, item, list ):
+    new_tag = item.find('rdf:Bag')
+    for label, value in zip(list.split()[::2], list.split()[1::2]):
+        new_tag.append(soup.new_tag('rdf:li',attrs={
+            'rdf:resource': f'https://identifiers.org/{label}/{value}'
+        }))
+
 def add_listOfUnitDefinitions( model, units_definitions ):
-    pass
+    """
+    Add to the model a list of unit definitions as necessary.
+    """
+    # if necessary add a listOfUnitDefinitions
+    if units_definitions:
+        for term in units_definitions:
+            # if necessary add the unitDefinition to the list
+            pass
 
-def add_listOfCompartments( model, compartments ):
-    pass
+def add_listOfCompartments( soup, compartments ):
+    """
+    Add to the model a list of compartments as necessary.
+    """
+    model = soup.find("model")
+    mylist = model.find("listOfCompartments")
+    if not mylist:
+        new_tag = soup.new_tag("listOfCompartments",)
+        model.append( new_tag )
+        mylist = new_tag
+    if compartments:
+        for compartment in compartments:
+            old = mylist.find("compartment", attrs={"id":compartment})
+            if not old:
+                new_tag = soup.new_tag( "compartment", attrs={"id":compartment}, constant="true")
+                mylist.append(new_tag)
 
-def add_listOfSpecies( model, species ):
-    pass
+def add_listOfSpecies( soup, species ):
+    """
+    Add to the model a list of species as necessary from the DataFrame.
+    """
+    model = soup.find('model')
+    mylist = model.find('listOfSpecies')
+    if not mylist:
+        new_tag = soup.new_tag('listOfSpecies')
+        model.append(new_tag)
+        mylist = new_tag
+    for row in species.itertuples():
+        new_species = soup.new_tag('species',
+            attrs={
+                "boundaryCondition":"false",
+                "compartment":row.Compartment,
+                "constant":"false",
+                "fbc:charge":row.Charge,
+                "fbc:chemicalFormula":row.ChemicalFormula,
+                "hasOnlySubstanceUnits":"false",
+                "id":row.Id,
+                "initialConcentration":row.InitialConcentration,
+                "metaid":f'meta_{row.Id}',
+                "name":row.Name
+            } )
+        mylist.append(new_species)
+        if len(row.Dbases) > 0:
+            add_annotation( soup, new_species)
+            add_annotations( soup, new_species, row.Dbases )
 
-def add_listOfReactions( model, reactions ):
-    pass
+def add_listOfReactions( soup, reactions ):
+    """
+    Add to the model a list of reactions as necessary from the DataFrame.
+    """
+    model = soup.find('model')
+    mylist = model.find('listOfReactions')
+    if not mylist:
+        new_tag = soup.new_tag('listOfReactions')
+        model.append(new_tag)
+        mylist = new_tag
+    for row in reactions.itertuples():
+        new_reaction = soup.new_tag('reaction',
+            attrs={
+                "fast":"false",
+                "fbc:lowerFluxBound":"cobra_default_lb",
+                "fbc:upperFluxBound":"cobra_default_ub",
+                "id":row.Id,
+                "metaid":f'meta_{row.Id}',
+                "name":row.Name
+            } )
+        mylist.append(new_reaction)
+
+        if len(row.Reagents):
+            new_tag=soup.new_tag('listOfReactants')
+            for species in row.Reagents.split():
+                new_tag.append(soup.new_tag('speciesReference', attrs={
+                    "constant":"true",
+                    "species":species,
+                    "stoichiometry":"1"
+                }))
+            new_reaction.append(new_tag)
+
+        if len(row.Products):
+            new_tag=soup.new_tag('listOfProducts')
+            for species in row.Reagents.split():
+                new_tag.append(soup.new_tag('speciesReference', attrs={
+                    "constant":"true",
+                    "species":species,
+                    "stoichiometry":"1"
+                }))
+            new_reaction.append(new_tag)
+
+        if len(row.Modifiers):
+            new_tag=soup.new_tag('listOfModifiers')
+            for species in row.Reagents.split():
+                new_tag.append(soup.new_tag('modifierSpeciesReference', attrs={
+                    "species":species,
+                }))
+            new_reaction.append(new_tag)
+
+        if len(row.GeneRules) > 0:
+            pass
+
+        if row.dG0:
+            row.Dbases=f'dG0 {row.dG0.split()[0]} dG0_uncertainty {row.dG0.split()[1]} {row.Dbases}'
+        if row.EC:
+            row.Dbases=f'ec-code {row.EC.split()} {row.Dbases}'
+        if len(row.Dbases) > 0:
+            add_annotation( soup, new_reaction)
+            add_annotations( soup, new_reaction, row.Dbases )
 
 def add_listOfObjectives( model, objectives ):
-    pass
+    """
+    Add to the model a list of objectives as necessary.
+    """
 
 def add_listOfGenes( model, genes ):
-    pass
+    """
+    Add to the model a list of genes as necessary.
+    """
+    if genes:
+        for gene in genes:
+            pass
 
 def main():
     """
@@ -127,32 +267,26 @@ def main():
     compounds_file, reactions_file, output_file = command_line( sys.argv )
 
     compounds = read_table( compounds_file )
-    print(compounds)
     try:
         compartments = list(set(compounds['Compartment'].tolist()))
     except KeyError:
         compartments = None
-    print(compartments)
     reactions = read_table( reactions_file )
-    print(reactions)
     try:
         genes = gene_elements(reactions['geneRule'].tolist())
     except KeyError:
         genes = None
-    print(genes)
-    objectives = None
-    units_definitions = ["mmol_per_gDW_per_hr"]
 
-    model = BeautifulSoup()
-    add_listOfUnitDefinitions( model, units_definitions )
-    add_listOfCompartments( model, compartments )
-    add_listOfSpecies( model, compounds )
-    add_listOfReactions( model, reactions )
-    add_listOfObjectives( model, objectives )
-    add_listOfGenes( model, genes )
+    soup = BeautifulSoup( SBML_INITIAL ,"xml")
+    add_listOfUnitDefinitions( soup, ["mmol_per_gDW_per_hr"] )
+    add_listOfCompartments( soup, compartments )
+    add_listOfSpecies( soup, compounds )
+    add_listOfReactions( soup, reactions )
+    add_listOfObjectives( soup, None )
+    add_listOfGenes( soup, genes )
 
     with open(output_file, 'w', encoding="UTF8") if output_file != '-' else sys.stdout as fp:
-        fp.write(model.prettify(formatter="minimal"))
+        fp.write(soup.prettify(formatter="minimal"))
 
 if __name__ == '__main__':
     main()
