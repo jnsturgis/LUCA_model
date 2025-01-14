@@ -206,15 +206,13 @@ def add_listOfReactions( soup, reactions ):
     for row in reactions.itertuples():
         new_reaction = soup.new_tag('reaction',
             attrs={
-                "fast":"false",
-                "reversible":"true",
-                "id":row.Id,
-
-                "metaid":f'meta_{row.Id}',
-                "name":row.Name,
-
-                "fbc:lowerFluxBound":"cobra_default_lb",
-                "fbc:upperFluxBound":"cobra_default_ub"
+                "fast":"false",                          # Required
+                "reversible":"true",                     # Required
+                "id":row.Id,                             # Required
+                "metaid":f'meta_{row.Id}',               # Optional
+                "name":row.Name,                         # Optional
+                "fbc:lowerFluxBound":"cobra_default_lb", # Required fbc:strict
+                "fbc:upperFluxBound":"cobra_default_ub"  # Required fbc:strict
             } )
         mylist.append(new_reaction)
 
@@ -260,6 +258,24 @@ def add_listOfReactions( soup, reactions ):
             add_annotation( soup, new_reaction)
             add_annotations( soup, new_reaction, annotations )
 
+def add_listOfParameters( soup, parameters ):
+    """
+    Add to the model a list of parameters.
+    """
+    model = soup.find('model')
+    mylist = model.find('listOfParameters')
+    if not mylist:
+        new_tag = soup.new_tag('listOfParameters')
+        model.append(new_tag)
+        mylist = new_tag
+    for label, value in zip(parameters[::2], parameters[1::2]):
+        new_tag.append(soup.new_tag('parameter',attrs={
+            'constant': 'true',
+            'id': label,
+            'sboTerm': 'SBO:0000626',
+            'value': value
+        }))
+
 def add_listOfObjectives( soup, objectives ):
     """
     Add to the model a list of objectives as necessary.
@@ -295,11 +311,13 @@ def main():
     except KeyError:
         genes = None
 
+    parameters = ["cobra_default_lb", "-1000", "cobra_default_ub", "1000"]
+
     soup = BeautifulSoup( SBML_INITIAL ,"xml")
     add_listOfUnitDefinitions( soup, ["mmol_per_gDW_per_hr"] )
     add_listOfCompartments( soup, compartments )
     add_listOfSpecies( soup, compounds )
-    # TODO: add_listOfParameters(soup, parameters)
+    add_listOfParameters(soup, parameters)
     add_listOfReactions( soup, reactions )
     add_listOfObjectives( soup, None )
     add_listOfGenes( soup, genes )

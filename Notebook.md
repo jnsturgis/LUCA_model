@@ -148,3 +148,12 @@ What we need to do and in what order
 3. Analysis of working model
 3.1 Analysis of unused and unnecessary reactions and unreferenced substances
 3.2 Analysis of thermodynamic choke points (possibly with initial concentration modification)
+
+14/1/25: reactions.
+table2sbml works and produces valid sbml.
+Several points to resolve with the program
+1. GeneRules and list of genes are not currently output.
+2. Objectives are not output where to get them from?
+3. Parametres are generic
+4. Units are not output and generic
+5. Not at all robust to errors in the tables.
