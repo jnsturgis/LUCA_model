@@ -175,6 +175,7 @@ def add_listOfSpecies( soup, species ):
         model.append(new_tag)
         mylist = new_tag
     for row in species.itertuples():
+        print( row )
         new_species = soup.new_tag('species',
             attrs={
                 "boundaryCondition":"false",
@@ -189,7 +190,7 @@ def add_listOfSpecies( soup, species ):
                 "name":row.Name
             } )
         mylist.append(new_species)
-        if len(row.Dbases) > 0:
+        if not pd.isna(row.Dbases) and len(row.Dbases) > 0:
             add_annotation( soup, new_species)
             add_annotations( soup, new_species, row.Dbases )
 
@@ -236,7 +237,7 @@ def add_listOfReactions( soup, reactions ):
                 }))
             new_reaction.append(new_tag)
 
-        if len(row.Modifiers):
+        if not pd.isna(row.Modifiers) and len(row.Modifiers):
             new_tag=soup.new_tag('listOfModifiers')
             for species in row.Modifiers.split():
                 new_tag.append(soup.new_tag('modifierSpeciesReference', attrs={
@@ -244,15 +245,15 @@ def add_listOfReactions( soup, reactions ):
                 }))
             new_reaction.append(new_tag)
 
-        if len(row.GeneRules) > 0:
+        if not pd.isna(row.GeneRules) and len(row.GeneRules) > 0:
             # TODO: This needs parsing of gene rules expression (read definition)
             pass
 
         annotations = row.Dbases
-        if row.FreeEnergy:
+        if not pd.isna(row.FreeEnergy) and row.FreeEnergy:
             temp = row.FreeEnergy.split()
             annotations = f'dG0 {temp[0]} dG0_uncertainty {temp[1]} {annotations}'
-        if row.EC:
+        if not pd.isna(row.EC) and row.EC:
             annotations=f'ec-code {row.EC} {annotations}'
         if len(annotations) > 0:
             add_annotation( soup, new_reaction)

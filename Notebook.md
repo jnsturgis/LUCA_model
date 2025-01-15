@@ -157,3 +157,7 @@ Several points to resolve with the program
 3. Parametres are generic
 4. Units are not output and generic
 5. Not at all robust to errors in the tables.
+
+15/1/25
+FAB_reaction.csv needs Dbases and FreeEnergy - should be filled by 'external'
+FAB_compound.csv needs Dbases, charge and formula - should be filled by 'external'
