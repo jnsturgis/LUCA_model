@@ -161,3 +161,7 @@ Several points to resolve with the program
 15/1/25
 FAB_reaction.csv needs Dbases and FreeEnergy - should be filled by 'external'
 FAB_compound.csv needs Dbases, charge and formula - should be filled by 'external'
+
+16/1/25
+Extract kegg-compound and kegg-reaction annotations from Id's automatically if there is
+not already the annotation and the Id has the right form `R_{kegg-id}` or `M_x_{kegg-id}`.

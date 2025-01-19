@@ -175,7 +175,6 @@ def add_listOfSpecies( soup, species ):
         model.append(new_tag)
         mylist = new_tag
     for row in species.itertuples():
-        print( row )
         new_species = soup.new_tag('species',
             attrs={
                 "boundaryCondition":"false",
@@ -186,7 +185,7 @@ def add_listOfSpecies( soup, species ):
                 "hasOnlySubstanceUnits":"false",
                 "id":row.Id,
                 "initialConcentration":row.InitialConcentration,
-                "metaid":f'meta_{row.Id}',
+                "metaid":f'meta_M_{row.Compartment}_{row.Id}',
                 "name":row.Name
             } )
         mylist.append(new_species)
@@ -209,7 +208,7 @@ def add_listOfReactions( soup, reactions ):
             attrs={
                 "fast":"false",                          # Required
                 "reversible":"true",                     # Required
-                "id":row.Id,                             # Required
+                "id": row.Id,                            # Required
                 "metaid":f'meta_{row.Id}',               # Optional
                 "name":row.Name,                         # Optional
                 "fbc:lowerFluxBound":"cobra_default_lb", # Required fbc:strict

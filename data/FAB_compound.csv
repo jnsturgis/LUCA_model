@@ -1,39 +1,39 @@
-Id	Name	Compartment	InitialConcentration	Charge	ChemicalFormula	Dbases
-C00024	Acertyl-CoA	I	1	0	C23H38N7O17P3S	
-C00083	Malonyl-CoA	I	1	0	C24H38N7O19P3S	
-C01209	Malonyl-ACP	I	1			
-C00229	ACP	I	1			
-C05744	Acetoacetyl-ACP	I	1			CHEBI 2393
-C04618	3 hydroxy-butanoyl-ACP	I	1			
-C04246	But-2-enoyl-ACP	I	1			
-C05745	Butyryl-ACP	I	1			
-C05746	3-oxo-hexanoyl-ACP	I	1			
-C05747	3-hydroxy-hexanoyl-ACP	I	1			
-C05748	trans-hex-2-enoyl-ACP	I	1			
-C05749	Hexanoyl-ACP	I	1			
-C05750	3-oxo-octanoyl-ACP	I	1			
-C04620	3-hydroxy-octanoyl-ACP	I	1			
-C05751	Trans-oct-2-enoyl-ACP	I	1			
-C05752	Octanoyl-ACP	I	1			
-C05753	3-oxo-decanoyl-ACP	I	1			
-C04619	3-hydroxy-decanoyl-ACP	I	1			
-C05754	Trans-dec-2-enoyl-ACP	I	1			
-C05755	Decanoyl-ACP	I	1			
-C05756	3-oxo-dodecanoyl-ACP	I	1			CHEBI 1637
-C05757	3-hydroxy-dodecanoyl-ACP	I	1			
-C05758	Trans-dodec-2-enoyl-ACP	I	1			
-C05223	Dodecanoyl-ACP	I	1			
-C05759	3-oxo-tetradecanoyl-ACP	I	1			
-C04688	3-hydroxy-tetradecanoyl-ACP	I	1			
-C05760	Trans-tetradec-2-enoyl-ACP	I	1			
-C05761	Tetradecanoyl-ACP	I	1			
-C05762	3-oxo-hexadecanoyl-ACP	I	1			
-C04633	3-hydroxy-hexadecanoyl-ACP	I	1			
-C05763	Trans-hexadec-2-enoyl-ACP	I	1			
-C05764	Hexadecanoyl-ACP	I	1			
-C00001	Water	I	55000	0	H20	
-C00010	Coenzyme A	I	1	0	C21H36N7O16P3S	
-C00011	CO2	I	1	0	CO2	
-C00005	NADPH	I	1	0		
-C00006	NADP+	I	1	1		
-C00080	H+	I	0.0001	1		
+Id,Name,Compartment,InitialConcentration,Charge,ChemicalFormula,Dbases
+M_i_C00024,Acertyl-CoA,i,1,0,C23H38N7O17P3S,
+M_i_C00083,Malonyl-CoA,I,1,0,C24H38N7O19P3S,
+M_i_C01209,Malonyl-ACP,I,1,,,
+M_i_C00229,ACP,I,1,,,
+M_i_C05744,Acetoacetyl-ACP,I,1,,,CHEBI 2393
+M_i_C04618,3 hydroxy-butanoyl-ACP,I,1,,,
+M_i_C04246,But-2-enoyl-ACP,I,1,,,
+M_i_C05745,Butyryl-ACP,I,1,,,
+M_i_C05746,3-oxo-hexanoyl-ACP,I,1,,,
+M_i_C05747,3-hydroxy-hexanoyl-ACP,I,1,,,
+M_i_C05748,trans-hex-2-enoyl-ACP,I,1,,,
+M_i_C05749,Hexanoyl-ACP,I,1,,,
+M_i_C05750,3-oxo-octanoyl-ACP,I,1,,,
+M_i_C04620,3-hydroxy-octanoyl-ACP,I,1,,,
+M_i_C05751,Trans-oct-2-enoyl-ACP,I,1,,,
+M_i_C05752,Octanoyl-ACP,I,1,,,
+M_i_C05753,3-oxo-decanoyl-ACP,I,1,,,
+M_i_C04619,3-hydroxy-decanoyl-ACP,I,1,,,
+M_i_C05754,Trans-dec-2-enoyl-ACP,I,1,,,
+M_i_C05755,Decanoyl-ACP,I,1,,,
+M_i_C05756,3-oxo-dodecanoyl-ACP,I,1,,,CHEBI 1637
+M_i_C05757,3-hydroxy-dodecanoyl-ACP,I,1,,,
+M_i_C05758,Trans-dodec-2-enoyl-ACP,I,1,,,
+M_i_C05223,Dodecanoyl-ACP,I,1,,,
+M_i_C05759,3-oxo-tetradecanoyl-ACP,I,1,,,
+M_i_C04688,3-hydroxy-tetradecanoyl-ACP,I,1,,,
+M_i_C05760,Trans-tetradec-2-enoyl-ACP,I,1,,,
+M_i_C05761,Tetradecanoyl-ACP,I,1,,,
+M_i_C05762,3-oxo-hexadecanoyl-ACP,I,1,,,
+M_i_C04633,3-hydroxy-hexadecanoyl-ACP,I,1,,,
+M_i_C05763,Trans-hexadec-2-enoyl-ACP,I,1,,,
+M_i_C05764,Hexadecanoyl-ACP,I,1,,,
+M_i_C00001,Water,I,55000,0,H20,
+M_i_C00010,Coenzyme A,I,1,0,C21H36N7O16P3S,
+M_i_C00011,CO2,I,1,0,CO2,
+M_i_C00005,NADPH,I,1,0,,
+M_i_C00006,NADP+,I,1,1,,
+M_i_C00080,H+,I,0.0001,1,,
