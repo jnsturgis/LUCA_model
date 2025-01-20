@@ -164,4 +164,8 @@ FAB_compound.csv needs Dbases, charge and formula - should be filled by 'externa
 
 16/1/25
 Extract kegg-compound and kegg-reaction annotations from Id's automatically if there is
-not already the annotation and the Id has the right form `R_{kegg-id}` or `M_x_{kegg-id}`.
+not already the annotation and the Id has the right form `R_x_{kegg-id}` or `M_x_{kegg-id}`.
+
+19/1/25
+Added Wood Ljungdahl pathway - and adjusted names in tables to conform to `{kegg-id}`
+syntax introduced.
