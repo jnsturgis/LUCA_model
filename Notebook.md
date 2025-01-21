@@ -150,3 +150,31 @@ What we need to do and in what order
 3.2 Analysis of thermodynamic choke points (possibly with initial concentration modification)
 
 NOTE 5/1/25: Probably do not need FeS cluster exchange as synthesis is in model.
+
+Note 5/1/25: These lines extract the LUCA.sbml catabolism (energy supply)
+environment and anabolism segments respectively.
+```
+python3 tools/select_parts.py  models/LUCA.sbml -k ".*Energy.*"
+python3 tools/select_parts.py  models/LUCA.sbml -k ".*exchange.*"
+python3 tools/select_parts.py  models/LUCA.sbml -r ".*EX_.*"
+```
+14/1/25: reactions.
+table2sbml works and produces valid sbml.
+Several points to resolve with the program
+1. GeneRules and list of genes are not currently output.
+2. Objectives are not output where to get them from?
+3. Parametres are generic
+4. Units are not output and generic
+5. Not at all robust to errors in the tables.
+
+15/1/25
+FAB_reaction.csv needs Dbases and FreeEnergy - should be filled by 'external'
+FAB_compound.csv needs Dbases, charge and formula - should be filled by 'external'
+
+16/1/25
+Extract kegg-compound and kegg-reaction annotations from Id's automatically if there is
+not already the annotation and the Id has the right form `R_x_{kegg-id}` or `M_x_{kegg-id}`.
+
+19/1/25
+Added Wood Ljungdahl pathway - and adjusted names in tables to conform to `{kegg-id}`
+syntax introduced.

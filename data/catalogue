@@ -2,3 +2,8 @@ LUCAcompounds_v0.0.csv - original table from Witmer article
 LUCAreactions_v0.0.csv - idem
 LUCAcofactors.csv      - list of identified cofactors for reactions from litterature
 Bionumbers_concentrations.csv - concentrations of metabolites from bionumbers tables *.png
+
+FAB_compound.csv      - Fatty acid biosynthesis compounds from kegg
+FAB_reaction.csv      - Fatty acid biosynthesis reactions from kegg
+WL_compound.csv       - Wood-Ljungdahl pathway compounds from kegg
+WL_reaction.csv       - Wood-Ljungdahl pathway reactions from kegg
