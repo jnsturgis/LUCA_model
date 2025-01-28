@@ -59,77 +59,81 @@ def inreactions_id(reactions, reaction_id ):
 
     return False
 
-# Command line handling
+def main():
+    # Command line handling
 
-if len(sys.argv) > 4 or len(sys.argv) <= 1:
-    usage()
+    if len(sys.argv) > 4 or len(sys.argv) <= 1:
+        usage()
 
-# Defaults
-filename = None
-fileflag = False
-keepflag = True
+    # Defaults
+    filename = None
+    fileflag = False
+    keepflag = True
 
-i = len(sys.argv)-1
-regex = re.compile(sys.argv[i])
-i = i-1
-while i > 0:
-    if sys.argv[i][0] == '-':           # Handle flags
-        keep = sys.argv[i]
-        if keep[1] == 'r':
-            keepflag = False
-        elif keep[1] != 'k':
-            usage()
-    else:
-        if fileflag:
-            usage()
-        filename = sys.argv[i]          # Handle filename
-        fileflag = True
+    i = len(sys.argv)-1
+    regex = re.compile(sys.argv[i])
     i = i-1
+    while i > 0:
+        if sys.argv[i][0] == '-':           # Handle flags
+            keep = sys.argv[i]
+            if keep[1] == 'r':
+                keepflag = False
+            elif keep[1] != 'k':
+                usage()
+        else:
+            if fileflag:
+                usage()
+            filename = sys.argv[i]          # Handle filename
+            fileflag = True
+        i = i-1
 
-# Read the sbml file.
+    # Read the sbml file.
 
-if fileflag:
-    try:
-        with open( filename, encoding="UTF8") as fp:
-            model = BeautifulSoup( fp, 'xml' )
-    except:
-        print( f"Failed to read sbml model from '{sys.argv[1]}'.")
-        sys.exit()
-else:
-    try:
-        model = BeautifulSoup(sys.stdin, 'xml' )
-    except:
-        print( "Failed to read sbml from stdin.")
-        sys.exit()
-
-# Edit the Reactions
-
-for reaction in model.find_all('reaction'):
-    if regex.match(reaction['id']) or regex.match(reaction['name']):
-        if not keepflag:
-            reaction.decompose()
+    if fileflag:
+        try:
+            with open( filename, encoding="UTF8") as fp:
+                model = BeautifulSoup( fp, 'xml' )
+        except:
+            print( f"Failed to read sbml model from '{sys.argv[1]}'.")
+            sys.exit()
     else:
-        if keepflag:
+        try:
+            model = BeautifulSoup(sys.stdin, 'xml' )
+        except:
+            print( "Failed to read sbml from stdin.")
+            sys.exit()
+
+    # Edit the Reactions
+
+    for reaction in model.find_all('reaction'):
+        if regex.match(reaction['id']) or regex.match(reaction['name']):
+            if not keepflag:
+                reaction.decompose()
+        else:
+            if keepflag:
+                reaction.decompose()
+
+    # Edit the species
+
+    for species in model.find_all('species'):
+        if not inreactions_sp(model.find('listOfReactions'), species['id']):
+            species.decompose()
+
+    # Edit the fbc:FluxObjectives
+
+    for reaction in model.find_all('fbc:fluxObjective'):
+        if not inreactions_id (model.find('listOfReactions'),
+                                reaction['fbc:reaction']):
             reaction.decompose()
 
-# Edit the species
+    # if there are no fluxObjective's in the list remove the list!
+    if not model.find('fbc:fluxObjective'):
+        fbc_list = model.find('fbc:listOfObjectives')
+        fbc_list.decompose()
 
-for species in model.find_all('species'):
-    if not inreactions_sp(model.find('listOfReactions'), species['id']):
-        species.decompose()
+    # Output the result
 
-# Edit the fbc:FluxObjectives
+    print(model.prettify(formatter="minimal"))
 
-for reaction in model.find_all('fbc:fluxObjective'):
-    if not inreactions_id (model.find('listOfReactions'),
-                            reaction['fbc:reaction']):
-        reaction.decompose()
-
-# if there are no fluxObjective's in the list remove the list!
-if not model.find('fbc:fluxObjective'):
-    fbc_list = model.find('fbc:listOfObjectives')
-    fbc_list.decompose()
-
-# Output the result
-
-print(model.prettify(formatter="minimal"))
+if __name__ == '__main__':
+    main()

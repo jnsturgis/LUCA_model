@@ -17,22 +17,26 @@ in model.boundary
 import sys
 import cobra as cb
 
-if len(sys.argv) != 2:
-    print(f'Usage: {sys.argv[0]} sbml_file' )
-    sys.exit()
+def main():
+    if len(sys.argv) != 2:
+        print(f'Usage: {sys.argv[0]} sbml_file' )
+        sys.exit()
 
-# Read the sbml file.
+    # Read the sbml file.
 
-try:
-    model = cb.io.read_sbml_model("LUCA.sbml")
-except:
-    print( f"Failed to read sbml model from '{sys.argv[1]}'.")
-    sys.exit()
+    try:
+        model = cb.io.read_sbml_model("LUCA.sbml")
+    except:
+        print( f"Failed to read sbml model from '{sys.argv[1]}'.")
+        sys.exit()
 
 
-print( f"Read sbml model from '{sys.argv[1]}'." )
-print(  "Checking reactions are balanced.")
-for reaction in set(model.reactions) - set(model.boundary):
-    if len(reaction.check_mass_balance()) > 0 :
-        print(reaction.id + str(reaction.check_mass_balance()) )
-print( "Done.")
+    print( f"Read sbml model from '{sys.argv[1]}'." )
+    print(  "Checking reactions are balanced.")
+    for reaction in set(model.reactions) - set(model.boundary):
+        if len(reaction.check_mass_balance()) > 0 :
+            print(reaction.id + str(reaction.check_mass_balance()) )
+    print( "Done.")
+
+if __name__ == '__main__':
+    main()

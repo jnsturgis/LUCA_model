@@ -21,73 +21,80 @@ The program should for each line in the table:
 import sys
 from bs4 import BeautifulSoup
 
-if len(sys.argv) != 3:
-    print(f'Usage: {sys.argv[0]} sbml_file cofactor_table' )
-    sys.exit()
+def main():
+    """
+    This is the routine which does everything.
+    """
+    if len(sys.argv) != 3:
+        print(f'Usage: {sys.argv[0]} sbml_file cofactor_table' )
+        sys.exit()
 
-# Read the sbml file.
+    # Read the sbml file.
 
-try:
-    with open( sys.argv[1], encoding="UTF8") as fp:
-        model = BeautifulSoup( fp, 'xml' )
-except:
-    print( f"Failed to read sbml model from '{sys.argv[1]}'.")
-    sys.exit()
+    try:
+        with open( sys.argv[1], encoding="UTF8") as fp:
+            model = BeautifulSoup( fp, 'xml' )
+    except:
+        print( f"Failed to read sbml model from '{sys.argv[1]}'.")
+        sys.exit()
 
-# Read the cofactor table.
+    # Read the cofactor table.
 
-my_table = []
-i = 0
-try:
-    with open( sys.argv[2], encoding="UTF8") as fp:
-        for line in fp:
-            elements = line.split('\t')
-            if i > 0 and len(elements[1].strip()) > 0:
-                my_table.append(( elements[0], elements[1].strip() ))
-            i += 1
-except:
-    print( f"Failed to read cofactor table from '{sys.argv[2]}'." )
-    sys.exit()
+    my_table = []
+    i = 0
+    try:
+        with open( sys.argv[2], encoding="UTF8") as fp:
+            for line in fp:
+                elements = line.split('\t')
+                if i > 0 and len(elements[1].strip()) > 0:
+                    my_table.append(( elements[0], elements[1].strip() ))
+                i += 1
+    except:
+        print( f"Failed to read cofactor table from '{sys.argv[2]}'." )
+        sys.exit()
 
-# Now process the cofactors.
-# 1. Check the species are in the sbml.
-species_list = []
-for element in my_table:
-    for species in element[1].split(','):
-        if species.strip() not in species_list :
-            species_list.append(species.strip())
+    # Now process the cofactors.
+    # 1. Check the species are in the sbml.
+    species_list = []
+    for element in my_table:
+        for species in element[1].split(','):
+            if species.strip() not in species_list :
+                species_list.append(species.strip())
 
-for species in model.find_all('species'):
-    # pylint: disable='cell-var-from-loop'
-    specid = species['id']
-    if specid[4:] in species_list:
-        species_list[:] = list(filter(lambda a: a!=specid[4:], species_list ))
+    for species in model.find_all('species'):
+        # pylint: disable='cell-var-from-loop'
+        specid = species['id']
+        if specid[4:] in species_list:
+            species_list[:] = list(filter(lambda a: a!=specid[4:], species_list ))
 
-if len(species_list) > 0:
-    print( 'The following species need to be added to the sbml model.' )
-    for species in species_list:
-        print( species )
-    sys.exit()
+    if len(species_list) > 0:
+        print( 'The following species need to be added to the sbml model.' )
+        for species in species_list:
+            print( species )
+        sys.exit()
 
-# 2/3. Modify reactions as necessary the list of modulators for each reaction
+    # 2/3. Modify reactions as necessary the list of modulators for each reaction
 
-my_dict = dict(my_table)
+    my_dict = dict(my_table)
 
-for reaction in model.find_all('reaction'):
-    reacid = reaction['id']
-    if reacid in my_dict:
-        modifier   = []
-        modlist = reaction.find('listOfModifiers')
-        if modlist is None :
-            prodlist = reaction.find('listOfProducts')
-            assert prodlist is not None
-            modlist = model.new_tag('listOfModifiers')
-            prodlist.insert_after(modlist)
-        for cofactor in my_dict[reacid].split(','):
-            cof_tag = model.new_tag('modifierSpeciesReference')
-            cof_tag['species'] = f'M_{cofactor.strip()}'
-            modlist.append( cof_tag )
+    for reaction in model.find_all('reaction'):
+        reacid = reaction['id']
+        if reacid in my_dict:
+            modifier   = []
+            modlist = reaction.find('listOfModifiers')
+            if modlist is None :
+                prodlist = reaction.find('listOfProducts')
+                assert prodlist is not None
+                modlist = model.new_tag('listOfModifiers')
+                prodlist.insert_after(modlist)
+            for cofactor in my_dict[reacid].split(','):
+                cof_tag = model.new_tag('modifierSpeciesReference')
+                cof_tag['species'] = f'M_{cofactor.strip()}'
+                modlist.append( cof_tag )
 
-# 4. Print the resulting sbml file
+    # 4. Print the resulting sbml file
 
-print(model.prettify(formatter="minimal"))
+    print(model.prettify(formatter="minimal"))
+
+if __name__ == '__main__':
+    main()
