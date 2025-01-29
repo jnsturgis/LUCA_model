@@ -3,18 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+************************
 LUCA_model documentation
-========================
+************************
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+.. include:: readme
+   :parser: myst
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   tools/index
-   models/index
-   data/index
+   models/doc
+   tools/doc
+   data/doc
+   presentation/doc
+
+   Branch_Info.md
+   Notebook.md

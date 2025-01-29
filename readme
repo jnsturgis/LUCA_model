@@ -1,21 +1,24 @@
 
-## LUCA.sbml
+# LUCA_model project
 
-THe objective of this project is to build a self consistent metabolic model of LUCA, 
-that is coherent with as many as possible of the accepted and likely properties of LUCA.
+The primary objective of this project is to build a self consistent metabolic
+model of LUCA, coded as an SBML file.
+The model should be coherent with as many as possible of the accepted and
+likely properties of LUCA.
+Furthermore, the model should be functional in as far as allowing a
+flux-balance-analysis solution with an objective function representing a
+reasonable cellular content, including fabrication of all necessary cofactors
+and coenzymes, with exchange reactions representing a plausible LUCA_environment
+for LUCA.
 
-The model sbml file will contain the model however a number of accessory programs should
-be associated with the project in order to:
-* Help maintain coherency and consistency of the model. 
-* Allow automatic recovery of information and annotations for the model from different
-on-line sources.
-* Produce figures based on the model
+Beyond the SBML model the project will include and require a number of
+accessory programs that will:
 
-The main model will contain the anabolic reactions necessary for growth of the model
-organism, as analysed by flux balance analysis, and the exchange reactions with the
-environment needed for resource acquisition and waste disposal.
-A separate part of the model will deal with catabolic reactions and the possible sources
-of ATP.
+* Help maintain coherency and consistency of the model.
+* Allow automatic recovery of information and annotations for the model from
+different on-line sources.
+* Facilitate building the model from different parts
+* Produce figures and tables based on the model
 
-The initial model LUCA_v0.0.sbml was generated automatically from the tables Witters et al. (1)
-using the script in table2sbml.py
+The initial model LUCA_v0.0.sbml was generated automatically from the tables
+Witters et al. (1). 
