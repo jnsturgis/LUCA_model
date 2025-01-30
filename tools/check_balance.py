@@ -1,12 +1,18 @@
 """
 Check that the reactions in sbml file are all balanced.
 
-This program takes one argument, an sbml file that is going to be read
-and checked.
-This will give a warning for non integer formulae - this is expected for the
-some "aggregation" metabolites. However unbalanced equations should just be
-the objective, and the exchange reactions, these are not checked as they are
-in model.boundary
+Usage:
+        check_balance <sbml_file>
+
+This program takes one required argument, the name of an sbml file that will be
+read and checked.
+
+The program will give a warning for non integer formulae - this is to be
+expected for some "aggregation" metabolites. However unbalanced equations
+should just be the objective biomass reaction, and the environment exchange
+reactions, these are not checked as they are in model.boundary.
+
+The program relies on the `cobra` python library.
 """
 
 # Allow todo comments and dont insist on capitals if initialized with a default.
@@ -18,14 +24,17 @@ import sys
 import cobra as cb
 
 def main():
+    """
+    The main function does it all.
+    """
     if len(sys.argv) != 2:
-        print(f'Usage: {sys.argv[0]} sbml_file' )
+        print(f'Usage: {sys.argv[0]} <sbml_file>' )
         sys.exit()
 
     # Read the sbml file.
 
     try:
-        model = cb.io.read_sbml_model("LUCA.sbml")
+        model = cb.io.read_sbml_model(sys.argv[1])
     except:
         print( f"Failed to read sbml model from '{sys.argv[1]}'.")
         sys.exit()
