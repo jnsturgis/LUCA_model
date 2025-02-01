@@ -69,6 +69,8 @@ def command_line( args ):
                 if i+1 >= len(args):
                     usage()
                 output = args[i+1]
+            elif args[i] == '-h':
+                usage()
             else:
                 if not compounds:
                     compounds = args[i]
@@ -90,7 +92,7 @@ def read_table( source ):
     """
     try:
         with open(source, 'r', encoding="UTF8") if source != '-' else sys.stdin as fp:
-            data_table = pd.read_csv ( fp, sep = '\t')
+            data_table = pd.read_csv ( fp, sep = ',')
     except:
         print( f"Failed to read table from '{source}'.")
         sys.exit()
@@ -180,12 +182,12 @@ def add_listOfSpecies( soup, species ):
                 "boundaryCondition":"false",
                 "compartment":row.Compartment,
                 "constant":"false",
-                "fbc:charge":row.Charge,
+                "fbc:charge":int(row.Charge),
                 "fbc:chemicalFormula":row.ChemicalFormula,
                 "hasOnlySubstanceUnits":"false",
                 "id":row.Id,
                 "initialConcentration":row.InitialConcentration,
-                "metaid":f'meta_M_{row.Compartment}_{row.Id}',
+                "metaid":f'meta_{row.Id}',
                 "name":row.Name
             } )
         mylist.append(new_species)
@@ -218,22 +220,38 @@ def add_listOfReactions( soup, reactions ):
 
         if len(row.Reagents):
             new_tag=soup.new_tag('listOfReactants')
-            for species in row.Reagents.split():
+            reagent_list = row.Reagents.split()
+            i = 0
+            while i < len(reagent_list):
+                stochiometry = "1"
+                if reagent_list[i].isdigit():
+                    stochiometry = reagent_list[i]
+                    i = i + 1
+                species = reagent_list[i]
                 new_tag.append(soup.new_tag('speciesReference', attrs={
                     "constant":"true",
                     "species":species,
-                    "stoichiometry":"1"
+                    "stoichiometry":stochiometry
                 }))
+                i = i+1
             new_reaction.append(new_tag)
 
         if len(row.Products):
             new_tag=soup.new_tag('listOfProducts')
-            for species in row.Products.split():
+            product_list = row.Products.split()
+            i = 0
+            while i < len(product_list):
+                stochiometry = "1"
+                if product_list[i].isdigit() :
+                    stochiometry = product_list[i]
+                    i = i + 1
+                species = product_list[i]
                 new_tag.append(soup.new_tag('speciesReference', attrs={
                     "constant":"true",
                     "species":species,
-                    "stoichiometry":"1"
+                    "stoichiometry":stochiometry
                 }))
+                i = i+1
             new_reaction.append(new_tag)
 
         if not pd.isna(row.Modifiers) and len(row.Modifiers):
