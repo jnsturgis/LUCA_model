@@ -46,3 +46,15 @@ models based on different assumptions. The default model, that is here, is a
 copy of the catabolic scheme driven by a respiratory chain and proton motive
 force driven ATP synthase. Various alternative catabolic can be used to build
 the full model.
+
+----
+
+FAB_pathway.sbml
+-----------------
+The fatty acid biosynthesis pathway, constructed from the tables `data/FAB_compound.csv`
+and `data/FAB_reaction.csv` using `tools/table2sbml.py`. This pathway synthesises
+hexadecanoyl-ACP from Acetyl-CoA using NADPH as the reducing source.
+
+WL_pathway.sbml
+----------------
+The Wood-Ljungdahl pathway.

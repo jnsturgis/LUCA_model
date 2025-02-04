@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml fbc:required="false" level="3" sboTerm="SBO:0000624" version="1" xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2">
+ <model fbc:strict="true" id="model_name" metaid="meta_model_name">
+  <listOfCompartments>
+   <compartment constant="true" id="i"/>
+  </listOfCompartments>
+  <listOfSpecies>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C23H38N7O17P3S" hasOnlySubstanceUnits="false" id="M_i_C00024" initialConcentration="1" metaid="meta_M_i_C00024" name="Acetyl-CoA"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="CO2" hasOnlySubstanceUnits="false" id="M_i_C00011" initialConcentration="1" metaid="meta_M_i_C00011" name="CO2"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="CO" hasOnlySubstanceUnits="false" id="M_i_C00237" initialConcentration="1" metaid="meta_M_i_C00237" name="CO"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="CH2O2" hasOnlySubstanceUnits="false" id="M_i_C00058" initialConcentration="1" metaid="meta_M_i_C00058" name="Formate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C19H23N7O6" hasOnlySubstanceUnits="false" id="M_i_C00101" initialConcentration="1" metaid="meta_M_i_C00101" name="Tetra-hydro-folate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H23N7O7" hasOnlySubstanceUnits="false" id="M_i_C00234" initialConcentration="1" metaid="meta_M_i_C00234" name="10-formyl-tetrahydrofolate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="C20H22N7O6" hasOnlySubstanceUnits="false" id="M_i_C00445" initialConcentration="1" metaid="meta_M_i_C00445" name="5,10-methenyl-tetrahydrofolate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H23N7O6" hasOnlySubstanceUnits="false" id="M_i_C00143" initialConcentration="1" metaid="meta_M_i_C00143" name="5,10-methylene-tetrahydrofolate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H25N7O6" hasOnlySubstanceUnits="false" id="M_i_C00440" initialConcentration="1" metaid="meta_M_i_C00440" name="5-methyltetrahydrofolate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H36N7O16P3S" hasOnlySubstanceUnits="false" id="M_i_C00010" initialConcentration="1" metaid="meta_M_i_C00010" name="Coenzyme A"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="H" hasOnlySubstanceUnits="false" id="M_i_C00080" initialConcentration="1" metaid="meta_M_i_C00080" name="Proton"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="4" fbc:chemicalFormula="Fe2S2Pr" hasOnlySubstanceUnits="false" id="M_i_C00138" initialConcentration="1" metaid="meta_M_i_C00138" name="Ferredoxin (reduced)"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="5" fbc:chemicalFormula="Fe2S2Pr" hasOnlySubstanceUnits="false" id="M_i_C00139" initialConcentration="1" metaid="meta_M_i_C00139" name="Ferredoxin (oxidized)"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O" hasOnlySubstanceUnits="false" id="M_i_C00001" initialConcentration="1" metaid="meta_M_i_C00001" name="Water"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H30N7O17P3" hasOnlySubstanceUnits="false" id="M_i_C00005" initialConcentration="1" metaid="meta_M_i_C00005" name="NADPH"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="C21H29N7O17P3" hasOnlySubstanceUnits="false" id="M_i_C00006" initialConcentration="1" metaid="meta_M_i_C00006" name="NADP+"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H16N5O13P3" hasOnlySubstanceUnits="false" id="M_i_C00002" initialConcentration="1" metaid="meta_M_i_C00002" name="ATP"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H15N5O10P2" hasOnlySubstanceUnits="false" id="M_i_C00008" initialConcentration="1" metaid="meta_M_i_C00008" name="ADP"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H3PO4" hasOnlySubstanceUnits="false" id="M_i_C00009" initialConcentration="1" metaid="meta_M_i_C00009" name="Pi"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="C21H28N7O14P2" hasOnlySubstanceUnits="false" id="M_i_C00003" initialConcentration="1" metaid="meta_M_i_C00003" name="NAD+"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H29N7O14P2" hasOnlySubstanceUnits="false" id="M_i_C00004" initialConcentration="1" metaid="meta_M_i_C00004" name="NADH"/>
+  </listOfSpecies>
+  <listOfParameters>
+   <parameter constant="true" id="cobra_default_lb" sboTerm="SBO:0000626" value="-1000"/>
+   <parameter constant="true" id="cobra_default_ub" sboTerm="SBO:0000626" value="1000"/>
+  </listOfParameters>
+  <listOfReactions>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R07157" metaid="meta_R_i_R07157" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00080" stoichiometry="2"/>
+     <speciesReference constant="true" species="M_i_C00138" stoichiometry="2"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00237" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00139" stoichiometry="2"/>
+    </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="M_i_C00138"/>
+    </listOfModifiers>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R07157">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.2.7.4"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R00134" metaid="meta_R_i_R00134" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00058" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
+    </listOfProducts>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R00134">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.17.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R10234" metaid="meta_R_i_R10234" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00440" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00010" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00237" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00024" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00101" stoichiometry="1"/>
+    </listOfProducts>
+    <listOfModifiers>
+     <modifierSpeciesReference species="M_i_C00101"/>
+    </listOfModifiers>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R10234">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.1.1.258"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R00943" metaid="meta_R_i_R00943" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00101" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00002" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00058" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00008" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00009" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00234" stoichiometry="1"/>
+    </listOfProducts>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R00943">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/6.3.4.3"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R01655" metaid="meta_R_i_R01655" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00445" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00001" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00234" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
+    </listOfProducts>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R01655">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/3.5.4.9"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R01220" metaid="meta_R_i_R01220" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00445" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00005" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00143" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00006" stoichiometry="1"/>
+    </listOfProducts>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R01220">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.5.1.5"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R00768" metaid="meta_R_i_R00768" name="nan" reversible="true">
+    <listOfReactants>
+     <speciesReference constant="true" species="M_i_C00143" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00004" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00080" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00440" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00003" stoichiometry="1"/>
+    </listOfProducts>
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_R_i_R00768">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.5.1.20"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+   </reaction>
+  </listOfReactions>
+ </model>
+</sbml>
