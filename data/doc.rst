@@ -39,4 +39,12 @@ fatty acid bioynthesis pathway.
 Wood Ljungdahl pathway
 ######################
 ``WL_compound.csv`` and ``WL_reaction.csv`` contain the data for producing the
-Wood-Ljungdahl carbon assimilation pathway.
+Wood-Ljungdahl carbon assimilation pathway and energy production pathway, as
+per Buckel and Thauer 2013 following the Acetobacterium woodii energetics and
+reactions about 0.25 ATP/Acetate
+
+Wolfe Cycle pathway
+####################
+``WC_compound.csv`` and ``WC_reaction.csv`` contain the data for producing the
+Wolfe cycle carbon assimilation pathway. As shown in Buckel and Thauer about 0.5
+ATP/Methane

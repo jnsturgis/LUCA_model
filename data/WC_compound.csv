@@ -4,14 +4,23 @@ M_i_C03576,Coenzyme M,i,1,0,C2H6O3S2
 M_i_C04832,CoM CoB heterodisulfide,i,1,0,C13H26NO10PS3
 M_i_C03920,Methyl CoM,i,1,0,C3H8O3S2
 M_i_C01217,Tetrahydromethanopterin H4MPT,i,1,0,C30H45N6O16P
-M_i_C00862,Methanofuran,C34H44N4O15
-M_i_C01001,Formyl Methanofuran,C35H44N4O16
-M_i_C01274,N5 Formyl H4MPT,C31H45N6O17P
-M_i_C04330,N5N10 Methenyl H4MPT,C31H44N6O16P
-M_i_C04377,N5N10 Methylene H4MPT,C31H45N6O16P
-M_i_C04488,N5 Methyl H4MPT,C31H47N6O16P
-M_i_C00876,Coenzyme F420 (oxidised),C29H36N5O18P
-M_i_C01080,Coenzyme F420 (reduced),C29H38N5O18P
+M_i_C00862,Methanofuran,i,1,0,C34H44N4O15
+M_i_C01001,Formyl Methanofuran,i,1,0,C35H44N4O16
+M_i_C01274,N5 Formyl H4MPT,i,1,0,C31H45N6O17P
+M_i_C04330,N5N10 Methenyl H4MPT,i,1,1,C31H44N6O16P
+M_i_C04377,N5N10 Methylene H4MPT,i,1,0,C31H45N6O16P
+M_i_C04488,N5 Methyl H4MPT,i,1,0,C31H47N6O16P
+M_i_C00876,Coenzyme F420 (oxidised),i,1,0,C29H36N5O18P
+M_i_C01080,Coenzyme F420 (reduced),i,1,0,C29H38N5O18P
 M_i_C00011,CO2,i,1,0,CO2,
-M_i_C00138w,Wolfe Cycle Ferredoxin (reduced),i,1,0,Fe2S2Pr,
-M_i_C00139w,Wolfe Cycle Ferredoxin (oxidized),i,1,0,Fe2S2Pr,
+M_i_C00138w,Fe8S8 Ferredoxin (doubly reduced),i,1,16,Fe8S8Pr,
+M_i_C00139w,Fe8S8 Ferredoxin (oxidized),i,1,18,Fe8S8Pr,
+M_i_C00080,H+,i,0.0001,1,H,
+M_i_C00001,Water,i,55000,0,H2O,
+M_o_C00080,H+,o,0.01,1,H,
+M_i_C01438,Methane,i,1,0,CH4,
+M_i_C00282,Hydrogen,i,1,0,H2,
+M_i_C00009,Phosphate,i,1,0,H3PO4,
+M_i_C00008,ADP,i,1,0,C10H15N5O10P2,
+M_i_C00002,ATP,i,1,0,C10H16N5O13P3,
+M_i_C00016,FAD,i,1,0,C27H33N9O15P2,
