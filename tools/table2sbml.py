@@ -266,7 +266,8 @@ def add_listOfReactions( soup, reactions ):
             # TODO: This needs parsing of gene rules expression (read definition)
             pass
 
-        annotations = row.Dbases
+        # TODO this needs better parsing to include all possibilities and add them.
+        annotations = ""
         if not pd.isna(row.FreeEnergy) and row.FreeEnergy:
             temp = row.FreeEnergy.split()
             annotations = f'dG0 {temp[0]} dG0_uncertainty {temp[1]} {annotations}'

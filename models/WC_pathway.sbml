@@ -20,8 +20,8 @@
    <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H36N5O18P" hasOnlySubstanceUnits="false" id="M_i_C00876" initialConcentration="1.0" metaid="meta_M_i_C00876" name="Coenzyme F420 (oxidised)"/>
    <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C29H38N5O18P" hasOnlySubstanceUnits="false" id="M_i_C01080" initialConcentration="1.0" metaid="meta_M_i_C01080" name="Coenzyme F420 (reduced)"/>
    <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="CO2" hasOnlySubstanceUnits="false" id="M_i_C00011" initialConcentration="1.0" metaid="meta_M_i_C00011" name="CO2"/>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="2" fbc:chemicalFormula="Fe2S2Pr" hasOnlySubstanceUnits="false" id="M_i_C00138w" initialConcentration="1.0" metaid="meta_M_i_C00138w" name="Wolfe Cycle Ferredoxin (reduced)"/>
-   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="4" fbc:chemicalFormula="Fe2S2Pr" hasOnlySubstanceUnits="false" id="M_i_C00139w" initialConcentration="1.0" metaid="meta_M_i_C00139w" name="Wolfe Cycle Ferredoxin (oxidized)"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="16" fbc:chemicalFormula="Fe8S8Pr" hasOnlySubstanceUnits="false" id="M_i_C00138w" initialConcentration="1.0" metaid="meta_M_i_C00138w" name="Fe8S8 Ferredoxin (doubly reduced)"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="18" fbc:chemicalFormula="Fe8S8Pr" hasOnlySubstanceUnits="false" id="M_i_C00139w" initialConcentration="1.0" metaid="meta_M_i_C00139w" name="Fe8S8 Ferredoxin (oxidized)"/>
    <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="1" fbc:chemicalFormula="H" hasOnlySubstanceUnits="false" id="M_i_C00080" initialConcentration="0.0001" metaid="meta_M_i_C00080" name="H+"/>
    <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O" hasOnlySubstanceUnits="false" id="M_i_C00001" initialConcentration="55000.0" metaid="meta_M_i_C00001" name="Water"/>
    <species boundaryCondition="false" compartment="o" constant="false" fbc:charge="1" fbc:chemicalFormula="H" hasOnlySubstanceUnits="false" id="M_o_C00080" initialConcentration="0.01" metaid="meta_M_o_C00080" name="H+"/>
@@ -136,27 +136,17 @@
     <listOfReactants>
      <speciesReference constant="true" species="M_i_C04628" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C03576" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_C00139w" stoichiometry="1"/>
-    </listOfReactants>
-    <listOfProducts>
      <speciesReference constant="true" species="M_i_C00138w" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00080" stoichiometry="2"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="M_i_C00139w" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_i_C00282" stoichiometry="2"/>
      <speciesReference constant="true" species="M_i_C04832" stoichiometry="1"/>
     </listOfProducts>
     <listOfModifiers>
      <modifierSpeciesReference species="M_i_C00016"/>
     </listOfModifiers>
-    <annotation>
-     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
-      <rdf:Description rdf:about="#meta_R_i_R11931">
-       <bqbiol:is>
-        <rdf:Bag>
-         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.8.7.3"/>
-        </rdf:Bag>
-       </bqbiol:is>
-      </rdf:Description>
-     </rdf:RDF>
-    </annotation>
    </reaction>
    <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="R_i_R04464" metaid="meta_R_i_R04464" name="nan" reversible="true">
     <listOfReactants>
@@ -272,11 +262,11 @@
     <listOfReactants>
      <speciesReference constant="true" species="M_i_C00139w" stoichiometry="1"/>
      <speciesReference constant="true" species="M_i_C00282" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_o_C00080" stoichiometry="1"/>
+     <speciesReference constant="true" species="M_o_C00080" stoichiometry="2"/>
     </listOfReactants>
     <listOfProducts>
      <speciesReference constant="true" species="M_i_C00138w" stoichiometry="1"/>
-     <speciesReference constant="true" species="M_i_C00080" stoichiometry="3"/>
+     <speciesReference constant="true" species="M_i_C00080" stoichiometry="4"/>
     </listOfProducts>
     <annotation>
      <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
