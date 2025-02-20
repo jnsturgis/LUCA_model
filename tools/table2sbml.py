@@ -1,5 +1,5 @@
 """
-This file generates an sbml model based on Tables of compounds and reactions.
+This file generates an sbml model based on tables of compounds and reactions.
 
 The table formats:
 Reaction table is a tab separated list of:
@@ -8,8 +8,12 @@ Reaction table is a tab separated list of:
 * Reagents list [Compound ID's - usually KEGG or CHEBI]
 * Products list [Compound ID's - usually KEGG or CHEBI]
 * Modifier list [Compound ID's - usually KEGG or CHEBI]
-* geneRule rule using gene product names, and, or and parentheses for parsing.
-* EC# for an enzyme doint the reaction (for annotations).
+* geneRule rule using gene product names, and, or and parentheses for parsing
+
+* TODO: a set of annotations as a semicolon separated 2 tuple list [("name";"value")]
+* TODO: an optional note as a string
+
+* EC# for an enzyme doing the reaction (for annotations).
 * FreeEnergy A list [dG0, uncertainty] at pH 7.0 (for annotations).
 * Dbases A list of dbase references [ dbase, id, ...] (for annotations).
 
@@ -20,6 +24,10 @@ Compounds table is a tab separated list of:
 * initialConcentration (defaults to '1.0')
 * Charge (defaults to 0)
 * ChemicalFormula in (C/H/alphabetical or alphabetical (if no C))
+
+* TODO: a set of annotations as a semicolon separated 2 tuple list [("name";"value")]
+* TODO: an optional note as a string
+
 * Dbases A list of dbase references [ dbase, id, ...] (for annotations).
 
 For chemical formulae define:
