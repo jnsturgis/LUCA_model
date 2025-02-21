@@ -20,12 +20,15 @@ def main():
     """
     source = "-"
     # For connectivity and cycle detection remove common metabolites
-    exclude = ['Mi_C00001', 'Mi_C00080', 'Mi_C00011', 'Mi_C00005', 'Mi_C00006']
+    exclude = ['Mi_C00001', 'Mi_C00002', 'Mi_C00003', 'Mi_C00004', 'Mi_C00005',
+        'Mi_C00080', 'Mi_C00011', 'Mi_C00006', 'Mi_C00008', 'Mi_C00009', 'Mi_C00013',
+        'Mi_C00020']
 #    handle_argv()
     graph = network.Network.from_csv(source)
     network.check_connectivity(graph, exclude)
     network.check_balance(graph)
     network.analyse_pathway(graph, exclude)
+    network.reaction_adjacency_graph( graph )
 
 if __name__ == '__main__':
     main()

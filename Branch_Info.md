@@ -19,3 +19,6 @@
               possible, use scripts)
 * documentation - Set up an write documentation for the project, both the Sphinx
               documentation and the presentation documentation.
+
+* top_dow   - Tools and files for building the metabolic network, and analyzing
+              it as per Beguerisse-Díaz et al. 2018.

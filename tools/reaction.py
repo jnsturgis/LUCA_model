@@ -19,11 +19,11 @@ class Reaction:
     @classmethod
     def from_text(cls, csv_line):
         """
-        Create a raction based on a csv line containing the information.
+        Create a reaction based on a csv line containing the information.
         """
         items = csv_line.split(',')
-        items[2] = rxn_parse(items[2])
-        items[3] = rxn_parse(items[3])
+        items[2] = _rxn_parse(items[2])
+        items[3] = _rxn_parse(items[3])
         return cls(items)
 
     def substrates(self):
@@ -44,8 +44,7 @@ class Reaction:
         """
         return self.modif
 
-
-def rxn_parse( mystring ):
+def _rxn_parse( mystring ):
     """
     Parse the reagent/product list to a list of tuples.
     """

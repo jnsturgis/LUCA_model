@@ -16,6 +16,7 @@ Standalone functions operate with multiple instances or are very generic.
 import sys
 
 import networkx as nx
+from networkx.algorithms import bipartite
 
 import reaction as rxn
 import compound as cpd
@@ -42,20 +43,27 @@ class Network:
         """
         compounds = {}
         reactions = {}
+        old_line = ""
 
         with (sys.stdin if csv_name == "-" else open(csv_name, "r", encoding='utf-8')) as f:
             for line in f:
                 line = line.rstrip()
-                parts = line.split(',',1)
-                match line[0]:
-                    case '#':           # Comment
-                        continue
-                    case 'R':           # Reaction line
-                        reactions[parts[0]] = rxn.Reaction.from_text(line)
-                    case 'M':           # Metabolite line
-                        compounds[parts[0]] = cpd.Compound.from_text(line)
-                    case _:             # Oops error
-                        raise ValueError(f'Invalid input line \n{line}')
+                if len(old_line) > 0:
+                    line = old_line + line
+                if line[-1] != '\\':        # Continuation character
+                    parts = line.split(',',1)
+                    match line[0]:
+                        case '#':           # Comment
+                            continue
+                        case 'R':           # Reaction line
+                            reactions[parts[0]] = rxn.Reaction.from_text(line)
+                        case 'M':           # Metabolite line
+                            compounds[parts[0]] = cpd.Compound.from_text(line)
+                        case _:             # Oops error
+                            raise ValueError(f'Invalid input line \n{line}')
+                    old_line = ""
+                else:
+                    old_line = line[:-1]
         return cls(compounds, reactions)
 
     def add_compound( self, compound_id, compound_data ):
@@ -76,12 +84,19 @@ def find_modifiers(network):
     """
     modifiers = []
     for _, reaction in network.reactions.items():
-        modifiers.append(reaction.modifiers)
+        modifiers.extend(reaction.modifiers())
     return set(modifiers)
 
-def make_graph( network):
+def make_graph( network ):
     """
-    Make a network graph from the metabolic network information.
+    Make a network graph from the metabolic network information using networkx.
+
+    In the resulting graph, produced from the reactions, the nodes correspond
+    to the reactions and compounds featuring as substrates and products of the
+    reactions. The graph is undirected and unweighted. The node labels
+    correspond to the reaction and compound id's is used to set the bipartite
+    attrbute (reations = 1, other things = 0) allowing consideration as a
+    bipartite graph.
     """
     graph = nx.Graph()
     for r_id, reaction in network.reactions.items():
@@ -89,7 +104,104 @@ def make_graph( network):
             graph.add_edge(c_id, r_id)
         for c_id in reaction.products():
             graph.add_edge(r_id, c_id)
+    # set attribute bipartite for nodes based on first letter of node_id...
+    nx.set_node_attributes(graph,
+        {node: 0 if node.startswith("R") else 1 for node in graph.nodes}, "bipartite")
+    assert nx.is_bipartite(graph)
     return graph
+
+def make_dgraph( network, **kwargs):
+    """
+    Make a directed network graph from the metabolic network information using networkx.
+
+    In the resulting graph, produced from the reactions, the nodes correspond
+    to the reactions and compounds featuring as substrates and products of the
+    reactions.
+    The graph is directed and weighted based on the standard free energy change
+    associated with the reaction in the forward and reverse directions using
+    the metropolis scheme.
+    TODO different weighting options (flux, dG°'m etc)
+    The node labels correspond to the reaction and compound id's is used to set
+    the bipartite attrbute (reations = 1, other things = 0) allowing
+    consideration as a bipartite graph.
+    """
+    graph = nx.DiGraph()
+
+    options = {
+        'weighting': 'dG0'
+    }
+    if kwargs:
+        options.update({k: v for k, v in kwargs.items() if k in options})
+
+    for r_id, reaction in network.reactions.items():
+
+        match options['weighting']:
+    # TODO add weighting algorithm and check others
+            case 'dG0':
+                forward_weight = 1.0        # This should be based of DG°'m'
+                reverse_weight = 0.0
+            case 'flux':
+                flux = reaction.dict.get('flux', 0.0)
+                if flux > 0:
+                    forward_weight = flux   # This should be based of DG°'m'
+                    reverse_weight = 0.0
+                else:
+                    forward_weight = 0.0
+                    reverse_weight = -flux
+            case '_':
+                raise ValueError("Unrecognized weighting scheme.")
+
+        for c_id in reaction.substrates():
+            graph.add_weighted_edges_from([c_id, r_id, forward_weight])
+            graph.add_weighted_edges_from([r_id, c_id, reverse_weight])
+        for c_id in reaction.products():
+            graph.add_weighted_edges_from([r_id, c_id, forward_weight])
+            graph.add_weighted_edges_from([c_id, r_id, reverse_weight])
+    # set attribute bipartite for nodes based on first letter of node_id...
+    nx.set_node_attributes(graph,
+        {node: 0 if node.startswith("R") else 1 for node in graph.nodes}, "bipartite")
+    assert nx.is_bipartite(graph)
+    return graph
+
+def reaction_adjacency_graph( network ):
+    """
+    Calculate the reaction adjacency matrix for a metabolic network.
+
+    This is the projection of the metabolic network bipartite graph onto the
+    reaction node, with edges weighted by the number of connections.
+    """
+    # TODO check weighting algorithm
+    bi_graph = make_graph( network )
+    result = bipartite.weighted_projected_graph(
+        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 0})
+    return result
+
+def normalized_flow_graph( network ):
+    """
+    Calculate the normalized_flow_graph for a metabolic network based on weighted graph
+
+    This is the projection of the weighted directions metabolic network
+    bipartite graph onto the reaction node, with edges weighted by the edge
+    weightings.
+    """
+    # TODO check algorithm
+    bi_graph = make_dgraph( network )
+    result = bipartite.weighted_projected_graph(
+        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 0})
+    return result
+
+def mass_flow_graph( network ):
+    """
+    Calculate the reaction adjacency matrix for a metabolic network.
+
+    This is the projection of the metabolic network bipartite graph onto the
+    reaction node, with edges weighted by the number of connections.
+    """
+    # TODO check algorithm
+    bi_graph = make_dgraph( network, weighting='flux')
+    result = bipartite.weighted_projected_graph(
+        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 0})
+    return result
 
 def add_atoms( dict1, dict2 ):
     """
@@ -126,8 +238,8 @@ def check_rxn_balance(reaction, compounds):
     if not (charge == 0.0 and all(value == 0 for value in atoms.values())):
         s1 = f'Reaction {reaction.r_id} unbalanced: '
         if charge != 0.0:
-            s1 += 'charge {charge}'
-        for k, v in atoms:
+            s1 += f'charge {charge}'
+        for k, v in atoms.items():
             if v != 0.0:
                 s1 += f",{k} {v}"
         print( s1 )
@@ -147,9 +259,9 @@ def check_connectivity(network, exclude):
     graph = make_graph(network)
     nodes = list(graph.nodes)
     unrefed = find_modifiers(network).union(nodes)
-    for c_id, _ in network.compounds.items():
+    for c_id, cmpd in network.compounds.items():
         if c_id not in unrefed:
-            print(f'Compound {c_id} is not used by reactions.')
+            print(f"Compound {c_id} '{cmpd.name}'is not used in any reactions.")
     for item in exclude:
         if graph.has_node(item):
             graph.remove_node(item)
@@ -187,6 +299,7 @@ def analyse_pathway(network, exclude, *args):
     cycles = list(nx.cycle_basis(graph))
     print(f'Network has {len(cycles)} base cycles.')
     modifiers = find_modifiers(network)
+    print(f'Modifiers are :{modifiers}')
     for ring in cycles:
         mods = modifiers.intersection(ring)
         if mods:
@@ -194,6 +307,16 @@ def analyse_pathway(network, exclude, *args):
         else:
             print (f"No modifiers in cycle: {ring}")
     return graph
+
+def stochiometric_matrix( network ):
+    """
+    Calculate the stochiometric matrix S for a metabolic network
+
+    S(i,j) is the stochiometry of production of compound(i) by reaction (j),
+    thus reagents get negative stochiometries.
+    Compound indexes can be found from ??? and reaction indexes from ???
+    """
+    # TODO add code
 
 def main():
     """

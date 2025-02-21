@@ -1,7 +1,10 @@
 doc.rst               - Documentation control file for Sphinx
 
-Concentrations.csv     - concentrations of metabolites from bionumbers tables *.png
+Concentrations.csv     - concentrations of metabolites from bionumbers tables
+Composition.csv        - Amino acid composition from E coli 1998 DNA Research 5(5):251-9
 
+DOI:10.1093/dnares/5.5.251
 FAB_pathway.csv       - Fatty acid biosynthesis pathway from kegg
 WC_pathway.csv        - Wolfe cycle pathway from kegg
 WL_pathway.csv        - Wood-Ljungdahl pathway from kegg
+PS_pathway.csv        - Protein synthesis from amino-acids based on kegg
