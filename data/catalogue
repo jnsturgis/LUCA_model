@@ -11,3 +11,5 @@ PS_pathway.csv        - Protein synthesis from amino-acids based on kegg the
 Supplementary_Table_2.csv - Reaction list from Wimmers article (Metabolism)
 Wimmers.csv           - csv file produced from Supplementary_Table_2 with
                         reactions and compounds added (kegg_reactions.py)
+NAP_pathway.csv       - DNA and RNA polymerase reactions to add dATGC /AUGC to
+                        a nucleic acid, Mr 1268.76 (RNA), 1204.76 (DNA).

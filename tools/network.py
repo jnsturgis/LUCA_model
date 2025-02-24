@@ -293,7 +293,8 @@ def check_balance(network):
     """
     balanced = True
     for _, reaction in network.reactions.items():
-        balanced = balanced and check_rxn_balance(reaction, network.compounds)
+        test = check_rxn_balance(reaction, network.compounds)
+        balanced = balanced and test
     if balanced:
         print( 'All reactions are chemically balanced.')
 

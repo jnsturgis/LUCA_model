@@ -25,6 +25,8 @@ following the Acetobacterium woodii energetics and reactions about 0.25 ATP/Acet
 assimilation pathway. As shown in Buckel and Thauer about 0.5 ATP/Methane.
 * ``PS_pathway.csv`` the data for protein synthesis reactions from amino acids,
   making and average composition protein. Mr = 11248.39 so 1mM is 1.1% wt/vol.
+* ``NAP_pathway.csv`` Nucleic acid polymerase reactions producing DNA (1204.76 g/mol)
+  and RNA (1268.76 g/mol 1mM = 0.1269% wt/vol).
 * ``Wimmers.csv`` contains the data for the reactions in the article by Wimmers
   et al. The Autotrophic Core: An Ancient Network of 404 Reactions Converts H2,
   CO2, and NH3 into Amino Acids, Bases, and Cofactors.
