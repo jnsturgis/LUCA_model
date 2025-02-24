@@ -17,11 +17,11 @@ class Reaction:
             self.dict[k] = v
 
     @classmethod
-    def from_text(cls, csv_line):
+    def from_text(cls, csv_line, sep ):
         """
         Create a reaction based on a csv line containing the information.
         """
-        items = csv_line.split(',')
+        items = csv_line.split( sep )
         items[2] = _rxn_parse(items[2])
         items[3] = _rxn_parse(items[3])
         return cls(items)
@@ -60,3 +60,8 @@ def _rxn_parse( mystring ):
         else:
             raise ValueError("Reagent list:'{mystring}' error.")
     return result
+
+def unit_test():
+    """
+    Test the functions and structures in this file.
+    """

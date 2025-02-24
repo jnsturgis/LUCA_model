@@ -21,11 +21,11 @@ class Compound:
             self.dict[k] = v
 
     @classmethod
-    def from_text(cls, line):
+    def from_text(cls, line, sep):
         """
         Create a compound based on a csv line containing the information.
         """
-        items = line.split(',')
+        items = line.split( sep )
         items = items[:2] + [items[0][1]] + items[2:]
         return cls(items)
 
@@ -42,3 +42,16 @@ class Compound:
             element_counts[element] += count  # Sum up duplicate elements
 
         return dict(element_counts)
+
+def unit_test():
+    """
+    Test the functions and structures in this file.
+    """
+
+def main():
+    """
+    A main function.
+    """
+
+if __name__ == '__main__':
+    main()

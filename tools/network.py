@@ -13,7 +13,11 @@ Class methods operate on the class or are alternatice constructors
 Standalone functions operate with multiple instances or are very generic.
 """
 
+# pylint: disable=W0511
+# TODO Needs unit testing
 import sys
+
+import numpy as np
 
 import networkx as nx
 from networkx.algorithms import bipartite
@@ -45,20 +49,26 @@ class Network:
         reactions = {}
         old_line = ""
 
+        sep = ";"
+
         with (sys.stdin if csv_name == "-" else open(csv_name, "r", encoding='utf-8')) as f:
             for line in f:
                 line = line.rstrip()
                 if len(old_line) > 0:
                     line = old_line + line
                 if line[-1] != '\\':        # Continuation character
-                    parts = line.split(',',1)
+                    parts = line.split(sep,1)
                     match line[0]:
                         case '#':           # Comment
                             continue
                         case 'R':           # Reaction line
-                            reactions[parts[0]] = rxn.Reaction.from_text(line)
+                            if parts[0] in reactions:
+                                print(f'Duplicate reaction {parts[0]}.')
+                            reactions[parts[0]] = rxn.Reaction.from_text(line, sep)
                         case 'M':           # Metabolite line
-                            compounds[parts[0]] = cpd.Compound.from_text(line)
+                            if parts[0] in compounds:
+                                print(f'Duplicate compound {parts[0]}.')
+                            compounds[parts[0]] = cpd.Compound.from_text(line, sep)
                         case _:             # Oops error
                             raise ValueError(f'Invalid input line \n{line}')
                     old_line = ""
@@ -95,8 +105,16 @@ def make_graph( network ):
     to the reactions and compounds featuring as substrates and products of the
     reactions. The graph is undirected and unweighted. The node labels
     correspond to the reaction and compound id's is used to set the bipartite
-    attrbute (reations = 1, other things = 0) allowing consideration as a
+    attrbute (metabolites = 0, other things = 1) allowing consideration as a
     bipartite graph.
+
+    The initial letter codes for id's are:
+        * Mx_ Metabolite in compartment x (x=i or e)
+        * R_  Reaction normal type.
+        * X_  Exchange reaction for input from the environment.
+        * T_  Transport reaction between compartments.
+        * B_  Biomass reaction.
+
     """
     graph = nx.Graph()
     for r_id, reaction in network.reactions.items():
@@ -106,7 +124,7 @@ def make_graph( network ):
             graph.add_edge(r_id, c_id)
     # set attribute bipartite for nodes based on first letter of node_id...
     nx.set_node_attributes(graph,
-        {node: 0 if node.startswith("R") else 1 for node in graph.nodes}, "bipartite")
+        {node: 0 if node.startswith("M") else 1 for node in graph.nodes}, "bipartite")
     assert nx.is_bipartite(graph)
     return graph
 
@@ -159,7 +177,7 @@ def make_dgraph( network, **kwargs):
             graph.add_weighted_edges_from([c_id, r_id, reverse_weight])
     # set attribute bipartite for nodes based on first letter of node_id...
     nx.set_node_attributes(graph,
-        {node: 0 if node.startswith("R") else 1 for node in graph.nodes}, "bipartite")
+        {node: 0 if node.startswith("M") else 1 for node in graph.nodes}, "bipartite")
     assert nx.is_bipartite(graph)
     return graph
 
@@ -173,7 +191,7 @@ def reaction_adjacency_graph( network ):
     # TODO check weighting algorithm
     bi_graph = make_graph( network )
     result = bipartite.weighted_projected_graph(
-        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 0})
+        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 1})
     return result
 
 def normalized_flow_graph( network ):
@@ -187,7 +205,7 @@ def normalized_flow_graph( network ):
     # TODO check algorithm
     bi_graph = make_dgraph( network )
     result = bipartite.weighted_projected_graph(
-        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 0})
+        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 1})
     return result
 
 def mass_flow_graph( network ):
@@ -200,7 +218,7 @@ def mass_flow_graph( network ):
     # TODO check algorithm
     bi_graph = make_dgraph( network, weighting='flux')
     result = bipartite.weighted_projected_graph(
-        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 0})
+        bi_graph, nodes = {n for n, d in bi_graph.nodes(data=True) if d["bipartite"] == 1})
     return result
 
 def add_atoms( dict1, dict2 ):
@@ -246,7 +264,7 @@ def check_rxn_balance(reaction, compounds):
         return False
     return True
 
-def check_connectivity(network, exclude):
+def check_connectivity(network):
     """
     Check that the metabolic network is connected and indicate divisions if there are any
 
@@ -262,9 +280,6 @@ def check_connectivity(network, exclude):
     for c_id, cmpd in network.compounds.items():
         if c_id not in unrefed:
             print(f"Compound {c_id} '{cmpd.name}'is not used in any reactions.")
-    for item in exclude:
-        if graph.has_node(item):
-            graph.remove_node(item)
     sub_graphs = list(nx.connected_components(graph))
     print(f'Network has {len(sub_graphs)} connected components.')
     if len(sub_graphs) > 1:
@@ -316,13 +331,45 @@ def stochiometric_matrix( network ):
     thus reagents get negative stochiometries.
     Compound indexes can be found from ??? and reaction indexes from ???
     """
-    # TODO add code
+    reaction_keys = list(network.reactions.keys())
+    compound_keys = list(network.compounds.keys())
+    s_matrix = np.zeros((len(compound_keys),len(reaction_keys)))
+    # pylint: disable=C0200
+    for j in range(0,len(reaction_keys)):
+        reaction = network.reactions[reaction_keys[j]]
+        for substrate in reaction.subst:
+            val  = - substrate[1]
+            i    = compound_keys.index(substrate[0])
+            s_matrix[i][j] = val
+        for substrate in reaction.prod:
+            val  = substrate[1]
+            i    = compound_keys.index(substrate[0])
+            s_matrix[i][j] = val
+    # pylint: enable=C0200
+    return s_matrix, reaction_keys, compound_keys
+
+def unit_test():
+    """
+    Test the functions and structures in this file.
+    """
+    print("Running the tests...")
+    print("Testing Reactions...")
+    rxn.unit_test()
+    print("Testing Compounds...")
+    cpd.unit_test()
+    print("Finished testing.")
 
 def main():
     """
     The main routine for the network file
     """
+    if len(sys.argv) > 1:
+        if sys.argv[1] == 'test':
+            unit_test()
+            sys.exit()
+
     print("This file is used to define a network class")
+    print("Run with argument 'test' to do tests.")
 
 if __name__ == '__main__':
     main()

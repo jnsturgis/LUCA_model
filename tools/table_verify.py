@@ -25,9 +25,10 @@ def main():
         'Mi_C00020']
 #    handle_argv()
     graph = network.Network.from_csv(source)
-    network.check_connectivity(graph, exclude)
+    network.check_connectivity(graph)
     network.check_balance(graph)
     network.analyse_pathway(graph, exclude)
+    network.stochiometric_matrix( graph )
     network.reaction_adjacency_graph( graph )
 
 if __name__ == '__main__':

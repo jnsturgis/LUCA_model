@@ -173,8 +173,46 @@ FAB_compound.csv needs Dbases, charge and formula - should be filled by 'externa
 
 16/1/25
 Extract kegg-compound and kegg-reaction annotations from Id's automatically if there is
-not already the annotation and the Id has the right form `R_x_{kegg-id}` or `M_x_{kegg-id}`.
+not already the annotation and the Id has the right form `Rx_{kegg-id}` or `Mx_{kegg-id}`.
 
 19/1/25
 Added Wood Ljungdahl pathway - and adjusted names in tables to conform to `{kegg-id}`
 syntax introduced.
+
+21/2/25
+Need to find a way to use databases to automatically fill databases but still
+use the previous knowledge
+
+previous knowledge is:
+reactions in original set
+new reactions to add from kegg
+modifications to make (protein, dna, rna synthesis)
+transport reactions
+
+24/2/25
+```
+network.py        - make a (networkx) graph for doing graphy things from .csv
+kegg-reactions.py - takes list of reactions id's and recovers info from kegg.
+```
+Changed network.py to use ';' rather than ',' because of compound names with ','
+Requires modification to csv input files (tr "," ";" < old > new)
+
+1. built Wimmers.csv from Supplementary_Table_2
+   `cut -f1 -d';' < Supplementary_Table_2.csv | sort | head --lines=-3 | tail -n +2 > toto`
+    `python tools/kegg_reactions.py < data/toto > data/Wimmers.csv`
+2. Manually add RMAN1 - 3 and methanofuran.
+```
+# Manual Modifications
+Ri_RMAN1;Wimmers manually added reaction;Mi_C21107;Mi_C20559;
+Ri_RMAN2;Wimmers manually added reaction;Mi_C20562;Mi_C05927;
+Ri_RMAN3;Wimmers manually added reaction;Mi_C21070;Mi_C00862;
+Mi_C00862;Methanofuran;1;0;C34H44N4O15
+```
+3. Add positive charges to (C00080)H+, (C00003)NAD+, (C00006)NADP+
+4. Status with `python tools/table_verify.py < data/Wimmers.csv > toto` shows
+   graph is in 4 pieces!!! 1 big one and:
+	 * 'Ri_R00104' - this should not be
+	 * 'Ri_R00127' - this should not be
+	 * 'Ri_R00333', 'Mi_C00454', 'Mi_C00201'  - NDP and NTP only appearances but with AMP/ADP
+	 * One reaction is charge inbalanced `Ri_R00189 unbalanced: charge -1.0`
+   * 382 cycles found in graph.
