@@ -1,16 +1,51 @@
 """
 This file generates an sbml model based on tables of compounds and reactions.
 
-Version 3. Using network, reaction and compound classes
+The table formats:
+Reaction table is a tab separated list of:
+* ID for reaction if possible from KEGG or another database.
+* Name Reaction name
+* Reagents list [Compound ID's - usually KEGG or CHEBI]
+* Products list [Compound ID's - usually KEGG or CHEBI]
+* Modifier list [Compound ID's - usually KEGG or CHEBI]
+* geneRule rule using gene product names, and, or and parentheses for parsing
+
+* TODO: a set of annotations as a semicolon separated 2 tuple list [("name";"value")]
+* TODO: an optional note as a string
+
+* EC# for an enzyme doing the reaction (for annotations).
+* FreeEnergy A list [dG0, uncertainty] at pH 7.0 (for annotations).
+* Dbases A list of dbase references [ dbase, id, ...] (for annotations).
+
+Compounds table is a tab separated list of:
+* ID for compound if possible from KEGG or another database.
+* Name Compound name
+* Compartment (defaults to 'i')
+* initialConcentration (defaults to '1.0')
+* Charge (defaults to 0)
+* ChemicalFormula in (C/H/alphabetical or alphabetical (if no C))
+
+* TODO: a set of annotations as a semicolon separated 2 tuple list [("name";"value")]
+* TODO: an optional note as a string
+
+* Dbases A list of dbase references [ dbase, id, ...] (for annotations).
+
+For chemical formulae define:
+* Dna (DNA)
+* Rna (RNA)
+* Pro (Protein)
+* Acp (Acyl carrier protein)
 """
 
 # pylint: disable='fixme' 'invalid-name' 'bare-except'
 
+# TODO: define table formats for efficiency and possible completeness.
+# TODO: make robust against missing columns and data
+# TODO: avoid double entry
+
 import sys
-
+import pandas as pd
 from bs4 import BeautifulSoup
-
-import network
 
 SBML_INITIAL = """<?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
@@ -30,7 +65,8 @@ def command_line( args ):
     """
     Handle the command line filenames and flags.
     """
-    source = "-"
+    compounds = None
+    reactions = None
     output = "-"
 
     skip = False
@@ -44,12 +80,31 @@ def command_line( args ):
             elif args[i] == '-h':
                 usage()
             else:
-                if not source:
-                    source = args[i]
+                if not compounds:
+                    compounds = args[i]
+                elif not reactions:
+                    reactions = args[i]
                 else:
                     usage()
 
-    return source, output
+    if not compounds:
+        compounds = "-"
+    if not reactions:
+        reactions = "-"
+
+    return compounds, reactions, output
+
+def read_table( source ):
+    """
+    Read a tab separated file into a pandas DataFrame
+    """
+    try:
+        with open(source, 'r', encoding="UTF8") if source != '-' else sys.stdin as fp:
+            data_table = pd.read_csv ( fp, sep = ',')
+    except:
+        print( f"Failed to read table from '{source}'.")
+        sys.exit()
+    return data_table
 
 def gene_elements( rule_list ):
     """
@@ -100,8 +155,7 @@ def add_listOfUnitDefinitions( model, units_definitions ):
     if units_definitions:
         for term in units_definitions:
             # if necessary add the unitDefinition to the list
-            # Dummy
-            model += term
+            pass
 
 def add_listOfCompartments( soup, compartments ):
     """
@@ -120,7 +174,7 @@ def add_listOfCompartments( soup, compartments ):
                 new_tag = soup.new_tag( "compartment", attrs={"id":compartment}, constant="true")
                 mylist.append(new_tag)
 
-def add_listOfSpecies( soup, metab_model ):
+def add_listOfSpecies( soup, species ):
     """
     Add to the model a list of species as necessary from the DataFrame.
     """
@@ -130,26 +184,26 @@ def add_listOfSpecies( soup, metab_model ):
         new_tag = soup.new_tag('listOfSpecies')
         model.append(new_tag)
         mylist = new_tag
-    for key, species in matab_model.compounds.items():
+    for row in species.itertuples():
         new_species = soup.new_tag('species',
             attrs={
                 "boundaryCondition":"false",
-                "compartment":species.compartment,
+                "compartment":row.Compartment,
                 "constant":"false",
-                "fbc:charge":int(species.charge),
-                "fbc:chemicalFormula":species.formula,
+                "fbc:charge":int(row.Charge),
+                "fbc:chemicalFormula":row.ChemicalFormula,
                 "hasOnlySubstanceUnits":"false",
-                "id":key,
-                "initialConcentration":species.concentration,
-                "metaid":f'meta_{key}',
-                "name":species.name
+                "id":row.Id,
+                "initialConcentration":row.InitialConcentration,
+                "metaid":f'meta_{row.Id}',
+                "name":row.Name
             } )
         mylist.append(new_species)
-#        if not pd.isna(row.Dbases) and len(row.Dbases) > 0:
-#            add_annotation( soup, new_species)
-#            add_annotations( soup, new_species, row.Dbases )
+        if not pd.isna(row.Dbases) and len(row.Dbases) > 0:
+            add_annotation( soup, new_species)
+            add_annotations( soup, new_species, row.Dbases )
 
-def add_listOfReactions( soup, matab_model ):
+def add_listOfReactions( soup, reactions ):
     """
     Add to the model a list of reactions as necessary from the DataFrame.
     """
@@ -159,61 +213,77 @@ def add_listOfReactions( soup, matab_model ):
         new_tag = soup.new_tag('listOfReactions')
         model.append(new_tag)
         mylist = new_tag
-    for key, reaction in matab_model.reactions.items():
+    for row in reactions.itertuples():
         new_reaction = soup.new_tag('reaction',
             attrs={
                 "fast":"false",                          # Required
                 "reversible":"true",                     # Required
-                "id": key,                               # Required
-                "metaid":f'meta_{key}',                  # Optional
-                "name":reaction.name,                    # Optional
+                "id": row.Id,                            # Required
+                "metaid":f'meta_{row.Id}',               # Optional
+                "name":row.Name,                         # Optional
                 "fbc:lowerFluxBound":"cobra_default_lb", # Required fbc:strict
                 "fbc:upperFluxBound":"cobra_default_ub"  # Required fbc:strict
             } )
         mylist.append(new_reaction)
 
-        if len(reaction.subst):
+        if len(row.Reagents):
             new_tag=soup.new_tag('listOfReactants')
-            for item in reaction.subst:
+            reagent_list = row.Reagents.split()
+            i = 0
+            while i < len(reagent_list):
+                stochiometry = "1"
+                if reagent_list[i].isdigit():
+                    stochiometry = reagent_list[i]
+                    i = i + 1
+                species = reagent_list[i]
                 new_tag.append(soup.new_tag('speciesReference', attrs={
                     "constant":"true",
-                    "species":item[0],
-                    "stoichiometry":item[1]
+                    "species":species,
+                    "stoichiometry":stochiometry
                 }))
+                i = i+1
             new_reaction.append(new_tag)
 
-        if len(reaction.prod):
+        if len(row.Products):
             new_tag=soup.new_tag('listOfProducts')
-            for item in reaction.prod:
+            product_list = row.Products.split()
+            i = 0
+            while i < len(product_list):
+                stochiometry = "1"
+                if product_list[i].isdigit() :
+                    stochiometry = product_list[i]
+                    i = i + 1
+                species = product_list[i]
                 new_tag.append(soup.new_tag('speciesReference', attrs={
                     "constant":"true",
-                    "species":item[0],
-                    "stoichiometry":item[1]
+                    "species":species,
+                    "stoichiometry":stochiometry
                 }))
+                i = i+1
             new_reaction.append(new_tag)
 
-        if len(reaction.modif):
+        if not pd.isna(row.Modifiers) and len(row.Modifiers):
             new_tag=soup.new_tag('listOfModifiers')
-            for species in reaction.modif:
+            for species in row.Modifiers.split():
                 new_tag.append(soup.new_tag('modifierSpeciesReference', attrs={
                     "species":species,
                 }))
             new_reaction.append(new_tag)
 
-#        if not pd.isna(row.GeneRules) and len(row.GeneRules) > 0:
+        if not pd.isna(row.GeneRules) and len(row.GeneRules) > 0:
             # TODO: This needs parsing of gene rules expression (read definition)
-#            pass
+            pass
 
         # TODO this needs better parsing to include all possibilities and add them.
-#        annotations = ""
-#        if not pd.isna(row.FreeEnergy) and row.FreeEnergy:
-#            temp = row.FreeEnergy.split()
-#            annotations = f'dG0 {temp[0]} dG0_uncertainty {temp[1]} {annotations}'
-#        if not pd.isna(row.EC) and row.EC:
-#            annotations=f'ec-code {row.EC} {annotations}'
-#        if len(annotations) > 0:
-#            add_annotation( soup, new_reaction)
-#            add_annotations( soup, new_reaction, annotations )
+        annotations = ""
+        if not pd.isna(row.FreeEnergy) and row.FreeEnergy:
+            temp = row.FreeEnergy.split()
+            annotations = f'dG0 {temp[0]} dG0_uncertainty {temp[1]} {annotations}'
+        if not pd.isna(row.EC) and row.EC:
+            annotations=f'ec-code {row.EC} {annotations}'
+        if len(annotations) > 0:
+            add_annotation( soup, new_reaction)
+            add_annotations( soup, new_reaction, annotations )
 
 def add_listOfParameters( soup, parameters ):
     """
@@ -238,41 +308,46 @@ def add_listOfObjectives( soup, objectives ):
     Add to the model a list of objectives as necessary.
     """
     # TODO: Do we really need this, and how is it parsed in the list? (read documentation)
-    # Dummy
     if objectives:
-        soup += objectives
+        pass
 
 def add_listOfGenes( soup, genes ):
     """
     Add to the model a list of genes as necessary.
-
-    Dummy
     """
     if genes:
         for gene in genes:
-            soup += gene
+            pass
 
 def main():
     """
     Main routine for table2sbml.
 
-    Read in data and organize an sbml file from them.
+    Read in 2 data tables and organize an sbml file from them.
     """
-    source_file, output_file = command_line( sys.argv )
+    compounds_file, reactions_file, output_file = command_line( sys.argv )
 
-    data = network.Network.from_csv(source_file)
+    compounds = read_table( compounds_file )
+    try:
+        compartments = list(set(compounds['Compartment'].tolist()))
+    except KeyError:
+        compartments = None
+    reactions = read_table( reactions_file )
+    try:
+        genes = gene_elements(reactions['geneRule'].tolist())
+    except KeyError:
+        genes = None
 
     parameters = ["cobra_default_lb", "-1000", "cobra_default_ub", "1000"]
 
     soup = BeautifulSoup( SBML_INITIAL ,"xml")
-
     add_listOfUnitDefinitions( soup, ["mmol_per_gDW_per_hr"] )
-    add_listOfCompartments( soup, network.find_compartments( data ) )
-    add_listOfSpecies( soup, data )
+    add_listOfCompartments( soup, compartments )
+    add_listOfSpecies( soup, compounds )
     add_listOfParameters(soup, parameters)
-    add_listOfReactions( soup, data )
+    add_listOfReactions( soup, reactions )
     add_listOfObjectives( soup, None )
-    add_listOfGenes( soup, None )
+    add_listOfGenes( soup, genes )
 
     with open(output_file, 'w', encoding="UTF8") if output_file != '-' else sys.stdout as fp:
         fp.write(soup.prettify(formatter="minimal"))

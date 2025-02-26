@@ -111,9 +111,6 @@ def make_graph( network ):
     The initial letter codes for id's are:
         * Mx_ Metabolite in compartment x (x=i or e)
         * R_  Reaction normal type.
-        * X_  Exchange reaction for input from the environment.
-        * T_  Transport reaction between compartments.
-        * B_  Biomass reaction.
 
     """
     graph = nx.Graph()
@@ -348,6 +345,16 @@ def stochiometric_matrix( network ):
             s_matrix[i][j] = val
     # pylint: enable=C0200
     return s_matrix, reaction_keys, compound_keys
+
+def find_compartments( network ):
+    """
+    Return a set of compartment codes for the network, extracted from compound id's
+    """
+    compartment_set = set([])
+    for compound in list(network.compounds.keys()):
+        compartment_set.add(compound[1])
+    return compartment_set
+
 
 def unit_test():
     """

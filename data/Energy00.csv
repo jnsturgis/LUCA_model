@@ -1,0 +1,7 @@
+# Compounds
+Mi_C00001;H2O;1;0;H2O
+Mi_C00002;ATP;1;0;C10H16N5O13P3
+Mi_C00008;ADP;1;0;C10H15N5O10P2
+Mi_C00009;Orthophosphate;1;0;H3PO4
+# An imaginary energy source
+Ri_JS0001;ATP condensation;Mi_C00008 Mi_C00009;Mi_C00001 Mi_C00002;

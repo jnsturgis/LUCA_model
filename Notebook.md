@@ -216,3 +216,29 @@ Mi_C00862;Methanofuran;1;0;C34H44N4O15
 	 * 'Ri_R00333', 'Mi_C00454', 'Mi_C00201'  - NDP and NTP only appearances but with AMP/ADP
 	 * One reaction is charge inbalanced `Ri_R00189 unbalanced: charge -1.0`
    * 382 cycles found in graph.
+
+TODO
+
+Code the reaction names as Qxxxxx if changed even a little from the KEGG standard.
+Setup Biomass (B), catabolism (K), Transport (T) and exchange (X) reactions to test.
+
+Indicate modified metabolites as D rather than C  (changed equation) (this should
+be done automatically later in the workflow)
+
+Write network to SBML routines in network.py and possibly add construction for
+cobra and fba.
+
+Get DG'm from Equilibrator or elsewhere and fill in blanks unknown is not
+allowed and then limit reversibility.
+
+Identify missing reactions and decide on options:
+* Add from kegg
+* Add not from kegg
+
+AUtomatic identification of blocking points.
+
+
+25/2/25
+Created
+* Energy00.csv a simple ATP condensation reaction.
+* Environment00.csv a series of exchange reactions.

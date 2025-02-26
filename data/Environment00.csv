@@ -1,0 +1,32 @@
+# Compounds that can exchange
+Mi_C00001;H2O;1;0;H2O
+Mi_C00009;Orthophosphate;1;0;H3PO4
+Mi_C00011;CO2;1;0;CO2
+Mi_C00014;Ammonia;1;0;NH3
+Mi_C00080;H+;1;1;H
+Mi_C00094;Sulfite;1;0;H2SO3
+Mi_C00283;Hydrogen sulfide;1;0;H2S
+Mi_C00282;Hydrogen;1;0;H2
+Mi_C00288;HCO3-;1;0;HCO3
+Mi_C06232;Molybdate;1;0;H2MoO4
+# Temporary compounds to get some flux.
+Mi_C00008;ADP;1;0;C10H15N5O10P2
+Mi_C00017;Generic Protein;1;0;PrH
+Mi_C00039;Generic DNA;1;0;DnOH
+Mi_C00046;Generic RNA;1;0;RnOH
+# Exchange reactions, initially inside transport for nonpermeants later
+Ri_C00001;Water exchange;;Mi_C00001;
+Ri_C00009;Phosphate exchange;;Mi_C00009;
+Ri_C00011;CO2 exchange;;Mi_C00011;
+Ri_C00014;Ammonia exchange;;Mi_C00014;
+Ri_C00080;Proton exchange;;Mi_C00080;
+Ri_C00094;Sulfite exchange;;Mi_C00094;
+Ri_C00282;Hydrogen exchange;;Mi_C00282;
+Ri_C00283;H2S exchange;;Mi_C00283;
+Ri_C00288;Bicarbonate exchange;;Mi_C00288;
+Ri_C06232;Molybdate exchange;;Mi_C06232;
+# Temporary exchange reactions to get some flux.
+Ri_C00008;ADP Exchange;;Mi_C00008;
+Ri_C00017;Environmental Protein;;Mi_C00017;
+Ri_C00039;eDNA;;Mi_C00039;
+Ri_C00046;eRNA;;Mi_C00046;
