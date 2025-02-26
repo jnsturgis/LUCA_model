@@ -130,7 +130,7 @@ def add_listOfSpecies( soup, metab_model ):
         new_tag = soup.new_tag('listOfSpecies')
         model.append(new_tag)
         mylist = new_tag
-    for key, species in matab_model.compounds.items():
+    for key, species in metab_model.compounds.items():
         new_species = soup.new_tag('species',
             attrs={
                 "boundaryCondition":"false",
