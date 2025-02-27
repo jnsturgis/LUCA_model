@@ -260,3 +260,65 @@ Thoughts on rolling back from LUCA.
 * A family tree of the enzymes for reactions.
 * ATP synthase as an energy driven exporter or pump before takeover as ATP source.
 * How did pyrophosphatase work as an ATP synthesiser in metabolism?
+
+27/2/25
+Thoughts on tools and documenting model building decisions.
+1. Script `.sh` to build the model and produce figures for the modules and the
+		whole model.
+	* Central metabolism (EM, KC, RPPP) (no oxygen) (CM)
+	* Proteins - amino acid biosynthesis (AAB) and protein polymerization (PS)
+	* Nucleic acids - Purine (PUB), Pyrimidine (PYB) nucleotide biosynthesis and
+	  polymerization reactions (NAP)
+	* Membrane synthesis - Fatty acids (FAB), Polyprene (GGB), and membrane lipid
+	  (ML) biosynthetic pathways.
+	* Cofactor biosynthesis pathways and cycles probably several. (C01..C99)
+	* Transport reactions (TR) for different transporters.
+	* Anabolism, several options (A01..A99)
+	* Exchange reactions for different scenarios and tests (X01..X99)
+	* Biomass reactions for different scenarios and tests (B01..B99)
+2. Model building step 1 start with list of kegg reaction id's produce `.csv`
+		with `kegg_model.py`
+3. Model building step 2 edit `.csv` file(s) with sed scripts.
+4. Model building step 3 convert `.csv` files to `.sbml` models for different
+    modules and check that they work and collect a minimal set of `cofactors`
+		that appear in loops of the model.
+5. Verify that the module `.sbml` files can produce flux in an appropriate
+		environmental context.
+6. Merge modules to form complete model as `.sbml` file.
+7. Analysis:
+	* fba
+	* graph analysis
+	* thermodynamic analysis
+
+Thoughts on file formats and flow of information.
+* `.rxn` List of kegg reaction id's as white space separated words.
+* `.sed` sed control file for operating on `.csv` files.
+* `.csv` condensed description of a model in csv format with ';' as the
+    separator with lines for metabolites (start with letter M) and reactions
+		(start with letter R). Lines for metabolites contain:
+	 1. an ID (Mc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
+	    id of the equivalent molecule).
+	 2. a name for the molecule.
+	 3. an initial concentration of the molecule in the model.
+	 4. the charge of the molecule (coherent with the reactions and formula).
+	 5. the formula of the molecule with the abbreviations Pr, Rn and Dn
+	    corresponding to generic protein (polypeptide), RNA and DNA molecules.
+	 6. Potentially more information that is parsed as: Nothing yet.
+	  The lines for reactions contain the following information:
+	 1. an ID (Rc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
+	    id of the equivalent reaction).
+	 2. a name for the reaction.
+	 3. a set of words representing the reaction substrates possibly preceded by
+	    a numerical stoichiometry.
+	 4. a set of words representing the reaction products possibly preceded by
+	    a numerical stoichiometry.
+	 5. a set of words representing any reaction modulators (cofactors and
+	    regulators)
+	 6. potentially a pair of numbers representing the DG°'m standard free energy
+	    change at 1mM standard state in aqueous solution at pH7.0 (and pMg2+ of
+			50mM and ionic strength of about 400mM)
+	 7. potentially a set of EC numbers identifying the enzyme(s) responsable for
+	    the reaction.
+   8. potentially a pair of numbers for the maximum fluxes in forward and
+	    reverse directions.
+* `.sbml` an sbml representation of the same data as in the csv file.

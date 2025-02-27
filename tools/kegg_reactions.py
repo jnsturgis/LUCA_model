@@ -114,7 +114,7 @@ def main():
     parser = argparse.ArgumentParser(prog="kegg_reactions",
         description="Interrogate kegg to build metabolic network csv file")
     parser.add_argument("infile", type=str, help="Filename or use '-' for stdin")
-    parser.add_argument("outfile", type=str, help="Filename or use '-' for stdin")
+    parser.add_argument("outfile", type=str, help="Filename or use '-' for stdout")
     args = parser.parse_args()
 
     # Read words from input
@@ -123,18 +123,19 @@ def main():
         reaction_set = set(f.read().split())
 
     reactions = fetch_reactions(URL, reaction_set )
-    compound_set = set()
+    compound_set = []
     for _, rxn in reactions.items():
-        compound_set.union(set(rxn[2].split()).union(set(rxn[3].split())))
-    compounds = fetch_compounds(URL, compound_set)
+        compound_set.extend(rxn[2].split())
+        compound_set.extend(rxn[3].split())
+    compounds = fetch_compounds(URL, set(compound_set))
 
     # Output the csv file
     with (sys.stdout if args.outfile == "-" else open(args.outfile,
         "w", encoding='utf-8')) as f:
         for _ , compound in sorted(compounds.items()):
-            print(f'Mi_{compound[0]};{compound[1]};1;0;{compound[2]}')
+            f.write(f'Mi_{compound[0]};{compound[1]};1;0;{compound[2]}\n')
         for _ , rxn in sorted(reactions.items()):
-            print(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(rxn[3],'Mi_')};')
+            f.write(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(rxn[3],'Mi_')};\n')
 
 if __name__ == '__main__':
     main()

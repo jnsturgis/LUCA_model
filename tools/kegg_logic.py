@@ -27,7 +27,7 @@ def main():
         help = f'Known operations are {OPERATIONS}')
     parser.add_argument("infile1", type=str, help="Filename or use '-' for stdin")
     parser.add_argument("infile2", type=str, help="Filename or use '-' for stdin")
-    parser.add_argument("outfile", type=str, help="Filename or use '-' for stdin")
+    parser.add_argument("outfile", type=str, help="Filename or use '-' for stdout")
     args = parser.parse_args()
     if args.operation not in OPERATIONS:
         parser.print_help()
