@@ -242,3 +242,21 @@ AUtomatic identification of blocking points.
 Created
 * Energy00.csv a simple ATP condensation reaction.
 * Environment00.csv a series of exchange reactions.
+* Biomass_full.csv an initial biomass reaction to get started.
+
+Objective here is to get the combination Energy00, Environment00 and Biomass_full
+to work together as a network and fba and its analysis to then be able to add
+different aspects and keep working by backtracking.
+* Membranes and lipid metabolisms
+* Wimmers pathways
+* FeS metabolism etc.
+
+26/2/25
+Thoughts on rolling back from LUCA.
+* DNA is an afterthought
+* Some amino acids are afterthoughts
+* In rolling back consider protein evolution through duplication and specialization
+  where did the enzymes/functionalities come from.
+* A family tree of the enzymes for reactions.
+* ATP synthase as an energy driven exporter or pump before takeover as ATP source.
+* How did pyrophosphatase work as an ATP synthesiser in metabolism?

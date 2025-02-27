@@ -1,17 +1,23 @@
 """
 Retrieve reaction information from kegg based on a list of reactions
 
-The program takes as input a list of reaction identifiers and interrogates the
-kegg database to recover the name equation and possibly ec number(s) for the
-reaction.
+The program takes as input a file containing reaction a list of identifiers and
+interrogates the kegg database to recover the name equation and possibly ec
+number(s) for the reaction.
+
 The program then recovers, for the different compounds that appear in the
 reactions, the name charge and chemical formula from the kegg database.
+
 This information is the written as a csv file suitable for making into a
 metabolic model, by the other tools.
 """
 
 import sys
+import argparse
 import requests
+
+# Constants definitions
+URL = 'https://rest.kegg.jp/get/'           # URL of kegg database api.
 
 def first_word(line: str) -> str:
     """
@@ -50,59 +56,85 @@ def fetch_compounds( url: str, all_compounds: set) -> dict:
     """
     compounds = {}
     for c_id in all_compounds:
-        response = requests.get(url+c_id, timeout=5)
-        response.raise_for_status()
-        lines = response.text.strip().split("\n")
-        c_name = ""
-        c_formula = ""
-        for line in lines:
-            if first_word(line) == "NAME":
-                c_name = second_word(line)
-            if first_word(line) == "FORMULA":
-                c_formula = second_word(line)
+        if c_id[0] != 'C' or len(c_id) != 6:
+            print(f'Parsing error - {c_id} not a valid kegg compound id. **IGNORED**')
+        else:
+            response = requests.get(url+c_id, timeout=5)
+            try:
+                response.raise_for_status()
+            except requests.exceptions.HTTPError:
+                print(f'Error retrieving data for "{c_id}" **IGNORED**')
+                continue
+
+            lines = response.text.strip().split("\n")
+            c_name = ""
+            c_formula = ""
+            for line in lines:
+                if first_word(line) == "NAME":
+                    c_name = second_word(line)
+                if first_word(line) == "FORMULA":
+                    c_formula = second_word(line)
             compounds[c_id] = [c_id, c_name, c_formula]
     return compounds
+
+def fetch_reactions( url: str, reaction_set: set ) -> dict:
+    """
+    Fetch the reaction information from the database
+    """
+    reactions = {}
+
+    for r_id in reaction_set:
+        if r_id[0] != 'R' or len(r_id) != 6:
+            print(f'Input format error - {r_id} not a valid kegg reaction id. **IGNORED**')
+        else:
+            response = requests.get(url+r_id, timeout=5)
+            try:
+                response.raise_for_status()
+            except requests.exceptions.HTTPError:
+                print(f'Error retrieving data for "{r_id}" **IGNORED**')
+                continue
+
+            lines = response.text.strip().split("\n")
+            r_name = ""
+            r_substrates = []
+            r_products = []
+            for line in lines:
+                if first_word(line) == "NAME":
+                    r_name = second_word(line)
+                if first_word(line) == "EQUATION":
+                    r_substrates, r_products = parse_equation(line)
+            reactions[r_id] = [r_id,r_name,r_substrates,r_products]
+    return reactions
 
 def main():
     """
     Main routine does the work.
     """
-    url = 'https://rest.kegg.jp/get/'
-    reactions = {}
-    compounds = {}
-    all_compounds = []
-    for in_line in sys.stdin:
-        if len(in_line)>1 and in_line[0] != '#':
-            r_id = first_word(in_line)
-        if r_id[0] != 'R':
-            print(f'Input format error - {in_line.rstrip()} unexpected.')
-        response = requests.get(url+r_id, timeout=5)
-        response.raise_for_status()
-        lines = response.text.strip().split("\n")
-        r_name = ""
-        r_substrates = []
-        r_products = []
-        for line in lines:
-            if first_word(line) == "NAME":
-                r_name = second_word(line)
+    # Handle the command line using argparse.
+    parser = argparse.ArgumentParser(prog="kegg_reactions",
+        description="Interrogate kegg to build metabolic network csv file")
+    parser.add_argument("infile", type=str, help="Filename or use '-' for stdin")
+    parser.add_argument("outfile", type=str, help="Filename or use '-' for stdin")
+    args = parser.parse_args()
 
-            if first_word(line) == "EQUATION":
-                r_substrates, r_products = parse_equation(line)
+    # Read words from input
+    with (sys.stdin if args.infile == "-" else open(args.infile,
+        "r", encoding="utf-8")) as f:
+        reaction_set = set(f.read().split())
 
-        reactions[r_id] = [r_id,r_name,r_substrates,r_products]
-        all_compounds.extend(r_substrates.split())
-        all_compounds.extend(r_products.split())
+    reactions = fetch_reactions(URL, reaction_set )
+    compound_set = set()
+    for _, rxn in reactions.items():
+        compound_set.union(set(rxn[2].split()).union(set(rxn[3].split())))
+    compounds = fetch_compounds(URL, compound_set)
 
-    all_compounds = set(all_compounds)
-    all_compounds = {item for item in all_compounds if item.startswith('C')}
-
-    compounds = fetch_compounds(url, all_compounds)
-
-    for _ , compound in sorted(compounds.items()):
-        print(f'Mi_{compound[0]};{compound[1]};1;0;{compound[2]}')
-
-    for _ , rxn in sorted(reactions.items()):
-        print(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(rxn[3],'Mi_')};')
+    # Output the csv file
+    with (sys.stdout if args.outfile == "-" else open(args.outfile,
+        "w", encoding='utf-8')) as f:
+        for _ , compound in sorted(compounds.items()):
+            print(f'Mi_{compound[0]};{compound[1]};1;0;{compound[2]}')
+        for _ , rxn in sorted(reactions.items()):
+            print(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(rxn[3],'Mi_')};')
 
 if __name__ == '__main__':
     main()
