@@ -57,7 +57,8 @@ def fetch_compounds( url: str, all_compounds: set) -> dict:
     compounds = {}
     for c_id in all_compounds:
         if c_id[0] != 'C' or len(c_id) != 6:
-            print(f'Parsing error - {c_id} not a valid kegg compound id. **IGNORED**')
+            if not c_id.isdigit():
+                print(f'Parsing error - {c_id} not a valid kegg compound id. **IGNORED**')
         else:
             response = requests.get(url+c_id, timeout=5)
             try:

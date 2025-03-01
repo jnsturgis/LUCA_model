@@ -295,7 +295,9 @@ Thoughts on file formats and flow of information.
 * `.sed` sed control file for operating on `.csv` files.
 * `.csv` condensed description of a model in csv format with ';' as the
     separator with lines for metabolites (start with letter M) and reactions
-		(start with letter R). Lines for metabolites contain:
+		(start with letter R). the '#' character can be used for comments, and long
+		lines can be broken with a '\' before the EOL character. Lines for
+		metabolites contain:
 	 1. an ID (Mc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
 	    id of the equivalent molecule).
 	 2. a name for the molecule.
@@ -321,4 +323,192 @@ Thoughts on file formats and flow of information.
 	    the reaction.
    8. potentially a pair of numbers for the maximum fluxes in forward and
 	    reverse directions.
+	 9. potentially a flux from the last recorded fba.
 * `.sbml` an sbml representation of the same data as in the csv file.
+
+PUR.rxn from kegg modules M00048 M00049 M00050 all in Wimmers tables,
+and kegg module M00053 with reactions R02014 and R02020 not in Wimmers tables.
+
+PYR.rxn from kegg modules M00051 M00052, all in Wimmers tables except R00570 (ndk),
+and kegg module M00938 and R02023, missing from Wimmers tables R02018, R02022,
+R02023, R02024(desoxynucleotide synthases), R06613 alternative dUMP->dTMP and
+R02331 (desoxy-ndk)
+
+Note - this pathway would be simpler and less energy consuming if UMP could be
+converted directly to dUMP or dUDP converted to dTDP. Even dUDP conversion to
+dUMP would save energy.
+
+AAB.rxn pathways from kegg modules
+  * M00028 Ornithine biosynthesis without R02282 in Wimmers
+	* M00844 Arginine biosynthesis in Wimmers
+	* M00340 Histidine biosynthesis in Wimmers
+	* M00020 Serine biosynthesis in Wimmers
+	* M00018 Threonine biosynthesis in Wimmers
+	* R00945 R00751 Glycine synthesis routes in Wimmers
+	* R01001 R01290 Cysteine synthesis in Wimmers
+  * R00243 R00248 R00253 R00258 R00396 R00400 R00355 R00483 R00578 A,D,N,E,Q Biosynthesis in Wimmers
+	* M00019 2 oxobutanone biosynthesis in Wimmers
+	* M00535 Valine/Isoleucine biosynthesis in Wimmers
+	* M00432 Leucine biosynthesis in Wimmers
+	* M00022 Shikimate biosynthesis pathway in Wimmers
+	* M00025 Tyrosine biosynthesis pathway in Wimmers
+	* M00024 Phenylalanine biosynthesis pathway in Wimmers
+	* M00023 Tryptophan biosynthesis pathway in Wimmers
+  * M00015 Proline biosynthesis pathway in Wimmers
+  * M00016 Lysine biosynthesis pathway in Wimmers
+	* M00030 Lysine biosynthesis pathway too in Wimmers
+	* M00017 Methionine biosynthesis pathway without M04409 in Wimmers
+
+CM.rxn based on kegg maps 10, 20, and 30
+  * M00007 PPP Oxidative branch
+	* M00006 PPP Non oxidative branch R01067 R08575 absent from Wimmers
+	* M00005 PRPP synthesis in Wimmers
+	* M00008 Entner-Doudoroff without R02036 R05605 in Wimmers
+	* M00001 Glycolysis without R01786 R02189 R09085 R13199 R05805 R00756 R01068 R07159 in Wimmers
+	* M00009 TCA cycle without R00621 R03316 R07618 R02570 R00727 R10343 R00361
+	* R00709 in Wimmers adding R00351 R01899 R00268 absent from Wimmers
+
+CF.rxn cofactor biosynthesis based on kegg map m01240
+  * R10089 PyridoxalP synthesis
+	* M00896 Archeal TPP synthesis
+	* M00895 Prokaryotic TPP synthesis adding R05636 R07460 in Wimmers except
+	  R07463 (added for iminoglycine synthesis)
+	* M00115 NAD biosynthesis without R00481 (O2) adding R00104 for NADP as Wimmers
+	* M00120 CoA biosynthesis in Wimmers
+	* M00119 Pantothenate biosynthesis in Wimmers
+  * M00573 BioI Biotin pathway without R10123 (O2) in Wimmers
+	* M00572 PimolenoylACP synthesis in Wimmers
+  * M00125 FAD biosynthesis
+	* M00881 Lipoate biosynthesis NOT in Wimmers
+	* M00126 THF biosynthesis plus R11072 in Wimmers
+	* THF cycle in Wimmers
+  * M00880 Molybdenum cofactor biosynthesis in Wimmers
+	* M00121 Heme biosynthesis without R03220 R03222 R12605 R09489 R00310 but
+	  with R04178 R11329 R11522. R03197 and R11329 absent from Wimmers.
+  * M00846 Siroheme biosynthesis R2864 absent from Wimmers.
+	* M00836 Cofactor F430 in Wimmers
+	* M00924 Anaerobic Cobalamine biosynthesis in Wimmers
+  * M00112 Cobalamin biosynthesis without R06529 as Wimmers but with R12184 R09083
+	* M00989 Oxygen independant quinol synthesis absent from Wimmers
+	* M00935 Methanofuran biosynthesis in Wimmers incomplete in kegg (RMAN)
+	* M00378 Coenzyme F420 biosynthesis in Wimmers
+	* M00358 Coenzyme M biosynthesis in Wimmers
+  * M00608 Coenzyme B biosynthesis in Wimmers but 3 reactions missing R09720
+	  R10391 R10394 in Wimmers and incomplete in kegg
+
+After this effort...
+3 reactions in Wimmers.rxn are not included in CM.rxn, CF.rxn, AAB.rxn, PUR.rxn
+and PYR.rxn: RMAN1 RMAN2 RMAN3
+
+Reactions not in Wimmers.rxn:
+AAB.rxn:  R04405
+CM.rxn:   R00268 R00351 R01067 R01899 R08575
+CF.rxn:   R00424 R01218 R02864 R03197 *R04178* R04985 R05000 R06529 *R07463* *R08768*
+					R08769 *R09083* R09720 R09737 R10391 R10394 R11329 R11522 *R12067* R12184
+					R12423 R12424 R12427 R12428 R12657 *R12658* *R13426* R13439 R13440 R13441
+PUR.rxn:  R00331 R01137 R01857 R02014 R02017 R02019 R02020
+PYR.rxn:  R00570 R02018 R02022 R02023 R02024 R02331 R06613
+
+*** I will need to assess how important additions are.
+
+FAB.rxn: Synthesis of C16:0 AcylCoA, is not in Wimmers.rxn (except R01626).
+GGB.rxn: Synthesis of GGPP (M00900), is not in Wimmers.rxn.
+ML.rxn:  Synthesis of PS/PE on diacyl or digeranylgeranyl GolP, is not in Wimmers.rxn
+
+Next steps:
+1. Edit reaction lists to remove unnecessary reactions (especially if I added
+   them without justification).
+2. Create scripts to edit reactions to clarify abstractions notably Pr, Rn and
+   Dn as units rather than 'R'
+
+Convert to .csv
+AAB: OK
+CM:  OK
+CF:  OK
+FAB: OK
+GGB: OK
+ML:  OK
+PUR: OK
+PYR: OK
+
+Remove oxygen requiring reactions ML R00846, AAB, FAB, CM, GGB, PUR, PYR,
+CF R04178 R07463 R08768 R09083 R12067 R12658 R13426
+
+Identify compounds with 'R' atoms...
+AAB: LysW system C5H8NO4R and Holo Lys2 HSR and their adducts.
+CM:  None
+CF:  ACP HSR and adducts, Lipoyl carrier protein NH2R and adducts, Glycine cleavage system NH2R
+FAB: ACP = HSR and adducts...
+GGB: None
+ML:  Acyl-CoA acyl group R
+PUR: NTP/NDP R for nucleotide.
+PYR: None
+
+Delete reactions with NTP/NDP R00331 and R00333 from PYR.rxn (DONE)
+
+Use this command to make the csv files from the rxn files.
+`python ../tools/kegg_reactions.py CM.rxn CM.csv`
+
+Used this script to make the modifications.
+`for name in AAB CF CM FAB GGB ML PUR PYR; do
+awk 'NR==FNR {if ($1 !~ /^#/) {rules[$1]=$2; replacements[$1]=$3} next}
+     {for (key in rules) if ($0 ~ key) gsub(rules[key], replacements[key])}
+     1' csv_editions.txt $name".csv" | tr "~" " " > $name"2.csv"
+done
+grep -vF 'Mi_C01641' < CF2.csv > tmp.csv; mv tmp.csv CF2.csv
+grep -vF '^Mi_C02987' < CF2.csv > tmp.csv; mv tmp.csv CF2.csv
+cat << EOT >>CF2.csv
+Mi_C00046;Generic RNA;1;0;RnOH
+Mi_C02987;Glutamyl-tRNA;1;0;C5H8O4NRn
+EOT`
+
+Next steps
+1. make sure all reactions are balanced and fix in csv_editions if not!
+    `python ../tools/csv_table_verify.py PYR2.csv` (not currently working -hangs on load)
+2. work on `csv_table_verify.py` command line source and flags, writing sbml or csv
+		and dealing with missing metabolites.
+
+1/3/25
+
+Unbalanced reactions:
+AAB2.csv  OK
+CF2.csv   Ri_R01078 Ri_R03231 Ri_R03348 Ri_R04109 Ri_R05220 Ri_R05223 Ri_R05578
+					Ri_R07459 Ri_R07461 Ri_R07773 Ri_R08716 Ri_R09153 Ri_R09394 Ri_R10246
+					Ri_R10397 Ri_R10404 Ri_R10712 Ri_R10802 Ri_R11580 Ri_R11628 Ri_R12026
+					Ri_R12184 Ri_R12423 Ri_R12424 Ri_R13439 Ri_R13440 Ri_R13441
+CM2.csv   Ri_R00344 Ri_R00742 Ri_R02164 Ri_R10866
+FAB2.csv  Ri_R04534
+GGB2.csv  OK
+ML2.csv   Ri_R02242 Ri_R06872
+PUR2.csv  Ri_R07404
+PYR2.csv  R100Ri_R00575 Ri_R01868
+
+Added to csv_editions.txt
+Bicarbonate H
+Flavodoxin formulae
+Quinone formulae (fake)
+Acceptor formulae (fake)
+C22154 Iron cluster scaffold protein with 4Fe4S 2+ cluster... Fe4S4Pr
+Remove H+ from substrates for Ri_R10092
+Add H+ to products for Ri_R04534
+C22154 Iron cluster scaffold protein with 4Fe4S 2+ cluster... Fe4S4Pr
+Electron charge
+Sulfur donor formula (fake)
+
+Various incomplete reactions are problematic
+Ri_R08716 Mi_C17401;Mi_C11539 added acceptor/donor
+Ri_R09153 Mi_C00593;Mi_C03576 added H2S, reductant
+Ri_R10397 Mi_C16590;Mi_C16593 added H2S, reductant
+Ri_R10404 Mi_C00019;Mi_C00021 methylation by unknown mechanism
+
+As are some metabolites that are "undefined" like acceptor and electron.
+
+Need to keep an eye on these when I do the fba.
+
+Next:
+1. verify_table command line (not just stdin and flags for actions)
+2. write_sbml from network.
+3. read csv in network including extra fields.
+
+then...
+* setup environments for fba of different modules...

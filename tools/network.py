@@ -54,6 +54,7 @@ class Network:
         with (sys.stdin if csv_name == "-" else open(csv_name, "r", encoding='utf-8')) as f:
             for line in f:
                 line = line.rstrip()
+                print(line)
                 if len(old_line) > 0:
                     line = old_line + line
                 if line[-1] != '\\':        # Continuation character
