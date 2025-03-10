@@ -511,5 +511,17 @@ Next:
 3. read csv in network including extra fields.
 
 then...
-* setup environments for fba of different modules...
+* setup environments for fba of different modules... eg. ML_env.csv
 * find enzyme prosthetic groups and incorporate information... consider how, probably enzyme object.
+
+2/3/25
+
+Done: verify_table command line
+To test: write sbml from network.
+
+Cofactor database (found via DatabaseCommons)
+https://www.ebi.ac.uk/thornton-srv/databases/CoFactor/queries.php?ec=1.1.1.8&submit=Go
+
+10/3/25
+Need to work on write_sbml...
+Produces valid sbml... but listOfUnitDefinitions and listOfUnits needs work.

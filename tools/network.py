@@ -16,8 +16,9 @@ Standalone functions operate with multiple instances or are very generic.
 # pylint: disable=W0511
 # TODO Needs unit testing
 import sys
-
 import numpy as np
+
+from bs4 import BeautifulSoup
 
 import networkx as nx
 from networkx.algorithms import bipartite
@@ -25,28 +26,81 @@ from networkx.algorithms import bipartite
 import reaction as rxn
 import compound as cpd
 
+SBML_INITIAL = """<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
+<model metaid="meta_model_name" id="model_name" fbc:strict="true">
+</model>
+</sbml>
+"""
 class Network:
     """
-    A class to describe metabolic networks
+    A class to describe metabolic networks.
+
+    A metabolic network is made of:
+    1. A set of compounds as a dictionary.
+    2. A set of reactions in a dictionary.
+    3. A set of enzymes in a dictionary.
     """
     def __init__(self, *argv):
         match len(argv):
-            case 2:
+            case 3:
                 self.compounds = argv[0]
                 self.reactions = argv[1]
+                self.enzymes   = argv[2]
             case 0:
                 self.compounds = {}
                 self.reactions = {}
+                self.enzymes   = {}
             case _:
-                raise ValueError("Need 0 or 2 dictionaries to make a metabolic network.")
+                raise ValueError("Need 0 or 3 dictionaries to make a metabolic network.")
+
+    @classmethod
+    def from_sbml(cls, sbml_name):
+        """
+        Use an sbml file to setup a metabolic network.
+        """
 
     @classmethod
     def from_csv(cls, csv_name):
         """
         Use a csv file to setup a metabolic network.
+
+        `.csv` condensed description of a model in csv format with ';' as the
+        separator with lines for metabolites (start with letter M) and reactions
+		(start with letter R). the '#' character can be used for comments, and long
+		lines can be broken with a '\' before the EOL character. Lines for
+		metabolites contain:
+	       1. an ID (Mc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
+	          id of the equivalent molecule).
+	       2. a name for the molecule.
+	       3. an initial concentration of the molecule in the model.
+	       4. the charge of the molecule (coherent with the reactions and formula).
+	       5. the formula of the molecule with the abbreviations Pr, Rn and Dn
+	          corresponding to generic protein (polypeptide), RNA and DNA molecules.
+           6. Potentially more information that is parsed as: Nothing yet.
+        The lines for reactions contain the following information:
+	       1. an ID (Rc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
+	          id of the equivalent reaction).
+	       2. a name for the reaction.
+	       3. a set of words representing the reaction substrates possibly preceded by
+	          a numerical stoichiometry.
+	       4. a set of words representing the reaction products possibly preceded by
+	          a numerical stoichiometry.
+	       5. a set of words representing any reaction modulators (cofactors and
+	          regulators)
+	       6. potentially a pair of numbers representing the DG°'m standard free energy
+	          change at 1mM standard state in aqueous solution at pH7.0 (and pMg2+ of
+			  50mM and ionic strength of about 400mM)
+	       7. potentially a set of EC numbers identifying the enzyme(s) responsable for
+	          the reaction.
+           8. potentially a pair of numbers for the maximum fluxes in forward and
+	          reverse directions.
+	       9. potentially a flux from the last recorded fba.
         """
+
         compounds = {}
         reactions = {}
+        enzymes   = {}
         old_line = ""
 
         sep = ";"
@@ -54,7 +108,6 @@ class Network:
         with (sys.stdin if csv_name == "-" else open(csv_name, "r", encoding='utf-8')) as f:
             for line in f:
                 line = line.rstrip()
-                print(line)
                 if len(old_line) > 0:
                     line = old_line + line
                 if line[-1] != '\\':        # Continuation character
@@ -70,12 +123,14 @@ class Network:
                             if parts[0] in compounds:
                                 print(f'Duplicate compound {parts[0]}.')
                             compounds[parts[0]] = cpd.Compound.from_text(line, sep)
+                        case 'E':           # Enzyme line
+                            continue
                         case _:             # Oops error
                             raise ValueError(f'Invalid input line \n{line}')
                     old_line = ""
                 else:
                     old_line = line[:-1]
-        return cls(compounds, reactions)
+        return cls(compounds, reactions, enzymes)
 
     def add_compound( self, compound_id, compound_data ):
         """
@@ -88,6 +143,31 @@ class Network:
         Add a new reaction to a metabolic network.
         """
         self.reactions[reaction_id] = reaction_data
+
+    def compartments(self) -> list:
+        """
+        Get a list of compartments in the metabolic network.
+        """
+        return ['i','e']
+
+    def write_sbml(self, outfile):
+        """
+        Write the model as an sbml file with the passed name.
+        """
+        parameters = ["cobra_default_lb", "-1000", "cobra_default_ub", "1000"]
+        soup = BeautifulSoup( SBML_INITIAL ,"xml")
+
+        add_list_unitdefinitions( soup, ["mmol_per_gDW_per_hr"] )
+        add_list_compartments( soup, self.compartments() )
+        add_list_species( soup, self.compounds )
+        add_list_parameters(soup, parameters)
+        add_list_reactions( soup, self.reactions )
+        add_list_objectives( soup, None )
+        add_list_genes( soup, None )
+
+        with open(outfile, 'w',
+            encoding="UTF8") if outfile != '-' else sys.stdout as fp:
+            fp.write(soup.prettify(formatter="minimal"))
 
 def find_modifiers(network):
     """
@@ -356,6 +436,228 @@ def find_compartments( network ):
         compartment_set.add(compound[1])
     return compartment_set
 
+def add_annotation( soup, item ):
+    """
+    Add to 'item' the xml bits to hold annotation key:value pairs
+    """
+    new_tag = soup.new_tag('annotation')
+    item.append(new_tag)
+    new_tag.append(soup.new_tag('rdf:RDF', attrs={
+        "xmlns:bqbiol":"http://biomodels.net/biology-qualifiers/",
+        "xmlns:bqmodel":"http://biomodels.net/model-qualifiers/",
+        "xmlns:dcterms":"http://purl.org/dc/terms/",
+        "xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xmlns:vCard":"http://www.w3.org/2001/vcard-rdf/3.0#",
+        "xmlns:vCard4":"http://www.w3.org/2006/vcard/ns#"}))
+    new_tag = new_tag.find('rdf:RDF')
+    new_tag.append(soup.new_tag('rdf:Description', attrs={'rdf:about':f'#{item["metaid"]}'}))
+    new_tag = new_tag.find('rdf:Description')
+    new_tag.append(soup.new_tag('bqbiol:is'))
+    new_tag = new_tag.find('bqbiol:is')
+    new_tag.append(soup.new_tag('rdf:Bag'))
+
+def add_annotations( soup, item, item_list ):
+    """
+    add key value pairs from the 'item_list' to the annotation of 'item'
+    """
+    new_tag = item.find('rdf:Bag')
+    for label, value in zip(item_list.split()[::2], item_list.split()[1::2]):
+        new_tag.append(soup.new_tag('rdf:li',attrs={
+            'rdf:resource': f'https://identifiers.org/{label}/{value}'
+        }))
+
+def add_list_unitdefinitions( soup, units_definitions ):
+    """
+    Add to the model a list of unit definitions as necessary.
+
+    Passed parameters:
+        soup                a BeautifulSoup xml parse tree.
+        units_definitions   a list of strings.
+
+    """
+    # TODO: This needs parsing of units expression (read definition)
+    # if necessary add a listOfUnitDefinitions
+    my_model = soup.find("model")
+    if units_definitions:
+        my_list = soup.new_tag("listOfUnitDefinitions")
+        my_model.append(my_list)
+        for term in units_definitions:
+            # if necessary add the unitDefinition to the list
+            new_term = soup.new_tag("unitDefinition", attrs={"id":term})
+            my_list.append(new_term)
+            new_tag = soup.new_tag("listOfUnits")
+            new_term.append(new_tag)
+            words = term.split('_')
+            # Need to think how to do this properly and not just assume the term.
+            if not words[0] == 'mmol':
+                pass
+            new_unit = soup.new_tag("unit", attrs={
+                "kind":"mole" ,
+                "exponent":"1",
+                "scale":"-3",
+                "multiplier":"1"})
+            new_tag.append(new_unit)
+            new_unit = soup.new_tag("unit", attrs={
+                "kind":"gram" ,
+                "exponent":"-1",
+                "scale":"0",
+                "multiplier":"1"})
+            new_tag.append(new_unit)
+            new_unit = soup.new_tag("unit", attrs={
+                "kind":"second" ,
+                "exponent":"-1",
+                "scale":"0",
+                "multiplier":"3600"})
+            new_tag.append(new_unit)
+
+def add_list_compartments( soup, compartments ):
+    """
+    Add to the model a list of compartments as necessary.
+    """
+    model = soup.find("model")
+    mylist = model.find("listOfCompartments")
+    if not mylist:
+        new_tag = soup.new_tag("listOfCompartments",)
+        model.append( new_tag )
+        mylist = new_tag
+    if compartments:
+        for compartment in compartments:
+            old = mylist.find("compartment", attrs={"id":compartment})
+            if not old:
+                new_tag = soup.new_tag( "compartment", attrs={"id":compartment}, constant="true")
+                mylist.append(new_tag)
+
+def add_list_species( soup, metab_model ):
+    """
+    Add to the model a list of species as necessary from the DataFrame.
+    """
+    model = soup.find('model')
+    mylist = model.find('listOfSpecies')
+    if not mylist:
+        new_tag = soup.new_tag('listOfSpecies')
+        model.append(new_tag)
+        mylist = new_tag
+    for key, species in metab_model.items():
+        new_species = soup.new_tag('species',
+            attrs={
+                "boundaryCondition":"false",
+                "compartment":species.compartment,
+                "constant":"false",
+                "fbc:charge":int(species.charge),
+                "fbc:chemicalFormula":species.formula,
+                "hasOnlySubstanceUnits":"false",
+                "id":key,
+                "initialConcentration":species.concentration,
+                "metaid":f'meta_{key}',
+                "name":species.name
+            } )
+        mylist.append(new_species)
+#        if not pd.isna(row.Dbases) and len(row.Dbases) > 0:
+#            add_annotation( soup, new_species)
+#            add_annotations( soup, new_species, row.Dbases )
+
+def add_list_reactions( soup, matab_model ):
+    """
+    Add to the model a list of reactions as necessary from the DataFrame.
+    """
+    model = soup.find('model')
+    mylist = model.find('listOfReactions')
+    if not mylist:
+        new_tag = soup.new_tag('listOfReactions')
+        model.append(new_tag)
+        mylist = new_tag
+    for key, reaction in matab_model.items():
+        new_reaction = soup.new_tag('reaction',
+            attrs={
+                "fast":"false",                          # Required
+                "reversible":"true",                     # Required
+                "id": key,                               # Required
+                "metaid":f'meta_{key}',                  # Optional
+                "name":reaction.name,                    # Optional
+                "fbc:lowerFluxBound":"cobra_default_lb", # Required fbc:strict
+                "fbc:upperFluxBound":"cobra_default_ub"  # Required fbc:strict
+            } )
+        mylist.append(new_reaction)
+
+        if len(reaction.subst):
+            new_tag=soup.new_tag('listOfReactants')
+            for item in reaction.subst:
+                new_tag.append(soup.new_tag('speciesReference', attrs={
+                    "constant":"true",
+                    "species":item[0],
+                    "stoichiometry":item[1]
+                }))
+            new_reaction.append(new_tag)
+
+        if len(reaction.prod):
+            new_tag=soup.new_tag('listOfProducts')
+            for item in reaction.prod:
+                new_tag.append(soup.new_tag('speciesReference', attrs={
+                    "constant":"true",
+                    "species":item[0],
+                    "stoichiometry":item[1]
+                }))
+            new_reaction.append(new_tag)
+
+        if len(reaction.modif):
+            new_tag=soup.new_tag('listOfModifiers')
+            for species in reaction.modif:
+                new_tag.append(soup.new_tag('modifierSpeciesReference', attrs={
+                    "species":species,
+                }))
+            new_reaction.append(new_tag)
+
+#        if not pd.isna(row.GeneRules) and len(row.GeneRules) > 0:
+            # TODO: This needs parsing of gene rules expression (read definition)
+#            pass
+
+        # TODO this needs better parsing to include all possibilities and add them.
+#        annotations = ""
+#        if not pd.isna(row.FreeEnergy) and row.FreeEnergy:
+#            temp = row.FreeEnergy.split()
+#            annotations = f'dG0 {temp[0]} dG0_uncertainty {temp[1]} {annotations}'
+#        if not pd.isna(row.EC) and row.EC:
+#            annotations=f'ec-code {row.EC} {annotations}'
+#        if len(annotations) > 0:
+#            add_annotation( soup, new_reaction)
+#            add_annotations( soup, new_reaction, annotations )
+
+def add_list_parameters( soup, parameters ):
+    """
+    Add to the model a list of parameters.
+    """
+    model = soup.find('model')
+    mylist = model.find('listOfParameters')
+    if not mylist:
+        new_tag = soup.new_tag('listOfParameters')
+        model.append(new_tag)
+        mylist = new_tag
+    for label, value in zip(parameters[::2], parameters[1::2]):
+        new_tag.append(soup.new_tag('parameter',attrs={
+            'constant': 'true',
+            'id': label,
+            'sboTerm': 'SBO:0000626',
+            'value': value
+        }))
+
+def add_list_objectives( soup, objectives ):
+    """
+    Add to the model a list of objectives as necessary.
+    """
+    # TODO: Do we really need this, and how is it parsed in the list? (read documentation)
+    # Dummy
+    if objectives:
+        soup += objectives
+
+def add_list_genes( soup, genes ):
+    """
+    Add to the model a list of genes as necessary.
+
+    Dummy
+    """
+    if genes:
+        for gene in genes:
+            soup += gene
 
 def unit_test():
     """
