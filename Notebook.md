@@ -521,7 +521,37 @@ To test: write sbml from network.
 
 Cofactor database (found via DatabaseCommons)
 https://www.ebi.ac.uk/thornton-srv/databases/CoFactor/queries.php?ec=1.1.1.8&submit=Go
+***Note uniprot is probably a better bet as maintained***
 
 10/3/25
 Need to work on write_sbml...
-Produces valid sbml... but listOfUnitDefinitions and listOfUnits needs work.
+Produces valid sbml... but
+
+TODO:
+* listOfUnitDefinitions and listOfUnits needs work to parse the unit definitions
+  and save a correct list of units.
+
+Next steps:
+1. Read csv including extra fields as described above in reaction.py
+2. Add ec info to csv file made from rxn file
+3. Add enzyme info to network model.
+4. Save reaction dictionary info as annotations in sbml.
+5. Read sbml in network.py and include in structures annotations and notes.
+6. Load enzyme information from ebi uniprot as far as possible and save in
+   network structure - search for ec number and then for protein in coli or
+	 another organism.
+7. Construct "environments" to test different reaction tables and csv tables and
+   combinations using fba - via sbml and cnapy, via cobra and internally.
+8. Update documentation
+9. Merge with main
+10. Save and load python structures.
+
+11/3/25
+
+* Added code for item 1 - need to test without and with use - so add code for 4!
+  - works at least for ec-code. OK
+* Added 4 but need to test - OK -
+* Added 2 ec number recovery when building csv file (should it be first or all
+  enzymes? - I do not understand why or how the list - OK
+* Added 3 though no way of saving it or filling it in yet
+* Added 6 though currently ChEBI identifiers not KEGG.

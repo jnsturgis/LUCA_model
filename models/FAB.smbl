@@ -1,0 +1,922 @@
+** Reaction id:Ri_R01626
+name          :malonyl-CoA:[acyl-carrier-protein] S-malonyltransferase
+substrates    :[['Mi_C00083', 1.0], ['Mi_C00229', 1]]
+products      :[['Mi_C00010', 1.0], ['Mi_C01209', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.39'}
+
+** Reaction id:Ri_R04428
+name          :(3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C04618', 1.0]]
+products      :[['Mi_C04246', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04430
+name          :butyryl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05745', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C04246', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R04533
+name          :(3R)-3-hydroxybutanoyl-[acyl-carrier protein]:NADP+ oxidoreductase
+substrates    :[['Mi_C04618', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05744', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.1.1.100'}
+
+** Reaction id:Ri_R04534
+name          :(3R)-3-hydroxydecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+substrates    :[['Mi_C04619', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05753', 1.0], ['Mi_C00005', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.1.1.100'}
+
+** Reaction id:Ri_R04535
+name          :(3R)-3-hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C04619', 1.0]]
+products      :[['Mi_C05754', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04536
+name          :(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+substrates    :[['Mi_C04620', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05750', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.1.1.100'}
+
+** Reaction id:Ri_R04537
+name          :(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C04620', 1.0]]
+products      :[['Mi_C05751', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04543
+name          :(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+substrates    :[['Mi_C04633', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05762', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.1.1.100'}
+
+** Reaction id:Ri_R04544
+name          :(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C04633', 1.0]]
+products      :[['Mi_C05763', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04556
+name          :(5Z)-(15S)-11alpha-hydroxy-9,15-dioxoprostanoate:NAD+ delta13-oxidoreductase
+substrates    :[['Mi_C04671', 1.0], ['Mi_C00003', 1]]
+products      :[['Mi_C04707', 1.0], ['Mi_C00004', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.48'}
+
+** Reaction id:Ri_R04568
+name          :(3R)-3-hydroxytetradecanoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C04688', 1.0]]
+products      :[['Mi_C05760', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04725
+name          :dodecanoyl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05223', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05758', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R04726
+name          :dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+substrates    :[['Mi_C05223', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05759', 1.0], ['Mi_C00011', 1], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.41'}
+
+** Reaction id:Ri_R04952
+name          :butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+substrates    :[['Mi_C05745', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05746', 1.0], ['Mi_C00011', 1], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.41'}
+
+** Reaction id:Ri_R04953
+name          :(3R)-3-hydroxyhexanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+substrates    :[['Mi_C05747', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05746', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.1.1.100'}
+
+** Reaction id:Ri_R04954
+name          :(3R)-3-hydroxyhexanoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C05747', 1.0]]
+products      :[['Mi_C05748', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04956
+name          :hexanoyl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05749', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05748', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R04957
+name          :hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+substrates    :[['Mi_C05749', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05750', 1.0], ['Mi_C00011', 1], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.41'}
+
+** Reaction id:Ri_R04959
+name          :octanoyl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05752', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05751', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R04960
+name          :octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+substrates    :[['Mi_C05752', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05753', 1.0], ['Mi_C00011', 1], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.41'}
+
+** Reaction id:Ri_R04962
+name          :decanoyl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05755', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05754', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R04963
+name          :decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+substrates    :[['Mi_C05755', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05756', 1.0], ['Mi_C00011', 1], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.41'}
+
+** Reaction id:Ri_R04964
+name          :(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase
+substrates    :[['Mi_C05757', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05756', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.1.1.100'}
+
+** Reaction id:Ri_R04965
+name          :(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase
+substrates    :[['Mi_C05757', 1.0]]
+products      :[['Mi_C05758', 1.0], ['Mi_C00001', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.85'}
+
+** Reaction id:Ri_R04967
+name          :tetradecanoyl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05761', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05760', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R04968
+name          :tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)
+substrates    :[['Mi_C05761', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05762', 1.0], ['Mi_C00011', 1], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.41'}
+
+** Reaction id:Ri_R04970
+name          :hexadecanoyl-[acp]:NADP+ trans-2-oxidoreductase
+substrates    :[['Mi_C05764', 1.0], ['Mi_C00006', 1]]
+products      :[['Mi_C05763', 1.0], ['Mi_C00005', 1], ['Mi_C00080', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '1.3.1.10'}
+
+** Reaction id:Ri_R10700
+name          :palmitoyl-[acp]:CoA S-palmitoyltransferase
+substrates    :[['Mi_C05764', 1.0], ['Mi_C00010', 1]]
+products      :[['Mi_C00154', 1.0], ['Mi_C00229', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.86'}
+
+** Reaction id:Ri_R10707
+name          :acetyl-CoA:malonyl-[acyl-carrier protein] C-acetyltransferase (decarboxylating)
+substrates    :[['Mi_C00024', 1.0], ['Mi_C01209', 1]]
+products      :[['Mi_C05744', 1.0], ['Mi_C00010', 1], ['Mi_C00011', 1]]
+modifiers     :[]
+annotations   :{'ec-code': '2.3.1.180'}
+
+<?xml version="1.0" encoding="utf-8"?>
+<sbml fbc:required="false" level="3" sboTerm="SBO:0000624" version="1" xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2">
+ <model fbc:strict="true" id="model_name" metaid="meta_model_name">
+  <listOfUnitDefinitions>
+   <unitDefinition id="mmol_per_gDW_per_hr">
+    <listOfUnits>
+     <unit exponent="1" kind="mole" multiplier="1" scale="-3"/>
+     <unit exponent="-1" kind="gram" multiplier="1" scale="0"/>
+     <unit exponent="-1" kind="second" multiplier="3600" scale="0"/>
+    </listOfUnits>
+   </unitDefinition>
+  </listOfUnitDefinitions>
+  <listOfCompartments>
+   <compartment constant="true" id="i"/>
+   <compartment constant="true" id="e"/>
+  </listOfCompartments>
+  <listOfSpecies>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O" hasOnlySubstanceUnits="false" id="Mi_C00001" initialConcentration="1" metaid="meta_Mi_C00001" name="H2O"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H28N7O14P2" hasOnlySubstanceUnits="false" id="Mi_C00003" initialConcentration="1" metaid="meta_Mi_C00003" name="NAD+"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H29N7O14P2" hasOnlySubstanceUnits="false" id="Mi_C00004" initialConcentration="1" metaid="meta_Mi_C00004" name="NADH"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H30N7O17P3" hasOnlySubstanceUnits="false" id="Mi_C00005" initialConcentration="1" metaid="meta_Mi_C00005" name="NADPH"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H29N7O17P3" hasOnlySubstanceUnits="false" id="Mi_C00006" initialConcentration="1" metaid="meta_Mi_C00006" name="NADP+"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C21H36N7O16P3S" hasOnlySubstanceUnits="false" id="Mi_C00010" initialConcentration="1" metaid="meta_Mi_C00010" name="CoA"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="CO2" hasOnlySubstanceUnits="false" id="Mi_C00011" initialConcentration="1" metaid="meta_Mi_C00011" name="CO2"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C23H38N7O17P3S" hasOnlySubstanceUnits="false" id="Mi_C00024" initialConcentration="1" metaid="meta_Mi_C00024" name="Acetyl-CoA"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="H" hasOnlySubstanceUnits="false" id="Mi_C00080" initialConcentration="1" metaid="meta_Mi_C00080" name="H+"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C24H38N7O19P3S" hasOnlySubstanceUnits="false" id="Mi_C00083" initialConcentration="1" metaid="meta_Mi_C00083" name="Malonyl-CoA"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C37H66N7O17P3S" hasOnlySubstanceUnits="false" id="Mi_C00154" initialConcentration="1" metaid="meta_Mi_C00154" name="Palmitoyl-CoA"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="HSR" hasOnlySubstanceUnits="false" id="Mi_C00229" initialConcentration="1" metaid="meta_Mi_C00229" name="Acyl-carrier protein"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H3O3SR" hasOnlySubstanceUnits="false" id="Mi_C01209" initialConcentration="1" metaid="meta_Mi_C01209" name="Malonyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H5OSR" hasOnlySubstanceUnits="false" id="Mi_C04246" initialConcentration="1" metaid="meta_Mi_C04246" name="But-2-enoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H7O2SR" hasOnlySubstanceUnits="false" id="Mi_C04618" initialConcentration="1" metaid="meta_Mi_C04618" name="(3R)-3-Hydroxybutanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H19O2SR" hasOnlySubstanceUnits="false" id="Mi_C04619" initialConcentration="1" metaid="meta_Mi_C04619" name="(3R)-3-Hydroxydecanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H15O2SR" hasOnlySubstanceUnits="false" id="Mi_C04620" initialConcentration="1" metaid="meta_Mi_C04620" name="(3R)-3-Hydroxyoctanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C16H31O2SR" hasOnlySubstanceUnits="false" id="Mi_C04633" initialConcentration="1" metaid="meta_Mi_C04633" name="(3R)-3-Hydroxypalmitoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H32O5" hasOnlySubstanceUnits="false" id="Mi_C04671" initialConcentration="1" metaid="meta_Mi_C04671" name="(5Z)-11alpha-Hydroxy-9,15-dioxoprostanoate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H27O2SR" hasOnlySubstanceUnits="false" id="Mi_C04688" initialConcentration="1" metaid="meta_Mi_C04688" name="(3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C20H30O5" hasOnlySubstanceUnits="false" id="Mi_C04707" initialConcentration="1" metaid="meta_Mi_C04707" name="(5Z,13E)-11alpha-Hydroxy-9,15-dioxoprost-5,13-dienoate"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C12H23OSR" hasOnlySubstanceUnits="false" id="Mi_C05223" initialConcentration="1" metaid="meta_Mi_C05223" name="Dodecanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H5O2SR" hasOnlySubstanceUnits="false" id="Mi_C05744" initialConcentration="1" metaid="meta_Mi_C05744" name="Acetoacetyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H7OSR" hasOnlySubstanceUnits="false" id="Mi_C05745" initialConcentration="1" metaid="meta_Mi_C05745" name="Butyryl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H9O2SR" hasOnlySubstanceUnits="false" id="Mi_C05746" initialConcentration="1" metaid="meta_Mi_C05746" name="3-Oxohexanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H11O2SR" hasOnlySubstanceUnits="false" id="Mi_C05747" initialConcentration="1" metaid="meta_Mi_C05747" name="(3R)-3-Hydroxyhexanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H9OSR" hasOnlySubstanceUnits="false" id="Mi_C05748" initialConcentration="1" metaid="meta_Mi_C05748" name="trans-Hex-2-enoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H11OSR" hasOnlySubstanceUnits="false" id="Mi_C05749" initialConcentration="1" metaid="meta_Mi_C05749" name="Hexanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H13O2SR" hasOnlySubstanceUnits="false" id="Mi_C05750" initialConcentration="1" metaid="meta_Mi_C05750" name="3-Oxooctanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H13OSR" hasOnlySubstanceUnits="false" id="Mi_C05751" initialConcentration="1" metaid="meta_Mi_C05751" name="trans-Oct-2-enoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C8H15OSR" hasOnlySubstanceUnits="false" id="Mi_C05752" initialConcentration="1" metaid="meta_Mi_C05752" name="Octanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H17O2SR" hasOnlySubstanceUnits="false" id="Mi_C05753" initialConcentration="1" metaid="meta_Mi_C05753" name="3-Oxodecanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H17OSR" hasOnlySubstanceUnits="false" id="Mi_C05754" initialConcentration="1" metaid="meta_Mi_C05754" name="trans-Dec-2-enoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C10H19OSR" hasOnlySubstanceUnits="false" id="Mi_C05755" initialConcentration="1" metaid="meta_Mi_C05755" name="Decanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C12H21O2SR" hasOnlySubstanceUnits="false" id="Mi_C05756" initialConcentration="1" metaid="meta_Mi_C05756" name="3-Oxododecanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C12H23O2SR" hasOnlySubstanceUnits="false" id="Mi_C05757" initialConcentration="1" metaid="meta_Mi_C05757" name="(3R)-3-Hydroxydodecanoyl-[acyl-carrier protein]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C12H21OSR" hasOnlySubstanceUnits="false" id="Mi_C05758" initialConcentration="1" metaid="meta_Mi_C05758" name="trans-Dodec-2-enoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H25O2SR" hasOnlySubstanceUnits="false" id="Mi_C05759" initialConcentration="1" metaid="meta_Mi_C05759" name="3-Oxotetradecanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H25OSR" hasOnlySubstanceUnits="false" id="Mi_C05760" initialConcentration="1" metaid="meta_Mi_C05760" name="trans-Tetradec-2-enoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C14H27OSR" hasOnlySubstanceUnits="false" id="Mi_C05761" initialConcentration="1" metaid="meta_Mi_C05761" name="Tetradecanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C16H29O2SR" hasOnlySubstanceUnits="false" id="Mi_C05762" initialConcentration="1" metaid="meta_Mi_C05762" name="3-Oxohexadecanoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C16H29OSR" hasOnlySubstanceUnits="false" id="Mi_C05763" initialConcentration="1" metaid="meta_Mi_C05763" name="trans-Hexadec-2-enoyl-[acp]"/>
+   <species boundaryCondition="false" compartment="i" constant="false" fbc:charge="0" fbc:chemicalFormula="C16H31OSR" hasOnlySubstanceUnits="false" id="Mi_C05764" initialConcentration="1" metaid="meta_Mi_C05764" name="Hexadecanoyl-[acp]"/>
+  </listOfSpecies>
+  <listOfParameters>
+   <parameter constant="true" id="cobra_default_lb" sboTerm="SBO:0000626" value="-1000"/>
+   <parameter constant="true" id="cobra_default_ub" sboTerm="SBO:0000626" value="1000"/>
+  </listOfParameters>
+  <listOfReactions>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R01626" metaid="meta_Ri_R01626" name="malonyl-CoA:[acyl-carrier-protein] S-malonyltransferase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R01626">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.39"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C00083" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C00010" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04428" metaid="meta_Ri_R04428" name="(3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04428">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04618" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C04246" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04430" metaid="meta_Ri_R04430" name="butyryl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04430">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05745" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C04246" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04533" metaid="meta_Ri_R04533" name="(3R)-3-hydroxybutanoyl-[acyl-carrier protein]:NADP+ oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04533">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.100"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04618" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05744" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04534" metaid="meta_Ri_R04534" name="(3R)-3-hydroxydecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04534">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.100"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04619" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05753" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04535" metaid="meta_Ri_R04535" name="(3R)-3-hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04535">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04619" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05754" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04536" metaid="meta_Ri_R04536" name="(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04536">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.100"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04620" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05750" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04537" metaid="meta_Ri_R04537" name="(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04537">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04620" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05751" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04543" metaid="meta_Ri_R04543" name="(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein]:NADP+ oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04543">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.100"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04633" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05762" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04544" metaid="meta_Ri_R04544" name="(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04544">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04633" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05763" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04556" metaid="meta_Ri_R04556" name="(5Z)-(15S)-11alpha-hydroxy-9,15-dioxoprostanoate:NAD+ delta13-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04556">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.48"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04671" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00003" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C04707" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00004" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04568" metaid="meta_Ri_R04568" name="(3R)-3-hydroxytetradecanoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04568">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C04688" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05760" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04725" metaid="meta_Ri_R04725" name="dodecanoyl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04725">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05223" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05758" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04726" metaid="meta_Ri_R04726" name="dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04726">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.41"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05223" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05759" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04952" metaid="meta_Ri_R04952" name="butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04952">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.41"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05745" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05746" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04953" metaid="meta_Ri_R04953" name="(3R)-3-hydroxyhexanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04953">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.100"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05747" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05746" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04954" metaid="meta_Ri_R04954" name="(3R)-3-hydroxyhexanoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04954">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05747" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05748" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04956" metaid="meta_Ri_R04956" name="hexanoyl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04956">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05749" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05748" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04957" metaid="meta_Ri_R04957" name="hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04957">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.41"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05749" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05750" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04959" metaid="meta_Ri_R04959" name="octanoyl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04959">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05752" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05751" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04960" metaid="meta_Ri_R04960" name="octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04960">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.41"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05752" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05753" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04962" metaid="meta_Ri_R04962" name="decanoyl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04962">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05755" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05754" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04963" metaid="meta_Ri_R04963" name="decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04963">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.41"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05755" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05756" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04964" metaid="meta_Ri_R04964" name="(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04964">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.100"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05757" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05756" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04965" metaid="meta_Ri_R04965" name="(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04965">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.85"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05757" stoichiometry="1.0"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05758" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00001" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04967" metaid="meta_Ri_R04967" name="tetradecanoyl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04967">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05761" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05760" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04968" metaid="meta_Ri_R04968" name="tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04968">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.41"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05761" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05762" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R04970" metaid="meta_Ri_R04970" name="hexadecanoyl-[acp]:NADP+ trans-2-oxidoreductase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R04970">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/1.3.1.10"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05764" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00006" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05763" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00005" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00080" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R10700" metaid="meta_Ri_R10700" name="palmitoyl-[acp]:CoA S-palmitoyltransferase" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R10700">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.86"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C05764" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00010" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C00154" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00229" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+   <reaction fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_default_ub" id="Ri_R10707" metaid="meta_Ri_R10707" name="acetyl-CoA:malonyl-[acyl-carrier protein] C-acetyltransferase (decarboxylating)" reversible="true">
+    <annotation>
+     <rdf:RDF xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#">
+      <rdf:Description rdf:about="#meta_Ri_R10707">
+       <bqbiol:is>
+        <rdf:Bag>
+         <rdf:li rdf:resource="https://identifiers.org/ec-code/2.3.1.180"/>
+        </rdf:Bag>
+       </bqbiol:is>
+      </rdf:Description>
+     </rdf:RDF>
+    </annotation>
+    <listOfReactants>
+     <speciesReference constant="true" species="Mi_C00024" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C01209" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+     <speciesReference constant="true" species="Mi_C05744" stoichiometry="1.0"/>
+     <speciesReference constant="true" species="Mi_C00010" stoichiometry="1"/>
+     <speciesReference constant="true" species="Mi_C00011" stoichiometry="1"/>
+    </listOfProducts>
+   </reaction>
+  </listOfReactions>
+ </model>
+</sbml>

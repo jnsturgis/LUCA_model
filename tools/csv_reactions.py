@@ -74,30 +74,36 @@ def main():
     reactions = {}
     compounds = {}
     all_compounds = []
+    all_enzymes = []
     for in_line in sys.stdin:
-        if len(in_line)>1 and in_line[0] != '#':
-            r_id = first_word(in_line)
-        if r_id[0] != 'R':
-            print(f'Input format error - {in_line.rstrip()} unexpected.')
-        response = requests.get(URL+r_id, timeout=5)
-        response.raise_for_status()
-        lines = response.text.strip().split("\n")
-        r_name = ""
-        r_substrates = []
-        r_products = []
-        for line in lines:
-            if first_word(line) == "NAME":
-                r_name = second_word(line)
+        if len(in_line)<=1 or in_line[0] == '#':
+            continue
+        for r_id in in_line.split():
+            if r_id[0] != 'R':
+                print(f'Input format error - {r_id} unexpected.')
+            response = requests.get(URL+r_id, timeout=5)
+            response.raise_for_status()
+            lines = response.text.strip().split("\n")
+            r_name = ""
+            r_substrates = []
+            r_products = []
+            r_enzymes = []
+            for line in lines:
+                if first_word(line) == "NAME":
+                    r_name = second_word(line)
+                if first_word(line) == "EQUATION":
+                    r_substrates, r_products = parse_equation(line)
+                if first_word(line) == "ENZYME":
+                    r_enzymes = line.split()[1:]
 
-            if first_word(line) == "EQUATION":
-                r_substrates, r_products = parse_equation(line)
-
-        reactions[r_id] = [r_id,r_name,r_substrates,r_products]
-        all_compounds.extend(r_substrates.split())
-        all_compounds.extend(r_products.split())
+            reactions[r_id] = [r_id,r_name,r_substrates,r_products,r_enzymes]
+            all_compounds.extend(r_substrates.split())
+            all_compounds.extend(r_products.split())
+            all_enzymes.extend(r_enzymes)
 
     all_compounds = set(all_compounds)
     all_compounds = {item for item in all_compounds if item.startswith('C')}
+    all_enzymes = set(all_enzymes)
 
     compounds = fetch_compounds(URL, all_compounds)
 
@@ -105,7 +111,12 @@ def main():
         print(f'Mi_{compound[0]};{compound[1]};1;0;{compound[2]}')
 
     for _ , rxn in sorted(reactions.items()):
-        print(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(rxn[3],'Mi_')};')
+#            Should we write all enzymes or the first one?
+#        print(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(
+#            rxn[3],'Mi_')};;{' '.join(rxn[4])}')
+#            Optional items should only appear if present
+        print(f'Ri_{rxn[0]};{rxn[1]};{rename(rxn[2],'Mi_')};{rename(
+            rxn[3],'Mi_')};;{rxn[4][0]}')
 
 if __name__ == '__main__':
     main()

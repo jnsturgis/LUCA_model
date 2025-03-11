@@ -1,0 +1,11 @@
+--2025-03-11 16:28:07--  https://rest.uniprot.org/uniprotkb/P49327
+Resolving rest.uniprot.org (rest.uniprot.org)... 193.62.193.81
+Connecting to rest.uniprot.org (rest.uniprot.org)|193.62.193.81|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/json]
+Saving to: ‘P49327’
+
+P49327                                     [<=>                                                                          ]       0  --.-KB/s               P49327                                     [ <=>                                                                         ] 176,27K  --.-KB/s    in 0,1s    
+
+2025-03-11 16:28:07 (1,80 MB/s) - ‘P49327’ saved [180501]
+

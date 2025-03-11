@@ -15,6 +15,7 @@ Standalone functions operate with multiple instances or are very generic.
 
 # pylint: disable=W0511
 # TODO Needs unit testing
+
 import sys
 import numpy as np
 
@@ -25,13 +26,16 @@ from networkx.algorithms import bipartite
 
 import reaction as rxn
 import compound as cpd
+import enzyme as enz
 
+# Text for an empty SBML model.
 SBML_INITIAL = """<?xml version="1.0" encoding="UTF-8"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
 <model metaid="meta_model_name" id="model_name" fbc:strict="true">
 </model>
 </sbml>
 """
+
 class Network:
     """
     A class to describe metabolic networks.
@@ -67,35 +71,41 @@ class Network:
 
         `.csv` condensed description of a model in csv format with ';' as the
         separator with lines for metabolites (start with letter M) and reactions
-		(start with letter R). the '#' character can be used for comments, and long
-		lines can be broken with a '\' before the EOL character. Lines for
+		(start with letter R). the '#' character can be used for comments, and
+        long lines can be broken with a '\' before the EOL character. Lines for
 		metabolites contain:
-	       1. an ID (Mc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
-	          id of the equivalent molecule).
+	       1. an ID (Mc_XXXXXX where c is compartment and XXXXXX is possibly the
+	          kegg id of the equivalent molecule).
 	       2. a name for the molecule.
 	       3. an initial concentration of the molecule in the model.
-	       4. the charge of the molecule (coherent with the reactions and formula).
+	       4. the charge of the molecule (coherent with the reactions and
+              formula).
 	       5. the formula of the molecule with the abbreviations Pr, Rn and Dn
-	          corresponding to generic protein (polypeptide), RNA and DNA molecules.
+	          corresponding to generic protein (polypeptide), RNA and DNA
+              molecules.
            6. Potentially more information that is parsed as: Nothing yet.
         The lines for reactions contain the following information:
-	       1. an ID (Rc_XXXXXX where c is compartment and XXXXXX is possibly the kegg
-	          id of the equivalent reaction).
+	       1. an ID (Rc_XXXXXX where c is compartment and XXXXXX is possibly the
+	          kegg id of the equivalent reaction).
 	       2. a name for the reaction.
-	       3. a set of words representing the reaction substrates possibly preceded by
-	          a numerical stoichiometry.
-	       4. a set of words representing the reaction products possibly preceded by
-	          a numerical stoichiometry.
+	       3. a set of words representing the reaction substrates possibly
+	          preceded by a numerical stoichiometry.
+	       4. a set of words representing the reaction products possibly
+	          preceded by a numerical stoichiometry.
 	       5. a set of words representing any reaction modulators (cofactors and
 	          regulators)
-	       6. potentially a pair of numbers representing the DG°'m standard free energy
-	          change at 1mM standard state in aqueous solution at pH7.0 (and pMg2+ of
-			  50mM and ionic strength of about 400mM)
-	       7. potentially a set of EC numbers identifying the enzyme(s) responsable for
-	          the reaction.
-           8. potentially a pair of numbers for the maximum fluxes in forward and
-	          reverse directions.
-	       9. potentially a flux from the last recorded fba.
+	       6. potentially a pair of numbers representing the DG°'m standard free
+	          energy change at 1mM standard state in aqueous solution at pH7.0
+              (and pMg2+ of 50mM and ionic strength of about 400mM) and the
+              precision of this estimate. (in kJ/mol) [nn.nn n.nn]
+	       7. potentially a set of EC numbers identifying the enzyme(s)
+              responsable for the reaction [x.y.z.zz]
+           8. potentially a pair of numbers for the maximum fluxes in forward
+              and reverse directions. [nn.nn -nn.nn]
+           9. potentially a flux from the last recorded fba [nn.nn]
+
+           N.B. The format of optional fields allows determination of the
+           interpretation split() gives 1 (ec,fba) or 2 (dG,flux)
         """
 
         compounds = {}
@@ -123,13 +133,19 @@ class Network:
                             if parts[0] in compounds:
                                 print(f'Duplicate compound {parts[0]}.')
                             compounds[parts[0]] = cpd.Compound.from_text(line, sep)
-                        case 'E':           # Enzyme line
-                            continue
                         case _:             # Oops error
                             raise ValueError(f'Invalid input line \n{line}')
                     old_line = ""
                 else:
                     old_line = line[:-1]
+        # Recover enzymes from reactions info
+        for r_id, the_reaction in reactions.items():
+            if the_reaction.dict.get('ec-code'):
+                ec_code = the_reaction.dict.get('ec-code')
+                if not enzymes.get(ec_code):
+                    enzymes[ec_code] = enz.Enzyme(ec_code)
+                enzymes[ec_code].add_reaction(r_id)
+
         return cls(compounds, reactions, enzymes)
 
     def add_compound( self, compound_id, compound_data ):
@@ -436,36 +452,6 @@ def find_compartments( network ):
         compartment_set.add(compound[1])
     return compartment_set
 
-def add_annotation( soup, item ):
-    """
-    Add to 'item' the xml bits to hold annotation key:value pairs
-    """
-    new_tag = soup.new_tag('annotation')
-    item.append(new_tag)
-    new_tag.append(soup.new_tag('rdf:RDF', attrs={
-        "xmlns:bqbiol":"http://biomodels.net/biology-qualifiers/",
-        "xmlns:bqmodel":"http://biomodels.net/model-qualifiers/",
-        "xmlns:dcterms":"http://purl.org/dc/terms/",
-        "xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "xmlns:vCard":"http://www.w3.org/2001/vcard-rdf/3.0#",
-        "xmlns:vCard4":"http://www.w3.org/2006/vcard/ns#"}))
-    new_tag = new_tag.find('rdf:RDF')
-    new_tag.append(soup.new_tag('rdf:Description', attrs={'rdf:about':f'#{item["metaid"]}'}))
-    new_tag = new_tag.find('rdf:Description')
-    new_tag.append(soup.new_tag('bqbiol:is'))
-    new_tag = new_tag.find('bqbiol:is')
-    new_tag.append(soup.new_tag('rdf:Bag'))
-
-def add_annotations( soup, item, item_list ):
-    """
-    add key value pairs from the 'item_list' to the annotation of 'item'
-    """
-    new_tag = item.find('rdf:Bag')
-    for label, value in zip(item_list.split()[::2], item_list.split()[1::2]):
-        new_tag.append(soup.new_tag('rdf:li',attrs={
-            'rdf:resource': f'https://identifiers.org/{label}/{value}'
-        }))
-
 def add_list_unitdefinitions( soup, units_definitions ):
     """
     Add to the model a list of unit definitions as necessary.
@@ -529,7 +515,7 @@ def add_list_compartments( soup, compartments ):
 
 def add_list_species( soup, metab_model ):
     """
-    Add to the model a list of species as necessary from the DataFrame.
+    Add to the model a list of species
     """
     model = soup.find('model')
     mylist = model.find('listOfSpecies')
@@ -558,69 +544,16 @@ def add_list_species( soup, metab_model ):
 
 def add_list_reactions( soup, matab_model ):
     """
-    Add to the model a list of reactions as necessary from the DataFrame.
+    Add to the model a list of reactions
     """
     model = soup.find('model')
     mylist = model.find('listOfReactions')
     if not mylist:
-        new_tag = soup.new_tag('listOfReactions')
-        model.append(new_tag)
-        mylist = new_tag
-    for key, reaction in matab_model.items():
-        new_reaction = soup.new_tag('reaction',
-            attrs={
-                "fast":"false",                          # Required
-                "reversible":"true",                     # Required
-                "id": key,                               # Required
-                "metaid":f'meta_{key}',                  # Optional
-                "name":reaction.name,                    # Optional
-                "fbc:lowerFluxBound":"cobra_default_lb", # Required fbc:strict
-                "fbc:upperFluxBound":"cobra_default_ub"  # Required fbc:strict
-            } )
-        mylist.append(new_reaction)
+        mylist = soup.new_tag('listOfReactions')
+        model.append(mylist)
 
-        if len(reaction.subst):
-            new_tag=soup.new_tag('listOfReactants')
-            for item in reaction.subst:
-                new_tag.append(soup.new_tag('speciesReference', attrs={
-                    "constant":"true",
-                    "species":item[0],
-                    "stoichiometry":item[1]
-                }))
-            new_reaction.append(new_tag)
-
-        if len(reaction.prod):
-            new_tag=soup.new_tag('listOfProducts')
-            for item in reaction.prod:
-                new_tag.append(soup.new_tag('speciesReference', attrs={
-                    "constant":"true",
-                    "species":item[0],
-                    "stoichiometry":item[1]
-                }))
-            new_reaction.append(new_tag)
-
-        if len(reaction.modif):
-            new_tag=soup.new_tag('listOfModifiers')
-            for species in reaction.modif:
-                new_tag.append(soup.new_tag('modifierSpeciesReference', attrs={
-                    "species":species,
-                }))
-            new_reaction.append(new_tag)
-
-#        if not pd.isna(row.GeneRules) and len(row.GeneRules) > 0:
-            # TODO: This needs parsing of gene rules expression (read definition)
-#            pass
-
-        # TODO this needs better parsing to include all possibilities and add them.
-#        annotations = ""
-#        if not pd.isna(row.FreeEnergy) and row.FreeEnergy:
-#            temp = row.FreeEnergy.split()
-#            annotations = f'dG0 {temp[0]} dG0_uncertainty {temp[1]} {annotations}'
-#        if not pd.isna(row.EC) and row.EC:
-#            annotations=f'ec-code {row.EC} {annotations}'
-#        if len(annotations) > 0:
-#            add_annotation( soup, new_reaction)
-#            add_annotations( soup, new_reaction, annotations )
+    for _ , reaction in matab_model.items():
+        mylist.append(reaction.as_sbml(soup))
 
 def add_list_parameters( soup, parameters ):
     """
@@ -629,11 +562,11 @@ def add_list_parameters( soup, parameters ):
     model = soup.find('model')
     mylist = model.find('listOfParameters')
     if not mylist:
-        new_tag = soup.new_tag('listOfParameters')
-        model.append(new_tag)
-        mylist = new_tag
+        mylist = soup.new_tag('listOfParameters')
+        model.append(mylist)
+
     for label, value in zip(parameters[::2], parameters[1::2]):
-        new_tag.append(soup.new_tag('parameter',attrs={
+        mylist.append(soup.new_tag('parameter',attrs={
             'constant': 'true',
             'id': label,
             'sboTerm': 'SBO:0000626',
