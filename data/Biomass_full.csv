@@ -1,0 +1,7 @@
+# Compounds that need to be produced.
+Mi_C00002;ATP;1;0;C10H16N5O13P3
+Mi_C00017;Generic Protein;1;0;PrH
+Mi_C00039;Generic DNA;1;0;DnOH
+Mi_C00046;Generic RNA;1;0;RnOH
+# Biomass equation stochiometry for approximately correct composition of cell
+Ri_Cell;Biomass reaction;20 Mi_C00046 3 Mi_C00039 10 Mi_C00017 9.6 Mi_C00002;;

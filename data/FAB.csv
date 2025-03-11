@@ -1,0 +1,73 @@
+Mi_C00001;H2O;1;0;H2O
+Mi_C00003;NAD+;1;0;C21H28N7O14P2
+Mi_C00004;NADH;1;0;C21H29N7O14P2
+Mi_C00005;NADPH;1;0;C21H30N7O17P3
+Mi_C00006;NADP+;1;0;C21H29N7O17P3
+Mi_C00010;CoA;1;0;C21H36N7O16P3S
+Mi_C00011;CO2;1;0;CO2
+Mi_C00024;Acetyl-CoA;1;0;C23H38N7O17P3S
+Mi_C00080;H+;1;0;H
+Mi_C00083;Malonyl-CoA;1;0;C24H38N7O19P3S
+Mi_C00154;Palmitoyl-CoA;1;0;C37H66N7O17P3S
+Mi_C00229;Acyl-carrier protein;1;0;HSR
+Mi_C01209;Malonyl-[acyl-carrier protein];1;0;C3H3O3SR
+Mi_C04246;But-2-enoyl-[acyl-carrier protein];1;0;C4H5OSR
+Mi_C04618;(3R)-3-Hydroxybutanoyl-[acyl-carrier protein];1;0;C4H7O2SR
+Mi_C04619;(3R)-3-Hydroxydecanoyl-[acyl-carrier protein];1;0;C10H19O2SR
+Mi_C04620;(3R)-3-Hydroxyoctanoyl-[acyl-carrier protein];1;0;C8H15O2SR
+Mi_C04633;(3R)-3-Hydroxypalmitoyl-[acyl-carrier protein];1;0;C16H31O2SR
+Mi_C04671;(5Z)-11alpha-Hydroxy-9,15-dioxoprostanoate;1;0;C20H32O5
+Mi_C04688;(3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein];1;0;C14H27O2SR
+Mi_C04707;(5Z,13E)-11alpha-Hydroxy-9,15-dioxoprost-5,13-dienoate;1;0;C20H30O5
+Mi_C05223;Dodecanoyl-[acyl-carrier protein];1;0;C12H23OSR
+Mi_C05744;Acetoacetyl-[acp];1;0;C4H5O2SR
+Mi_C05745;Butyryl-[acp];1;0;C4H7OSR
+Mi_C05746;3-Oxohexanoyl-[acp];1;0;C6H9O2SR
+Mi_C05747;(3R)-3-Hydroxyhexanoyl-[acyl-carrier protein];1;0;C6H11O2SR
+Mi_C05748;trans-Hex-2-enoyl-[acp];1;0;C6H9OSR
+Mi_C05749;Hexanoyl-[acp];1;0;C6H11OSR
+Mi_C05750;3-Oxooctanoyl-[acp];1;0;C8H13O2SR
+Mi_C05751;trans-Oct-2-enoyl-[acp];1;0;C8H13OSR
+Mi_C05752;Octanoyl-[acp];1;0;C8H15OSR
+Mi_C05753;3-Oxodecanoyl-[acp];1;0;C10H17O2SR
+Mi_C05754;trans-Dec-2-enoyl-[acp];1;0;C10H17OSR
+Mi_C05755;Decanoyl-[acp];1;0;C10H19OSR
+Mi_C05756;3-Oxododecanoyl-[acp];1;0;C12H21O2SR
+Mi_C05757;(3R)-3-Hydroxydodecanoyl-[acyl-carrier protein];1;0;C12H23O2SR
+Mi_C05758;trans-Dodec-2-enoyl-[acp];1;0;C12H21OSR
+Mi_C05759;3-Oxotetradecanoyl-[acp];1;0;C14H25O2SR
+Mi_C05760;trans-Tetradec-2-enoyl-[acp];1;0;C14H25OSR
+Mi_C05761;Tetradecanoyl-[acp];1;0;C14H27OSR
+Mi_C05762;3-Oxohexadecanoyl-[acp];1;0;C16H29O2SR
+Mi_C05763;trans-Hexadec-2-enoyl-[acp];1;0;C16H29OSR
+Mi_C05764;Hexadecanoyl-[acp];1;0;C16H31OSR
+Ri_R01626;malonyl-CoA:[acyl-carrier-protein] S-malonyltransferase;Mi_C00083 Mi_C00229;Mi_C00010 Mi_C01209;;2.3.1.39
+Ri_R04428;(3R)-3-hydroxybutanoyl-[acyl-carrier-protein] hydro-lyase;Mi_C04618;Mi_C04246 Mi_C00001;;2.3.1.85
+Ri_R04430;butyryl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05745 Mi_C00006;Mi_C04246 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R04533;(3R)-3-hydroxybutanoyl-[acyl-carrier protein]:NADP+ oxidoreductase;Mi_C04618 Mi_C00006;Mi_C05744 Mi_C00005 Mi_C00080;;1.1.1.100
+Ri_R04534;(3R)-3-hydroxydecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase;Mi_C04619 Mi_C00006;Mi_C05753 Mi_C00005;;1.1.1.100
+Ri_R04535;(3R)-3-hydroxydecanoyl-[acyl-carrier-protein] hydro-lyase;Mi_C04619;Mi_C05754 Mi_C00001;;2.3.1.85
+Ri_R04536;(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase;Mi_C04620 Mi_C00006;Mi_C05750 Mi_C00005 Mi_C00080;;1.1.1.100
+Ri_R04537;(3R)-3-hydroxyoctanoyl-[acyl-carrier-protein] hydro-lyase;Mi_C04620;Mi_C05751 Mi_C00001;;2.3.1.85
+Ri_R04543;(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein]:NADP+ oxidoreductase;Mi_C04633 Mi_C00006;Mi_C05762 Mi_C00005 Mi_C00080;;1.1.1.100
+Ri_R04544;(3R)-3-hydroxypalmitoyl-[acyl-carrier-protein] hydro-lyase;Mi_C04633;Mi_C05763 Mi_C00001;;2.3.1.85
+Ri_R04556;(5Z)-(15S)-11alpha-hydroxy-9,15-dioxoprostanoate:NAD+ delta13-oxidoreductase;Mi_C04671 Mi_C00003;Mi_C04707 Mi_C00004 Mi_C00080;;1.3.1.48
+Ri_R04568;(3R)-3-hydroxytetradecanoyl-[acyl-carrier-protein] hydro-lyase;Mi_C04688;Mi_C05760 Mi_C00001;;2.3.1.85
+Ri_R04725;dodecanoyl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05223 Mi_C00006;Mi_C05758 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R04726;dodecanoyl-[acyl-carrier-protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating);Mi_C05223 Mi_C01209;Mi_C05759 Mi_C00011 Mi_C00229;;2.3.1.41
+Ri_R04952;butyryl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating);Mi_C05745 Mi_C01209;Mi_C05746 Mi_C00011 Mi_C00229;;2.3.1.41
+Ri_R04953;(3R)-3-hydroxyhexanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase;Mi_C05747 Mi_C00006;Mi_C05746 Mi_C00005 Mi_C00080;;1.1.1.100
+Ri_R04954;(3R)-3-hydroxyhexanoyl-[acyl-carrier-protein] hydro-lyase;Mi_C05747;Mi_C05748 Mi_C00001;;2.3.1.85
+Ri_R04956;hexanoyl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05749 Mi_C00006;Mi_C05748 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R04957;hexanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating);Mi_C05749 Mi_C01209;Mi_C05750 Mi_C00011 Mi_C00229;;2.3.1.41
+Ri_R04959;octanoyl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05752 Mi_C00006;Mi_C05751 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R04960;octanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating);Mi_C05752 Mi_C01209;Mi_C05753 Mi_C00011 Mi_C00229;;2.3.1.41
+Ri_R04962;decanoyl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05755 Mi_C00006;Mi_C05754 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R04963;decanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating);Mi_C05755 Mi_C01209;Mi_C05756 Mi_C00011 Mi_C00229;;2.3.1.41
+Ri_R04964;(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein]:NADP+ oxidoreductase;Mi_C05757 Mi_C00006;Mi_C05756 Mi_C00005 Mi_C00080;;1.1.1.100
+Ri_R04965;(3R)-3-hydroxydodecanoyl-[acyl-carrier-protein] hydro-lyase;Mi_C05757;Mi_C05758 Mi_C00001;;2.3.1.85
+Ri_R04967;tetradecanoyl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05761 Mi_C00006;Mi_C05760 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R04968;tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating);Mi_C05761 Mi_C01209;Mi_C05762 Mi_C00011 Mi_C00229;;2.3.1.41
+Ri_R04970;hexadecanoyl-[acp]:NADP+ trans-2-oxidoreductase;Mi_C05764 Mi_C00006;Mi_C05763 Mi_C00005 Mi_C00080;;1.3.1.10
+Ri_R10700;palmitoyl-[acp]:CoA S-palmitoyltransferase;Mi_C05764 Mi_C00010;Mi_C00154 Mi_C00229;;2.3.1.86
+Ri_R10707;acetyl-CoA:malonyl-[acyl-carrier protein] C-acetyltransferase (decarboxylating);Mi_C00024 Mi_C01209;Mi_C05744 Mi_C00010 Mi_C00011;;2.3.1.180

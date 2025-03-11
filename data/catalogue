@@ -1,9 +1,18 @@
-LUCAcompounds_v0.0.csv - original table from Witmer article
-LUCAreactions_v0.0.csv - idem
-LUCAcofactors.csv      - list of identified cofactors for reactions from litterature
-Bionumbers_concentrations.csv - concentrations of metabolites from bionumbers tables *.png
+doc.rst               - Documentation control file for Sphinx
 
-FAB_compound.csv      - Fatty acid biosynthesis compounds from kegg
-FAB_reaction.csv      - Fatty acid biosynthesis reactions from kegg
-WL_compound.csv       - Wood-Ljungdahl pathway compounds from kegg
-WL_reaction.csv       - Wood-Ljungdahl pathway reactions from kegg
+Concentrations.csv    - concentrations of metabolites from bionumbers tables
+Composition.csv       - Amino acid composition from E coli 1998
+                        DNA Research 5(5):251-9 doi 10.1093/dnares/5.5.251
+FAB_pathway.csv       - Fatty acid biosynthesis pathway from kegg
+WC_pathway.csv        - Wolfe cycle pathway from kegg
+WL_pathway.csv        - Wood-Ljungdahl pathway from kegg
+PS_pathway.csv        - Protein synthesis from amino-acids based on kegg the
+                        Mr of the produced protein is 11248.39
+Supplementary_Table_2.csv - Reaction list from Wimmers article (Metabolism)
+Wimmers.csv           - csv file produced from Supplementary_Table_2 with
+                        reactions and compounds added (kegg_reactions.py)
+NAP_pathway.csv       - DNA and RNA polymerase reactions to add dATGC /AUGC to
+                        a nucleic acid, Mr 1268.76 (RNA), 1204.76 (DNA).
+Environment00.csv     - Exchange reactions
+Biomass_full.csv      - A biomass reaction
+Energy00.csv          - A simple imaginary energy generation scheme

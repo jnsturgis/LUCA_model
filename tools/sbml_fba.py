@@ -28,6 +28,8 @@ The different modifications made to the input sbml file should be logged.
 # TODO: setup routines that operate on the BeautifulSoup structure.
 # Less efficient but more portable than current version.
 
+# TODO: enable addition of flux as first annotation
+
 import sys
 import math
 

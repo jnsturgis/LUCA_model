@@ -1,0 +1,11 @@
+# Compounds
+Mi_C00001;H2O;1;0;H2O
+Mi_C00002;ATP;1;0;C10H16N5O13P3
+Mi_C00008;ADP;1;0;C10H15N5O10P2
+Mi_C00009;Orthophosphate;1;0;H3PO4
+Mi_C00013;Diphosphate;1;0;H4P2O7
+Me_C00080;External proton;1;1;H
+Mi_C00080;Internal proton;1;1;H
+# An imaginary energy source
+Ri_JS0001;ATP condensation;Mi_C00008 Mi_C00009;Mi_C00001 Mi_C00002;
+Ri_JS0002;Proton translocating pyrophosphatase;Mi_C00013 Mi_C00001 Mi_C00080;2 Mi_C00009 Me_C00080;
