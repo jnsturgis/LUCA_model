@@ -115,7 +115,8 @@ class Network:
 
         sep = ";"
 
-        with (sys.stdin if csv_name == "-" else open(csv_name, "r", encoding='utf-8')) as f:
+        with (sys.stdin if csv_name == "-" else open(csv_name,
+            "r", encoding='utf-8')) as f:
             for line in f:
                 line = line.rstrip()
                 if len(old_line) > 0:

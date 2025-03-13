@@ -555,3 +555,9 @@ Next steps:
   enzymes? - I do not understand why or how the list - OK
 * Added 3 though no way of saving it or filling it in yet
 * Added 6 though currently ChEBI identifiers not KEGG.
+
+12/3/25
+
+* Added script to build the models automatically
+
+13/3/25
